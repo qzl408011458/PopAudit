@@ -15,7 +15,10 @@ folder unless a usage line says otherwise.
 | folder | Supplementary item |
 |---|---|
 | `srmse_threshold/` | S2, Table S1 |
+| `scenario_only_ablation/` | S2 scenario-only rule; Table 5 (tab:baseline-counts), Sec. 6.5 |
 | `tau_ladder/` | S3.6, Table S6; Sec. 6.3 tau paragraph |
+| `ensemble_size/` | S3.6 ensemble size and the selected realization; Sec. 6.4 |
+| `oracle_2013_reference/` | S3.7 observed 2013 sample as a reference; Sec. 6.3 |
 | `sigma_sensitivity/` | S3.7, Table S7; Sec. 7 |
 | `seed_robustness/` | S3.8, Table S8; Sec. 7 |
 | `truncated_priors/` | S3.9, Table S9; S4.2 hard-rule check |
@@ -30,11 +33,43 @@ folder unless a usage line says otherwise.
 (marginal-only SRMSE) over the 81 cases. `python threshold_sweep.py` [REPO] writes `threshold_sweep.csv`,
 `per_case_srmse.csv` and `threshold_sweep.log`.
 
+**scenario_only_ablation** (S2 scenario-only rule; Table 5, tab:baseline-counts; Sec. 6.5). Admits a case
+when it passes the Layer-2 gate alone, ignoring Layers 1 and 3, and compares this and the other reduced
+protocols with the audit on the 81 cases (Layer 2 is evaluated for the 27 Layer-1 rejections too).
+`python a27_l2_only.py` [REPO] reads the certificate, `baselines/baseline_comparison.csv` and the per-case
+Layer-2 summaries in `main_experiments/audits_v3/` and writes `a27_protocol_summary.csv` (accepted counts per
+protocol and horizon, agreement with the audit), `a27_l1_rejections_l2.csv` (the Layer-1 rejections and
+their Layer-2 verdicts) and `a27_l2_only.log`.
+
 **tau_ladder** (S3.6, Table S6). Re-projects the 10 valid 2024 cases over a grid of Layer-3 tolerances tau
 and records D, nESS, R_3 and feasibility. `bash launch.sh` runs `tau_ladder.py` for every case
 (`launch_loose.sh` / `tau_loose.py`: tau > 1); `python collect.py`, `python collect_loose.py`, then
 `python make_table.py` write `tau_ladder_all.csv`, `tau_*.csv`, `tab_tau_ladder.tex` and
 `figS_tau_ladder_D.pdf`. Runs [ENS] [PW]; table [REPO].
+
+**ensemble_size** (S3.6 "Ensemble size and the selected realization"; Sec. 6.4). Checks K = 50 and the hand-off
+of r* to Layer 3. `python a10_subsample.py` [REPO] recomputes the Layer-1 and Layer-2 gates (with the
+gates of `main_experiments/decision_certificate_xstate_v3.py`) on 200 random sub-ensembles of K = 10 and
+K = 25 per case from the shipped per-realization statistics, with Layer 3 held at its verdict, and writes
+`a10_subsample_case.csv`, `a10_subsample_validcounts.csv`, `a10_spread_all81.csv` (spread of chi_H^(r)
+over the 50 realizations) and `a10_subsample.log`. `python a10_l3_median.py med,rstar` re-runs Layer 3
+and D for the 23 valid cases at the median-chi_H realization (the 25th of 50) and, as a pipeline check, at
+r*; it writes `a10_l3_med_rstar.csv` and `a10_l3.log` (and `l3_*/`, `cells7_*/`, not shipped) [ENS] [RAW].
+`python a10_D_compare.py` [REPO, from the shipped `a10_l3_med_rstar.csv`] compares D and re-selects the
+prior and the decision per scenario: `a10_D_med_vs_rstar.csv`, `a10_scenario_decision_med_vs_rstar.csv`,
+`a10_D_compare.log`.
+
+**oracle_2013_reference** (S3.7, observed 2013 sample as a reference; Sec. 6.3 2021 deferral). Audits the
+observed 2013 base-year sample (`full`: `person_level_2013_<ST>.csv`; `test`: the 2013 test split) in place
+of a prior, as one realization through the production Layer-2 and Layer-3 command lines, in all nine
+scenarios. `python run_oracle.py` [RAW] writes `ens/` and `runs/` (Layer-2/3 outputs with projected
+weights, not shipped) and `run_oracle.log`; `python validate.py` [ENS] [PW] feeds the r* realization of
+three real cases through the same single-realization path and checks it against their main-experiment
+Layer-2/3 outputs and D (`validation_single_realization_path.csv`) and that sigma(H) equals the
+production scale; `python collect.py` [PW] writes `a9_oracle_all.csv` (chi_H, Layer-3 diagnostics, D and
+R_2^MA per variant and scenario), `a9_production_context.csv` (valid count, selected prior and D-dagger per
+scenario) and `a9_oracle_table.csv` (the two merged); `python per_attr.py` [PW] writes
+`a9_D_per_attribute.csv`. `collect.py` and `per_attr.py` read `runs/` from `run_oracle.py`.
 
 **sigma_sensitivity** (S3.7, Table S7, exact admission thresholds). Varies the historical-uncertainty
 scale sigma(H) one setting at a time and re-runs Layers 2-3 for the 54 Layer-1-passing cases with copies
@@ -98,6 +133,7 @@ Paths are relative to `supplementary_experiments/` unless they start with anothe
 | item | script | output | needs |
 |---|---|---|---|
 | S1 Figure (fig:joint-transfer) | `V3/figures/make_transfer_figures_v3.py` | `fig_appB_joint_transfer.pdf`, `tableH_joint_transfer.csv`, `transfer_stats.json` | [PW] |
+| S2 scenario-only rule; Table 5 (tab:baseline-counts) scenario-only row | `scenario_only_ablation/a27_l2_only.py` | `scenario_only_ablation/a27_protocol_summary.csv`, `a27_l1_rejections_l2.csv`, `a27_l2_only.log` | [REPO] |
 | S2 Table S1 (tab:srmse-sweep) | `srmse_threshold/threshold_sweep.py` | `srmse_threshold/threshold_sweep.csv`, `per_case_srmse.csv`, `threshold_sweep.log` | [REPO] |
 | S3.1 Table S2 (tab:layerwise_outcomes) | `V3/figures/make_paper_tables_v3.py` | `V3/figures/tables/tab_layerwise_outcomes.tex` | [REPO] |
 | S3.2 Table S3, Figure (fig:l2-abnormality) | `make_paper_tables_v3.py`; `V3/ablation_l2/run_ensemble_table.py`, `make_L2_semantics_figure.py` | `tab_chiH_decomposition.tex`; `ensemble_results.csv`, `fig_L2_abnormality_vs_drift.pdf` | [REPO]; SRMSE_J [ENS] [PW] |
@@ -106,6 +142,9 @@ Paths are relative to `supplementary_experiments/` unless they start with anothe
 | S3.5 Figure (fig:lipschitz-transfer) | `make_transfer_figures_v3.py` | `fig_cor1_marginal_transfer.pdf`, `tableG_marginal_transfer.csv` | [PW] |
 | S3.6 gate sweep, kappa ladders, B0 ladder, null reference | `V3/sensitivity/sensitivity_sweep.py`, `kappa_recheck.py`, `kappa_null_sim.py` | `V3/sensitivity/*.csv`, `kappa_recheck.md` | [REPO] |
 | S3.6 Table S6 (tab:tau-ladder) | `tau_ladder/*` | `tau_ladder/tab_tau_ladder.tex`, `tau_*.csv`, `figS_tau_ladder_D.pdf` | runs [ENS] [PW]; table [REPO] |
+| S3.6 ensemble size (K = 10, 25 sub-ensembles); Sec. 6.4 | `ensemble_size/a10_subsample.py` | `ensemble_size/a10_subsample_{case,validcounts}.csv`, `a10_spread_all81.csv`, `a10_subsample.log` | [REPO] |
+| S3.6 median realization instead of r*; Sec. 6.4 | `ensemble_size/a10_l3_median.py med,rstar`, `a10_D_compare.py` | `ensemble_size/a10_l3_med_rstar.csv`, `a10_D_med_vs_rstar.csv`, `a10_scenario_decision_med_vs_rstar.csv`, `*.log` | Layer 3 [ENS] [RAW]; comparison [REPO] |
+| S3.7 observed 2013 sample as a reference; Sec. 6.3 | `oracle_2013_reference/run_oracle.py`, `validate.py`, `collect.py`, `per_attr.py` | `oracle_2013_reference/a9_oracle_table.csv`, `a9_oracle_all.csv`, `a9_production_context.csv`, `a9_D_per_attribute.csv`, `validation_single_realization_path.csv`, `run_oracle.log` | runs [RAW]; validation [ENS] [PW]; collection [PW] |
 | S3.7 Table S7 (tab:sigma-sensitivity), exact thresholds | `sigma_sensitivity/*` | `sigma_sensitivity/results/*` | Layer 2 [REPO]; Layer 3 / D [ENS] [PW] |
 | S3.8 Table S8 (tab:seed-robustness) | `seed_robustness/*` | `seed_robustness/results/*` | [CKPT] [ENS] [PW]; table [REPO] |
 | S3.8 TTVAE record reuse across seeds | `seed_robustness/verify/ttvae_records.py`, `ttvae_ca_records.py` | `seed_robustness/verify/ttvae_records.log`, `ttvae_ca_records.log` | [ENS] [RAW] |

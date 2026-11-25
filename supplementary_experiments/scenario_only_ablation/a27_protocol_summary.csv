@@ -1,0 +1,6 @@
+protocol,accepted,acc_2018,acc_2021,acc_2024,agree,valid_rejected,invalid_accepted
+full_audit,23,13,0,10,81,0,0
+srmse_0.30,79,27,26,26,25,0,56
+structural_only_L1,54,18,18,18,50,0,31
+scenario_only_L2,29,16,0,13,75,0,6
+L1_and_L2_no_L3,23,13,0,10,81,0,0

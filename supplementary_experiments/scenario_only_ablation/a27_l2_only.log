@@ -1,0 +1,39 @@
+          protocol  accepted  acc_2018  acc_2021  acc_2024  agree  valid_rejected  invalid_accepted
+        full_audit        23        13         0        10     81               0                 0
+        srmse_0.30        79        27        26        26     25               0                56
+structural_only_L1        54        18        18        18     50               0                31
+  scenario_only_L2        29        16         0        13     75               0                 6
+   L1_and_L2_no_L3        23        13         0        10     81               0                 0
+
+L1 rejections passing L2: 6 of 27
+year     2018  2021  2024  All
+model                         
+borysov     0     0     0    0
+ctgan       3     0     3    6
+tvae        0     0     0    0
+All         3     0     3    6
+state model  year  L1_invalid  L2_chi_H  L2_cutoff
+   CA ctgan  2018    0.011912   3.20092    5.01288
+   CA ctgan  2024    0.011912   4.36839    5.01125
+   TX ctgan  2018    0.016093   2.74657    5.01231
+   TX ctgan  2024    0.016093   4.40992    5.01033
+   OH ctgan  2018    0.012614   1.56446    5.01760
+   OH ctgan  2024    0.012614   4.19212    5.02057
+
+L1 rejections by model/year count:
+year     2018  2021  2024
+model                    
+borysov     3     3     3
+ctgan       3     3     3
+tvae        3     3     3
+
+L1-pass but L2-fail (31):
+year         2018  2021  2024  All
+model                             
+bn              0     3     0    3
+flowsyn         3     3     3    9
+semapop_vae     0     3     0    3
+tabddpm         0     3     2    5
+ttvae           0     3     0    3
+wgan_zcr        2     3     3    8
+All             5    18     8   31
