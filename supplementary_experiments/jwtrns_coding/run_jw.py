@@ -51,7 +51,7 @@ def do_l2(v, m, st, y):
     out = vdir(v) / f"layer2_{m}_{st}_{y}"
     shutil.rmtree(out, ignore_errors=True)
     ens = ens_dir(PRIMARY[m].format(st=st))
-    cmd = [PY, "-u", "layer2_historical_sigma.py",
+    cmd = [PY, "-u", _PA.R("/audit/layer2_historical_sigma.py"),
            "--realizations_dir", f"{ens}/generated_ensembles",
            "--scenario_reference_csv", ref(v, st, y),
            "--target_attrs", *R.L2_ATTRS,
@@ -79,7 +79,7 @@ def do_l3(v, m, st, y):
     sig = pd.read_csv(l2 / "layer2_historical_sigma_summary.csv")
     sj = l3 / "sigma_H_targets.json"
     json.dump({r.target: float(r.sigma) for r in sig.itertuples()}, open(sj, "w"))
-    rc = run([PY, "-u", f"{ROOT}/layer3_projection_uncertainty_branches.py",
+    rc = run([PY, "-u", _PA.R("/audit/layer3_projection_uncertainty_branches.py"),
               "--realizations_csv", str(c7),
               "--scenario_reference_csv", ref(v, st, y),
               "--target_attrs", *R.L3_ATTRS,

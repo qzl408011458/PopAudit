@@ -21,7 +21,7 @@ ITSC code draws conditions from the TRAINING embeddings.  The argparse default h
 diagnostic row of Supplementary Table S12 (see hpo/finalize.py --sampling-arm).
 """
 from __future__ import annotations
-import sys as _sys, pathlib as _pl; _sys.path.append(str(_pl.Path(__file__).resolve().parents[0])); import popaudit_paths as _PA  # release path bootstrap (see popaudit_paths.py)
+import sys as _sys, pathlib as _pl; _sys.path.insert(0, str(_pl.Path(__file__).resolve().parents[1])); import popaudit_paths as _PA  # release bootstrap: repository root first on sys.path (see popaudit_paths.py)
 
 import argparse
 import json
@@ -36,7 +36,7 @@ import pandas as pd
 import torch
 from torch.utils.data import DataLoader, TensorDataset
 
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, _PA.R(""))
 
 from train_semapop_gan_v2 import (                       # noqa: E402
     set_torch_seed, prepare_data, val_metrics, selection_score,

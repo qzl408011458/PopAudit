@@ -3,7 +3,7 @@
 One folder per analysis of the Supplementary Material, with the scripts next to their results. Items of
 the Supplementary Material that come from the main pipeline (S1, S3.1-S3.5, the S3.6 gate, kappa and B0
 sweeps, Tables S10-S12 and the upper block of Table S13) are produced in `main_experiments/`, `hpo/` and
-the root modules; the table at the end lists them too.
+`audit/`, `training/` and the shared modules at the root; the table at the end lists them too.
 
 Labels: [REPO] runs from this repository alone; [PW] needs the Layer-3 projected weights and the processed
 scenario references; [ENS] needs the generated ensembles or the r* cells7 inputs of Layer 3; [CKPT] needs
@@ -87,7 +87,7 @@ current comparison `code/compare_l1_disjoint_g1fix.py`, outputs in `corrected/`.
 `if1_check.py`, `if1_leakfree.py`; independent re-computation `check/verify_if1.py` [RAW] [ENS].
 
 **sigma_calibration** (S4.2, Table S13). `python sigma_lower_block.py` recomputes the lower block from
-the shipped Layer-2 outputs [REPO]; the upper block is the defaults of `layer2_historical_sigma.py` and
+the shipped Layer-2 outputs [REPO]; the upper block is the defaults of `audit/layer2_historical_sigma.py` and
 `main_experiments/rerun_audit_new.py`.
 
 ## Item -> script -> output
@@ -123,8 +123,8 @@ Paths are relative to `supplementary_experiments/` unless they start with anothe
 | Table S11 (tab:fidelity-v3) | `hpo/fidelity_table_tex.py` | `main_experiments/tables/tab_fidelity_v3.tex` | [REPO] |
 | Table S11 caption, oracle floor (about 0.022, 0.015 to 0.030 across draws) | `iid_reference/code/fidelity_iid.py`, `household_disjoint/code/fidelity_disjoint.py` | `iid_reference/results/fidelity_yardsticks.csv` (rows `oracle_prodtest`, column `srmse_1_orig`), `household_disjoint/results/fidelity_oracle_floor.csv`; the caption text is a fixed string in `fidelity_table_tex.py` | [RAW] |
 | Table S12 (tab:condition-source-v3) | inputs: `hpo/records/final/{semapop_vae_<ST>_train_mu,ttvae_<ST>_prior}/aggregate.json`, `PAPER_xstate_v3_extras/xstate_certificate_all.csv` (no generator) | - | [REPO] |
-| S4.2 hard validity rules | `layer1.py`, `main_experiments/l1_invalid_fix_shadow.py`, `truncated_priors/scripts/verify_ens_g1fix.py` | `truncated_priors/diag/reference_rule_violations.csv` | [RAW] for the reference check |
-| Table S13 (tab:sigma-calibration) | upper block: defaults of `layer2_historical_sigma.py` / `main_experiments/rerun_audit_new.py`; lower block: `sigma_calibration/sigma_lower_block.py` | `sigma_calibration/sigma_lower_block.csv` | [REPO] |
+| S4.2 hard validity rules | `audit/layer1.py`, `main_experiments/l1_invalid_fix_shadow.py`, `truncated_priors/scripts/verify_ens_g1fix.py` | `truncated_priors/diag/reference_rule_violations.csv` | [RAW] for the reference check |
+| Table S13 (tab:sigma-calibration) | upper block: defaults of `audit/layer2_historical_sigma.py` / `main_experiments/rerun_audit_new.py`; lower block: `sigma_calibration/sigma_lower_block.py` | `sigma_calibration/sigma_lower_block.csv` | [REPO] |
 
 The authors also re-ran, from the ensembles and projected weights, the S4.1 fresh-reference and
 household-disjoint collectors and the Table S10 budget step before release; all outputs matched the

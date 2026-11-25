@@ -73,14 +73,14 @@ says which path was taken (``path`` = ``native_condvec+rejection`` or
 
 Example
 -------
-    python train_ctgan_v2.py \
+    python training/train_ctgan_v2.py \
         --data-dir <semapop_repo>/data/pums_v2/CA \
         --out-root <semapop_repo>/modelSave \
         --tag ctgan_ca --device cuda:0 --epochs 300 --seed 42
 """
 
 from __future__ import annotations
-import sys as _sys, pathlib as _pl; _sys.path.append(str(_pl.Path(__file__).resolve().parents[0])); import popaudit_paths as _PA  # release path bootstrap (see popaudit_paths.py)
+import sys as _sys, pathlib as _pl; _sys.path.insert(0, str(_pl.Path(__file__).resolve().parents[1])); import popaudit_paths as _PA  # release bootstrap: repository root first on sys.path (see popaudit_paths.py)
 
 import argparse
 import copy
@@ -99,9 +99,9 @@ import pandas as pd
 import torch
 import yaml
 
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, _PA.R(""))
 
-REPO_DIR = os.path.dirname(os.path.abspath(__file__))
+REPO_DIR = _PA.R("")
 DEFAULT_EVAL_CONFIG = os.path.join(REPO_DIR, "configs", "eval_v3_pums12.yaml")
 
 

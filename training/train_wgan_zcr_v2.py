@@ -43,14 +43,14 @@ from the same code path (identical architecture, seeding and post-processing),
 
 Example
 -------
-    python train_wgan_zcr_v2.py \
+    python training/train_wgan_zcr_v2.py \
         --data-dir <semapop_repo>/data/pums_v2/CA \
         --eval-config configs/eval_v2_pums20.yaml \
         --tag wganzcr_ca --device cuda:0 --epochs 300 --seed 42
 """
 
 from __future__ import annotations
-import sys as _sys, pathlib as _pl; _sys.path.append(str(_pl.Path(__file__).resolve().parents[0])); import popaudit_paths as _PA  # release path bootstrap (see popaudit_paths.py)
+import sys as _sys, pathlib as _pl; _sys.path.insert(0, str(_pl.Path(__file__).resolve().parents[1])); import popaudit_paths as _PA  # release bootstrap: repository root first on sys.path (see popaudit_paths.py)
 
 import argparse
 import copy
@@ -70,7 +70,7 @@ from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 from torch.utils.data import DataLoader, TensorDataset
 
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, _PA.R(""))
 
 from model.wgan import (  # noqa: E402
     TabularSchema,
@@ -104,7 +104,7 @@ from train_semapop_gan_v2 import (  # noqa: E402
     val_metrics,
 )
 
-_REPO_ROOT = os.path.dirname(os.path.abspath(__file__))
+_REPO_ROOT = _PA.R("")
 #: the frozen paper protocol; every paper run must use it.
 DEFAULT_EVAL_CONFIG = os.path.join(_REPO_ROOT, "configs", "eval_v3_pums12.yaml")
 

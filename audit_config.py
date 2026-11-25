@@ -1,12 +1,13 @@
 """
-Shared Layer-2 audit configuration — imported by all train_*.py scripts.
+Shared K = 50 ensemble configuration, imported by utils/ensemble_v2.py (the trainers' ensemble
+writer) and train_ttvae_CA.py.
 
 The same K=50 ensemble seeds are used by every model so that Layer-2
 metrics (per-realization mean, 95% CI, model ranking, paired tests)
 are computed on identical sampling randomness sequences across models.
 
 DO NOT change these mid-experiment. If K must grow, append seeds to
-the end of the list; never modify existing entries — that would
+the end of the list; never modify existing entries, since that would
 invalidate prior model runs.
 
 Pattern: extends the original 5-seed convention

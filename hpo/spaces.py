@@ -47,6 +47,7 @@ DESIGN RULES (every deviation must be written down)
    (``hpo/budget_probe.py``).
 """
 from __future__ import annotations
+import sys as _sys, pathlib as _pl; _sys.path.append(str(_pl.Path(__file__).resolve().parents[1])); import popaudit_paths as _PA  # release path bootstrap (see popaudit_paths.py)
 
 import argparse
 import os
@@ -97,7 +98,7 @@ class ModelSpec:
     defaults: Dict[str, Any] = field(default_factory=dict)
 
     def script_path(self) -> str:
-        return os.path.join(C.REPO, self.script)
+        return os.path.join(_PA.R("/training"), self.script)
 
     def full_params(self, p: Dict[str, Any]) -> Dict[str, Any]:
         """Searched params on top of this model's defaults.

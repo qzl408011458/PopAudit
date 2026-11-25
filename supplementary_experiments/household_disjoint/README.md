@@ -70,5 +70,5 @@ the same verdicts.
 
 - A household-disjoint reference cannot be made representative here without retraining, because the
   split itself is row-based. Ohio is the worst case. The placebo contrast is the identifying comparison.
-- `layer1.py` implements the seven hard rules of Supplementary S4.2 (there is no
+- `audit/layer1.py` implements the seven hard rules of Supplementary S4.2 (there is no
   `rule_student_age_reasonable` column).

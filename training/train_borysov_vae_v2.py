@@ -36,7 +36,7 @@ DEPARTURES FROM THE RELEASED CODE, all recorded into metrics.json:
     but --load-final is the faithful default.
 """
 from __future__ import annotations
-import sys as _sys, pathlib as _pl; _sys.path.append(str(_pl.Path(__file__).resolve().parents[0])); import popaudit_paths as _PA  # release path bootstrap (see popaudit_paths.py)
+import sys as _sys, pathlib as _pl; _sys.path.insert(0, str(_pl.Path(__file__).resolve().parents[1])); import popaudit_paths as _PA  # release bootstrap: repository root first on sys.path (see popaudit_paths.py)
 
 import argparse
 import json
@@ -51,7 +51,7 @@ import pandas as pd
 import torch
 from sklearn.preprocessing import StandardScaler
 
-REPO_DIR = os.path.dirname(os.path.abspath(__file__))
+REPO_DIR = _PA.R("")
 sys.path.insert(0, REPO_DIR)
 sys.path.insert(0, os.path.join(REPO_DIR, "scripts"))
 

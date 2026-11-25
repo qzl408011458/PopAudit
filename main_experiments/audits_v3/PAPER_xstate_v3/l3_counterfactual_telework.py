@@ -67,7 +67,7 @@ for w in WS:
     cf_ref = OUT / f"ref_w{int(w*100)}.csv"; ref.to_csv(cf_ref, index=False)
     wfh_share = ref.loc[ref["Commute_Mode"]==WFH, w_col].sum()/ref[w_col].sum()
     od = OUT / f"w{int(w*100)}"
-    subprocess.run([PY, "-u", str(ROOT/"layer3_projection_uncertainty_branches.py"),
+    subprocess.run([PY, "-u", str(_PA.R("/audit/layer3_projection_uncertainty_branches.py")),
         "--realizations_csv", str(CELLS7), "--scenario_reference_csv", str(cf_ref),
         "--target_attrs", *L3ATTRS, "--base_weight_col", "base_count",
         "--reference_weight_col", w_col, "--output_dir", str(od),

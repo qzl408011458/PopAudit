@@ -50,7 +50,7 @@ forward rather than the rejection sampling of Sun & Erath (2015).  Both differen
 recorded in metrics.json so the paper can state them instead of glossing them.
 """
 from __future__ import annotations
-import sys as _sys, pathlib as _pl; _sys.path.append(str(_pl.Path(__file__).resolve().parents[0])); import popaudit_paths as _PA  # release path bootstrap (see popaudit_paths.py)
+import sys as _sys, pathlib as _pl; _sys.path.insert(0, str(_pl.Path(__file__).resolve().parents[1])); import popaudit_paths as _PA  # release bootstrap: repository root first on sys.path (see popaudit_paths.py)
 
 import argparse, json, os, sys, time, warnings
 from datetime import datetime
@@ -70,7 +70,7 @@ if os.environ.get("PYTHONHASHSEED") != "0":
     os.execv(sys.executable, [sys.executable] + sys.argv)
 
 warnings.filterwarnings("ignore")
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, _PA.R(""))
 
 import utils.eval_v2 as ev                                     # noqa: E402
 from model.bn_v2 import build_numeric_decoder                  # noqa: E402

@@ -102,13 +102,13 @@ row index, or nearest-neighbour lookup enters the sampling path.  See the
 
 Example (production)
 --------------------
-    python train_flowsyn_v3.py --state CA --device cuda:1 \
+    python training/train_flowsyn_v3.py --state CA --device cuda:1 \
         --out-root <repo>/modelSave \
         --ensemble
 """
 
 from __future__ import annotations
-import sys as _sys, pathlib as _pl; _sys.path.append(str(_pl.Path(__file__).resolve().parents[0])); import popaudit_paths as _PA  # release path bootstrap (see popaudit_paths.py)
+import sys as _sys, pathlib as _pl; _sys.path.insert(0, str(_pl.Path(__file__).resolve().parents[1])); import popaudit_paths as _PA  # release bootstrap: repository root first on sys.path (see popaudit_paths.py)
 
 import argparse
 import json
@@ -126,7 +126,7 @@ import torch
 import yaml
 from sklearn.preprocessing import LabelEncoder, QuantileTransformer
 
-REPO_DIR = os.path.dirname(os.path.abspath(__file__))
+REPO_DIR = _PA.R("")
 sys.path.insert(0, REPO_DIR)
 
 from model.flowsyn import FlowSynVAE, vae_loss                        # noqa: E402

@@ -5,6 +5,8 @@ module.  Defaults are relative to the repository root (the folder that holds thi
 each one can be overridden with an environment variable:
 
   POPAUDIT_ROOT       repository root                         default: folder of this file
+                      (must be this code checkout: the trainers and hpo/ take code and configs/ from it;
+                      relocate data or outputs with POPAUDIT_DATA / MODELS / HPO instead)
   POPAUDIT_DATA       processed PUMS / persona data            default: $POPAUDIT_ROOT/data
   POPAUDIT_MODELS     trainer output root (checkpoints)        default: $POPAUDIT_ROOT/modelSave
   POPAUDIT_HPO        HPO records (studies/, best/, final/)    default: $POPAUDIT_ROOT/hpo/records
@@ -18,6 +20,14 @@ each one can be overridden with an environment variable:
 
 Scripts that build paths relative to their own location, or relative to the repository root
 (``data/...``), are unchanged; keep the data under ``$POPAUDIT_ROOT/data`` (a symlink is fine).
+
+Code folders.  The audit layers live in ``audit/`` (AUDIT) and the trainers in ``training/`` (TRAINING);
+in the authors' tree both sat at the repository root.  Importing this module appends both folders to
+``sys.path`` (appended, so they never shadow anything), which is how scripts that ``import layer1`` or
+``import train_tabddpm_v2`` find them.  Every script in ``training/`` starts with a one-line bootstrap that
+puts the repository root first on ``sys.path`` and imports this module, so ``model.*``, ``utils.*``,
+``hpo.*`` and ``audit_config`` resolve as they did at the root.  Scripts that call a layer or a trainer as a
+subprocess take its path from ``R("/audit/...")`` / ``R("/training")``.
 """
 import os
 import sys
@@ -34,7 +44,8 @@ LAYOUT = os.environ.get("POPAUDIT_LAYOUT", "release")
 
 # release-relative folder -> folder in the authors' original tree (used only when POPAUDIT_LAYOUT=production;
 # most specific first).  main_experiments/ is their experiments/E_state/, supplementary_experiments/ their
-# experiments/E_state/audits_v3_referee/ (with the subfolder names on the right).
+# experiments/E_state/audits_v3_referee/ (with the subfolder names on the right); audit/ and training/ were
+# their repository root.
 _PRODUCTION_LAYOUT = [
     ("/supplementary_experiments/household_disjoint/code/compare_l1_disjoint_g1fix.py", "/experiments/E_state/audits_v3_referee/misc_g1fix/code/compare_l1_disjoint_g1fix.py"),
     ("/supplementary_experiments/iid_reference/code/check_scenario_refs_g1fix.py", "/experiments/E_state/audits_v3_referee/misc_g1fix/code/check_scenario_refs_g1fix.py"),
@@ -56,6 +67,8 @@ _PRODUCTION_LAYOUT = [
     ("/supplementary_experiments", "/experiments/E_state/audits_v3_referee"),
     ("/main_experiments/tables", "/docs/manuscript/revision/tables_v3"),
     ("/main_experiments", "/experiments/E_state"),
+    ("/training", ""),
+    ("/audit", ""),
 ]
 
 
@@ -77,6 +90,13 @@ def R(rel=""):
     return ROOT + rel
 
 
+AUDIT = R("/audit")          # layer1.py, layer2_historical_sigma.py, layer3_projection_uncertainty_branches.py
+TRAINING = R("/training")    # train_*.py
+for _d in (AUDIT, TRAINING):
+    if _d not in sys.path:
+        sys.path.append(_d)
+
+
 def S(rel=""):
     """Path below the authors' external data disk, mapped onto the configured locations."""
     for seg, base in (("/hpo_v3/final", ENSEMBLES), ("/hpo_v3", HPO), ("/data", DATA), ("/modelSave", MODELS)):
@@ -86,5 +106,5 @@ def S(rel=""):
 
 
 if __name__ == "__main__":
-    for k in ("ROOT", "DATA", "MODELS", "HPO", "ENSEMBLES", "SSD", "PYTHON", "LAYOUT"):
+    for k in ("ROOT", "DATA", "MODELS", "HPO", "ENSEMBLES", "SSD", "PYTHON", "LAYOUT", "AUDIT", "TRAINING"):
         print(f"{k:10s} {globals()[k]}")

@@ -117,7 +117,7 @@ def build_cells7(model, state, year, ens_dir):
 
 def do_l1(model, state, ens_dir):
     out = f"{AUD}/layer1_{model}_{state}"
-    rc = run([PY, "layer1.py",
+    rc = run([PY, _PA.R("/audit/layer1.py"),
               "--real_test_data", f"{ROOT}/data/pums_states/{state}/testdata_pers.csv",
               "--realizations_dir", f"{ens_dir}/generated_ensembles",
               "--output_dir", out], f"{out}.relog")
@@ -129,7 +129,7 @@ def do_year(model, state, year, ens_dir):
     ref = f"{state_dir}/reference_{year}_{state}.csv"
     # --- L2 ---
     l2 = l2_dir(model, state, year)
-    rc2 = run([PY, "-u", "layer2_historical_sigma.py",
+    rc2 = run([PY, "-u", _PA.R("/audit/layer2_historical_sigma.py"),
                "--realizations_dir", f"{ens_dir}/generated_ensembles",
                "--scenario_reference_csv", ref,
                "--target_attrs", *L2_ATTRS,
@@ -160,7 +160,7 @@ def do_l3(model, state, year, ens_dir):
     sig_json = f"{l3}/sigma_H_targets.json"
     _json.dump({r.target: float(r.sigma) for r in sig.itertuples()}, open(sig_json, "w"))
     # --- L3 ---
-    rc3 = run([PY, "-u", f"{ROOT}/layer3_projection_uncertainty_branches.py",
+    rc3 = run([PY, "-u", _PA.R("/audit/layer3_projection_uncertainty_branches.py"),
                "--realizations_csv", cells7,
                "--scenario_reference_csv", ref,
                "--target_attrs", *L3_ATTRS,

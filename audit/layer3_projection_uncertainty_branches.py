@@ -33,7 +33,7 @@ The script reports:
     - agent-level ESS/nESS and weight-concentration diagnostics.
 
 Example:
-    python layer3_projection.py \
+    python audit/layer3_projection_uncertainty_branches.py \
         --realizations_dir generated_ensembles \
         --scenario_reference_csv pums_future.csv \
         --reference_weight_col PWGTP \
@@ -70,7 +70,7 @@ except Exception:
 
 
 # ============================================================
-# Attribute spaces, aligned with layer2.py / current framework
+# Attribute spaces, aligned with layer2_historical_sigma.py / current framework
 # ============================================================
 
 FULL_NUM_COLS: List[str] = [

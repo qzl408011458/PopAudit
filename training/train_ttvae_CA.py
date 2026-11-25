@@ -1,5 +1,6 @@
 # train_ttv ae.py
 from __future__ import annotations
+import sys as _sys, pathlib as _pl; _sys.path.insert(0, str(_pl.Path(__file__).resolve().parents[1])); import popaudit_paths as _PA  # release bootstrap: repository root first on sys.path (see popaudit_paths.py)
 import os
 import sys
 import random

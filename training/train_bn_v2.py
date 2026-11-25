@@ -57,14 +57,14 @@ Conventions copied from ``train_semapop_gan_v2.py``
 
 Example
 -------
-    python train_bn_v2.py \
+    python training/train_bn_v2.py \
         --data-dir <semapop_repo>/data/pums_v2/CA \
         --eval-config configs/eval_v2_pums20.yaml \
         --max-parents 3 --score bic --n-samples 200000 --seed 42
 """
 
 from __future__ import annotations
-import sys as _sys, pathlib as _pl; _sys.path.append(str(_pl.Path(__file__).resolve().parents[0])); import popaudit_paths as _PA  # release path bootstrap (see popaudit_paths.py)
+import sys as _sys, pathlib as _pl; _sys.path.insert(0, str(_pl.Path(__file__).resolve().parents[1])); import popaudit_paths as _PA  # release bootstrap: repository root first on sys.path (see popaudit_paths.py)
 
 import argparse
 import json
@@ -81,7 +81,7 @@ import numpy as np
 import pandas as pd
 import yaml
 
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, _PA.R(""))
 
 import utils.eval_v2 as ev  # noqa: E402
 from utils.ensemble_v2 import add_ensemble_args, write_ensemble  # noqa: E402
@@ -92,7 +92,7 @@ from model.bn_v2 import (  # noqa: E402
     learn_structure,
 )
 
-DEFAULT_EVAL_CONFIG = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+DEFAULT_EVAL_CONFIG = os.path.join(_PA.R(""),
                                    "configs", "eval_v3_pums12.yaml")
 
 
@@ -131,7 +131,7 @@ def _save_ckpt(obj: Dict[str, Any], path: str) -> str:
 # F6: bin code -> value  (the only place where the BN leaves the discrete space)
 #
 # ``NumericDecoder`` / ``build_numeric_decoder`` live in ``model.bn_v2`` so that
-# a checkpoint written by ``python train_bn_v2.py`` (module ``__main__``) can be
+# a checkpoint written by ``python training/train_bn_v2.py`` (module ``__main__``) can be
 # unpickled from anywhere; the checkpoint additionally stores ``dec.to_dict()``
 # so it can be read without importing this repo's classes at all.
 # --------------------------------------------------------------------------- #

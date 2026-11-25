@@ -57,13 +57,13 @@ assertion as every other sampling path.
 
 Example
 -------
-    python train_tvae_ref_v2.py \
+    python training/train_tvae_ref_v2.py \
         --data-dir data/pums_states/CA --cols-config cols_config_v3.yaml \
         --tag tvae_ref_ca --device cuda:2 --epochs 300 --seed 42 --ensemble
 """
 
 from __future__ import annotations
-import sys as _sys, pathlib as _pl; _sys.path.append(str(_pl.Path(__file__).resolve().parents[0])); import popaudit_paths as _PA  # release path bootstrap (see popaudit_paths.py)
+import sys as _sys, pathlib as _pl; _sys.path.insert(0, str(_pl.Path(__file__).resolve().parents[1])); import popaudit_paths as _PA  # release bootstrap: repository root first on sys.path (see popaudit_paths.py)
 
 import argparse
 import copy
@@ -79,7 +79,7 @@ import numpy as np
 import pandas as pd
 import torch
 
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, _PA.R(""))
 
 # shared conventions: identical helpers, imported instead of copied ---------- #
 from train_ctgan_v2 import (  # noqa: E402
@@ -100,7 +100,7 @@ from utils.ensemble_v2 import add_ensemble_args, write_ensemble  # noqa: E402
 
 import yaml  # noqa: E402
 
-REPO_DIR = os.path.dirname(os.path.abspath(__file__))
+REPO_DIR = _PA.R("")
 DEFAULT_EVAL_CONFIG = os.path.join(REPO_DIR, "configs", "eval_v3_pums12.yaml")
 
 

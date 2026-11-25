@@ -7,7 +7,7 @@ every main-text table and figure.
 ```
 run_audit_v3.py                 runs Layers 1-3 for the 81 cases (--extras: diagnostic rows)
 rerun_l1_paper.py, rerun_audit_new.py   Layer-1 and Layer-2/3 drivers called by run_audit_v3.py
-l1_invalid_fix_shadow.py        independent re-implementation of the seven hard rules (check of layer1.py)
+l1_invalid_fix_shadow.py        independent re-implementation of the seven hard rules (check of audit/layer1.py)
 decision_certificate_xstate_v3.py   gates, first failed gate, R_2^MA, certificate tables
 audits_v3/
   layer1_paper_<prior>_<ST>/, layer2_<prior>_<ST>_<Y>/, layer3_paperW_<prior>_<ST>_<Y>/   per-case outputs
@@ -39,12 +39,12 @@ checkpoints; [RAW] needs raw or processed PUMS files. The large inputs are avail
 Notes:
 
 - **Audit (step 3).** `run_audit_v3.py --l23-only` re-runs Layer 2, the r* cells7 inputs and Layer 3 and
-  reuses Layer 1. `layer1.py` implements the seven hard rules of Supplementary S4.2, so a fresh Layer-1 run
+  reuses Layer 1. `audit/layer1.py` implements the seven hard rules of Supplementary S4.2, so a fresh Layer-1 run
   reproduces every value of the shipped `layer1_ensemble_summary.json` (the fresh file also has
   `rule_child_not_employed_std`, lacks the provenance key `invalid_rules_note`, and orders keys
   differently). `l1_invalid_fix_shadow.py` writes `audits_v3_l1fix/`, identical for all 51 pairs. In every
   `layer1_paper_*` folder the summary and per-realization CSVs were regenerated with the released
-  `layer1.py`; the certificate reads only the JSON. The primary BN row is audited under the tag `bn` (study
+  `audit/layer1.py`; the certificate reads only the JSON. The primary BN row is audited under the tag `bn` (study
   `bn_pgmpy_<ST>`); the `--extras` run audits the same study again as `bn_pgmpy`, so `layer*_bn_*` and
   `layer*_bn_pgmpy_*` are identical. Both are shipped: the certificate reads the first, `kappa_null_sim.py`
   the second. `layer3_projected_weight_files.json` in each `layer3_paperW_*` folder lists the projected-weight
@@ -76,7 +76,7 @@ earlier row. "Step NN" refers to `regen_after_g1fix.sh`.
 | Sec. 5.2 PUMS processing, constant-2013-dollar income, JWTRNS crosswalk | `_pums_proc.py`, `data_prep/run_data_chain.sh` | `data/pums*/person_level_merged_compact_*.csv` | [RAW] |
 | Sec. 5.2 Ohio 2024 income example (42.4 / 28.2 / 22.4 %) | `supplementary_experiments/income_deflation/check/raw_shares.py`, `income_deflation/code/relabel.py` | `income_deflation/check/raw_shares.{csv,log}`, `income_deflation/results/income_shares_by_definition.csv` | [RAW] |
 | Sec. 5.2-5.3, App. B datasets and splits | `data_prep/build_state_slices.py`, `data_prep/pums_states/<ST>/sample_and_split.py` | `data/pums_states/<ST>/...` | [RAW] |
-| Sec. 5.3, App. B priors, HPO, training, personas | `hpo/`, `train_*.py`, `data_prep/pums_states/<ST>/run_persona_*.py`, `run_emb_*.py` | `hpo/records/` | GPU |
+| Sec. 5.3, App. B priors, HPO, training, personas | `hpo/`, `training/train_*.py`, `data_prep/pums_states/<ST>/run_persona_*.py`, `run_emb_*.py` | `hpo/records/` | GPU |
 | Sec. 5.3 common settings (alpha, kappa1, kappa2, tau, B0, sigma floor) | `main_experiments/decision_certificate_xstate_v3.py`, `main_experiments/rerun_audit_new.py` | constants | - |
 | Sec. 6, all Layer 1-3 numbers | `main_experiments/run_audit_v3.py` | `layer1_paper_*`, `layer2_*`, `layer3_paperW_*` | [ENS] [RAW] |
 | Decision certificate | `main_experiments/decision_certificate_xstate_v3.py` (steps 01/02) | `PAPER_xstate_v3/xstate_{certificate_all,valid_only,model_by_gate,per_model_robustness}.csv` | [REPO] |
@@ -103,7 +103,7 @@ earlier row. "Step NN" refers to `regen_after_g1fix.sh`.
 | Figure 4 (fig:baseline-comparison) | `make_figures_v3.py` (08, after 11) | `figures/pdf/figF_comparison_sensitivity.pdf` | [REPO] |
 | Sec. 7 seed and sigma sensitivity | Supplementary S3.7, S3.8 | see `supplementary_experiments/README.md` | - |
 | App. B, Table B1 taxi footnote | `supplementary_experiments/jwtrns_coding/verify_crosswalk.py` | `jwtrns_coding/results/footprint_taxi.csv` | [RAW] |
-| App. B BN configuration | `hpo/spaces.py` (BDeu, equivalent sample size 66.6383, maximum in-degree 4), `train_bn_pgmpy.py` | `hpo/records/final/bn_pgmpy_<ST>/` | - |
+| App. B BN configuration | `hpo/spaces.py` (BDeu, equivalent sample size 66.6383, maximum in-degree 4), `training/train_bn_pgmpy.py` | `hpo/records/final/bn_pgmpy_<ST>/` | - |
 | (diagnostic, not in the paper) BN backend comparison | certificate `--extras`, `bn_pgmpy_compare/compare_bn.py` | `PAPER_xstate_v3_extras/`, `bn_pgmpy_compare/` | [REPO]; D part [PW] |
 | Figure A1 (fig:framework-flow) | `main_experiments/figures/fig_framework_flow.tex` (standalone TikZ; `pdflatex` gives `fig_framework_flow.pdf`) | - | - |
 | Tables 1, 2, C1 | static | - | - |

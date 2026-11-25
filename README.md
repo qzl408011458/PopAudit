@@ -18,9 +18,10 @@ audit outputs and the hyper-parameter search records.
 
 | folder or file | contents |
 |---|---|
-| `layer1.py`, `layer2_historical_sigma.py`, `layer3_projection_uncertainty_branches.py` | the three audit layers |
-| `audit_config.py`, `popaudit_paths.py` | ensemble settings (K = 50, seeds 42 + 100 i); central path configuration |
-| `train_*.py`, `model/`, `utils/` | trainers of the candidate priors and shared utilities |
+| `audit/` | the three audit layers: `layer1.py`, `layer2_historical_sigma.py`, `layer3_projection_uncertainty_branches.py` |
+| `training/` | trainers of the candidate priors (`train_*.py`) |
+| `model/`, `utils/` | model code and shared utilities (evaluation, K = 50 ensemble writer) |
+| `audit_config.py`, `popaudit_paths.py` | ensemble settings (K = 50, seeds 42 + 100 i), read by the trainers and the ensemble writer `utils/ensemble_v2.py`; central path configuration |
 | `_pums_proc.py`, `_gen_pub_personas_traintest.py` | PUMS processing and the Qwen3-8B persona generator (imported by `data_prep/`) |
 | `configs/` | frozen evaluation protocol |
 | [`data_prep/`](data_prep/README.md) | download, processing, state slices, splits, personas and embeddings |
@@ -42,9 +43,10 @@ Paths default to folders inside the repository and can be changed with environme
 (`POPAUDIT_DATA` for the processed data, default `data/`; `POPAUDIT_HPO` for the HPO records, default
 `hpo/records/`; `POPAUDIT_ENSEMBLES` for the generated ensembles, default `hpo/records/final/`; see
 `popaudit_paths.py` for the full list). Keep the processed data under `data/` (a symlink is fine), because
-some scripts read it relative to the repository root. Scripts below the root that import `model.*`,
-`utils.*` or `hpo.*` either add the root to `sys.path` themselves or must be run from the root with
-`PYTHONPATH=$POPAUDIT_ROOT`.
+some scripts read it relative to the repository root. `POPAUDIT_ROOT` must be this checkout. Run commands
+from the repository root, e.g. `python training/train_ctgan_v2.py --help` or `python audit/layer1.py --help`;
+the import mechanism is described in `popaudit_paths.py`. Other scripts below the root that import `model.*`,
+`utils.*` or `hpo.*` add the root to `sys.path` themselves or need `PYTHONPATH=$POPAUDIT_ROOT`.
 
 **From the shipped outputs** (no large inputs needed), regenerate the certificate, Table 3, Figures 1
 and 4, the sensitivity analyses, the headline numbers and the Supplementary tables that work from
@@ -78,7 +80,9 @@ large for this repository. They are available from the authors on request.
 
 [REPO] marks steps that run from this repository alone. Logs and some per-case JSON files were written in
 the authors' working tree; absolute paths in them were replaced by `<POPAUDIT_ROOT>` / `<POPAUDIT_HPO>`, and
-their folder names map to this layout as listed in `popaudit_paths.py` (`_PRODUCTION_LAYOUT`).
+their folder names map to this layout as listed in `popaudit_paths.py` (`_PRODUCTION_LAYOUT`). In that tree
+the audit layers and the trainers sat at the repository root, so records such as
+`hpo/records/finalize_commands.tsv` name them without `audit/` or `training/`.
 
 ## License and citation
 

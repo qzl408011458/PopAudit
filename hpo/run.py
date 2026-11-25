@@ -22,6 +22,7 @@ Properties (fairness of the comparison):
   terminating the subprocess.  No trainer was modified to make this work.
 """
 from __future__ import annotations
+import sys as _sys, pathlib as _pl; _sys.path.append(str(_pl.Path(__file__).resolve().parents[1])); import popaudit_paths as _PA  # release path bootstrap (see popaudit_paths.py)
 
 import argparse
 import json
@@ -336,7 +337,8 @@ def main(argv: Optional[List[str]] = None) -> int:
         print(f"[abort] {args.model} is deliberately NOT hyperparameter-searched.\n"
               f"        {spec.notes}\n"
               f"        Produce its row with a single run:\n"
-              f"          python {spec.script} --data-dir <dir> --eval-config <yaml>",
+              f"          python " + os.path.relpath(os.path.join(_PA.R("/training"), spec.script), C.REPO)
+              + " --data-dir <dir> --eval-config <yaml>",
               file=sys.stderr)
         return 2
     if not os.path.exists(spec.script_path()):

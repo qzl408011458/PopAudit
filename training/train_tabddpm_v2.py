@@ -71,7 +71,7 @@ faithful defaults                    0.662      1.716      0.41 / 0.44 / 0.71
 
 Example
 -------
-    python train_tabddpm_v2.py \
+    python training/train_tabddpm_v2.py \
         --data-dir <semapop_repo>/data/pums_v2/CA \
         --eval-config configs/eval_v2_pums20.yaml \
         --cat-input onehot --clip-x0 5 \
@@ -79,7 +79,7 @@ Example
 """
 
 from __future__ import annotations
-import sys as _sys, pathlib as _pl; _sys.path.append(str(_pl.Path(__file__).resolve().parents[0])); import popaudit_paths as _PA  # release path bootstrap (see popaudit_paths.py)
+import sys as _sys, pathlib as _pl; _sys.path.insert(0, str(_pl.Path(__file__).resolve().parents[1])); import popaudit_paths as _PA  # release bootstrap: repository root first on sys.path (see popaudit_paths.py)
 
 import argparse
 import copy
@@ -99,7 +99,7 @@ import yaml
 from sklearn.preprocessing import LabelEncoder, QuantileTransformer, StandardScaler
 from torch.utils.data import DataLoader, TensorDataset
 
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, _PA.R(""))
 
 from model.tabddpm_v2 import (  # noqa: E402
     GaussianMultinomialDiffusion,
@@ -109,7 +109,7 @@ from model.tabddpm_v2 import (  # noqa: E402
 from utils.ensemble_v2 import add_ensemble_args, write_ensemble  # noqa: E402
 from utils.marg_loss_v2 import DEFAULT_TIME_STEPS, BinningSpec, build_binning_spec  # noqa: E402
 
-_REPO_ROOT = os.path.dirname(os.path.abspath(__file__))
+_REPO_ROOT = _PA.R("")
 #: the frozen paper protocol; every paper run must use it.
 DEFAULT_EVAL_CONFIG = os.path.join(_REPO_ROOT, "configs", "eval_v3_pums12.yaml")
 

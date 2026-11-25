@@ -1,8 +1,9 @@
 # Hyper-parameter search and training
 
 Optuna search, final training and fidelity tables of the nine candidate priors and the diagnostic rows
-(Section 5.3, Appendix B, Supplementary S4.1 and Tables S10-S12). The trainers (`train_*.py`) and models
-(`model/`) are at the repository root.
+(Section 5.3, Appendix B, Supplementary S4.1 and Tables S10-S12). The trainers are in `training/` and the
+models in `model/`; `spaces.py` names the trainer of each model, and `run.py` and `finalize.py` run it as
+`training/<trainer>` with the repository root as working directory.
 
 ```
 bash hpo/run_all.sh search        # Optuna TPE (seed 42), median pruner, selection on the validation split
@@ -36,7 +37,9 @@ Notes:
   training-record embeddings. The argparse default of `train_semapop_vae_v2.py` is `--cond-mode mu` (the M-U
   arm, Table S12 only). `run_all.sh` and `finalize_commands.tsv` pass the audited setting explicitly.
 - **Finalize settings.** `finalize_commands.tsv` covers all 81 primary prior-state-seed runs and the
-  diagnostic rows; `$POPAUDIT_OUT/hpo_v3` there stands for the HPO output root. The as-shipped CTGAN and
+  diagnostic rows; `$POPAUDIT_OUT/hpo_v3` there stands for the HPO output root. The commands (and the `cmd`
+  field of `best/*.json`) name the trainers as they sat at the authors' repository root; in this release run
+  them from the root as `python training/train_*.py ...`. The as-shipped CTGAN and
   TVAE runs are missing because their logs were overwritten; their configuration is in
   `final/{ctgan,tvae_ref}_defaults_<ST>/*_final_s42/metrics.json` (`config`). TabDDPM uses the trainer
   default `--sample-batch 4096`, which the finalize argv does not pass. For the reselected TabDDPM

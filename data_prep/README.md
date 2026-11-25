@@ -17,6 +17,8 @@ Outputs go to `data/` below the repository root (`POPAUDIT_DATA`; a symlink is f
 
 Notes:
 
+- `_pums_proc.py` and `_gen_pub_personas_traintest.py` stay at the repository root, where `run_data_chain.sh`,
+  the `run_persona_<ST>.py` scripts and `supplementary_experiments/income_deflation` use them.
 - `_pums_proc.py` writes income classes in constant 2013 dollars (ADJINC x CPI-U; `--nominal-income`
   restores nominal dollars) and maps the ACS 2019+ JWTRNS codes onto the JWTR categories (chosen from the
   person-file header). The 2013 training base is a PWGTP-proportional resample with replacement

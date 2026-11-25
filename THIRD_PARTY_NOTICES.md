@@ -68,7 +68,7 @@ SOFTWARE.
 ## popsynth
 
 - Source: https://github.com/stasmix/popsynth (commit 089df3e)
-- Used in: model/borysov_vae.py, train_borysov_vae_v2.py
+- Used in: model/borysov_vae.py, training/train_borysov_vae_v2.py
 - The VAE architecture and training settings follow pop-synth-vae.ipynb, cells 36-38.
 
 ```

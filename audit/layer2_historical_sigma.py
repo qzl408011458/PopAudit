@@ -35,7 +35,7 @@ Expected command-line inputs:
          targets are constructed automatically.
 
 Example:
-    python layer2.py \
+    python audit/layer2_historical_sigma.py \
         --realizations_csv generated_ensembles.csv \
         --scenario_reference_csv real_future.csv \
         --target_attrs Age Household_Size Employment_status Household_Income_Class Number_of_cars_of_household \

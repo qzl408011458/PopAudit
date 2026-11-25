@@ -41,7 +41,7 @@ OUT.mkdir(parents=True, exist_ok=True)
 rows = []
 for tau in TAUS:
     od = OUT / f"tau_{tau}"
-    rc = subprocess.run([PY, "-u", str(ROOT/"layer3_projection_uncertainty_branches.py"),
+    rc = subprocess.run([PY, "-u", str(_PA.R("/audit/layer3_projection_uncertainty_branches.py")),
         "--realizations_csv", str(CELLS7), "--scenario_reference_csv", str(REF),
         "--target_attrs", *L3ATTRS, "--base_weight_col", "base_count",
         "--reference_weight_col", "PWGTP", "--output_dir", str(od),

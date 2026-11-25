@@ -26,7 +26,7 @@ OUT = OUTROOT/CELL; OUT.mkdir(parents=True, exist_ok=True)
 for tau in a.taus:
     od = OUT/f"tau_{tau}"
     if (od/"layer3_summary.json").exists(): print("skip", od); continue
-    rc = subprocess.run([PY, "-u", str(ROOT/"layer3_projection_uncertainty_branches.py"),
+    rc = subprocess.run([PY, "-u", str(_PA.R("/audit/layer3_projection_uncertainty_branches.py")),
         "--realizations_csv", str(c7[0]), "--scenario_reference_csv", str(REF),
         "--target_attrs", *L3ATTRS, "--base_weight_col", "base_count", "--reference_weight_col", "PWGTP",
         "--output_dir", str(od), "--projection_mode", "uncertainty_set", "--uncertainty_aggregation", "attribute_constraints",

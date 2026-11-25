@@ -55,14 +55,14 @@ Conditioning
 
 Example
 -------
-    python train_semapop_gan_v2.py \
+    python training/train_semapop_gan_v2.py \
         --data-dir <repo>/data/pums_states/CA \
         --out-root <semapop_repo>/modelSave \
         --tag ca13 --device cuda:2 --epochs 300 --seed 42
 """
 
 from __future__ import annotations
-import sys as _sys, pathlib as _pl; _sys.path.append(str(_pl.Path(__file__).resolve().parents[0])); import popaudit_paths as _PA  # release path bootstrap (see popaudit_paths.py)
+import sys as _sys, pathlib as _pl; _sys.path.insert(0, str(_pl.Path(__file__).resolve().parents[1])); import popaudit_paths as _PA  # release bootstrap: repository root first on sys.path (see popaudit_paths.py)
 
 import argparse
 import copy
@@ -86,7 +86,7 @@ from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder, StandardScaler
 from torch.utils.data import DataLoader, TensorDataset
 
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, _PA.R(""))
 
 from model.wgan_llm import (  # noqa: E402
     CondWGANCriticProj,
@@ -103,7 +103,7 @@ from utils.marg_loss_v2 import (  # noqa: E402
     build_marginal_loss,
 )
 
-_REPO_ROOT = os.path.dirname(os.path.abspath(__file__))
+_REPO_ROOT = _PA.R("")
 #: the frozen paper protocol; every paper run must use it.
 DEFAULT_EVAL_CONFIG = os.path.join(_REPO_ROOT, "configs", "eval_v3_pums12.yaml")
 
