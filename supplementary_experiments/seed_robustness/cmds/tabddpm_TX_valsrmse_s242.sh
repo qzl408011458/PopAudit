@@ -1,0 +1,6 @@
+# --- release path setup (popaudit_paths equivalents; override via environment, see README) ---
+: "${POPAUDIT_ROOT:=$(cd "$(dirname "${BASH_SOURCE[0]}")/../../.." && pwd)}"
+: "${POPAUDIT_PYTHON:=python}"
+: "${POPAUDIT_DATA:=$POPAUDIT_ROOT/data}"
+# --- end release path setup ---
+${POPAUDIT_PYTHON} ${POPAUDIT_ROOT}/supplementary_experiments/seed_robustness/tabddpm_gen_wrapper.py --data-dir ${POPAUDIT_DATA}/pums_states/TX --eval-config ${POPAUDIT_ROOT}/configs/eval_v3_pums12.yaml --f1-weight 0.0 --seed 242 --sample-seed 1476 --device cuda:0 --out-root ${POPAUDIT_ROOT}/supplementary_experiments/seed_robustness/final/tabddpm_TX_valsrmse --tag tabddpm_v2 --run-name tabddpm_TX_valsrmse_final_s242 --n-samples 10000 --select-on ml_eff --cols-config cols_config_v3.yaml --hidden 1024 1024 1024 1024 --dim-t 256 --dropout 0.000140398 --weight-decay 8.73463e-08 --batch-size 1024 --epochs 750 --lr 0.000339623 --grad-clip 0.511513 --timesteps 500 --schedule linear --parametrization x0 --gaussian-parametrization eps --gaussian-loss mse --time-sampler importance --lambda-multi 1.43081 --lambda-gauss 0.645295 --num-transform standard --load-final --ensemble --ensemble-n 212756 --generate-only --sample-batch 32768

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Data chain of the paper, from the raw ACS PUMS files to everything the trainers and the audit read.
 # Run from anywhere; paths are repository-relative.  Steps marked [GPU] need a CUDA GPU with >= 24 GB
-# (Qwen3-8B).  Steps 1-4 were re-checked by the authors (byte-identical outputs, see README).
+# (Qwen3-8B).  Steps 1-4 were re-checked by the authors (byte-identical outputs, see data_prep/README.md).
 #   bash data_prep/run_data_chain.sh [RAW_DIR]       # default RAW_DIR = data/raw (see download_pums.sh)
 set -euo pipefail
 cd "$(dirname "$0")/.."

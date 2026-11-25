@@ -2,9 +2,9 @@
 # Hyper-parameter search and training of the nine candidate priors and the diagnostic rows (Section 5.3,
 # Appendix B, Supplementary S4.1).  A cleaned summary of the authors' launch recipes; GPU ids, lane packing
 # and log names are free.  hpo/common.py reads the state datasets from $POPAUDIT_DATA/pums_states and keeps
-# studies, trials and finalize runs under $POPAUDIT_HPO (default results/hpo_v3, where the authors' records
+# studies, trials and finalize runs under $POPAUDIT_HPO (default hpo/records, where the authors' records
 # are); point POPAUDIT_HPO elsewhere before a new search or finalize run to keep those records intact.  The exact trainer argv of every finalize run (3 seeds per prior and
-# state, plus --ensemble --ensemble-n |reference| on seed 42) is in results/hpo_v3/finalize_commands.tsv.
+# state, plus --ensemble --ensemble-n |reference| on seed 42) is in hpo/records/finalize_commands.tsv.
 #   bash hpo/run_all.sh {search|finalize|diagnostics|budget}
 set -u
 cd "$(dirname "$0")/.."

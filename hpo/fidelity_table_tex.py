@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 """LaTeX version of hpo/fidelity_table.py: base-year fidelity (ref SRMSE-1, 3 seeds mean±sd)
-for the 9 audited priors + as-shipped / criterion diagnostic rows -> revision/tables_v3/tab_fidelity_v3.tex"""
+for the 9 audited priors + as-shipped / criterion diagnostic rows -> main_experiments/tables/tab_fidelity_v3.tex"""
 import sys as _sys, pathlib as _pl; _sys.path.append(str(_pl.Path(__file__).resolve().parents[1])); import popaudit_paths as _PA  # release path bootstrap (see popaudit_paths.py)
 import json, sys
 F = _PA.S('/hpo_v3/final')
-OUT = _PA.R('/results/tables/tab_fidelity_v3.tex')
+OUT = _PA.R('/main_experiments/tables/tab_fidelity_v3.tex')
 ROWS = [
     (r'SemaPop-VAE+ (M-R arm, audited)', 'semapop_vae_{st}_train', True),
     (r'TTVAE (triangular sampler)',      'ttvae_{st}', True),

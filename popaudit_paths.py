@@ -7,7 +7,7 @@ each one can be overridden with an environment variable:
   POPAUDIT_ROOT       repository root                         default: folder of this file
   POPAUDIT_DATA       processed PUMS / persona data            default: $POPAUDIT_ROOT/data
   POPAUDIT_MODELS     trainer output root (checkpoints)        default: $POPAUDIT_ROOT/modelSave
-  POPAUDIT_HPO        HPO records (studies/, best/, final/)    default: $POPAUDIT_ROOT/results/hpo_v3
+  POPAUDIT_HPO        HPO records (studies/, best/, final/)    default: $POPAUDIT_ROOT/hpo/records
   POPAUDIT_ENSEMBLES  finalize tree with the K=50 ensembles     default: $POPAUDIT_HPO/final
                       (final/<study>/<study>_final_s42/generated_ensembles/*.csv; available on request)
   POPAUDIT_SSD        fallback root for paths of the authors' external disk that are not data,
@@ -26,20 +26,36 @@ from pathlib import Path
 ROOT = os.environ.get("POPAUDIT_ROOT") or str(Path(__file__).resolve().parent)
 DATA = os.environ.get("POPAUDIT_DATA") or ROOT + "/data"
 MODELS = os.environ.get("POPAUDIT_MODELS") or ROOT + "/modelSave"
-HPO = os.environ.get("POPAUDIT_HPO") or ROOT + "/results/hpo_v3"
+HPO = os.environ.get("POPAUDIT_HPO") or ROOT + "/hpo/records"
 ENSEMBLES = os.environ.get("POPAUDIT_ENSEMBLES") or HPO + "/final"
 SSD = os.environ.get("POPAUDIT_SSD") or ROOT
 PYTHON = os.environ.get("POPAUDIT_PYTHON") or sys.executable
 LAYOUT = os.environ.get("POPAUDIT_LAYOUT", "release")
 
-# release-relative folder -> folder in the authors' original tree (used only when POPAUDIT_LAYOUT=production)
+# release-relative folder -> folder in the authors' original tree (used only when POPAUDIT_LAYOUT=production;
+# most specific first).  main_experiments/ is their experiments/E_state/, supplementary_experiments/ their
+# experiments/E_state/audits_v3_referee/ (with the subfolder names on the right).
 _PRODUCTION_LAYOUT = [
-    ("/experiments/E_state/supplementary/jwtrns", "/experiments/E_state/audits_v3_referee/group1/jwtrns_g1fix"),
-    ("/experiments/E_state/supplementary/adjinc", "/experiments/E_state/audits_v3_referee/group1/adjinc"),
-    ("/experiments/E_state/supplementary/sigma_calibration", "/experiments/E_state/audits_v3_referee/group1/release/check/indep"),
-    ("/experiments/E_state/supplementary/seed/verify", "/experiments/E_state/audits_v3_referee/group1/referee_verify/seed"),
-    ("/experiments/E_state/supplementary", "/experiments/E_state/audits_v3_referee"),
-    ("/results/tables", "/docs/manuscript/revision/tables_v3"),
+    ("/supplementary_experiments/household_disjoint/code/compare_l1_disjoint_g1fix.py", "/experiments/E_state/audits_v3_referee/misc_g1fix/code/compare_l1_disjoint_g1fix.py"),
+    ("/supplementary_experiments/iid_reference/code/check_scenario_refs_g1fix.py", "/experiments/E_state/audits_v3_referee/misc_g1fix/code/check_scenario_refs_g1fix.py"),
+    ("/supplementary_experiments/iid_reference/code/compare_iid_g1fix.py", "/experiments/E_state/audits_v3_referee/misc_g1fix/code/compare_iid_g1fix.py"),
+    ("/supplementary_experiments/household_disjoint/corrected", "/experiments/E_state/audits_v3_referee/misc_g1fix/l1_disjoint"),
+    ("/supplementary_experiments/iid_reference/corrected", "/experiments/E_state/audits_v3_referee/misc_g1fix/iid_test"),
+    ("/supplementary_experiments/seed_robustness/verify", "/experiments/E_state/audits_v3_referee/group1/referee_verify/seed"),
+    ("/supplementary_experiments/household_disjoint", "/experiments/E_state/audits_v3_referee/l1_disjoint"),
+    ("/supplementary_experiments/sigma_calibration", "/experiments/E_state/audits_v3_referee/group1/release/check/indep"),
+    ("/supplementary_experiments/sigma_sensitivity", "/experiments/E_state/audits_v3_referee/sigma"),
+    ("/supplementary_experiments/income_deflation", "/experiments/E_state/audits_v3_referee/group1/adjinc"),
+    ("/supplementary_experiments/truncated_priors", "/experiments/E_state/audits_v3_referee/filter"),
+    ("/supplementary_experiments/if1_metric_check", "/experiments/E_state/audits_v3_referee/if1_check"),
+    ("/supplementary_experiments/srmse_threshold", "/experiments/E_state/audits_v3_referee/srmse"),
+    ("/supplementary_experiments/seed_robustness", "/experiments/E_state/audits_v3_referee/seed"),
+    ("/supplementary_experiments/jwtrns_coding", "/experiments/E_state/audits_v3_referee/group1/jwtrns_g1fix"),
+    ("/supplementary_experiments/iid_reference", "/experiments/E_state/audits_v3_referee/iid_test"),
+    ("/supplementary_experiments/tau_ladder", "/experiments/E_state/audits_v3_referee/tau"),
+    ("/supplementary_experiments", "/experiments/E_state/audits_v3_referee"),
+    ("/main_experiments/tables", "/docs/manuscript/revision/tables_v3"),
+    ("/main_experiments", "/experiments/E_state"),
 ]
 
 
