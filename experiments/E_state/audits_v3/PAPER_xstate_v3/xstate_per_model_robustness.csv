@@ -1,0 +1,6 @@
+model,n_valid,max_R2MA
+bn,6,1.04023
+semapop_vae,6,1.02085
+ttvae,6,1.03164
+tabddpm,4,1.04267
+wgan_zcr,1,0.52793

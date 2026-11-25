@@ -1,0 +1,16 @@
+k2,n_valid,n_2018,n_2021,n_2024,entering
+3.5,11,11,0,0,CA×bn×2018; CA×semapop_vae×2018; CA×tabddpm×2018; CA×ttvae×2018; OH×bn×2018; OH×semapop_vae×2018; OH×ttvae×2018; TX×bn×2018; TX×semapop_vae×2018; TX×tabddpm×2018; TX×ttvae×2018
+3.75,11,11,0,0,
+4.0,12,11,0,1,OH×ttvae×2024
+4.25,15,11,0,4,OH×bn×2024; OH×semapop_vae×2024; TX×ttvae×2024
+4.5,18,11,0,7,CA×semapop_vae×2024; TX×bn×2024; TX×semapop_vae×2024
+4.75,23,13,0,10,CA×bn×2024; CA×tabddpm×2024; CA×ttvae×2024; OH×tabddpm×2018; OH×wgan_zcr×2018
+5.0,23,13,0,10,
+5.25,26,14,0,12,CA×wgan_zcr×2018; OH×tabddpm×2024; TX×tabddpm×2024
+5.5,28,14,0,14,CA×wgan_zcr×2024; OH×wgan_zcr×2024
+5.75,28,14,0,14,
+6.0,31,14,3,14,OH×bn×2021; OH×semapop_vae×2021; OH×ttvae×2021
+6.25,31,14,3,14,
+6.5,31,14,3,14,
+6.75,32,14,3,15,CA×flowsyn×2024
+7.0,33,14,4,15,TX×ttvae×2021

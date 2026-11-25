@@ -1,0 +1,39 @@
+== CA: training split 40000 records, test split 330109 records
+CA rid=0 seed=42 n=330109 in_train=0.9730 in_test=0.8198
+CA rid=0 seed=142 n=330109 in_train=0.9769 in_test=0.8211
+CA rid=0 seed=242 n=330109 in_train=0.9796 in_test=0.8216
+CA rid=0 seeds 42-142 rowwise_identical=0.9828
+CA rid=0 seeds 42-242 rowwise_identical=0.9758
+CA rid=0 seeds 142-242 rowwise_identical=0.9818
+CA rid=17 seed=42 n=330109 in_train=0.9729 in_test=0.8192
+CA rid=17 seed=142 n=330109 in_train=0.9768 in_test=0.8203
+CA rid=17 seed=242 n=330109 in_train=0.9794 in_test=0.8208
+CA rid=17 seeds 42-142 rowwise_identical=0.9833
+CA rid=17 seeds 42-242 rowwise_identical=0.9762
+CA rid=17 seeds 142-242 rowwise_identical=0.9823
+== OH: training split 40000 records, test split 64112 records
+OH rid=0 seed=42 n=64112 in_train=1.0000 in_test=0.7428
+OH rid=0 seed=142 n=64112 in_train=1.0000 in_test=0.7428
+OH rid=0 seed=242 n=64112 in_train=1.0000 in_test=0.7428
+OH rid=0 seeds 42-142 rowwise_identical=1.0000
+OH rid=0 seeds 42-242 rowwise_identical=1.0000
+OH rid=0 seeds 142-242 rowwise_identical=1.0000
+OH rid=17 seed=42 n=64112 in_train=1.0000 in_test=0.7433
+OH rid=17 seed=142 n=64112 in_train=1.0000 in_test=0.7433
+OH rid=17 seed=242 n=64112 in_train=1.0000 in_test=0.7433
+OH rid=17 seeds 42-142 rowwise_identical=1.0000
+OH rid=17 seeds 42-242 rowwise_identical=1.0000
+OH rid=17 seeds 142-242 rowwise_identical=1.0000
+== TX: training split 40000 records, test split 212756 records
+TX rid=0 seed=42 n=212756 in_train=1.0000 in_test=0.8457
+TX rid=0 seed=142 n=212756 in_train=0.9998 in_test=0.8456
+TX rid=0 seed=242 n=212756 in_train=0.9998 in_test=0.8456
+TX rid=0 seeds 42-142 rowwise_identical=0.9998
+TX rid=0 seeds 42-242 rowwise_identical=0.9998
+TX rid=0 seeds 142-242 rowwise_identical=0.9998
+TX rid=17 seed=42 n=212756 in_train=1.0000 in_test=0.8450
+TX rid=17 seed=142 n=212756 in_train=0.9999 in_test=0.8450
+TX rid=17 seed=242 n=212756 in_train=0.9999 in_test=0.8450
+TX rid=17 seeds 42-142 rowwise_identical=0.9999
+TX rid=17 seeds 42-242 rowwise_identical=0.9999
+TX rid=17 seeds 142-242 rowwise_identical=0.9999

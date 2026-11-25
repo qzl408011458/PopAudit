@@ -1,0 +1,40 @@
+[
+  {
+    "seed": 42,
+    "run_name": "ttvae_OH_prior_final_s42",
+    "run_dir": "<POPAUDIT_HPO>/final/ttvae_OH_prior/ttvae_OH_prior_final_s42",
+    "seconds": 132.0,
+    "returncode": 0,
+    "timed_out": false,
+    "log": "<POPAUDIT_HPO>/logs/ttvae_OH_prior/final_s42.log",
+    "val_metrics": {
+      "srmse_1": 2.504785447453853,
+      "srmse_2": 6.933679962101323,
+      "block_f1_demographic": 0.0,
+      "block_precision_demographic": 0.0,
+      "block_recall_demographic": 0.0,
+      "block_f1_household": 0.0,
+      "block_precision_household": 0.0,
+      "block_recall_household": 0.0,
+      "block_f1_commute": 0.7097606606025418,
+      "block_precision_commute": 1.0,
+      "block_recall_commute": 0.5501,
+      "block_f1_all": 0.0,
+      "block_f1": 0.23658688686751395
+    },
+    "val_objective": -4.719232704777588,
+    "reference_metrics": {
+      "n_reference": 64112,
+      "n_generated": 10000,
+      "srmse_1": 2.5078353461964045,
+      "srmse_2": 6.932690462523354,
+      "block_f1_demographic": 0.0,
+      "block_f1_household": 0.0,
+      "block_f1_commute": 0.7027639512767593,
+      "block_f1": 0.23425465042558644
+    },
+    "reference_objective": -4.720262904359879,
+    "val_minus_reference": 0.0010301995822912247,
+    "trainer_wall_clock_s": null
+  }
+]

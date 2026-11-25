@@ -1,0 +1,12 @@
+exp_i_sigma_curve.csv: 54 L1-survivor cells x 4 m  ->  216 rows
+exp_ii_vH.csv:
+ year  mean_sigma_norm    v_H
+ 2018           0.1132 0.0000
+ 2021           0.1604 0.4167
+ 2024           0.2061 0.8207
+exp_ii_budget_curve.csv:
+ gamma  n_deployable  n_valid  global_ADOPT  B(2018)  B(2021)  B(2024)  min_slack
+   0.0             3       23         False      0.3    0.300    0.300     -0.743
+   0.3             3       23         False      0.3    0.338    0.374     -0.669
+   0.5             3       23         False      0.3    0.363    0.423     -0.620
+   1.0             3       23         False      0.3    0.425    0.546     -0.496

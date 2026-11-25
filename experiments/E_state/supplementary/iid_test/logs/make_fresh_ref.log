@@ -1,0 +1,132 @@
+{
+ "state": "CA",
+ "seed_sequence": [
+  20261124,
+  6
+ ],
+ "n_test": 330109,
+ "n_state_pums_persons": 371403,
+ "raw_pums_rows": 371403,
+ "source_ids_unique": true,
+ "source_id_set_equals_raw": true,
+ "pwgtp_equals_raw_n_mismatch": 0,
+ "prod_resample_rows": 380109,
+ "prod_resample_unique_source_persons": 212276,
+ "prod_resample_coverage_of_pums_persons": 0.5715516568256045,
+ "prod_resample_coverage_of_pums_weight": 0.6942772952501611,
+ "attr_mismatch_vs_prod_resample": 0,
+ "dtype_equal": true,
+ "new_categories_vs_prod_test": {
+  "Region_Category": [],
+  "Gender": [],
+  "Marital_status": [],
+  "Employment_status": [],
+  "Studenthood_status": [],
+  "Personal_Income_Class": [],
+  "Household_Type": [],
+  "Household_Income_Class": [],
+  "Commute_Mode": []
+ },
+ "missing_categories_vs_prod_test": {
+  "Region_Category": [],
+  "Gender": [],
+  "Marital_status": [],
+  "Employment_status": [],
+  "Studenthood_status": [],
+  "Personal_Income_Class": [],
+  "Household_Type": [],
+  "Household_Income_Class": [],
+  "Commute_Mode": []
+ },
+ "n_unique_source_persons_fresh": 195969,
+ "reread_columns_equal": true,
+ "reread_dtype_equal": true
+}
+{
+ "state": "OH",
+ "seed_sequence": [
+  20261124,
+  39
+ ],
+ "n_test": 64112,
+ "n_state_pums_persons": 118223,
+ "raw_pums_rows": 118223,
+ "source_ids_unique": true,
+ "source_id_set_equals_raw": true,
+ "pwgtp_equals_raw_n_mismatch": 0,
+ "prod_resample_rows": 114112,
+ "prod_resample_unique_source_persons": 64467,
+ "prod_resample_coverage_of_pums_persons": 0.5452999839286772,
+ "prod_resample_coverage_of_pums_weight": 0.6846084560386794,
+ "attr_mismatch_vs_prod_resample": 0,
+ "dtype_equal": true,
+ "new_categories_vs_prod_test": {
+  "Region_Category": [],
+  "Gender": [],
+  "Marital_status": [],
+  "Employment_status": [],
+  "Studenthood_status": [],
+  "Personal_Income_Class": [],
+  "Household_Type": [],
+  "Household_Income_Class": [],
+  "Commute_Mode": []
+ },
+ "missing_categories_vs_prod_test": {
+  "Region_Category": [],
+  "Gender": [],
+  "Marital_status": [],
+  "Employment_status": [],
+  "Studenthood_status": [],
+  "Personal_Income_Class": [],
+  "Household_Type": [],
+  "Household_Income_Class": [],
+  "Commute_Mode": []
+ },
+ "n_unique_source_persons_fresh": 44793,
+ "reread_columns_equal": true,
+ "reread_dtype_equal": true
+}
+{
+ "state": "TX",
+ "seed_sequence": [
+  20261124,
+  48
+ ],
+ "n_test": 212756,
+ "n_state_pums_persons": 253599,
+ "raw_pums_rows": 253599,
+ "source_ids_unique": true,
+ "source_id_set_equals_raw": true,
+ "pwgtp_equals_raw_n_mismatch": 0,
+ "prod_resample_rows": 262756,
+ "prod_resample_unique_source_persons": 141716,
+ "prod_resample_coverage_of_pums_persons": 0.5588192382462076,
+ "prod_resample_coverage_of_pums_weight": 0.7117783812300523,
+ "attr_mismatch_vs_prod_resample": 0,
+ "dtype_equal": true,
+ "new_categories_vs_prod_test": {
+  "Region_Category": [],
+  "Gender": [],
+  "Marital_status": [],
+  "Employment_status": [],
+  "Studenthood_status": [],
+  "Personal_Income_Class": [],
+  "Household_Type": [],
+  "Household_Income_Class": [],
+  "Commute_Mode": []
+ },
+ "missing_categories_vs_prod_test": {
+  "Region_Category": [],
+  "Gender": [],
+  "Marital_status": [],
+  "Employment_status": [],
+  "Studenthood_status": [],
+  "Personal_Income_Class": [],
+  "Household_Type": [],
+  "Household_Income_Class": [],
+  "Commute_Mode": []
+ },
+ "n_unique_source_persons_fresh": 125846,
+ "reread_columns_equal": true,
+ "reread_dtype_equal": true
+}

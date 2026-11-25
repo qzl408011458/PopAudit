@@ -1,0 +1,10 @@
+state,year,H,n_adm,v_H,theta_dagger_dA,D_dagger_dA,flat_dA,gamma_min_dA,max_dA,theta_dagger_R2MA,D_dagger_R2MA,flat_R2MA,gamma_min_R2MA,max_R2MA,B0_admit_dA,B0_admit_R2MA
+CA,2018,5,4,0.0,ttvae,0.2488,Deploy,0.0,0.2763,tabddpm,0.4376,Defer,inf,0.4526,0.2488,0.4376
+OH,2018,5,5,0.0,semapop_vae,0.1493,Deploy,0.0,0.2684,semapop_vae,0.2792,Deploy,0.0,0.528,0.1493,0.2792
+TX,2018,5,4,0.0,ttvae,0.1561,Deploy,0.0,0.1758,ttvae,0.2947,Deploy,0.0,0.3551,0.1561,0.2947
+CA,2021,8,0,0.4167,,,Defer,,,,,Defer,,,,
+OH,2021,8,0,0.4167,,,Defer,,,,,Defer,,,,
+TX,2021,8,0,0.4167,,,Defer,,,,,Defer,,,,
+CA,2024,11,4,0.8207,semapop_vae,0.3593,Defer,0.241,0.3733,semapop_vae,1.0208,Defer,2.928,1.0427,0.3593,1.0208
+OH,2024,11,3,0.8207,semapop_vae,0.2399,Deploy,0.0,0.2558,ttvae,0.8705,Defer,2.317,0.8867,0.2399,0.8705
+TX,2024,11,3,0.8207,ttvae,0.2808,Deploy,0.0,0.2904,ttvae,0.7249,Defer,1.726,0.7419,0.2808,0.7249

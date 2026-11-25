@@ -1,0 +1,138 @@
+{
+ "library": "pgmpy 1.1.2",
+ "final_val_metrics": {
+  "srmse_1": 0.045766729082927844,
+  "srmse_2": 0.14605110566308774,
+  "block_f1": 0.9606986091185009
+ },
+ "tail_val_metrics": {
+  "srmse_1": 0.045766729082927844,
+  "srmse_2": 0.14605110566308774,
+  "block_f1": 0.9606986091185009
+ },
+ "select_on": "val_srmse",
+ "search": "HillClimbSearch (add/remove/reverse)",
+ "score": "bdeu",
+ "max_indegree": 4,
+ "numeric_decode": "empirical",
+ "cpt_estimator": "MaximumLikelihoodEstimator",
+ "sampling": "forward_sample (ancestral) -- NOT a deviation: pomegranate's rejection sampler with evidence=None, which is what the reference repo calls, reduces to ancestral sampling",
+ "deviation_from_literature": "Jutras-Dube et al. 2024 s3.1 specify MDL scoring with the greedy topological ordering of Heckerman et al. 1995 and rejection sampling per Sun & Erath 2015; BIC is MDL up to a constant, the search and the sampler are not the same algorithm",
+ "numeric_columns": [
+  "Age",
+  "Household_Size",
+  "Number_of_children",
+  "Number_of_cars_of_household"
+ ],
+ "n_edges": 23,
+ "n_params": 13023,
+ "edges": [
+  [
+   "Age",
+   "Studenthood_status"
+  ],
+  [
+   "Age",
+   "Marital_status"
+  ],
+  [
+   "Age",
+   "Household_Size"
+  ],
+  [
+   "Age",
+   "Number_of_children"
+  ],
+  [
+   "Age",
+   "Personal_Income_Class"
+  ],
+  [
+   "Household_Size",
+   "Number_of_children"
+  ],
+  [
+   "Household_Size",
+   "Household_Type"
+  ],
+  [
+   "Household_Size",
+   "Number_of_cars_of_household"
+  ],
+  [
+   "Number_of_children",
+   "Household_Type"
+  ],
+  [
+   "Number_of_children",
+   "Number_of_cars_of_household"
+  ],
+  [
+   "Number_of_cars_of_household",
+   "Commute_Mode"
+  ],
+  [
+   "Number_of_cars_of_household",
+   "Household_Income_Class"
+  ],
+  [
+   "Marital_status",
+   "Gender"
+  ],
+  [
+   "Employment_status",
+   "Commute_Mode"
+  ],
+  [
+   "Employment_status",
+   "Age"
+  ],
+  [
+   "Employment_status",
+   "Personal_Income_Class"
+  ],
+  [
+   "Employment_status",
+   "Studenthood_status"
+  ],
+  [
+   "Household_Type",
+   "Marital_status"
+  ],
+  [
+   "Household_Type",
+   "Household_Income_Class"
+  ],
+  [
+   "Household_Type",
+   "Number_of_cars_of_household"
+  ],
+  [
+   "Household_Type",
+   "Gender"
+  ],
+  [
+   "Personal_Income_Class",
+   "Household_Income_Class"
+  ],
+  [
+   "Personal_Income_Class",
+   "Gender"
+  ]
+ ],
+ "seconds": {
+  "structure": 0.9996044635772705,
+  "cpt": 0.052461862564086914,
+  "sample": 0.3011939525604248
+ },
+ "eval_config": "<POPAUDIT_ROOT>/configs/eval_v3_pums12.yaml",
+ "data_dir": "<POPAUDIT_ROOT>/data/pums_states/CA",
+ "seed": 42,
+ "cols_config": "cols_config_v3.yaml",
+ "port": "pop_audit copy of llm_pop train_bn_pgmpy.py @ e2b27f1 + K=50 ensemble writer",
+ "outputs": {
+  "samples_csv": "<POPAUDIT_HPO>/final/bn_pgmpy_CA/bn_pgmpy_CA_final_s42/generated_samples.csv",
+  "ensemble_dir": "<POPAUDIT_HPO>/final/bn_pgmpy_CA/bn_pgmpy_CA_final_s42/generated_ensembles",
+  "ensemble_k": 50
+ }
+}

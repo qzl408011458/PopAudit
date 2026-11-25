@@ -1,0 +1,36 @@
+========================================================================================
+MODEL=semapop_vae  STATE=TX
+========================================================================================
+
+  2018 [L2-PASS]  WFH share: real=0.024 proj=0.019 prior=0.018  | within-WFH nESS(proj)=0.461
+    P(Employment_status     |WFH):  TVD(proj,real)=0.012   TVD(prior,real)=0.012   TVD(proj,prior)=0.000
+    P(Age_Group             |WFH):  TVD(proj,real)=0.042   TVD(prior,real)=0.041   TVD(proj,prior)=0.001
+    P(Household_Income_Class|WFH):  TVD(proj,real)=0.041   TVD(prior,real)=0.052   TVD(proj,prior)=0.011
+
+  2021 [L2-FAIL COVID]  WFH share: real=0.075 proj=0.050 prior=0.019  | within-WFH nESS(proj)=0.474
+    P(Employment_status     |WFH):  TVD(proj,real)=0.008   TVD(prior,real)=0.008   TVD(proj,prior)=0.000
+    P(Age_Group             |WFH):  TVD(proj,real)=0.108   TVD(prior,real)=0.107   TVD(proj,prior)=0.001
+    P(Household_Income_Class|WFH):  TVD(proj,real)=0.079   TVD(prior,real)=0.084   TVD(proj,prior)=0.005
+
+  2024 []  WFH share: real=0.062 proj=0.032 prior=0.019  | within-WFH nESS(proj)=0.471
+    P(Employment_status     |WFH):  TVD(proj,real)=0.009   TVD(prior,real)=0.009   TVD(proj,prior)=0.000
+    P(Age_Group             |WFH):  TVD(proj,real)=0.089   TVD(prior,real)=0.090   TVD(proj,prior)=0.001
+    P(Household_Income_Class|WFH):  TVD(proj,real)=0.075   TVD(prior,real)=0.084   TVD(proj,prior)=0.009
+========================================================================================
+MODEL=ttvae  STATE=CA
+========================================================================================
+
+  2018 [L2-PASS]  WFH share: real=0.028 proj=0.024 prior=0.024  | within-WFH nESS(proj)=0.747
+    P(Employment_status     |WFH):  TVD(proj,real)=0.004   TVD(prior,real)=0.005   TVD(proj,prior)=0.000
+    P(Age_Group             |WFH):  TVD(proj,real)=0.040   TVD(prior,real)=0.040   TVD(proj,prior)=0.001
+    P(Household_Income_Class|WFH):  TVD(proj,real)=0.086   TVD(prior,real)=0.089   TVD(proj,prior)=0.003
+
+  2021 [L2-FAIL COVID]  WFH share: real=0.097 proj=0.072 prior=0.025  | within-WFH nESS(proj)=0.711
+    P(Employment_status     |WFH):  TVD(proj,real)=0.009   TVD(prior,real)=0.009   TVD(proj,prior)=0.000
+    P(Age_Group             |WFH):  TVD(proj,real)=0.123   TVD(prior,real)=0.123   TVD(proj,prior)=0.000
+    P(Household_Income_Class|WFH):  TVD(proj,real)=0.204   TVD(prior,real)=0.205   TVD(proj,prior)=0.001
+
+  2024 []  WFH share: real=0.068 proj=0.043 prior=0.025  | within-WFH nESS(proj)=0.709
+    P(Employment_status     |WFH):  TVD(proj,real)=0.011   TVD(prior,real)=0.011   TVD(proj,prior)=0.000
+    P(Age_Group             |WFH):  TVD(proj,real)=0.091   TVD(prior,real)=0.091   TVD(proj,prior)=0.000
+    P(Household_Income_Class|WFH):  TVD(proj,real)=0.176   TVD(prior,real)=0.177   TVD(proj,prior)=0.000

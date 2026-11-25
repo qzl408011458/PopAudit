@@ -1,0 +1,4 @@
+model,n_valid,max_R2MA
+bn,6,1.04023
+bn_pgmpy,6,1.04023
+bn_pgmpy_bic,5,0.87732

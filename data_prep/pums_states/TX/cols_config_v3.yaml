@@ -1,0 +1,14 @@
+# v3 (2026-08-29, v3 protocol): identical to cols_config.yaml EXCEPT Region_Category
+# is EXCLUDED from the modelled categorical columns — it is constant within a
+# state (South for TX), so it carries zero information and its presence
+# overstates the modelled-attribute count (nominal 13, effective 12).
+# Data files are UNCHANGED; the column remains in the CSVs, it is simply not modelled.
+# Original config preserved verbatim in cols_config.yaml.
+num_cols: ['Age', 'Household_Size', 'Number_of_children', 'Number_of_cars_of_household']
+cat_cols: ['Gender', 'Marital_status',
+       'Employment_status', 'Studenthood_status', 'Household_Type',
+       'Commute_Mode', 'Personal_Income_Class', 'Household_Income_Class']
+blocks:
+  demographic: ['Age', 'Gender', 'Marital_status', 'Employment_status', 'Studenthood_status', 'Personal_Income_Class']
+  household: ['Household_Type', 'Household_Size', 'Number_of_children', 'Number_of_cars_of_household', 'Household_Income_Class']
+  commute: ['Commute_Mode']

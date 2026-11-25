@@ -1,0 +1,54 @@
+== (T1) layer-wise outcomes ==
+  wrote tables/tab_layerwise_outcomes.tex
+      model  n  l1_rej       l1mode  l2_rej  l3_rej  valid gate
+semapop_vae  9       0           --       3       0      6   L2
+      ttvae  9       0           --       3       0      6   L2
+    tabddpm  9       0           --       5       0      4   L2
+         bn  9       0           --       3       0      6   L2
+   wgan_zcr  9       0           --       8       0      1   L2
+      ctgan  9       9 invalid mass       0       0      0   L1
+    flowsyn  9       0           --       9       0      0   L2
+    borysov  9       9 invalid mass       0       0      0   L1
+       tvae  9       9 invalid mass       0       0      0   L1
+  TOTAL: n=81 L1=27 L2=31 L3=0 valid=23
+
+== chi_H decomposition ==
+  decomposition chi_H vs certificate L2_chi_H: max |diff| = 4.90e-06 over 81 cells
+
+== (T2) decomposition table ==
+  wrote tables/tab_chiH_decomposition.tex
+                             all_%  drift_%
+Commute_Mode                  39.0     52.3
+Number_of_cars_of_household   19.4     15.1
+Household_Income_Class        17.6     13.0
+Age_Group                     11.4     11.3
+Household_Size                 6.4      4.4
+Employment_status              3.3      1.7
+Number_of_children             2.8      2.2
+  n_all=81  n_drift=31  mean chi_H all=8.20 drift=8.29
+
+== (F12) decomposition figure ==
+  wrote png/fig12_chiH_decomposition.png, pdf/fig12_chiH_decomposition.pdf
+
+== (T3) layer-3 diagnostics ==
+  wrote tables/tab_layer3_diagnostics.tex
+             n  n_feas   feas  R3_med   nESS   topk
+model                                              
+semapop_vae  9       9  1.000   0.052  0.976  0.421
+ttvae        9       9  1.000   0.053  0.976  0.295
+tabddpm      9       9  1.000   0.056  0.972  0.414
+bn           9       9  1.000   0.054  0.975  0.404
+wgan_zcr     9       9  1.000   0.063  0.968  0.449
+ctgan        9       9  1.000   0.046  0.978  0.421
+flowsyn      9       9  1.000   0.067  0.965  0.420
+borysov      9       9  1.000   0.057  0.984  0.300
+tvae         9       6  0.667   0.274  0.515  0.418
+
+== (T4) horizon validity ==
+  wrote tables/tab_horizon_validity.tex
+ year  H  valid  n
+ 2018  5     13 27
+ 2021  8      0 27
+ 2024 11     10 27
+
+Done.

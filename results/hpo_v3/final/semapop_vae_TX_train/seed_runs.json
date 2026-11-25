@@ -1,0 +1,95 @@
+[
+  {
+    "seed": 42,
+    "run_name": "semapop_vae_TX_train_final_s42",
+    "run_dir": "<POPAUDIT_HPO>/final/semapop_vae_TX_train/semapop_vae_TX_train_final_s42",
+    "seconds": 2410.2,
+    "returncode": 0,
+    "timed_out": false,
+    "log": "<POPAUDIT_HPO>/logs/semapop_vae_TX_train/final_s42.log",
+    "val_metrics": {
+      "srmse_1": 0.02847803268867404,
+      "srmse_2": 0.10431204585718909,
+      "block_f1": 0.9664626979948392,
+      "block_f1_demographic": 0.9490495548179759,
+      "block_f1_household": 0.9503885416666666,
+      "block_f1_commute": 0.999949997499875
+    },
+    "val_objective": -0.06639503927293157,
+    "reference_metrics": {
+      "n_reference": 212756,
+      "n_generated": 10000,
+      "srmse_1": 0.024457777043378193,
+      "srmse_2": 0.08565219315522024,
+      "block_f1_demographic": 0.9692709934327289,
+      "block_f1_household": 0.9691783465273672,
+      "block_f1_commute": 1.0,
+      "block_f1": 0.979483113320032
+    },
+    "reference_objective": -0.055054985099299215,
+    "val_minus_reference": -0.011340054173632354,
+    "trainer_wall_clock_s": null
+  },
+  {
+    "seed": 142,
+    "run_name": "semapop_vae_TX_train_final_s142",
+    "run_dir": "<POPAUDIT_HPO>/final/semapop_vae_TX_train/semapop_vae_TX_train_final_s142",
+    "seconds": 2284.0,
+    "returncode": 0,
+    "timed_out": false,
+    "log": "<POPAUDIT_HPO>/logs/semapop_vae_TX_train/final_s142.log",
+    "val_metrics": {
+      "srmse_1": 0.02959957978077067,
+      "srmse_2": 0.10198671213264723,
+      "block_f1": 0.9651319657060958,
+      "block_f1_demographic": 0.947648351184509,
+      "block_f1_household": 0.9478975684371539,
+      "block_f1_commute": 0.9998499774966245
+    },
+    "val_objective": -0.06579314595670896,
+    "reference_metrics": {
+      "n_reference": 212756,
+      "n_generated": 10000,
+      "srmse_1": 0.024490951251198944,
+      "srmse_2": 0.08578745982139664,
+      "block_f1_demographic": 0.9670561436246564,
+      "block_f1_household": 0.9681800652366525,
+      "block_f1_commute": 0.9999247908244806,
+      "block_f1": 0.9783869998952631
+    },
+    "reference_objective": -0.055139205536297795,
+    "val_minus_reference": -0.010653940420411165,
+    "trainer_wall_clock_s": null
+  },
+  {
+    "seed": 242,
+    "run_name": "semapop_vae_TX_train_final_s242",
+    "run_dir": "<POPAUDIT_HPO>/final/semapop_vae_TX_train/semapop_vae_TX_train_final_s242",
+    "seconds": 2300.8,
+    "returncode": 0,
+    "timed_out": false,
+    "log": "<POPAUDIT_HPO>/logs/semapop_vae_TX_train/final_s242.log",
+    "val_metrics": {
+      "srmse_1": 0.04346145787058716,
+      "srmse_2": 0.12140108066536104,
+      "block_f1": 0.9637095269799282,
+      "block_f1_demographic": 0.9425499336905203,
+      "block_f1_household": 0.9487786572512648,
+      "block_f1_commute": 0.9997999899979997
+    },
+    "val_objective": -0.0824312692679741,
+    "reference_metrics": {
+      "n_reference": 212756,
+      "n_generated": 10000,
+      "srmse_1": 0.029652873974552522,
+      "srmse_2": 0.09319045156807337,
+      "block_f1_demographic": 0.965520107825676,
+      "block_f1_household": 0.9686120691571901,
+      "block_f1_commute": 0.999941243798283,
+      "block_f1": 0.9780244735937164
+    },
+    "reference_objective": -0.061421662771312946,
+    "val_minus_reference": -0.021009606496661157,
+    "trainer_wall_clock_s": null
+  }
+]

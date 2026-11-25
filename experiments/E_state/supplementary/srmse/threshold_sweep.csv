@@ -1,0 +1,18 @@
+protocol,threshold,accepted,acc_2018,acc_2021,acc_2024,valid_rejected,invalid_accepted,agree,agree_pct,inv_acc_L1fail,inv_acc_L2fail,inv_acc_L3fail
+marginal-only SRMSE,0.2,50,21,17,12,4,31,46,56.8,9,22,0
+marginal-only SRMSE,0.25,72,25,24,23,0,49,32,39.5,20,29,0
+marginal-only SRMSE,0.3,79,27,26,26,0,56,25,30.9,25,31,0
+marginal-only SRMSE,0.35,81,27,27,27,0,58,23,28.4,27,31,0
+marginal-only SRMSE,0.4,81,27,27,27,0,58,23,28.4,27,31,0
+marginal-only SRMSE,0.5,81,27,27,27,0,58,23,28.4,27,31,0
+structural-only (allowances x s),0.5,36,12,12,12,2,15,64,79.0,0,15,0
+structural-only (allowances x s),0.75,51,17,17,17,0,28,53,65.4,0,28,0
+structural-only (allowances x s),1.0,54,18,18,18,0,31,50,61.7,0,31,0
+structural-only (allowances x s),1.25,54,18,18,18,0,31,50,61.7,0,31,0
+structural-only (allowances x s),1.5,54,18,18,18,0,31,50,61.7,0,31,0
+structural-only (allowances x s),2.0,54,18,18,18,0,31,50,61.7,0,31,0
+structural-only (invalid tol),0.001,36,12,12,12,4,17,60,74.1,0,17,0
+structural-only (invalid tol),0.0025,42,14,14,14,3,22,56,69.1,0,22,0
+structural-only (invalid tol),0.005,54,18,18,18,0,31,50,61.7,0,31,0
+structural-only (invalid tol),0.01,57,19,19,19,0,34,47,58.0,3,31,0
+structural-only (invalid tol),0.02,66,22,22,22,0,43,38,46.9,12,31,0

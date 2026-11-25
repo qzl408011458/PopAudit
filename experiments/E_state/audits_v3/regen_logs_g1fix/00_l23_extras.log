@@ -1,0 +1,99 @@
+[2026-11-24 18:06:36] audit_v3 EXTRAS: 24 cells -> <POPAUDIT_ROOT>/experiments/E_state/audits_v3
+  ctgan_defaults     CA  ctgan_defaults_CA              K=50  READY
+  ctgan_defaults     TX  ctgan_defaults_TX              K=50  READY
+  ctgan_defaults     OH  ctgan_defaults_OH              K=50  READY
+  tvae_defaults      CA  tvae_ref_defaults_CA           K=50  READY
+  tvae_defaults      TX  tvae_ref_defaults_TX           K=50  READY
+  tvae_defaults      OH  tvae_ref_defaults_OH           K=50  READY
+  borysov_defaults   CA  borysov_defaults_CA            K=50  READY
+  borysov_defaults   TX  borysov_defaults_TX            K=50  READY
+  borysov_defaults   OH  borysov_defaults_OH            K=50  READY
+  tabddpm_mleff      CA  tabddpm_CA                     K=50  READY
+  tabddpm_mleff      TX  tabddpm_TX                     K=50  READY
+  tabddpm_mleff      OH  tabddpm_OH                     K=50  READY
+  semapop_vae_mu     CA  semapop_vae_CA_train_mu        K=50  READY
+  semapop_vae_mu     TX  semapop_vae_TX_train_mu        K=50  READY
+  semapop_vae_mu     OH  semapop_vae_OH_train_mu        K=50  READY
+  ttvae_prior        CA  ttvae_CA_prior                 K=50  READY
+  ttvae_prior        TX  ttvae_TX_prior                 K=50  READY
+  ttvae_prior        OH  ttvae_OH_prior                 K=50  READY
+  bn_pgmpy           CA  bn_pgmpy_CA                    K=50  READY
+  bn_pgmpy           TX  bn_pgmpy_TX                    K=50  READY
+  bn_pgmpy           OH  bn_pgmpy_OH                    K=50  READY
+  bn_pgmpy_bic       CA  bn_pgmpy_bic_CA                K=50  READY
+  bn_pgmpy_bic       TX  bn_pgmpy_bic_TX                K=50  READY
+  bn_pgmpy_bic       OH  bn_pgmpy_bic_OH                K=50  READY
+[18:06:36] 72 tasks, jobs=10
+[18:08:35] L2 ctgan_defaults OH 2021 rc2=0; L3 ctgan_defaults OH 2021 rc3=0 (final_generated_samples_17_cells7.csv)
+[18:08:51] L2 ctgan_defaults OH 2018 rc2=0; L3 ctgan_defaults OH 2018 rc3=0 (final_generated_samples_20_cells7.csv)
+[18:08:52] L2 ctgan_defaults OH 2024 rc2=0; L3 ctgan_defaults OH 2024 rc3=0 (final_generated_samples_17_cells7.csv)
+[18:09:28] L2 ctgan_defaults TX 2018 rc2=0; L3 ctgan_defaults TX 2018 rc3=0 (final_generated_samples_16_cells7.csv)
+[18:10:20] L2 ctgan_defaults TX 2021 rc2=0; L3 ctgan_defaults TX 2021 rc3=0 (final_generated_samples_16_cells7.csv)
+[18:10:41] L2 ctgan_defaults TX 2024 rc2=0; L3 ctgan_defaults TX 2024 rc3=0 (final_generated_samples_16_cells7.csv)
+[18:11:20] L2 tvae_defaults CA 2018 rc2=0; L3 tvae_defaults CA 2018 rc3=0 (final_generated_samples_1_cells7.csv)
+[18:12:03] L2 ctgan_defaults CA 2024 rc2=0; L3 ctgan_defaults CA 2024 rc3=0 (final_generated_samples_29_cells7.csv)
+[18:12:10] L2 ctgan_defaults CA 2018 rc2=0; L3 ctgan_defaults CA 2018 rc3=0 (final_generated_samples_41_cells7.csv)
+[18:12:17] L2 ctgan_defaults CA 2021 rc2=0; L3 ctgan_defaults CA 2021 rc3=0 (final_generated_samples_29_cells7.csv)
+[18:12:27] L2 tvae_defaults TX 2018 rc2=0; L3 tvae_defaults TX 2018 rc3=0 (final_generated_samples_47_cells7.csv)
+[18:12:34] L2 tvae_defaults OH 2018 rc2=0; L3 tvae_defaults OH 2018 rc3=0 (final_generated_samples_0_cells7.csv)
+[18:13:35] L2 tvae_defaults OH 2021 rc2=0; L3 tvae_defaults OH 2021 rc3=0 (final_generated_samples_0_cells7.csv)
+[18:13:36] L2 tvae_defaults TX 2021 rc2=0; L3 tvae_defaults TX 2021 rc3=0 (final_generated_samples_47_cells7.csv)
+[18:14:46] L2 tvae_defaults OH 2024 rc2=0; L3 tvae_defaults OH 2024 rc3=0 (final_generated_samples_0_cells7.csv)
+[18:14:50] L2 tvae_defaults CA 2024 rc2=0; L3 tvae_defaults CA 2024 rc3=0 (final_generated_samples_1_cells7.csv)
+[18:15:13] L2 tvae_defaults TX 2024 rc2=0; L3 tvae_defaults TX 2024 rc3=0 (final_generated_samples_47_cells7.csv)
+[18:15:27] L2 tvae_defaults CA 2021 rc2=0; L3 tvae_defaults CA 2021 rc3=0 (final_generated_samples_1_cells7.csv)
+[18:16:16] L2 borysov_defaults TX 2018 rc2=0; L3 borysov_defaults TX 2018 rc3=0 (final_generated_samples_40_cells7.csv)
+[18:16:17] L2 borysov_defaults OH 2018 rc2=0; L3 borysov_defaults OH 2018 rc3=0 (final_generated_samples_15_cells7.csv)
+[18:16:17] L2 borysov_defaults OH 2021 rc2=0; L3 borysov_defaults OH 2021 rc3=0 (final_generated_samples_15_cells7.csv)
+[18:16:20] L2 borysov_defaults OH 2024 rc2=0; L3 borysov_defaults OH 2024 rc3=0 (final_generated_samples_15_cells7.csv)
+[18:16:39] L2 borysov_defaults TX 2021 rc2=0; L3 borysov_defaults TX 2021 rc3=0 (final_generated_samples_43_cells7.csv)
+[18:16:53] L2 borysov_defaults TX 2024 rc2=0; L3 borysov_defaults TX 2024 rc3=0 (final_generated_samples_43_cells7.csv)
+[18:17:09] L2 borysov_defaults CA 2018 rc2=0; L3 borysov_defaults CA 2018 rc3=0 (final_generated_samples_35_cells7.csv)
+[18:17:34] L2 borysov_defaults CA 2021 rc2=0; L3 borysov_defaults CA 2021 rc3=0 (final_generated_samples_35_cells7.csv)
+[18:17:39] L2 borysov_defaults CA 2024 rc2=0; L3 borysov_defaults CA 2024 rc3=0 (final_generated_samples_35_cells7.csv)
+[18:19:13] L2 tabddpm_mleff OH 2018 rc2=0; L3 tabddpm_mleff OH 2018 rc3=0 (final_generated_samples_16_cells7.csv)
+[18:19:34] L2 tabddpm_mleff OH 2021 rc2=0; L3 tabddpm_mleff OH 2021 rc3=0 (final_generated_samples_17_cells7.csv)
+[18:20:00] L2 tabddpm_mleff OH 2024 rc2=0; L3 tabddpm_mleff OH 2024 rc3=0 (final_generated_samples_17_cells7.csv)
+[18:20:09] L2 tabddpm_mleff TX 2018 rc2=0; L3 tabddpm_mleff TX 2018 rc3=0 (final_generated_samples_15_cells7.csv)
+[18:20:16] L2 tabddpm_mleff TX 2021 rc2=0; L3 tabddpm_mleff TX 2021 rc3=0 (final_generated_samples_15_cells7.csv)
+[18:21:45] L2 tabddpm_mleff TX 2024 rc2=0; L3 tabddpm_mleff TX 2024 rc3=0 (final_generated_samples_15_cells7.csv)
+[18:21:52] L2 tabddpm_mleff CA 2018 rc2=0; L3 tabddpm_mleff CA 2018 rc3=0 (final_generated_samples_46_cells7.csv)
+[18:22:43] L2 tabddpm_mleff CA 2024 rc2=0; L3 tabddpm_mleff CA 2024 rc3=0 (final_generated_samples_46_cells7.csv)
+[18:23:01] L2 semapop_vae_mu OH 2018 rc2=0; L3 semapop_vae_mu OH 2018 rc3=0 (final_generated_samples_5_cells7.csv)
+[18:23:23] L2 semapop_vae_mu CA 2018 rc2=0; L3 semapop_vae_mu CA 2018 rc3=0 (final_generated_samples_38_cells7.csv)
+[18:23:47] L2 tabddpm_mleff CA 2021 rc2=0; L3 tabddpm_mleff CA 2021 rc3=0 (final_generated_samples_46_cells7.csv)
+[18:24:10] L2 semapop_vae_mu TX 2018 rc2=0; L3 semapop_vae_mu TX 2018 rc3=0 (final_generated_samples_34_cells7.csv)
+[18:24:57] L2 semapop_vae_mu OH 2024 rc2=0; L3 semapop_vae_mu OH 2024 rc3=0 (final_generated_samples_10_cells7.csv)
+[18:24:59] L2 semapop_vae_mu OH 2021 rc2=0; L3 semapop_vae_mu OH 2021 rc3=0 (final_generated_samples_18_cells7.csv)
+[18:25:06] L2 semapop_vae_mu TX 2024 rc2=0; L3 semapop_vae_mu TX 2024 rc3=0 (final_generated_samples_47_cells7.csv)
+[18:25:54] L2 semapop_vae_mu TX 2021 rc2=0; L3 semapop_vae_mu TX 2021 rc3=0 (final_generated_samples_47_cells7.csv)
+[18:26:02] L2 semapop_vae_mu CA 2024 rc2=0; L3 semapop_vae_mu CA 2024 rc3=0 (final_generated_samples_8_cells7.csv)
+[18:26:19] L2 ttvae_prior OH 2018 rc2=0; L3 ttvae_prior OH 2018 rc3=0 (final_generated_samples_24_cells7.csv)
+[18:26:54] L2 semapop_vae_mu CA 2021 rc2=0; L3 semapop_vae_mu CA 2021 rc3=0 (final_generated_samples_8_cells7.csv)
+[18:27:10] L2 ttvae_prior OH 2021 rc2=0; L3 ttvae_prior OH 2021 rc3=0 (final_generated_samples_33_cells7.csv)
+[18:27:11] L2 ttvae_prior OH 2024 rc2=0; L3 ttvae_prior OH 2024 rc3=0 (final_generated_samples_42_cells7.csv)
+[18:27:32] L2 ttvae_prior TX 2018 rc2=0; L3 ttvae_prior TX 2018 rc3=0 (final_generated_samples_42_cells7.csv)
+[18:28:09] L2 ttvae_prior CA 2018 rc2=0; L3 ttvae_prior CA 2018 rc3=0 (final_generated_samples_18_cells7.csv)
+[18:28:29] L2 ttvae_prior TX 2021 rc2=0; L3 ttvae_prior TX 2021 rc3=0 (final_generated_samples_42_cells7.csv)
+[18:28:33] L2 ttvae_prior TX 2024 rc2=0; L3 ttvae_prior TX 2024 rc3=0 (final_generated_samples_42_cells7.csv)
+[18:28:42] L2 ttvae_prior CA 2021 rc2=0; L3 ttvae_prior CA 2021 rc3=0 (final_generated_samples_38_cells7.csv)
+[18:29:00] L2 ttvae_prior CA 2024 rc2=0; L3 ttvae_prior CA 2024 rc3=0 (final_generated_samples_38_cells7.csv)
+[18:29:23] L2 bn_pgmpy OH 2018 rc2=0; L3 bn_pgmpy OH 2018 rc3=0 (final_generated_samples_37_cells7.csv)
+[18:29:28] L2 bn_pgmpy OH 2021 rc2=0; L3 bn_pgmpy OH 2021 rc3=0 (final_generated_samples_37_cells7.csv)
+[18:29:33] L2 bn_pgmpy OH 2024 rc2=0; L3 bn_pgmpy OH 2024 rc3=0 (final_generated_samples_40_cells7.csv)
+[18:29:55] L2 bn_pgmpy TX 2018 rc2=0; L3 bn_pgmpy TX 2018 rc3=0 (final_generated_samples_46_cells7.csv)
+[18:30:15] L2 bn_pgmpy TX 2021 rc2=0; L3 bn_pgmpy TX 2021 rc3=0 (final_generated_samples_29_cells7.csv)
+[18:30:41] L2 bn_pgmpy CA 2018 rc2=0; L3 bn_pgmpy CA 2018 rc3=0 (final_generated_samples_3_cells7.csv)
+[18:30:49] L2 bn_pgmpy TX 2024 rc2=0; L3 bn_pgmpy TX 2024 rc3=0 (final_generated_samples_32_cells7.csv)
+[18:31:04] L2 bn_pgmpy CA 2021 rc2=0; L3 bn_pgmpy CA 2021 rc3=0 (final_generated_samples_3_cells7.csv)
+[18:31:11] L2 bn_pgmpy CA 2024 rc2=0; L3 bn_pgmpy CA 2024 rc3=0 (final_generated_samples_3_cells7.csv)
+[18:31:22] L2 bn_pgmpy_bic OH 2018 rc2=0; L3 bn_pgmpy_bic OH 2018 rc3=0 (final_generated_samples_44_cells7.csv)
+[18:31:28] L2 bn_pgmpy_bic OH 2021 rc2=0; L3 bn_pgmpy_bic OH 2021 rc3=0 (final_generated_samples_44_cells7.csv)
+[18:31:35] L2 bn_pgmpy_bic TX 2018 rc2=0; L3 bn_pgmpy_bic TX 2018 rc3=0 (final_generated_samples_28_cells7.csv)
+[18:31:41] L2 bn_pgmpy_bic OH 2024 rc2=0; L3 bn_pgmpy_bic OH 2024 rc3=0 (final_generated_samples_29_cells7.csv)
+[18:31:59] L2 bn_pgmpy_bic TX 2021 rc2=0; L3 bn_pgmpy_bic TX 2021 rc3=0 (final_generated_samples_28_cells7.csv)
+[18:32:11] L2 bn_pgmpy_bic CA 2018 rc2=0; L3 bn_pgmpy_bic CA 2018 rc3=0 (final_generated_samples_34_cells7.csv)
+[18:32:18] L2 bn_pgmpy_bic TX 2024 rc2=0; L3 bn_pgmpy_bic TX 2024 rc3=0 (final_generated_samples_28_cells7.csv)
+[18:32:32] L2 bn_pgmpy_bic CA 2021 rc2=0; L3 bn_pgmpy_bic CA 2021 rc3=0 (final_generated_samples_7_cells7.csv)
+[18:32:37] L2 bn_pgmpy_bic CA 2024 rc2=0; L3 bn_pgmpy_bic CA 2024 rc3=0 (final_generated_samples_7_cells7.csv)
+[2026-11-24 18:32:37] audit_v3 done.

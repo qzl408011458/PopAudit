@@ -1,0 +1,166 @@
+# driver.diff -- shadow Layer-1 driver vs production (generated 2026-11-24 14:03:42)
+# Production chain for audits_v3/layer1_paper_<tag>_<ST>/: run_audit_v3.py do_l1 -> rerun_l1_paper.run_cell (AUD redirected to audits_v3),
+# then l1_invalid_fix_shadow.FIXED patch of invalid_mass_* in layer1_ensemble_summary.json (2026-11-23).
+# (1) metric driver: the ONLY changes are the settable reference path REF (default = production testdata_pers.csv); AUD (output root) is
+#     overwritten at runtime by run_l1_disjoint.setup() exactly as run_audit_v3.py / audit_seed.py do (L1P.AUD = ...).
+
+--- rerun_l1_paper.py	2026-07-03 12:30:51.272677791 +0200
++++ audits_v3_referee/l1_disjoint/code/rerun_l1_paper_disjoint.py	2026-11-24 13:48:54.318042709 +0100
+@@ -29,6 +29,9 @@
+ import layer1 as L1
+ 
+ AUD = ROOT / "experiments/E_state/audits"
++# SHADOW (l1_disjoint): output root and Layer-1 reference path are the ONLY changes; both are set by
++# code/run_l1_disjoint.py.  REF default = the production reference (testdata_pers.csv).
++REF = str(ROOT / "data/pums_states/{state}/testdata_pers.csv")
+ AGE_BINS = [0, 18, 35, 50, 65, 200]
+ AGE_LABELS = ["0-17", "18-34", "35-49", "50-64", "65+"]
+ 
+@@ -132,7 +135,7 @@
+     files = sorted(glob.glob(str(ens / "final_generated_samples_*.csv")))
+     if not files:
+         return {"cell": f"{model}_{state}", "status": "NO_ENSEMBLE", "ens": ens_rel}
+-    real = pd.read_csv(ROOT / f"data/pums_states/{state}/testdata_pers.csv")
++    real = pd.read_csv(REF.format(state=state))
+     real = add_age_group(real)
+     reals = [add_age_group(pd.read_csv(f)) for f in files]
+     ids = [Path(f).stem for f in files]
+
+# (2) wrapper run_l1_disjoint.py vs the referee seed wrapper audits_v3_referee/seed/audit_seed.py (same do_l1 + FIXED invalid patch pattern;
+#     ensemble table/resolver imported from production run_audit_v3.PRIMARY/ens_dir; Layer 2/3 code removed)
+
+--- audits_v3_referee/seed/audit_seed.py	2026-11-24 09:49:02.404120964 +0100
++++ audits_v3_referee/l1_disjoint/code/run_l1_disjoint.py	2026-11-24 13:49:38.286114257 +0100
+@@ -1,77 +1,74 @@
+-"""Shadow 3-layer audit of the seed-2/3 K=50 ensembles with the exact current pipeline.
+-L1  : rerun_l1_paper.run_cell (Age_Group joint-TV) + invalid mass recomputed with the 7 fixed
+-      R_hard rules (l1_invalid_fix_shadow.FIXED), exactly as audits_v3 layer1 summaries were patched.
+-L2/L3: rerun_audit_new.do_year verbatim (L2 historical sigma; cells7 on true r*; L3 SCALABLE,
+-      tau=1, sigma(H) from Layer 2, sigma floor 0.005).  Only the output root changes.
+-usage: audit_seed.py --seed 142 [--only tabddpm_OH,...] [--jobs 12]
+-       --seed 42 re-audits the ORIGINAL ensembles into audits_s42/ (pipeline reproduction check).
++"""Shadow Layer-1 runs for the household-disjoint reference test (no retraining).
++Exactly the production chain that produced audits_v3/layer1_paper_<tag>_<ST>/:
++  run_audit_v3.do_l1 -> rerun_l1_paper.run_cell(tag, st, ens_dir(study))      (2026-09-02)
++  + l1_invalid_fix_shadow FIXED invalid-mass patch of layer1_ensemble_summary.json (2026-11-23)
++using code/rerun_l1_paper_disjoint.py (= rerun_l1_paper.py with ONLY the output root AUD and the
++reference path REF made settable; see driver.diff).  Ensembles = run_audit_v3.PRIMARY/ens_dir (seed 42).
++usage: run_l1_disjoint.py --variant orig|hhdisjoint_trainval|hhdisjoint_train|hhdisjoint_trainval_ipw|placebo_s1|...
++                          [--only ctgan_TX,...] [--jobs 9]
+ """
+ import os, sys, json, glob, time, argparse
+-from concurrent.futures import ThreadPoolExecutor, ProcessPoolExecutor, as_completed
+ from pathlib import Path
++from concurrent.futures import ProcessPoolExecutor, as_completed
+ import numpy as np, pandas as pd
+ ROOT = "<POPAUDIT_ROOT>"; E = f"{ROOT}/experiments/E_state"
+-sys.path.insert(0, E); sys.path.insert(0, ROOT)
+-HERE = os.path.dirname(os.path.abspath(__file__))
+-import rerun_audit_new as R
+-import rerun_l1_paper as L1P
+-import l1_invalid_fix_shadow as FIX
+-FINAL42 = "<POPAUDIT_HPO>/final"
+-STUDY = {"semapop_vae": "semapop_vae_{st}_train", "ttvae": "ttvae_{st}", "bn": "bn_pgmpy_{st}",
+-         "wgan_zcr": "wgan_zcr_{st}", "tabddpm": "tabddpm_{st}_valsrmse"}
+-STATES = ["CA", "TX", "OH"]; YEARS = R.YEARS
+-
+-def ens_dir(tag, st, seed):
+-    s = STUDY[tag].format(st=st)
+-    base = FINAL42 if seed == 42 else f"{HERE}/final"
+-    return f"{base}/{s}/{s}_final_s{seed}"
+-
+-def ready(ens):
+-    fs = glob.glob(f"{ens}/generated_ensembles/*.csv")
+-    return len(fs) == 50 and time.time() - max(os.path.getmtime(f) for f in fs) > 90
+-
+-def setup(seed):
+-    aud = f"{HERE}/audits_s{seed}"; os.makedirs(aud, exist_ok=True)
+-    R.AUD = aud; L1P.AUD = Path(aud)
+-    R.l2_dir = lambda m, s, y: f"{aud}/layer2_{m}_{s}_{y}"
+-    return aud
++HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
++sys.path.insert(0, os.path.join(HERE, "code")); sys.path.insert(0, E); sys.path.insert(0, ROOT)
++import rerun_l1_paper_disjoint as L1P          # shadow copy
++import l1_invalid_fix_shadow as FIX            # production FIXED rule set (read-only use)
++import run_audit_v3 as V3                      # production cell table + ensemble resolver (read-only use)
++
++REFS = {
++    "orig": f"{ROOT}/data/pums_states/{{state}}/testdata_pers.csv",
++    "hhdisjoint_trainval": f"{HERE}/refs/{{state}}/testdata_hhdisjoint_trainval.csv",
++    "hhdisjoint_train": f"{HERE}/refs/{{state}}/testdata_hhdisjoint_train.csv",
++    "hhdisjoint_trainval_ipw": f"{HERE}/refs/{{state}}/testdata_hhdisjoint_trainval_ipw.csv",
++}
++def ref_for(v):
++    if v in REFS: return REFS[v]
++    if v.startswith("placebo_s"): return f"{HERE}/refs/{{state}}/testdata_{v}.csv"
++    raise KeyError(v)
++
++def setup(variant):
++    out = f"{HERE}/runs/{variant}"; os.makedirs(out, exist_ok=True)
++    L1P.AUD = Path(out); L1P.REF = ref_for(variant)
++    return out
+ 
+-def do_l1(tag, st, seed):
+-    aud = setup(seed); ens = ens_dir(tag, st, seed)
++def do_l1(tag, st, variant):
++    out = setup(variant); study = V3.PRIMARY[tag].format(st=st); ens = V3.ens_dir(study)
+     r = L1P.run_cell(tag, st, ens)
++    if r.get("status") != "OK": return f"L1 {tag} {st} {variant} status={r.get('status')}"
+     files = sorted(glob.glob(f"{ens}/generated_ensembles/final_generated_samples_*.csv"))
+     f = [FIX.inv(pd.read_csv(fp), FIX.FIXED)[0] for fp in files]
+-    p = f"{aud}/layer1_paper_{tag}_{st}/layer1_ensemble_summary.json"
++    p = f"{out}/layer1_paper_{tag}_{st}/layer1_ensemble_summary.json"
+     j = json.load(open(p)); j["invalid_mass_mean_orig_rules"] = j.get("invalid_mass_mean")
+     j.update(invalid_mass_mean=float(np.mean(f)), invalid_mass_std=float(np.std(f, ddof=1)),
+              invalid_mass_min=float(np.min(f)), invalid_mass_max=float(np.max(f)),
+-             invalid_rules_note="7 fixed R_hard rules (l1_invalid_fix_shadow.FIXED)")
++             invalid_rules_note="7 fixed R_hard rules (l1_invalid_fix_shadow.FIXED)",
++             reference_csv=L1P.REF.format(state=st), ensemble_dir=ens)
+     json.dump(j, open(p, "w"), indent=1)
+-    return f"L1 {tag} {st} s{seed} marg={r.get('paper_marg')} dep={r.get('paper_dep')} supp={r.get('paper_support')} inv7={np.mean(f):.6f} ({r.get('secs')}s)"
++    return (f"L1 {tag} {st} {variant} marg={r['paper_marg']} dep={r['paper_dep']} supp={r['paper_support']} "
++            f"inv7={np.mean(f):.6f} ({r['secs']}s)")
+ 
+-def do_year(tag, st, y, seed):
+-    setup(seed)
+-    return f"s{seed} " + R.do_year(tag, st, y, ens_dir(tag, st, seed))
++def _w(a):
++    try: return do_l1(*a)
++    except Exception as e:
++        import traceback; return f"L1 {a} EXCEPTION {e!r} {traceback.format_exc()[-600:]}"
+ 
+ def main():
+-    ap = argparse.ArgumentParser(); ap.add_argument("--seed", type=int, required=True)
+-    ap.add_argument("--only", default=""); ap.add_argument("--jobs", type=int, default=12)
+-    ap.add_argument("--l1-jobs", type=int, default=6); ap.add_argument("--redo", action="store_true")
+-    a = ap.parse_args(); aud = setup(a.seed)
+-    cells = [(t, st) for t in STUDY for st in STATES
+-             if (not a.only or f"{t}_{st}" in a.only.split(","))
+-             and ready(ens_dir(t, st, a.seed))]
+-    print(f"[{time.strftime('%T')}] seed {a.seed}: {len(cells)} ready cells -> {aud}: {cells}", flush=True)
+-    l1 = [c for c in cells if a.redo or not os.path.exists(f"{aud}/layer1_paper_{c[0]}_{c[1]}/layer1_ensemble_summary.json")]
+-    yr = [(t, st, y) for t, st in cells for y in YEARS
+-          if a.redo or not os.path.exists(f"{aud}/layer3_paperW_{t}_{st}_{y}/layer3_summary.json")]
+-    with ProcessPoolExecutor(max_workers=a.l1_jobs) as px, ThreadPoolExecutor(max_workers=a.jobs) as tx:
+-        futs = {px.submit(do_l1, t, st, a.seed): f"L1 {t} {st}" for t, st in l1}
+-        futs.update({tx.submit(do_year, t, st, y, a.seed): f"Y {t} {st} {y}" for t, st, y in yr})
+-        for fu in as_completed(futs):
+-            try: print(f"[{time.strftime('%T')}] {fu.result()}", flush=True)
+-            except Exception as e: print(f"[{time.strftime('%T')}] {futs[fu]} EXCEPTION {e!r}", flush=True)
+-    print(f"[{time.strftime('%T')}] done seed {a.seed}", flush=True)
++    ap = argparse.ArgumentParser(); ap.add_argument("--variant", required=True)
++    ap.add_argument("--only", default=""); ap.add_argument("--jobs", type=int, default=9)
++    ap.add_argument("--redo", action="store_true"); a = ap.parse_args()
++    out = setup(a.variant)
++    cells = [(t, st) for t in V3.PRIMARY for st in V3.STATES if not a.only or f"{t}_{st}" in a.only.split(",")]
++    cells = [c for c in cells if a.redo or not os.path.exists(f"{out}/layer1_paper_{c[0]}_{c[1]}/layer1_ensemble_summary.json")]
++    # CA first (longest)
++    cells.sort(key=lambda c: {"CA": 0, "TX": 1, "OH": 2}[c[1]])
++    print(f"[{time.strftime('%F %T')}] variant={a.variant} ref={L1P.REF} -> {out}: {len(cells)} cells", flush=True)
++    with ProcessPoolExecutor(max_workers=a.jobs) as px:
++        futs = [px.submit(_w, (t, st, a.variant)) for t, st in cells]
++        for fu in as_completed(futs): print(f"[{time.strftime('%T')}] {fu.result()}", flush=True)
++    print(f"[{time.strftime('%F %T')}] done {a.variant}", flush=True)
+ 
+ if __name__ == "__main__":
+     main()

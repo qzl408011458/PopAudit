@@ -1,0 +1,12 @@
+{
+  "n_national_unweighted": 3132795,
+  "n_resampled": 3132795,
+  "person_id_unique_national": true,
+  "n_pwgtp_le0": 0,
+  "sampled_id_is_0_to_n": true,
+  "source_ids_subset_of_national": true,
+  "exact_reproduction_seed42_rowwise_match_frac": 1.0,
+  "exact_reproduction_all_rows": true,
+  "pwgtp_match": true,
+  "state_match": true
+}

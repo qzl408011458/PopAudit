@@ -1,0 +1,25 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Base-year (2013) fidelity of the audited priors against the 2013 test split, an independent draw from the same weighted PUMS sample as the training split (Section~\ref{app:hpo}): SRMSE on one-way marginals (mean $\pm$ sd over three training seeds). Indented rows are diagnostic: the package/publication configuration of the same model (\emph{as shipped}) or the authors\textquotesingle{} own selection criterion. They are not included among the candidate priors. The oracle floor (a real 2013 sample of the same size) is $\approx 0.022$ ($0.015$ to $0.030$ across draws).}
+\label{tab:fidelity-v3}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Prior & CA & TX & OH \\
+\midrule
+SemaPop-VAE+ (M-R arm, audited) & 0.026 $\pm$ 0.008 & 0.026 $\pm$ 0.003 & 0.030 $\pm$ 0.001 \\
+TTVAE (triangular sampler) & 0.040 $\pm$ 0.001 & 0.033 $\pm$ 0.002 & 0.029 $\pm$ 0.002 \\
+BN (pgmpy) & 0.036 $\pm$ 0.007 & 0.029 $\pm$ 0.003 & 0.045 $\pm$ 0.005 \\
+WGAN-GP-ZCR & 0.055 $\pm$ 0.005 & 0.068 $\pm$ 0.007 & 0.071 $\pm$ 0.007 \\
+CTGAN, tuned & 0.030 $\pm$ 0.001 & 0.028 $\pm$ 0.005 & 0.032 $\pm$ 0.002 \\
+\quad CTGAN, as shipped & 0.203 $\pm$ 0.006 & 0.199 $\pm$ 0.010 & 0.180 $\pm$ 0.026 \\
+FlowSyn (official protocol) & 0.075 $\pm$ 0.011 & 0.092 $\pm$ 0.015 & 0.094 $\pm$ 0.026 \\
+Borysov-style VAE, tuned & 0.095 $\pm$ 0.007 & 0.153 $\pm$ 0.023 & 0.145 $\pm$ 0.011 \\
+\quad Borysov-style VAE, as shipped & 0.253 $\pm$ 0.021 & 0.197 $\pm$ 0.018 & 0.179 $\pm$ 0.020 \\
+TabDDPM, val-SRMSE selection & 0.040 $\pm$ 0.006 & 0.042 $\pm$ 0.002 & 0.068 $\pm$ 0.004 \\
+\quad TabDDPM, authors' ML-efficacy selection & 0.256 $\pm$ 0.006 & 0.070 $\pm$ 0.001 & 0.489 $\pm$ 0.006 \\
+TVAE, tuned & 0.205 $\pm$ 0.005 & 0.148 $\pm$ 0.012 & 0.188 $\pm$ 0.027 \\
+\quad TVAE, as shipped & 0.230 $\pm$ 0.019 & 0.175 $\pm$ 0.022 & 0.199 $\pm$ 0.011 \\
+\bottomrule
+\end{tabular}
+\end{table}

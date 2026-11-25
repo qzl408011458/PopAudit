@@ -1,0 +1,7 @@
+model,L1,L2,VALID
+ctgan_defaults,9,0,0
+tvae_defaults,9,0,0
+borysov_defaults,9,0,0
+tabddpm_mleff,6,3,0
+semapop_vae_mu,0,4,5
+ttvae_prior,9,0,0

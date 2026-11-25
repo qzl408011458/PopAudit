@@ -1,0 +1,8 @@
+2018 max contrib all 0.00227 | L1-admissible 0.00207 | valid 0.00166 | argmax ['borysov', 'CA'] | n_commute [np.int64(13)]
+2021 max contrib all 0.00105 | L1-admissible 0.00092 | valid None | argmax ['tvae', 'OH'] | n_commute [np.int64(13)]
+2024 max contrib all 0.00748 | L1-admissible 0.00715 | valid 0.00461 | argmax ['tvae', 'OH'] | n_commute [np.int64(13)]
+       taxi_target  taxi_sigma  taxi_gen_mean
+state                                        
+CA        0.001823       0.005       0.000167
+OH        0.002206       0.005       0.000389
+TX        0.001702       0.005       0.000076

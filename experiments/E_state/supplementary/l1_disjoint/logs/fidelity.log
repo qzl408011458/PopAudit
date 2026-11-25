@@ -1,0 +1,125 @@
+SemaPop-VAE+ CA 42 {'srmse_1_stored': 0.0201, 'srmse_1_orig': 0.0201, 'srmse_1_hhdisjoint_trainval': 0.1345, 'srmse_1_hhdisjoint_trainval_ipw': 0.0252, 'srmse_1_placebo_s1': 0.1328}
+SemaPop-VAE+ CA 142 {'srmse_1_stored': 0.023, 'srmse_1_orig': 0.023, 'srmse_1_hhdisjoint_trainval': 0.1254, 'srmse_1_hhdisjoint_trainval_ipw': 0.0293, 'srmse_1_placebo_s1': 0.1232}
+SemaPop-VAE+ CA 242 {'srmse_1_stored': 0.0352, 'srmse_1_orig': 0.0352, 'srmse_1_hhdisjoint_trainval': 0.1134, 'srmse_1_hhdisjoint_trainval_ipw': 0.0366, 'srmse_1_placebo_s1': 0.1119}
+SemaPop-VAE+ TX 42 {'srmse_1_stored': 0.0245, 'srmse_1_orig': 0.0245, 'srmse_1_hhdisjoint_trainval': 0.2011, 'srmse_1_hhdisjoint_trainval_ipw': 0.0455, 'srmse_1_placebo_s1': 0.2013}
+SemaPop-VAE+ TX 142 {'srmse_1_stored': 0.0245, 'srmse_1_orig': 0.0245, 'srmse_1_hhdisjoint_trainval': 0.2069, 'srmse_1_hhdisjoint_trainval_ipw': 0.0391, 'srmse_1_placebo_s1': 0.2069}
+SemaPop-VAE+ TX 242 {'srmse_1_stored': 0.0297, 'srmse_1_orig': 0.0297, 'srmse_1_hhdisjoint_trainval': 0.2058, 'srmse_1_hhdisjoint_trainval_ipw': 0.0417, 'srmse_1_placebo_s1': 0.2067}
+SemaPop-VAE+ OH 42 {'srmse_1_stored': 0.0294, 'srmse_1_orig': 0.0294, 'srmse_1_hhdisjoint_trainval': 0.2974, 'srmse_1_hhdisjoint_trainval_ipw': 0.1059, 'srmse_1_placebo_s1': 0.3085}
+SemaPop-VAE+ OH 142 {'srmse_1_stored': 0.0294, 'srmse_1_orig': 0.0294, 'srmse_1_hhdisjoint_trainval': 0.2988, 'srmse_1_hhdisjoint_trainval_ipw': 0.1083, 'srmse_1_placebo_s1': 0.3095}
+SemaPop-VAE+ OH 242 {'srmse_1_stored': 0.0318, 'srmse_1_orig': 0.0318, 'srmse_1_hhdisjoint_trainval': 0.2879, 'srmse_1_hhdisjoint_trainval_ipw': 0.1063, 'srmse_1_placebo_s1': 0.2997}
+TTVAE CA 42 {'srmse_1_stored': 0.0393, 'srmse_1_orig': 0.0393, 'srmse_1_hhdisjoint_trainval': 0.1259, 'srmse_1_hhdisjoint_trainval_ipw': 0.0361, 'srmse_1_placebo_s1': 0.1243}
+TTVAE CA 142 {'srmse_1_stored': 0.0397, 'srmse_1_orig': 0.0397, 'srmse_1_hhdisjoint_trainval': 0.1255, 'srmse_1_hhdisjoint_trainval_ipw': 0.0415, 'srmse_1_placebo_s1': 0.1239}
+TTVAE CA 242 {'srmse_1_stored': 0.0413, 'srmse_1_orig': 0.0413, 'srmse_1_hhdisjoint_trainval': 0.1279, 'srmse_1_hhdisjoint_trainval_ipw': 0.0401, 'srmse_1_placebo_s1': 0.1267}
+TTVAE TX 42 {'srmse_1_stored': 0.0313, 'srmse_1_orig': 0.0313, 'srmse_1_hhdisjoint_trainval': 0.2026, 'srmse_1_hhdisjoint_trainval_ipw': 0.0477, 'srmse_1_placebo_s1': 0.2025}
+TTVAE TX 142 {'srmse_1_stored': 0.0357, 'srmse_1_orig': 0.0357, 'srmse_1_hhdisjoint_trainval': 0.1872, 'srmse_1_hhdisjoint_trainval_ipw': 0.0483, 'srmse_1_placebo_s1': 0.1879}
+TTVAE TX 242 {'srmse_1_stored': 0.0333, 'srmse_1_orig': 0.0333, 'srmse_1_hhdisjoint_trainval': 0.2099, 'srmse_1_hhdisjoint_trainval_ipw': 0.0533, 'srmse_1_placebo_s1': 0.2095}
+TTVAE OH 42 {'srmse_1_stored': 0.0298, 'srmse_1_orig': 0.0298, 'srmse_1_hhdisjoint_trainval': 0.3027, 'srmse_1_hhdisjoint_trainval_ipw': 0.1031, 'srmse_1_placebo_s1': 0.314}
+TTVAE OH 142 {'srmse_1_stored': 0.0306, 'srmse_1_orig': 0.0306, 'srmse_1_hhdisjoint_trainval': 0.2929, 'srmse_1_hhdisjoint_trainval_ipw': 0.0962, 'srmse_1_placebo_s1': 0.3048}
+TTVAE OH 242 {'srmse_1_stored': 0.0262, 'srmse_1_orig': 0.0262, 'srmse_1_hhdisjoint_trainval': 0.2986, 'srmse_1_hhdisjoint_trainval_ipw': 0.1069, 'srmse_1_placebo_s1': 0.3099}
+BN CA 42 {'srmse_1_stored': 0.0372, 'srmse_1_orig': 0.0372, 'srmse_1_hhdisjoint_trainval': 0.1113, 'srmse_1_hhdisjoint_trainval_ipw': 0.0347, 'srmse_1_placebo_s1': 0.1109}
+BN CA 142 {'srmse_1_stored': 0.0282, 'srmse_1_orig': 0.0282, 'srmse_1_hhdisjoint_trainval': 0.1396, 'srmse_1_hhdisjoint_trainval_ipw': 0.0332, 'srmse_1_placebo_s1': 0.1383}
+BN CA 242 {'srmse_1_stored': 0.043, 'srmse_1_orig': 0.043, 'srmse_1_hhdisjoint_trainval': 0.1126, 'srmse_1_hhdisjoint_trainval_ipw': 0.0431, 'srmse_1_placebo_s1': 0.1125}
+BN TX 42 {'srmse_1_stored': 0.0299, 'srmse_1_orig': 0.0299, 'srmse_1_hhdisjoint_trainval': 0.1947, 'srmse_1_hhdisjoint_trainval_ipw': 0.0419, 'srmse_1_placebo_s1': 0.1952}
+BN TX 142 {'srmse_1_stored': 0.025, 'srmse_1_orig': 0.025, 'srmse_1_hhdisjoint_trainval': 0.1954, 'srmse_1_hhdisjoint_trainval_ipw': 0.0365, 'srmse_1_placebo_s1': 0.1956}
+BN TX 242 {'srmse_1_stored': 0.0307, 'srmse_1_orig': 0.0307, 'srmse_1_hhdisjoint_trainval': 0.1836, 'srmse_1_hhdisjoint_trainval_ipw': 0.0483, 'srmse_1_placebo_s1': 0.185}
+BN OH 42 {'srmse_1_stored': 0.0409, 'srmse_1_orig': 0.0409, 'srmse_1_hhdisjoint_trainval': 0.294, 'srmse_1_hhdisjoint_trainval_ipw': 0.1124, 'srmse_1_placebo_s1': 0.3041}
+BN OH 142 {'srmse_1_stored': 0.0429, 'srmse_1_orig': 0.0429, 'srmse_1_hhdisjoint_trainval': 0.2915, 'srmse_1_hhdisjoint_trainval_ipw': 0.1121, 'srmse_1_placebo_s1': 0.302}
+BN OH 242 {'srmse_1_stored': 0.0504, 'srmse_1_orig': 0.0504, 'srmse_1_hhdisjoint_trainval': 0.2878, 'srmse_1_hhdisjoint_trainval_ipw': 0.1184, 'srmse_1_placebo_s1': 0.297}
+WGAN-GP-ZCR CA 42 {'srmse_1_stored': 0.0577, 'srmse_1_orig': 0.0577, 'srmse_1_hhdisjoint_trainval': 0.1361, 'srmse_1_hhdisjoint_trainval_ipw': 0.0575, 'srmse_1_placebo_s1': 0.135}
+WGAN-GP-ZCR CA 142 {'srmse_1_stored': 0.0498, 'srmse_1_orig': 0.0498, 'srmse_1_hhdisjoint_trainval': 0.1405, 'srmse_1_hhdisjoint_trainval_ipw': 0.0557, 'srmse_1_placebo_s1': 0.139}
+WGAN-GP-ZCR CA 242 {'srmse_1_stored': 0.0586, 'srmse_1_orig': 0.0586, 'srmse_1_hhdisjoint_trainval': 0.1377, 'srmse_1_hhdisjoint_trainval_ipw': 0.0595, 'srmse_1_placebo_s1': 0.137}
+WGAN-GP-ZCR TX 42 {'srmse_1_stored': 0.0697, 'srmse_1_orig': 0.0697, 'srmse_1_hhdisjoint_trainval': 0.219, 'srmse_1_hhdisjoint_trainval_ipw': 0.0838, 'srmse_1_placebo_s1': 0.2194}
+WGAN-GP-ZCR TX 142 {'srmse_1_stored': 0.0605, 'srmse_1_orig': 0.0605, 'srmse_1_hhdisjoint_trainval': 0.2119, 'srmse_1_hhdisjoint_trainval_ipw': 0.0758, 'srmse_1_placebo_s1': 0.2118}
+WGAN-GP-ZCR TX 242 {'srmse_1_stored': 0.0733, 'srmse_1_orig': 0.0733, 'srmse_1_hhdisjoint_trainval': 0.2241, 'srmse_1_hhdisjoint_trainval_ipw': 0.0806, 'srmse_1_placebo_s1': 0.2241}
+WGAN-GP-ZCR OH 42 {'srmse_1_stored': 0.0645, 'srmse_1_orig': 0.0645, 'srmse_1_hhdisjoint_trainval': 0.3202, 'srmse_1_hhdisjoint_trainval_ipw': 0.1342, 'srmse_1_placebo_s1': 0.3306}
+WGAN-GP-ZCR OH 142 {'srmse_1_stored': 0.0703, 'srmse_1_orig': 0.0703, 'srmse_1_hhdisjoint_trainval': 0.3197, 'srmse_1_hhdisjoint_trainval_ipw': 0.1333, 'srmse_1_placebo_s1': 0.3299}
+WGAN-GP-ZCR OH 242 {'srmse_1_stored': 0.0786, 'srmse_1_orig': 0.0786, 'srmse_1_hhdisjoint_trainval': 0.3206, 'srmse_1_hhdisjoint_trainval_ipw': 0.1345, 'srmse_1_placebo_s1': 0.3304}
+CTGAN tuned CA 42 {'srmse_1_stored': 0.0297, 'srmse_1_orig': 0.0297, 'srmse_1_hhdisjoint_trainval': 0.1255, 'srmse_1_hhdisjoint_trainval_ipw': 0.0307, 'srmse_1_placebo_s1': 0.1238}
+CTGAN tuned CA 142 {'srmse_1_stored': 0.0302, 'srmse_1_orig': 0.0302, 'srmse_1_hhdisjoint_trainval': 0.1333, 'srmse_1_hhdisjoint_trainval_ipw': 0.0336, 'srmse_1_placebo_s1': 0.1308}
+CTGAN tuned CA 242 {'srmse_1_stored': 0.0307, 'srmse_1_orig': 0.0307, 'srmse_1_hhdisjoint_trainval': 0.132, 'srmse_1_hhdisjoint_trainval_ipw': 0.0296, 'srmse_1_placebo_s1': 0.1312}
+CTGAN tuned TX 42 {'srmse_1_stored': 0.0266, 'srmse_1_orig': 0.0266, 'srmse_1_hhdisjoint_trainval': 0.1968, 'srmse_1_hhdisjoint_trainval_ipw': 0.0395, 'srmse_1_placebo_s1': 0.1966}
+CTGAN tuned TX 142 {'srmse_1_stored': 0.0237, 'srmse_1_orig': 0.0237, 'srmse_1_hhdisjoint_trainval': 0.2005, 'srmse_1_hhdisjoint_trainval_ipw': 0.0355, 'srmse_1_placebo_s1': 0.2003}
+CTGAN tuned TX 242 {'srmse_1_stored': 0.0325, 'srmse_1_orig': 0.0325, 'srmse_1_hhdisjoint_trainval': 0.208, 'srmse_1_hhdisjoint_trainval_ipw': 0.0406, 'srmse_1_placebo_s1': 0.2079}
+CTGAN tuned OH 42 {'srmse_1_stored': 0.0303, 'srmse_1_orig': 0.0303, 'srmse_1_hhdisjoint_trainval': 0.3053, 'srmse_1_hhdisjoint_trainval_ipw': 0.1056, 'srmse_1_placebo_s1': 0.3167}
+CTGAN tuned OH 142 {'srmse_1_stored': 0.0348, 'srmse_1_orig': 0.0348, 'srmse_1_hhdisjoint_trainval': 0.2927, 'srmse_1_hhdisjoint_trainval_ipw': 0.1074, 'srmse_1_placebo_s1': 0.303}
+CTGAN tuned OH 242 {'srmse_1_stored': 0.0308, 'srmse_1_orig': 0.0308, 'srmse_1_hhdisjoint_trainval': 0.3029, 'srmse_1_hhdisjoint_trainval_ipw': 0.1013, 'srmse_1_placebo_s1': 0.3136}
+CTGAN as shipped CA 42 {'srmse_1_stored': 0.2073, 'srmse_1_orig': 0.2073, 'srmse_1_hhdisjoint_trainval': 0.1935, 'srmse_1_hhdisjoint_trainval_ipw': 0.2055, 'srmse_1_placebo_s1': 0.1935}
+CTGAN as shipped CA 142 {'srmse_1_stored': 0.2048, 'srmse_1_orig': 0.2048, 'srmse_1_hhdisjoint_trainval': 0.1902, 'srmse_1_hhdisjoint_trainval_ipw': 0.2013, 'srmse_1_placebo_s1': 0.19}
+CTGAN as shipped CA 242 {'srmse_1_stored': 0.1955, 'srmse_1_orig': 0.1955, 'srmse_1_hhdisjoint_trainval': 0.1805, 'srmse_1_hhdisjoint_trainval_ipw': 0.1932, 'srmse_1_placebo_s1': 0.1791}
+CTGAN as shipped TX 42 {'srmse_1_stored': 0.1961, 'srmse_1_orig': 0.1961, 'srmse_1_hhdisjoint_trainval': 0.2254, 'srmse_1_hhdisjoint_trainval_ipw': 0.1973, 'srmse_1_placebo_s1': 0.2214}
+CTGAN as shipped TX 142 {'srmse_1_stored': 0.1914, 'srmse_1_orig': 0.1914, 'srmse_1_hhdisjoint_trainval': 0.2279, 'srmse_1_hhdisjoint_trainval_ipw': 0.1915, 'srmse_1_placebo_s1': 0.2252}
+CTGAN as shipped TX 242 {'srmse_1_stored': 0.2109, 'srmse_1_orig': 0.2109, 'srmse_1_hhdisjoint_trainval': 0.2055, 'srmse_1_hhdisjoint_trainval_ipw': 0.2232, 'srmse_1_placebo_s1': 0.2019}
+CTGAN as shipped OH 42 {'srmse_1_stored': 0.1615, 'srmse_1_orig': 0.1615, 'srmse_1_hhdisjoint_trainval': 0.3163, 'srmse_1_hhdisjoint_trainval_ipw': 0.2146, 'srmse_1_placebo_s1': 0.3223}
+CTGAN as shipped OH 142 {'srmse_1_stored': 0.1695, 'srmse_1_orig': 0.1695, 'srmse_1_hhdisjoint_trainval': 0.3111, 'srmse_1_hhdisjoint_trainval_ipw': 0.2089, 'srmse_1_placebo_s1': 0.3218}
+CTGAN as shipped OH 242 {'srmse_1_stored': 0.2094, 'srmse_1_orig': 0.2094, 'srmse_1_hhdisjoint_trainval': 0.3055, 'srmse_1_hhdisjoint_trainval_ipw': 0.2367, 'srmse_1_placebo_s1': 0.3133}
+FlowSyn CA 42 {'srmse_1_stored': 0.0786, 'srmse_1_orig': 0.0786, 'srmse_1_hhdisjoint_trainval': 0.1563, 'srmse_1_hhdisjoint_trainval_ipw': 0.0794, 'srmse_1_placebo_s1': 0.1557}
+FlowSyn CA 142 {'srmse_1_stored': 0.0622, 'srmse_1_orig': 0.0622, 'srmse_1_hhdisjoint_trainval': 0.1525, 'srmse_1_hhdisjoint_trainval_ipw': 0.0612, 'srmse_1_placebo_s1': 0.1514}
+FlowSyn CA 242 {'srmse_1_stored': 0.0835, 'srmse_1_orig': 0.0835, 'srmse_1_hhdisjoint_trainval': 0.1769, 'srmse_1_hhdisjoint_trainval_ipw': 0.0929, 'srmse_1_placebo_s1': 0.1743}
+FlowSyn TX 42 {'srmse_1_stored': 0.1099, 'srmse_1_orig': 0.1099, 'srmse_1_hhdisjoint_trainval': 0.2889, 'srmse_1_hhdisjoint_trainval_ipw': 0.11, 'srmse_1_placebo_s1': 0.2889}
+FlowSyn TX 142 {'srmse_1_stored': 0.0812, 'srmse_1_orig': 0.0812, 'srmse_1_hhdisjoint_trainval': 0.2238, 'srmse_1_hhdisjoint_trainval_ipw': 0.0902, 'srmse_1_placebo_s1': 0.2237}
+FlowSyn TX 242 {'srmse_1_stored': 0.0856, 'srmse_1_orig': 0.0856, 'srmse_1_hhdisjoint_trainval': 0.2284, 'srmse_1_hhdisjoint_trainval_ipw': 0.087, 'srmse_1_placebo_s1': 0.2282}
+FlowSyn OH 42 {'srmse_1_stored': 0.1144, 'srmse_1_orig': 0.1144, 'srmse_1_hhdisjoint_trainval': 0.3872, 'srmse_1_hhdisjoint_trainval_ipw': 0.171, 'srmse_1_placebo_s1': 0.3982}
+FlowSyn OH 142 {'srmse_1_stored': 0.0646, 'srmse_1_orig': 0.0646, 'srmse_1_hhdisjoint_trainval': 0.3026, 'srmse_1_hhdisjoint_trainval_ipw': 0.1233, 'srmse_1_placebo_s1': 0.3131}
+FlowSyn OH 242 {'srmse_1_stored': 0.1042, 'srmse_1_orig': 0.1042, 'srmse_1_hhdisjoint_trainval': 0.3808, 'srmse_1_hhdisjoint_trainval_ipw': 0.1577, 'srmse_1_placebo_s1': 0.3907}
+Borysov-VAE tuned CA 42 {'srmse_1_stored': 0.1033, 'srmse_1_orig': 0.1033, 'srmse_1_hhdisjoint_trainval': 0.1787, 'srmse_1_hhdisjoint_trainval_ipw': 0.1034, 'srmse_1_placebo_s1': 0.1778}
+Borysov-VAE tuned CA 142 {'srmse_1_stored': 0.0928, 'srmse_1_orig': 0.0928, 'srmse_1_hhdisjoint_trainval': 0.1514, 'srmse_1_hhdisjoint_trainval_ipw': 0.0915, 'srmse_1_placebo_s1': 0.1498}
+Borysov-VAE tuned CA 242 {'srmse_1_stored': 0.0889, 'srmse_1_orig': 0.0889, 'srmse_1_hhdisjoint_trainval': 0.1681, 'srmse_1_hhdisjoint_trainval_ipw': 0.0909, 'srmse_1_placebo_s1': 0.1665}
+Borysov-VAE tuned TX 42 {'srmse_1_stored': 0.1796, 'srmse_1_orig': 0.1796, 'srmse_1_hhdisjoint_trainval': 0.251, 'srmse_1_hhdisjoint_trainval_ipw': 0.1835, 'srmse_1_placebo_s1': 0.2545}
+Borysov-VAE tuned TX 142 {'srmse_1_stored': 0.1406, 'srmse_1_orig': 0.1406, 'srmse_1_hhdisjoint_trainval': 0.2271, 'srmse_1_hhdisjoint_trainval_ipw': 0.1467, 'srmse_1_placebo_s1': 0.229}
+Borysov-VAE tuned TX 242 {'srmse_1_stored': 0.1395, 'srmse_1_orig': 0.1395, 'srmse_1_hhdisjoint_trainval': 0.2404, 'srmse_1_hhdisjoint_trainval_ipw': 0.1413, 'srmse_1_placebo_s1': 0.2421}
+Borysov-VAE tuned OH 42 {'srmse_1_stored': 0.1574, 'srmse_1_orig': 0.1574, 'srmse_1_hhdisjoint_trainval': 0.3458, 'srmse_1_hhdisjoint_trainval_ipw': 0.2035, 'srmse_1_placebo_s1': 0.3561}
+Borysov-VAE tuned OH 142 {'srmse_1_stored': 0.1357, 'srmse_1_orig': 0.1357, 'srmse_1_hhdisjoint_trainval': 0.327, 'srmse_1_hhdisjoint_trainval_ipw': 0.1797, 'srmse_1_placebo_s1': 0.3378}
+Borysov-VAE tuned OH 242 {'srmse_1_stored': 0.1406, 'srmse_1_orig': 0.1406, 'srmse_1_hhdisjoint_trainval': 0.3365, 'srmse_1_hhdisjoint_trainval_ipw': 0.1939, 'srmse_1_placebo_s1': 0.3475}
+Borysov-VAE as shipped CA 42 {'srmse_1_stored': 0.2431, 'srmse_1_orig': 0.2431, 'srmse_1_hhdisjoint_trainval': 0.2722, 'srmse_1_hhdisjoint_trainval_ipw': 0.2457, 'srmse_1_placebo_s1': 0.2712}
+Borysov-VAE as shipped CA 142 {'srmse_1_stored': 0.2384, 'srmse_1_orig': 0.2384, 'srmse_1_hhdisjoint_trainval': 0.2716, 'srmse_1_hhdisjoint_trainval_ipw': 0.2391, 'srmse_1_placebo_s1': 0.2704}
+Borysov-VAE as shipped CA 242 {'srmse_1_stored': 0.2775, 'srmse_1_orig': 0.2775, 'srmse_1_hhdisjoint_trainval': 0.2773, 'srmse_1_hhdisjoint_trainval_ipw': 0.2797, 'srmse_1_placebo_s1': 0.2774}
+Borysov-VAE as shipped TX 42 {'srmse_1_stored': 0.1882, 'srmse_1_orig': 0.1882, 'srmse_1_hhdisjoint_trainval': 0.2697, 'srmse_1_hhdisjoint_trainval_ipw': 0.1951, 'srmse_1_placebo_s1': 0.2697}
+Borysov-VAE as shipped TX 142 {'srmse_1_stored': 0.2177, 'srmse_1_orig': 0.2177, 'srmse_1_hhdisjoint_trainval': 0.2786, 'srmse_1_hhdisjoint_trainval_ipw': 0.2239, 'srmse_1_placebo_s1': 0.2809}
+Borysov-VAE as shipped TX 242 {'srmse_1_stored': 0.1859, 'srmse_1_orig': 0.1859, 'srmse_1_hhdisjoint_trainval': 0.2774, 'srmse_1_hhdisjoint_trainval_ipw': 0.188, 'srmse_1_placebo_s1': 0.2804}
+Borysov-VAE as shipped OH 42 {'srmse_1_stored': 0.2006, 'srmse_1_orig': 0.2006, 'srmse_1_hhdisjoint_trainval': 0.3459, 'srmse_1_hhdisjoint_trainval_ipw': 0.2429, 'srmse_1_placebo_s1': 0.3555}
+Borysov-VAE as shipped OH 142 {'srmse_1_stored': 0.1617, 'srmse_1_orig': 0.1617, 'srmse_1_hhdisjoint_trainval': 0.3452, 'srmse_1_hhdisjoint_trainval_ipw': 0.2006, 'srmse_1_placebo_s1': 0.353}
+Borysov-VAE as shipped OH 242 {'srmse_1_stored': 0.1757, 'srmse_1_orig': 0.1757, 'srmse_1_hhdisjoint_trainval': 0.3465, 'srmse_1_hhdisjoint_trainval_ipw': 0.2104, 'srmse_1_placebo_s1': 0.3541}
+TabDDPM val-SRMSE CA 42 {'srmse_1_stored': 0.0364, 'srmse_1_orig': 0.0364, 'srmse_1_hhdisjoint_trainval': 0.144, 'srmse_1_hhdisjoint_trainval_ipw': 0.0439, 'srmse_1_placebo_s1': 0.1422}
+TabDDPM val-SRMSE CA 142 {'srmse_1_stored': 0.0476, 'srmse_1_orig': 0.0476, 'srmse_1_hhdisjoint_trainval': 0.1353, 'srmse_1_hhdisjoint_trainval_ipw': 0.047, 'srmse_1_placebo_s1': 0.1358}
+TabDDPM val-SRMSE CA 242 {'srmse_1_stored': 0.0374, 'srmse_1_orig': 0.0374, 'srmse_1_hhdisjoint_trainval': 0.1376, 'srmse_1_hhdisjoint_trainval_ipw': 0.0391, 'srmse_1_placebo_s1': 0.1365}
+TabDDPM val-SRMSE TX 42 {'srmse_1_stored': 0.0448, 'srmse_1_orig': 0.0448, 'srmse_1_hhdisjoint_trainval': 0.2111, 'srmse_1_hhdisjoint_trainval_ipw': 0.0543, 'srmse_1_placebo_s1': 0.2121}
+TabDDPM val-SRMSE TX 142 {'srmse_1_stored': 0.0417, 'srmse_1_orig': 0.0417, 'srmse_1_hhdisjoint_trainval': 0.2075, 'srmse_1_hhdisjoint_trainval_ipw': 0.054, 'srmse_1_placebo_s1': 0.2088}
+TabDDPM val-SRMSE TX 242 {'srmse_1_stored': 0.0402, 'srmse_1_orig': 0.0402, 'srmse_1_hhdisjoint_trainval': 0.2183, 'srmse_1_hhdisjoint_trainval_ipw': 0.0501, 'srmse_1_placebo_s1': 0.219}
+TabDDPM val-SRMSE OH 42 {'srmse_1_stored': 0.0713, 'srmse_1_orig': 0.0713, 'srmse_1_hhdisjoint_trainval': 0.3231, 'srmse_1_hhdisjoint_trainval_ipw': 0.1468, 'srmse_1_placebo_s1': 0.3328}
+TabDDPM val-SRMSE OH 142 {'srmse_1_stored': 0.0688, 'srmse_1_orig': 0.0688, 'srmse_1_hhdisjoint_trainval': 0.2995, 'srmse_1_hhdisjoint_trainval_ipw': 0.1451, 'srmse_1_placebo_s1': 0.3096}
+TabDDPM val-SRMSE OH 242 {'srmse_1_stored': 0.0643, 'srmse_1_orig': 0.0643, 'srmse_1_hhdisjoint_trainval': 0.3072, 'srmse_1_hhdisjoint_trainval_ipw': 0.143, 'srmse_1_placebo_s1': 0.3181}
+TabDDPM ML-eff CA 42 {'srmse_1_stored': 0.2542, 'srmse_1_orig': 0.2542, 'srmse_1_hhdisjoint_trainval': 0.2471, 'srmse_1_hhdisjoint_trainval_ipw': 0.2559, 'srmse_1_placebo_s1': 0.2441}
+TabDDPM ML-eff CA 142 {'srmse_1_stored': 0.2513, 'srmse_1_orig': 0.2513, 'srmse_1_hhdisjoint_trainval': 0.235, 'srmse_1_hhdisjoint_trainval_ipw': 0.2525, 'srmse_1_placebo_s1': 0.2326}
+TabDDPM ML-eff CA 242 {'srmse_1_stored': 0.2631, 'srmse_1_orig': 0.2631, 'srmse_1_hhdisjoint_trainval': 0.256, 'srmse_1_hhdisjoint_trainval_ipw': 0.2644, 'srmse_1_placebo_s1': 0.2537}
+TabDDPM ML-eff TX 42 {'srmse_1_stored': 0.0713, 'srmse_1_orig': 0.0713, 'srmse_1_hhdisjoint_trainval': 0.2329, 'srmse_1_hhdisjoint_trainval_ipw': 0.079, 'srmse_1_placebo_s1': 0.2327}
+TabDDPM ML-eff TX 142 {'srmse_1_stored': 0.0694, 'srmse_1_orig': 0.0694, 'srmse_1_hhdisjoint_trainval': 0.1983, 'srmse_1_hhdisjoint_trainval_ipw': 0.0808, 'srmse_1_placebo_s1': 0.1975}
+TabDDPM ML-eff TX 242 {'srmse_1_stored': 0.0691, 'srmse_1_orig': 0.0691, 'srmse_1_hhdisjoint_trainval': 0.2204, 'srmse_1_hhdisjoint_trainval_ipw': 0.0832, 'srmse_1_placebo_s1': 0.2191}
+TabDDPM ML-eff OH 42 {'srmse_1_stored': 0.4814, 'srmse_1_orig': 0.4814, 'srmse_1_hhdisjoint_trainval': 0.6144, 'srmse_1_hhdisjoint_trainval_ipw': 0.5243, 'srmse_1_placebo_s1': 0.6213}
+TabDDPM ML-eff OH 142 {'srmse_1_stored': 0.4917, 'srmse_1_orig': 0.4917, 'srmse_1_hhdisjoint_trainval': 0.5983, 'srmse_1_hhdisjoint_trainval_ipw': 0.5287, 'srmse_1_placebo_s1': 0.605}
+TabDDPM ML-eff OH 242 {'srmse_1_stored': 0.4933, 'srmse_1_orig': 0.4933, 'srmse_1_hhdisjoint_trainval': 0.6259, 'srmse_1_hhdisjoint_trainval_ipw': 0.5344, 'srmse_1_placebo_s1': 0.6336}
+TVAE tuned CA 42 {'srmse_1_stored': 0.2007, 'srmse_1_orig': 0.2007, 'srmse_1_hhdisjoint_trainval': 0.2574, 'srmse_1_hhdisjoint_trainval_ipw': 0.202, 'srmse_1_placebo_s1': 0.2573}
+TVAE tuned CA 142 {'srmse_1_stored': 0.2098, 'srmse_1_orig': 0.2098, 'srmse_1_hhdisjoint_trainval': 0.2611, 'srmse_1_hhdisjoint_trainval_ipw': 0.2117, 'srmse_1_placebo_s1': 0.2589}
+TVAE tuned CA 242 {'srmse_1_stored': 0.2044, 'srmse_1_orig': 0.2044, 'srmse_1_hhdisjoint_trainval': 0.2661, 'srmse_1_hhdisjoint_trainval_ipw': 0.208, 'srmse_1_placebo_s1': 0.2663}
+TVAE tuned TX 42 {'srmse_1_stored': 0.1364, 'srmse_1_orig': 0.1364, 'srmse_1_hhdisjoint_trainval': 0.2723, 'srmse_1_hhdisjoint_trainval_ipw': 0.1408, 'srmse_1_placebo_s1': 0.2717}
+TVAE tuned TX 142 {'srmse_1_stored': 0.1462, 'srmse_1_orig': 0.1462, 'srmse_1_hhdisjoint_trainval': 0.2443, 'srmse_1_hhdisjoint_trainval_ipw': 0.1499, 'srmse_1_placebo_s1': 0.2454}
+TVAE tuned TX 242 {'srmse_1_stored': 0.16, 'srmse_1_orig': 0.16, 'srmse_1_hhdisjoint_trainval': 0.2483, 'srmse_1_hhdisjoint_trainval_ipw': 0.1672, 'srmse_1_placebo_s1': 0.249}
+TVAE tuned OH 42 {'srmse_1_stored': 0.1711, 'srmse_1_orig': 0.1711, 'srmse_1_hhdisjoint_trainval': 0.393, 'srmse_1_hhdisjoint_trainval_ipw': 0.1902, 'srmse_1_placebo_s1': 0.4009}
+TVAE tuned OH 142 {'srmse_1_stored': 0.1735, 'srmse_1_orig': 0.1735, 'srmse_1_hhdisjoint_trainval': 0.3876, 'srmse_1_hhdisjoint_trainval_ipw': 0.2136, 'srmse_1_placebo_s1': 0.3964}
+TVAE tuned OH 242 {'srmse_1_stored': 0.2191, 'srmse_1_orig': 0.2191, 'srmse_1_hhdisjoint_trainval': 0.3627, 'srmse_1_hhdisjoint_trainval_ipw': 0.2557, 'srmse_1_placebo_s1': 0.3703}
+TVAE as shipped CA 42 {'srmse_1_stored': 0.2433, 'srmse_1_orig': 0.2433, 'srmse_1_hhdisjoint_trainval': 0.2942, 'srmse_1_hhdisjoint_trainval_ipw': 0.245, 'srmse_1_placebo_s1': 0.2931}
+TVAE as shipped CA 142 {'srmse_1_stored': 0.2392, 'srmse_1_orig': 0.2392, 'srmse_1_hhdisjoint_trainval': 0.2635, 'srmse_1_hhdisjoint_trainval_ipw': 0.238, 'srmse_1_placebo_s1': 0.2655}
+TVAE as shipped CA 242 {'srmse_1_stored': 0.2079, 'srmse_1_orig': 0.2079, 'srmse_1_hhdisjoint_trainval': 0.2333, 'srmse_1_hhdisjoint_trainval_ipw': 0.2082, 'srmse_1_placebo_s1': 0.2333}
+TVAE as shipped TX 42 {'srmse_1_stored': 0.1796, 'srmse_1_orig': 0.1796, 'srmse_1_hhdisjoint_trainval': 0.267, 'srmse_1_hhdisjoint_trainval_ipw': 0.1857, 'srmse_1_placebo_s1': 0.2692}
+TVAE as shipped TX 142 {'srmse_1_stored': 0.1519, 'srmse_1_orig': 0.1519, 'srmse_1_hhdisjoint_trainval': 0.2609, 'srmse_1_hhdisjoint_trainval_ipw': 0.1577, 'srmse_1_placebo_s1': 0.2625}
+TVAE as shipped TX 242 {'srmse_1_stored': 0.1943, 'srmse_1_orig': 0.1943, 'srmse_1_hhdisjoint_trainval': 0.2719, 'srmse_1_hhdisjoint_trainval_ipw': 0.2032, 'srmse_1_placebo_s1': 0.2726}
+TVAE as shipped OH 42 {'srmse_1_stored': 0.1884, 'srmse_1_orig': 0.1884, 'srmse_1_hhdisjoint_trainval': 0.3832, 'srmse_1_hhdisjoint_trainval_ipw': 0.2396, 'srmse_1_placebo_s1': 0.3908}
+TVAE as shipped OH 142 {'srmse_1_stored': 0.1985, 'srmse_1_orig': 0.1985, 'srmse_1_hhdisjoint_trainval': 0.3509, 'srmse_1_hhdisjoint_trainval_ipw': 0.2423, 'srmse_1_placebo_s1': 0.3576}
+TVAE as shipped OH 242 {'srmse_1_stored': 0.2107, 'srmse_1_orig': 0.2107, 'srmse_1_hhdisjoint_trainval': 0.371, 'srmse_1_hhdisjoint_trainval_ipw': 0.2603, 'srmse_1_placebo_s1': 0.379}
+max |orig - stored| = 0.0
+       draw  srmse_1_orig  ...  srmse_1_hhdisjoint_trainval_ipw  srmse_1_placebo_s1
+state                      ...                                                     
+CA      1.0      0.026756  ...                         0.027501            0.127592
+OH      1.0      0.020676  ...                         0.099671            0.311570
+TX      1.0      0.018338  ...                         0.036734            0.203221
+
+[3 rows x 5 columns]

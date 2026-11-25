@@ -1,0 +1,2 @@
+scenario_name,n_realizations,n_targets,loss_aggregation,n_attributes,ESS,ESS_ratio,entropy,entropy_ratio,perplexity,max_weight,top_5_weight,prior_mean_scenario_loss,posterior_mean_scenario_loss
+retrospective_reference_scenario,50,69,attribute_normalized,7,49.74802077973487,0.9949604155946975,3.909464948535507,0.9993461038217082,49.872260607341836,0.023102012968129915,0.1114843392314783,10.158566197373542,10.153418508246052

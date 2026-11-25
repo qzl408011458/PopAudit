@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this code or the released audit outputs, please cite the accompanying paper."
+title: "PopAudit: Auditing Generative Population Priors for Scenario-Constrained Transportation Simulation under Distributional Shift"
+type: software
+license: MIT
+repository-code: "https://github.com/qzl408011458/PopAudit"
+authors:
+  - given-names: Zhenlin
+    family-names: Qin
+    affiliation: "Department of Civil and Architectural Engineering, KTH Royal Institute of Technology, Stockholm, Sweden"
+  - given-names: Haoye
+    family-names: Chen
+    affiliation: "Department of Civil and Architectural Engineering, KTH Royal Institute of Technology, Stockholm, Sweden"
+  - given-names: Yancheng
+    family-names: Ling
+    affiliation: "Department of Civil and Architectural Engineering, KTH Royal Institute of Technology, Stockholm, Sweden"
+  - given-names: Francisco
+    family-names: "Câmara Pereira"
+    affiliation: "Department of Technology, Management and Economics, Technical University of Denmark, Kgs. Lyngby, Denmark"
+  - given-names: Zhenliang
+    family-names: Ma
+    affiliation: "Department of Civil and Architectural Engineering and Digital Futures, KTH Royal Institute of Technology, Stockholm, Sweden"
+keywords:
+  - population synthesis
+  - generative models
+  - scenario analysis
+  - transportation simulation
+  - audit

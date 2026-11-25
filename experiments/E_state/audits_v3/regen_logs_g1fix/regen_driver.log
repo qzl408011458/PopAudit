@@ -1,0 +1,53 @@
+[18:37:33] START 01_certificate_primary
+[18:37:34] END   01_certificate_primary rc=0
+[18:37:34] START 01b_rebuild_lever_data
+[18:37:35] END   01b_rebuild_lever_data rc=0
+[18:37:35] START 01c_build_budget_table
+[18:37:36] END   01c_build_budget_table rc=0
+[18:37:36] START 01d_baselines
+[18:37:36] END   01d_baselines rc=0
+[18:37:36] START 02_certificate_extras
+[18:37:37] END   02_certificate_extras rc=0
+[18:37:37] START 03_stress_semapop
+[18:37:58] END   03_stress_semapop rc=0
+[18:37:58] START 04_stress_ttvae
+[18:38:13] END   04_stress_ttvae rc=0
+[18:38:13] START 05_cf_semapop
+[18:38:44] END   05_cf_semapop rc=0
+[18:38:44] START 06_cf_ttvae
+[18:39:09] END   06_cf_ttvae rc=0
+[18:39:09] START 07_paper_tables
+[18:39:10] END   07_paper_tables rc=0
+[18:39:10] START 08_figures
+[18:39:13] END   08_figures rc=0
+[18:39:13] START 09_figE_postproj
+[18:39:20] END   09_figE_postproj rc=0
+[18:39:20] START 10_kappa_recheck
+[18:39:21] END   10_kappa_recheck rc=0
+[18:39:21] START 10b_kappa_null_sim
+[18:39:23] END   10b_kappa_null_sim rc=0
+[18:39:23] START 11_sensitivity_sweep
+[18:39:25] END   11_sensitivity_sweep rc=0
+[18:39:25] START 12_transfer_figures
+[18:39:49] END   12_transfer_figures rc=0
+[18:39:49] START 13_run_ablation
+[18:41:00] END   13_run_ablation rc=0
+[18:41:00] START 14_analyze
+[18:41:01] END   14_analyze rc=0
+[18:41:01] START 15_analyze_byhorizon
+[18:41:02] END   15_analyze_byhorizon rc=0
+[18:41:02] START 16_run_ensemble_table
+[18:42:26] END   16_run_ensemble_table rc=0
+[18:42:26] START 17_semantics_figure
+[18:42:27] END   17_semantics_figure rc=0
+[18:42:27] START 18_no_L2_tables
+[18:42:27] END   18_no_L2_tables rc=0
+[18:42:27] START 19_run_projeffect
+[18:46:24] END   19_run_projeffect rc=0
+[18:46:24] START 20_commute_figure
+[18:46:51] END   20_commute_figure rc=0
+[18:46:51] START 21_wfh_age_tables
+[18:46:54] END   21_wfh_age_tables rc=0
+[18:46:54] START 22_probe_commute
+[18:46:57] END   22_probe_commute rc=0
+[18:46:57] REGEN DONE

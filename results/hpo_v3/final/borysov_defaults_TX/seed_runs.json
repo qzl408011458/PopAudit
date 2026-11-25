@@ -1,0 +1,113 @@
+[
+  {
+    "seed": 42,
+    "run_name": "borysov_defaults_TX_final_s42",
+    "run_dir": "<POPAUDIT_HPO>/final/borysov_defaults_TX/borysov_defaults_TX_final_s42",
+    "seconds": 391.0,
+    "returncode": 0,
+    "timed_out": false,
+    "log": "<POPAUDIT_HPO>/logs/borysov_defaults_TX/final_s42.log",
+    "val_metrics": {
+      "srmse_1": 0.18989872674123207,
+      "srmse_2": 0.7051252583859361,
+      "block_f1_demographic": 0.3841445323289391,
+      "block_precision_demographic": 0.4732,
+      "block_recall_demographic": 0.3233,
+      "block_f1_household": 0.7799471688883454,
+      "block_precision_household": 0.9934,
+      "block_recall_household": 0.642,
+      "block_f1_commute": 0.9868800972595106,
+      "block_precision_commute": 1.0,
+      "block_recall_commute": 0.9741,
+      "block_f1": 0.7169905994922651
+    },
+    "val_objective": -0.4475119925635841,
+    "reference_metrics": {
+      "n_reference": 212756,
+      "n_generated": 10000,
+      "srmse_1": 0.18821831445446888,
+      "srmse_2": 0.6962528573517179,
+      "block_f1_demographic": 0.43191424633527176,
+      "block_f1_household": 0.776347799186886,
+      "block_f1_commute": 0.9866880039626407,
+      "block_f1": 0.7316500164949328
+    },
+    "reference_objective": -0.4422355859030934,
+    "val_minus_reference": -0.005276406660490673,
+    "trainer_wall_clock_s": 341.41
+  },
+  {
+    "seed": 142,
+    "run_name": "borysov_defaults_TX_final_s142",
+    "run_dir": "<POPAUDIT_HPO>/final/borysov_defaults_TX/borysov_defaults_TX_final_s142",
+    "seconds": 333.0,
+    "returncode": 0,
+    "timed_out": false,
+    "log": "<POPAUDIT_HPO>/logs/borysov_defaults_TX/final_s142.log",
+    "val_metrics": {
+      "srmse_1": 0.22497265478079667,
+      "srmse_2": 0.7712150601426424,
+      "block_f1_demographic": 0.385747982619491,
+      "block_precision_demographic": 0.4855,
+      "block_recall_demographic": 0.32,
+      "block_f1_household": 0.79433826576986,
+      "block_precision_household": 0.9846,
+      "block_recall_household": 0.6657,
+      "block_f1_commute": 0.983997967995936,
+      "block_precision_commute": 1.0,
+      "block_recall_commute": 0.9685,
+      "block_f1": 0.7213614054617623
+    },
+    "val_objective": -0.4980938574617195,
+    "reference_metrics": {
+      "n_reference": 212756,
+      "n_generated": 10000,
+      "srmse_1": 0.21772416286387763,
+      "srmse_2": 0.7545565330124465,
+      "block_f1_demographic": 0.4378559605690812,
+      "block_f1_household": 0.7945897034272481,
+      "block_f1_commute": 0.9834076742791475,
+      "block_f1": 0.738617779425159
+    },
+    "reference_objective": -0.4861403479381621,
+    "val_minus_reference": -0.011953509523557448,
+    "trainer_wall_clock_s": 330.92
+  },
+  {
+    "seed": 242,
+    "run_name": "borysov_defaults_TX_final_s242",
+    "run_dir": "<POPAUDIT_HPO>/final/borysov_defaults_TX/borysov_defaults_TX_final_s242",
+    "seconds": 328.5,
+    "returncode": 0,
+    "timed_out": false,
+    "log": "<POPAUDIT_HPO>/logs/borysov_defaults_TX/final_s242.log",
+    "val_metrics": {
+      "srmse_1": 0.19354247741959374,
+      "srmse_2": 0.7083757149145765,
+      "block_f1_demographic": 0.37279848544196365,
+      "block_precision_demographic": 0.4453,
+      "block_recall_demographic": 0.3206,
+      "block_f1_household": 0.7808366336633663,
+      "block_precision_household": 0.9927,
+      "block_recall_household": 0.6435,
+      "block_f1_commute": 0.9868800972595106,
+      "block_precision_commute": 1.0,
+      "block_recall_commute": 0.9741,
+      "block_f1": 0.7135050721216135
+    },
+    "val_objective": -0.4509590961670851,
+    "reference_metrics": {
+      "n_reference": 212756,
+      "n_generated": 10000,
+      "srmse_1": 0.18589840914144182,
+      "srmse_2": 0.6913295466832495,
+      "block_f1_demographic": 0.4207760026400358,
+      "block_f1_household": 0.7788771011615421,
+      "block_f1_commute": 0.9866880039626407,
+      "block_f1": 0.7287803692547395
+    },
+    "reference_objective": -0.4386139779123457,
+    "val_minus_reference": -0.01234511825473944,
+    "trainer_wall_clock_s": 326.44
+  }
+]

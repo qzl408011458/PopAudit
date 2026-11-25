@@ -1,0 +1,87 @@
+[20:18:39] base l2: 1 cases
+[20:21:42] L2 base ttvae CA 2018 ok
+[20:21:42] base l2 done in 183s
+[20:21:42] base l3: 1 cases
+[20:21:50] L3 base ttvae CA 2018 ok r*=0
+[20:21:50] base l3 done in 8s
+[20:21:51] floor0025 l2: 4 cases
+[20:22:30] L2 floor0025 semapop_vae OH 2024 ok
+[20:22:30] L2 floor0025 wgan_zcr OH 2021 ok
+[20:22:30] L2 floor0025 ttvae OH 2018 ok
+[20:23:55] L2 floor0025 tabddpm TX 2024 ok
+[20:23:55] floor0025 l2 done in 124s
+[20:23:55] floor0025 l3: 4 cases
+[20:24:02] L3 floor0025 ttvae OH 2018 ok r*=16
+[20:24:05] L3 floor0025 semapop_vae OH 2024 ok r*=36
+[20:24:05] L3 floor0025 wgan_zcr OH 2021 ok r*=19
+[20:24:10] L3 floor0025 tabddpm TX 2024 ok r*=42
+[20:24:10] floor0025 l3 done in 15s
+[20:24:11] hfree l2: 4 cases
+[20:24:50] L2 hfree semapop_vae OH 2024 ok
+[20:24:50] L2 hfree wgan_zcr OH 2021 ok
+[20:24:50] L2 hfree ttvae OH 2018 ok
+[20:26:17] L2 hfree tabddpm TX 2024 ok
+[20:26:17] hfree l2 done in 127s
+[20:26:17] hfree l3: 4 cases
+[20:26:25] L3 hfree ttvae OH 2018 ok r*=16
+[20:26:27] L3 hfree semapop_vae OH 2024 ok r*=36
+[20:26:27] L3 hfree wgan_zcr OH 2021 ok r*=41
+[20:26:31] L3 hfree tabddpm TX 2024 ok r*=42
+[20:26:31] hfree l3 done in 13s
+[20:26:31] mu2 l2: 4 cases
+[20:27:10] L2 mu2 semapop_vae OH 2024 ok
+[20:27:10] L2 mu2 wgan_zcr OH 2021 ok
+[20:27:11] L2 mu2 ttvae OH 2018 ok
+[20:28:36] L2 mu2 tabddpm TX 2024 ok
+[20:28:36] mu2 l2 done in 124s
+[20:28:36] mu2 l3: 4 cases
+[20:28:43] L3 mu2 ttvae OH 2018 ok r*=16
+[20:28:45] L3 mu2 tabddpm TX 2024 ok r*=42
+[20:28:45] L3 mu2 semapop_vae OH 2024 ok r*=8
+[20:28:45] L3 mu2 wgan_zcr OH 2021 ok r*=31
+[20:28:45] mu2 l3 done in 10s
+[20:28:46] lam05 l2: 4 cases
+[20:29:24] L2 lam05 semapop_vae OH 2024 ok
+[20:29:25] L2 lam05 wgan_zcr OH 2021 ok
+[20:29:25] L2 lam05 ttvae OH 2018 ok
+[20:30:49] L2 lam05 tabddpm TX 2024 ok
+[20:30:49] lam05 l2 done in 123s
+[20:30:49] lam05 l3: 4 cases
+[20:30:56] L3 lam05 ttvae OH 2018 ok r*=16
+[20:30:59] L3 lam05 wgan_zcr OH 2021 ok r*=42
+[20:31:01] L3 lam05 semapop_vae OH 2024 ok r*=36
+[20:31:04] L3 lam05 tabddpm TX 2024 ok r*=42
+[20:31:04] lam05 l3 done in 16s
+[20:31:05] beta0 l2: 4 cases
+[20:31:44] L2 beta0 semapop_vae OH 2024 ok
+[20:31:44] L2 beta0 wgan_zcr OH 2021 ok
+[20:31:44] L2 beta0 ttvae OH 2018 ok
+[20:33:08] L2 beta0 tabddpm TX 2024 ok
+[20:33:08] beta0 l2 done in 123s
+[20:33:08] beta0 l3: 4 cases
+[20:33:16] L3 beta0 ttvae OH 2018 ok r*=16
+[20:33:18] L3 beta0 semapop_vae OH 2024 ok r*=8
+[20:33:18] L3 beta0 wgan_zcr OH 2021 ok r*=41
+[20:33:24] L3 beta0 tabddpm TX 2024 ok r*=42
+[20:33:24] beta0 l3 done in 16s
+[20:33:24] floor01 l2: 4 cases
+[20:34:03] L2 floor01 semapop_vae OH 2024 ok
+[20:34:03] L2 floor01 wgan_zcr OH 2021 ok
+[20:34:04] L2 floor01 ttvae OH 2018 ok
+[20:35:27] L2 floor01 tabddpm TX 2024 ok
+[20:35:27] floor01 l2 done in 123s
+[20:35:27] floor01 l3: 4 cases
+[20:35:34] L3 floor01 ttvae OH 2018 ok r*=16
+[20:35:34] L3 floor01 semapop_vae OH 2024 ok r*=36
+[20:35:36] L3 floor01 wgan_zcr OH 2021 ok r*=13
+[20:35:38] L3 floor01 tabddpm TX 2024 ok r*=28
+[20:35:38] floor01 l3 done in 11s
+[20:35:39] win1013 l2: 2 cases
+[20:36:14] L2 win1013 semapop_vae OH 2024 ok
+[20:36:14] L2 win1013 ttvae OH 2021 ok
+[20:36:14] win1013 l2 done in 36s
+[20:36:15] lam2 l2: 2 cases
+[20:36:51] L2 lam2 semapop_vae OH 2024 ok
+[20:36:51] L2 lam2 ttvae OH 2021 ok
+[20:36:51] lam2 l2 done in 37s
+ALLDONE

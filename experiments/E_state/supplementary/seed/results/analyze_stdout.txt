@@ -1,0 +1,166 @@
+seed-42 vs production certificate: 45 cases, VALID agree 45, max |chi_H diff| 4.84e-06, max |L1_invalid diff| 5.0e-07
+
+cases with all three seeds: 45 of 45  ->  90 seed comparisons
+
+ADMISSION FLIPS vs seed 42:
+seed                   42     142    242
+state model    year                     
+OH    tabddpm  2018   True  False  False
+      wgan_zcr 2018   True  False  False
+TX    tabddpm  2024  False   True   True
+flipped seed comparisons: 6 of 90
+seed 42: VALID 23/45 regenerated | by year {2018: 13, 2021: 0, 2024: 10}
+seed 142: VALID 22/45 regenerated | by year {2018: 11, 2021: 0, 2024: 11}
+seed 242: VALID 22/45 regenerated | by year {2018: 11, 2021: 0, 2024: 11}
+
+81-case VALID by seed (non-regenerated cases carried at seed 42):
+ seed  n_regenerated  VALID81  VALID_2018  VALID_2021  VALID_2024  VALID_CA  VALID_OH  VALID_TX                                                                                                  valid_2024_set
+   42             45       23          13           0          10         8         8         7            semapop_vae_CA;ttvae_CA;bn_CA;tabddpm_CA;semapop_vae_TX;ttvae_TX;bn_TX;semapop_vae_OH;ttvae_OH;bn_OH
+  142             45       22          11           0          11         8         6         8 semapop_vae_CA;ttvae_CA;bn_CA;tabddpm_CA;semapop_vae_TX;ttvae_TX;bn_TX;tabddpm_TX;semapop_vae_OH;ttvae_OH;bn_OH
+  242             45       22          11           0          11         8         6         8 semapop_vae_CA;ttvae_CA;bn_CA;tabddpm_CA;semapop_vae_TX;ttvae_TX;bn_TX;tabddpm_TX;semapop_vae_OH;ttvae_OH;bn_OH
+
+Near-threshold cases (|chi_H - cutoff| < 1 at some seed, or invalid mass > 0.004):
+                       L1_invalid                 L2_cutoff                  VALID                 chi_H                
+seed                          42      142     242       42      142     242    42     142    242     42      142     242
+state model       year                                                                                                  
+CA    bn          2024     0.0001  0.0001  0.0001    5.0079  5.0079  5.0079   True   True   True  4.6509  4.6509  4.6509
+      semapop_vae 2024     0.0001  0.0002  0.0001    5.0111  5.0117  5.0118   True   True   True  4.4792  4.6733  4.6743
+      tabddpm     2024     0.0005  0.0005  0.0005    5.0106  5.0107  5.0113   True   True   True  4.6727  4.7145  4.5198
+      ttvae       2024     0.0000  0.0000  0.0000    5.0113  5.0113  5.0113   True   True   True  4.5744  4.5730  4.5827
+      wgan_zcr    2018     0.0005  0.0003  0.0006    5.0251  5.0279  5.0258  False  False  False  5.0660  5.4727  5.8026
+                  2024     0.0005  0.0003  0.0006    5.0130  5.0141  5.0113  False  False  False  5.3451  5.3629  5.3960
+OH    bn          2021     0.0031  0.0031  0.0031    5.0238  5.0238  5.0238  False  False  False  5.9731  5.9731  5.9731
+                  2024     0.0031  0.0031  0.0031    5.0189  5.0189  5.0189   True   True   True  4.1429  4.1429  4.1429
+      semapop_vae 2021     0.0004  0.0002  0.0002    5.0222  5.0221  5.0230  False  False  False  5.8787  5.7840  5.8890
+                  2024     0.0004  0.0002  0.0002    5.0179  5.0171  5.0184   True   True   True  4.0399  3.9692  4.0610
+      tabddpm     2018     0.0048  0.0034  0.0052    5.0368  5.0464  5.0380   True  False  False  4.5447  5.4156  4.9044
+                  2021     0.0048  0.0034  0.0052    5.0316  5.0397  5.0332  False  False  False  7.3853  8.0706  7.8600
+                  2024     0.0048  0.0034  0.0052    5.0240  5.0288  5.0242  False  False  False  5.1103  5.5446  5.4381
+      ttvae       2021     0.0000  0.0000  0.0000    5.0325  5.0325  5.0325  False  False  False  5.8087  5.8087  5.8087
+      wgan_zcr    2018     0.0008  0.0014  0.0017    5.0430  5.0593  5.0442   True  False  False  4.5430  6.0643  5.1937
+                  2024     0.0008  0.0014  0.0017    5.0266  5.0338  5.0270  False  False  False  5.3047  5.9997  5.6061
+TX    bn          2024     0.0001  0.0001  0.0001    5.0128  5.0128  5.0128   True   True   True  4.2793  4.2793  4.2793
+      semapop_vae 2024     0.0002  0.0002  0.0005    5.0141  5.0150  5.0147   True   True   True  4.3338  4.5288  3.9787
+      tabddpm     2024     0.0012  0.0011  0.0015    5.0160  5.0144  5.0139  False   True   True  5.0968  4.9592  4.8455
+      ttvae       2024     0.0000  0.0000  0.0000    5.0120  5.0120  5.0120   True   True   True  4.1367  4.1366  4.1367
+
+Per-case ranges over seeds:
+state       model  year  n  chi_mean  chi_min  chi_max  cut_min  cut_max  inv_min  inv_max  D_min  D_max  n_valid
+   CA          bn  2018  3    3.0326   3.0326   3.0326   5.0159   5.0159   0.0001   0.0001 0.2370 0.2370        3
+   CA          bn  2021  3   10.1830  10.1830  10.1830   5.0119   5.0119   0.0001   0.0001 0.2570 0.2570        0
+   CA          bn  2024  3    4.6509   4.6509   4.6509   5.0079   5.0079   0.0001   0.0001 0.3319 0.3319        3
+   CA semapop_vae  2018  3    3.2264   2.9219   3.5262   5.0163   5.0187   0.0001   0.0002 0.2294 0.2426        3
+   CA semapop_vae  2021  3   10.2065   9.9915  10.3555   5.0170   5.0180   0.0001   0.0002 0.2419 0.2528        0
+   CA semapop_vae  2024  3    4.6089   4.4792   4.6743   5.0111   5.0118   0.0001   0.0002 0.3207 0.3361        3
+   CA     tabddpm  2018  3    2.7267   2.5525   2.8353   5.0134   5.0143   0.0005   0.0005 0.2629 0.2741        3
+   CA     tabddpm  2021  3   10.2585  10.0976  10.3767   5.0158   5.0168   0.0005   0.0005 0.2699 0.2826        0
+   CA     tabddpm  2024  3    4.6356   4.5198   4.7145   5.0106   5.0113   0.0005   0.0005 0.3316 0.3448        3
+   CA       ttvae  2018  3    2.8465   2.8439   2.8504   5.0177   5.0178   0.0000   0.0000 0.2337 0.2359        3
+   CA       ttvae  2021  3   10.1070  10.1024  10.1139   5.0180   5.0180   0.0000   0.0000 0.2447 0.2472        0
+   CA       ttvae  2024  3    4.5767   4.5730   4.5827   5.0113   5.0113   0.0000   0.0000 0.3239 0.3263        3
+   CA    wgan_zcr  2018  3    5.4471   5.0660   5.8026   5.0251   5.0279   0.0003   0.0006 0.2703 0.2875        0
+   CA    wgan_zcr  2021  3   11.4416  11.3780  11.5235   5.0168   5.0208   0.0003   0.0006 0.3001 0.3101        0
+   CA    wgan_zcr  2024  3    5.3680   5.3451   5.3960   5.0113   5.0141   0.0003   0.0006 0.3530 0.3677        0
+   OH          bn  2018  3    1.5826   1.5826   1.5826   5.0179   5.0179   0.0031   0.0031 0.1621 0.1621        3
+   OH          bn  2021  3    5.9731   5.9731   5.9731   5.0238   5.0238   0.0031   0.0031 0.1999 0.1999        0
+   OH          bn  2024  3    4.1429   4.1429   4.1429   5.0189   5.0189   0.0031   0.0031 0.2310 0.2310        3
+   OH semapop_vae  2018  3    1.3369   1.2711   1.4480   5.0150   5.0169   0.0002   0.0004 0.1471 0.1655        3
+   OH semapop_vae  2021  3    5.8505   5.7840   5.8890   5.0221   5.0230   0.0002   0.0004 0.1844 0.2022        0
+   OH semapop_vae  2024  3    4.0234   3.9692   4.0610   5.0171   5.0184   0.0002   0.0004 0.2133 0.2312        3
+   OH     tabddpm  2018  3    4.9549   4.5447   5.4156   5.0368   5.0464   0.0034   0.0052 0.2436 0.2634        1
+   OH     tabddpm  2021  3    7.7720   7.3853   8.0706   5.0316   5.0397   0.0034   0.0052 0.2572 0.2743        0
+   OH     tabddpm  2024  3    5.3643   5.1103   5.5446   5.0240   5.0288   0.0034   0.0052 0.2993 0.3217        0
+   OH       ttvae  2018  3    1.3386   1.3386   1.3386   5.0198   5.0198   0.0000   0.0000 0.1556 0.1556        3
+   OH       ttvae  2021  3    5.8087   5.8087   5.8087   5.0325   5.0325   0.0000   0.0000 0.1944 0.1944        0
+   OH       ttvae  2024  3    3.9926   3.9926   3.9926   5.0267   5.0267   0.0000   0.0000 0.2233 0.2233        3
+   OH    wgan_zcr  2018  3    5.2670   4.5430   6.0643   5.0430   5.0593   0.0008   0.0017 0.2515 0.2583        1
+   OH    wgan_zcr  2021  3    8.0332   7.5688   8.5242   5.0339   5.0442   0.0008   0.0017 0.2892 0.3182        0
+   OH    wgan_zcr  2024  3    5.6368   5.3047   5.9997   5.0266   5.0338   0.0008   0.0017 0.3241 0.3652        0
+   TX          bn  2018  3    2.3949   2.3949   2.3949   5.0202   5.0202   0.0001   0.0001 0.1514 0.1514        3
+   TX          bn  2021  3    7.0448   7.0448   7.0448   5.0155   5.0155   0.0001   0.0001 0.1859 0.1859        0
+   TX          bn  2024  3    4.2793   4.2793   4.2793   5.0128   5.0128   0.0001   0.0001 0.2481 0.2481        3
+   TX semapop_vae  2018  3    2.5753   2.2124   2.7858   5.0177   5.0193   0.0002   0.0005 0.1431 0.1594        3
+   TX semapop_vae  2021  3    7.0393   6.5912   7.4259   5.0179   5.0203   0.0002   0.0005 0.1744 0.1883        0
+   TX semapop_vae  2024  3    4.2804   3.9787   4.5288   5.0141   5.0150   0.0002   0.0005 0.2375 0.2540        3
+   TX     tabddpm  2018  3    3.1302   3.0941   3.1496   5.0218   5.0254   0.0011   0.0015 0.1627 0.1829        3
+   TX     tabddpm  2021  3    7.7606   7.6262   7.8605   5.0164   5.0174   0.0011   0.0015 0.1870 0.2085        0
+   TX     tabddpm  2024  3    4.9671   4.8455   5.0968   5.0139   5.0160   0.0011   0.0015 0.2531 0.2682        2
+   TX       ttvae  2018  3    2.1690   2.1690   2.1690   5.0139   5.0139   0.0000   0.0000 0.1422 0.1423        3
+   TX       ttvae  2021  3    6.8879   6.8879   6.8879   5.0157   5.0157   0.0000   0.0000 0.1809 0.1810        0
+   TX       ttvae  2024  3    4.1367   4.1366   4.1367   5.0120   5.0120   0.0000   0.0000 0.2430 0.2431        3
+   TX    wgan_zcr  2018  3   11.3362  10.0743  12.9124   5.0476   5.0672   0.0003   0.0015 0.2099 0.2197        0
+   TX    wgan_zcr  2021  3   12.1178  11.2309  13.0018   5.0244   5.0370   0.0003   0.0015 0.2539 0.2680        0
+   TX    wgan_zcr  2024  3    8.9525   8.2724   9.7589   5.0219   5.0306   0.0003   0.0015 0.3210 0.3331        0
+
+Scenario decisions by seed:
+ seed state  year  n_adm                              admitted theta_dagger  D_dagger   runner_up  D_runner decision    v_H  gamma_min
+   42    CA  2018      4          semapop_vae,ttvae,bn,tabddpm  semapop_vae    0.2336       ttvae    0.2337   Deploy 0.0000     0.0000
+   42    CA  2021      0                                   NaN          NaN       NaN         NaN       NaN    Defer 0.4167        NaN
+   42    CA  2024      4          semapop_vae,ttvae,bn,tabddpm  semapop_vae    0.3207       ttvae    0.3242    Defer 0.8207     0.0839
+   42    OH  2018      5 semapop_vae,ttvae,bn,tabddpm,wgan_zcr  semapop_vae    0.1471       ttvae    0.1556   Deploy 0.0000     0.0000
+   42    OH  2021      0                                   NaN          NaN       NaN         NaN       NaN    Defer 0.4167        NaN
+   42    OH  2024      3                  semapop_vae,ttvae,bn  semapop_vae    0.2133       ttvae    0.2233   Deploy 0.8207     0.0000
+   42    TX  2018      4          ttvae,semapop_vae,bn,tabddpm        ttvae    0.1423 semapop_vae    0.1431   Deploy 0.0000     0.0000
+   42    TX  2021      0                                   NaN          NaN       NaN         NaN       NaN    Defer 0.4167        NaN
+   42    TX  2024      3                  semapop_vae,ttvae,bn  semapop_vae    0.2375       ttvae    0.2431   Deploy 0.8207     0.0000
+  142    CA  2018      4          ttvae,bn,semapop_vae,tabddpm        ttvae    0.2337          bn    0.2370   Deploy 0.0000     0.0000
+  142    CA  2021      0                                   NaN          NaN       NaN         NaN       NaN    Defer 0.4167        NaN
+  142    CA  2024      4          ttvae,bn,semapop_vae,tabddpm        ttvae    0.3239          bn    0.3319    Defer 0.8207     0.0970
+  142    OH  2018      3                  ttvae,bn,semapop_vae        ttvae    0.1556          bn    0.1621   Deploy 0.0000     0.0000
+  142    OH  2021      0                                   NaN          NaN       NaN         NaN       NaN    Defer 0.4167        NaN
+  142    OH  2024      3                  ttvae,bn,semapop_vae        ttvae    0.2233          bn    0.2310   Deploy 0.8207     0.0000
+  142    TX  2018      4          ttvae,semapop_vae,bn,tabddpm        ttvae    0.1423 semapop_vae    0.1491   Deploy 0.0000     0.0000
+  142    TX  2021      0                                   NaN          NaN       NaN         NaN       NaN    Defer 0.4167        NaN
+  142    TX  2024      4          semapop_vae,ttvae,bn,tabddpm  semapop_vae    0.2414       ttvae    0.2430   Deploy 0.8207     0.0000
+  242    CA  2018      4          semapop_vae,ttvae,bn,tabddpm  semapop_vae    0.2294       ttvae    0.2359   Deploy 0.0000     0.0000
+  242    CA  2021      0                                   NaN          NaN       NaN         NaN       NaN    Defer 0.4167        NaN
+  242    CA  2024      4          semapop_vae,ttvae,tabddpm,bn  semapop_vae    0.3257       ttvae    0.3263    Defer 0.8207     0.1043
+  242    OH  2018      3                  semapop_vae,ttvae,bn  semapop_vae    0.1501       ttvae    0.1556   Deploy 0.0000     0.0000
+  242    OH  2021      0                                   NaN          NaN       NaN         NaN       NaN    Defer 0.4167        NaN
+  242    OH  2024      3                  semapop_vae,ttvae,bn  semapop_vae    0.2211       ttvae    0.2233   Deploy 0.8207     0.0000
+  242    TX  2018      4          ttvae,bn,semapop_vae,tabddpm        ttvae    0.1422          bn    0.1514   Deploy 0.0000     0.0000
+  242    TX  2021      0                                   NaN          NaN       NaN         NaN       NaN    Defer 0.4167        NaN
+  242    TX  2024      4          ttvae,bn,semapop_vae,tabddpm        ttvae    0.2431          bn    0.2481   Deploy 0.8207     0.0000
+
+smallest |D_dagger - B0|:
+ seed state  year theta_dagger  D_dagger  gap_B0
+   42    CA  2024  semapop_vae    0.3207  0.0207
+  142    CA  2024        ttvae    0.3239  0.0239
+  242    CA  2024  semapop_vae    0.3257  0.0257
+  242    TX  2024        ttvae    0.2431  0.0569
+  142    TX  2024  semapop_vae    0.2414  0.0586
+
+runner-up gaps:
+ seed state  year theta_dagger   runner_up  gap_runner
+   42    CA  2018  semapop_vae       ttvae      0.0001
+   42    CA  2024  semapop_vae       ttvae      0.0036
+   42    OH  2018  semapop_vae       ttvae      0.0085
+   42    OH  2024  semapop_vae       ttvae      0.0100
+   42    TX  2018        ttvae semapop_vae      0.0008
+   42    TX  2024  semapop_vae       ttvae      0.0056
+  142    CA  2018        ttvae          bn      0.0033
+  142    CA  2024        ttvae          bn      0.0080
+  142    OH  2018        ttvae          bn      0.0065
+  142    OH  2024        ttvae          bn      0.0078
+  142    TX  2018        ttvae semapop_vae      0.0068
+  142    TX  2024  semapop_vae       ttvae      0.0017
+  242    CA  2018  semapop_vae       ttvae      0.0064
+  242    CA  2024  semapop_vae       ttvae      0.0006
+  242    OH  2018  semapop_vae       ttvae      0.0055
+  242    OH  2024  semapop_vae       ttvae      0.0022
+  242    TX  2018        ttvae          bn      0.0092
+  242    TX  2024        ttvae          bn      0.0049
+
+decision by seed:
+seed           42      142     242
+state year                        
+CA    2018  Deploy  Deploy  Deploy
+      2021   Defer   Defer   Defer
+      2024   Defer   Defer   Defer
+OH    2018  Deploy  Deploy  Deploy
+      2021   Defer   Defer   Defer
+      2024  Deploy  Deploy  Deploy
+TX    2018  Deploy  Deploy  Deploy
+      2021   Defer   Defer   Defer
+      2024  Deploy  Deploy  Deploy
+all 9 decisions identical across seeds: True

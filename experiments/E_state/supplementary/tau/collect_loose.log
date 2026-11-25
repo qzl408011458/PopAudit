@@ -1,0 +1,72 @@
+               cell state       model  tau  feasible      D   nESS     KL
+         bn_CA_2024    CA          bn  1.5      True 0.3405 0.9933 0.0029
+         bn_CA_2024    CA          bn  2.0      True 0.3476 0.9974 0.0012
+         bn_CA_2024    CA          bn  3.0      True 0.3593 1.0000 0.0000
+         bn_CA_2024    CA          bn  5.0      True 0.3594 1.0000 0.0000
+         bn_CA_2024    CA          bn 10.0      True 0.3594 1.0000 0.0000
+         bn_OH_2024    OH          bn  1.5      True 0.2388 0.9929 0.0030
+         bn_OH_2024    OH          bn  2.0      True 0.2453 0.9978 0.0010
+         bn_OH_2024    OH          bn  3.0      True 0.2538 1.0000 0.0000
+         bn_OH_2024    OH          bn  5.0      True 0.2538 1.0000 0.0000
+         bn_OH_2024    OH          bn 10.0      True 0.2538 1.0000 0.0000
+         bn_TX_2024    TX          bn  1.5      True 0.2672 0.9972 0.0012
+         bn_TX_2024    TX          bn  2.0      True 0.2773 0.9999 0.0000
+         bn_TX_2024    TX          bn  3.0      True 0.2797 1.0000 0.0000
+         bn_TX_2024    TX          bn  5.0      True 0.2797 1.0000 0.0000
+         bn_TX_2024    TX          bn 10.0      True 0.2797 1.0000 0.0000
+semapop_vae_CA_2024    CA semapop_vae  1.5      True 0.3306 0.9939 0.0027
+semapop_vae_CA_2024    CA semapop_vae  2.0      True 0.3388 0.9977 0.0010
+semapop_vae_CA_2024    CA semapop_vae  3.0      True 0.3516 1.0000 0.0000
+semapop_vae_CA_2024    CA semapop_vae  5.0      True 0.3516 1.0000 0.0000
+semapop_vae_CA_2024    CA semapop_vae 10.0      True 0.3517 1.0000 0.0000
+semapop_vae_OH_2024    OH semapop_vae  1.5      True 0.2217 0.9924 0.0032
+semapop_vae_OH_2024    OH semapop_vae  2.0      True 0.2288 0.9975 0.0011
+semapop_vae_OH_2024    OH semapop_vae  3.0      True 0.2404 1.0000 0.0000
+semapop_vae_OH_2024    OH semapop_vae  5.0      True 0.2404 1.0000 0.0000
+semapop_vae_OH_2024    OH semapop_vae 10.0      True 0.2404 1.0000 0.0000
+semapop_vae_TX_2024    TX semapop_vae  1.5      True 0.2672 0.9978 0.0010
+semapop_vae_TX_2024    TX semapop_vae  2.0      True 0.2799 1.0000 0.0000
+semapop_vae_TX_2024    TX semapop_vae  3.0      True 0.2815 1.0000 0.0000
+semapop_vae_TX_2024    TX semapop_vae  5.0      True 0.2815 1.0000 0.0000
+semapop_vae_TX_2024    TX semapop_vae 10.0      True 0.2815 1.0000 0.0000
+    tabddpm_CA_2024    CA     tabddpm  1.5      True 0.3461 0.9912 0.0038
+    tabddpm_CA_2024    CA     tabddpm  2.0      True 0.3551 0.9962 0.0017
+    tabddpm_CA_2024    CA     tabddpm  3.0      True 0.3707 0.9999 0.0000
+    tabddpm_CA_2024    CA     tabddpm  5.0      True 0.3736 1.0000 0.0000
+    tabddpm_CA_2024    CA     tabddpm 10.0      True 0.3736 1.0000 0.0000
+      ttvae_CA_2024    CA       ttvae  1.5      True 0.3343 0.9938 0.0027
+      ttvae_CA_2024    CA       ttvae  2.0      True 0.3427 0.9977 0.0011
+      ttvae_CA_2024    CA       ttvae  3.0      True 0.3558 1.0000 0.0000
+      ttvae_CA_2024    CA       ttvae  5.0      True 0.3559 1.0000 0.0000
+      ttvae_CA_2024    CA       ttvae 10.0      True 0.3559 1.0000 0.0000
+      ttvae_OH_2024    OH       ttvae  1.5      True 0.2315 0.9943 0.0024
+      ttvae_OH_2024    OH       ttvae  2.0      True 0.2387 0.9985 0.0007
+      ttvae_OH_2024    OH       ttvae  3.0      True 0.2468 1.0000 0.0000
+      ttvae_OH_2024    OH       ttvae  5.0      True 0.2468 1.0000 0.0000
+      ttvae_OH_2024    OH       ttvae 10.0      True 0.2468 1.0000 0.0000
+      ttvae_TX_2024    TX       ttvae  1.5      True 0.2606 0.9974 0.0012
+      ttvae_TX_2024    TX       ttvae  2.0      True 0.2724 0.9999 0.0000
+      ttvae_TX_2024    TX       ttvae  3.0      True 0.2750 1.0000 0.0000
+      ttvae_TX_2024    TX       ttvae  5.0      True 0.2750 1.0000 0.0000
+      ttvae_TX_2024    TX       ttvae 10.0      True 0.2750 1.0000 0.0000
+state
+CA    0.373567
+OH    0.253806
+TX    0.281493
+Name: D, dtype: float64
+state  tau       model      D
+   CA  1.5 semapop_vae 0.3306
+   CA  2.0 semapop_vae 0.3388
+   CA  3.0 semapop_vae 0.3516
+   CA  5.0 semapop_vae 0.3516
+   CA 10.0 semapop_vae 0.3517
+   OH  1.5 semapop_vae 0.2217
+   OH  2.0 semapop_vae 0.2288
+   OH  3.0 semapop_vae 0.2404
+   OH  5.0 semapop_vae 0.2404
+   OH 10.0 semapop_vae 0.2404
+   TX  1.5       ttvae 0.2606
+   TX  2.0       ttvae 0.2724
+   TX  3.0       ttvae 0.2750
+   TX  5.0       ttvae 0.2750
+   TX 10.0       ttvae 0.2750

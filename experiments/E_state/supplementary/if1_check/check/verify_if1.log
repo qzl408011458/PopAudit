@@ -1,0 +1,106 @@
+{'state': 'CA', 'val_unique_within_val': 0.8329, 'val_unique_within_val_age5': 0.6706, 'val_distinct_per_row': 0.9061, 'train_distinct_per_row': 0.750125, 'val_match_in_train': np.float64(0.395), 'val_match_in_train_age5': np.float64(0.557), 'val_src_in_train': np.float64(0.1426), 'val_src_dup_within_val': 0.0388, 'match_share_shared_src': np.float64(0.3610126582278481), 'match_share_coincidental': np.float64(0.6389873417721519), 'val_coincidental_match': np.float64(0.2524), 'val_match_in_test': np.float64(0.8375), 'val_src_in_test': np.float64(0.6561), 'n_leakfree_val': 8574}
+CA Memorizer      r0 P=0.170 R=0.169 IF1=0.169 age5=0.333 lf=0.130 inTr=1.000 HM=0.983
+CA Real(test)     r0 P=0.172 R=0.166 IF1=0.169 age5=0.329 lf=0.160 inTr=0.393 HM=0.982
+CA Memorizer      r1 P=0.174 R=0.173 IF1=0.174 age5=0.337 lf=0.137 inTr=1.000 HM=0.981
+CA Real(test)     r1 P=0.175 R=0.164 IF1=0.169 age5=0.332 lf=0.161 inTr=0.395 HM=0.983
+CA Memorizer      r2 P=0.170 R=0.171 IF1=0.170 age5=0.336 lf=0.130 inTr=1.000 HM=0.981
+CA Real(test)     r2 P=0.166 R=0.166 IF1=0.166 age5=0.326 lf=0.157 inTr=0.394 HM=0.981
+CA WGAN-GP-ZCR    r0 P=0.082 R=0.086 IF1=0.084 age5=0.223 lf=0.081 inTr=0.181 HM=0.961
+CA WGAN-GP-ZCR    r1 P=0.081 R=0.087 IF1=0.084 age5=0.216 lf=0.082 inTr=0.179 HM=0.962
+CA WGAN-GP-ZCR    r2 P=0.087 R=0.091 IF1=0.089 age5=0.224 lf=0.086 inTr=0.191 HM=0.964
+CA SemaPop-VAE+   r0 P=0.124 R=0.128 IF1=0.126 age5=0.305 lf=0.117 inTr=0.372 HM=0.979
+CA SemaPop-VAE+   r1 P=0.128 R=0.129 IF1=0.129 age5=0.311 lf=0.120 inTr=0.376 HM=0.981
+CA SemaPop-VAE+   r2 P=0.124 R=0.129 IF1=0.126 age5=0.306 lf=0.117 inTr=0.379 HM=0.980
+CA TTVAE          r0 P=0.166 R=0.152 IF1=0.159 age5=0.320 lf=0.124 inTr=0.972 HM=0.976
+CA TTVAE          r1 P=0.172 R=0.154 IF1=0.163 age5=0.328 lf=0.125 inTr=0.973 HM=0.981
+CA TTVAE          r2 P=0.167 R=0.150 IF1=0.158 age5=0.319 lf=0.125 inTr=0.973 HM=0.979
+CA BN             r0 P=0.089 R=0.097 IF1=0.093 age5=0.245 lf=0.089 inTr=0.198 HM=0.957
+CA BN             r1 P=0.084 R=0.092 IF1=0.088 age5=0.250 lf=0.085 inTr=0.199 HM=0.965
+CA BN             r2 P=0.092 R=0.101 IF1=0.096 age5=0.242 lf=0.092 inTr=0.199 HM=0.962
+CA TabDDPM        r0 P=0.102 R=0.110 IF1=0.106 age5=0.271 lf=0.101 inTr=0.235 HM=0.977
+CA TabDDPM        r1 P=0.108 R=0.109 IF1=0.108 age5=0.276 lf=0.104 inTr=0.242 HM=0.977
+CA TabDDPM        r2 P=0.106 R=0.113 IF1=0.109 age5=0.276 lf=0.106 inTr=0.241 HM=0.979
+CA CTGAN          r0 P=0.076 R=0.089 IF1=0.082 age5=0.223 lf=0.080 inTr=0.174 HM=0.967
+CA CTGAN          r1 P=0.081 R=0.092 IF1=0.086 age5=0.222 lf=0.081 inTr=0.175 HM=0.958
+CA CTGAN          r2 P=0.086 R=0.094 IF1=0.090 age5=0.220 lf=0.087 inTr=0.183 HM=0.968
+[CA] 237s
+{'state': 'TX', 'val_unique_within_val': 0.7529, 'val_unique_within_val_age5': 0.5682, 'val_distinct_per_row': 0.8587, 'train_distinct_per_row': 0.66405, 'val_match_in_train': np.float64(0.5073), 'val_match_in_train_age5': np.float64(0.6611), 'val_src_in_train': np.float64(0.2145), 'val_src_dup_within_val': 0.0616, 'match_share_shared_src': np.float64(0.4228267297457126), 'match_share_coincidental': np.float64(0.5771732702542874), 'val_coincidental_match': np.float64(0.2928), 'val_match_in_test': np.float64(0.8529), 'val_src_in_test': np.float64(0.6568), 'n_leakfree_val': 7855}
+TX Memorizer      r0 P=0.245 R=0.244 IF1=0.245 age5=0.430 lf=0.180 inTr=1.000 HM=0.983
+TX Real(test)     r0 P=0.246 R=0.244 IF1=0.245 age5=0.434 lf=0.225 inTr=0.498 HM=0.981
+TX Memorizer      r1 P=0.245 R=0.246 IF1=0.245 age5=0.424 lf=0.183 inTr=1.000 HM=0.983
+TX Real(test)     r1 P=0.243 R=0.242 IF1=0.243 age5=0.428 lf=0.218 inTr=0.498 HM=0.983
+TX Memorizer      r2 P=0.245 R=0.250 IF1=0.248 age5=0.431 lf=0.184 inTr=1.000 HM=0.983
+TX Real(test)     r2 P=0.249 R=0.245 IF1=0.247 age5=0.433 lf=0.224 inTr=0.507 HM=0.983
+TX WGAN-GP-ZCR    r0 P=0.123 R=0.127 IF1=0.125 age5=0.268 lf=0.118 inTr=0.227 HM=0.955
+TX WGAN-GP-ZCR    r1 P=0.124 R=0.124 IF1=0.124 age5=0.273 lf=0.116 inTr=0.227 HM=0.955
+TX WGAN-GP-ZCR    r2 P=0.128 R=0.128 IF1=0.128 age5=0.268 lf=0.119 inTr=0.230 HM=0.952
+TX SemaPop-VAE+   r0 P=0.189 R=0.193 IF1=0.190 age5=0.400 lf=0.170 inTr=0.433 HM=0.980
+TX SemaPop-VAE+   r1 P=0.191 R=0.194 IF1=0.192 age5=0.401 lf=0.170 inTr=0.424 HM=0.980
+TX SemaPop-VAE+   r2 P=0.197 R=0.199 IF1=0.198 age5=0.405 lf=0.179 inTr=0.430 HM=0.981
+TX TTVAE          r0 P=0.237 R=0.218 IF1=0.227 age5=0.410 lf=0.173 inTr=1.000 HM=0.980
+TX TTVAE          r1 P=0.250 R=0.224 IF1=0.236 age5=0.415 lf=0.177 inTr=1.000 HM=0.981
+TX TTVAE          r2 P=0.245 R=0.227 IF1=0.235 age5=0.422 lf=0.178 inTr=1.000 HM=0.983
+TX BN             r0 P=0.118 R=0.135 IF1=0.126 age5=0.301 lf=0.118 inTr=0.231 HM=0.941
+TX BN             r1 P=0.124 R=0.138 IF1=0.130 age5=0.312 lf=0.118 inTr=0.243 HM=0.944
+TX BN             r2 P=0.120 R=0.141 IF1=0.130 age5=0.305 lf=0.121 inTr=0.232 HM=0.942
+TX TabDDPM        r0 P=0.161 R=0.175 IF1=0.168 age5=0.362 lf=0.157 inTr=0.298 HM=0.981
+TX TabDDPM        r1 P=0.160 R=0.172 IF1=0.166 age5=0.359 lf=0.152 inTr=0.299 HM=0.982
+TX TabDDPM        r2 P=0.154 R=0.166 IF1=0.160 age5=0.354 lf=0.148 inTr=0.300 HM=0.980
+TX CTGAN          r0 P=0.116 R=0.135 IF1=0.125 age5=0.288 lf=0.112 inTr=0.229 HM=0.952
+TX CTGAN          r1 P=0.121 R=0.138 IF1=0.129 age5=0.291 lf=0.119 inTr=0.226 HM=0.956
+TX CTGAN          r2 P=0.122 R=0.132 IF1=0.127 age5=0.285 lf=0.117 inTr=0.225 HM=0.951
+[TX] 178s
+{'state': 'OH', 'val_unique_within_val': 0.672, 'val_unique_within_val_age5': 0.4893, 'val_distinct_per_row': 0.8067, 'train_distinct_per_row': 0.5691, 'val_match_in_train': np.float64(0.6325), 'val_match_in_train_age5': np.float64(0.7585), 'val_src_in_train': np.float64(0.375), 'val_src_dup_within_val': 0.1223, 'match_share_shared_src': np.float64(0.5928853754940712), 'match_share_coincidental': np.float64(0.40711462450592883), 'val_coincidental_match': np.float64(0.2575), 'val_match_in_test': np.float64(0.7401), 'val_src_in_test': np.float64(0.5101), 'n_leakfree_val': 6250}
+OH Memorizer      r0 P=0.326 R=0.324 IF1=0.325 age5=0.509 lf=0.205 inTr=1.000 HM=0.983
+OH Real(test)     r0 P=0.323 R=0.322 IF1=0.323 age5=0.511 lf=0.268 inTr=0.633 HM=0.983
+OH Memorizer      r1 P=0.327 R=0.323 IF1=0.325 age5=0.510 lf=0.205 inTr=1.000 HM=0.983
+OH Real(test)     r1 P=0.334 R=0.332 IF1=0.333 age5=0.511 lf=0.273 inTr=0.634 HM=0.983
+OH Memorizer      r2 P=0.333 R=0.318 IF1=0.325 age5=0.509 lf=0.207 inTr=1.000 HM=0.983
+OH Real(test)     r2 P=0.332 R=0.326 IF1=0.329 age5=0.510 lf=0.272 inTr=0.638 HM=0.981
+OH WGAN-GP-ZCR    r0 P=0.141 R=0.152 IF1=0.147 age5=0.299 lf=0.130 inTr=0.251 HM=0.949
+OH WGAN-GP-ZCR    r1 P=0.144 R=0.147 IF1=0.146 age5=0.296 lf=0.132 inTr=0.262 HM=0.947
+OH WGAN-GP-ZCR    r2 P=0.145 R=0.155 IF1=0.150 age5=0.306 lf=0.134 inTr=0.260 HM=0.948
+OH SemaPop-VAE+   r0 P=0.220 R=0.234 IF1=0.227 age5=0.460 lf=0.194 inTr=0.450 HM=0.980
+OH SemaPop-VAE+   r1 P=0.225 R=0.233 IF1=0.229 age5=0.463 lf=0.190 inTr=0.447 HM=0.981
+OH SemaPop-VAE+   r2 P=0.218 R=0.228 IF1=0.223 age5=0.457 lf=0.189 inTr=0.441 HM=0.979
+OH TTVAE          r0 P=0.332 R=0.308 IF1=0.320 age5=0.504 lf=0.207 inTr=1.000 HM=0.980
+OH TTVAE          r1 P=0.325 R=0.300 IF1=0.312 age5=0.499 lf=0.202 inTr=1.000 HM=0.980
+OH TTVAE          r2 P=0.329 R=0.298 IF1=0.313 age5=0.506 lf=0.195 inTr=1.000 HM=0.980
+OH BN             r0 P=0.141 R=0.171 IF1=0.155 age5=0.351 lf=0.133 inTr=0.270 HM=0.940
+OH BN             r1 P=0.149 R=0.180 IF1=0.163 age5=0.360 lf=0.140 inTr=0.275 HM=0.954
+OH BN             r2 P=0.147 R=0.173 IF1=0.159 age5=0.354 lf=0.133 inTr=0.271 HM=0.940
+OH TabDDPM        r0 P=0.153 R=0.175 IF1=0.163 age5=0.344 lf=0.145 inTr=0.268 HM=0.934
+OH TabDDPM        r1 P=0.155 R=0.179 IF1=0.166 age5=0.351 lf=0.148 inTr=0.272 HM=0.941
+OH TabDDPM        r2 P=0.149 R=0.176 IF1=0.162 age5=0.338 lf=0.145 inTr=0.263 HM=0.928
+OH CTGAN          r0 P=0.149 R=0.171 IF1=0.159 age5=0.341 lf=0.143 inTr=0.263 HM=0.959
+OH CTGAN          r1 P=0.156 R=0.175 IF1=0.165 age5=0.338 lf=0.146 inTr=0.271 HM=0.965
+OH CTGAN          r2 P=0.147 R=0.177 IF1=0.161 age5=0.333 lf=0.143 inTr=0.254 HM=0.958
+[OH] 86s
+CA Spearman IF1 vs HM: 0.771 | IF1 vs IF1_leakfree: 0.943
+OH Spearman IF1 vs HM: 0.6 | IF1 vs IF1_leakfree: 1.0
+TX Spearman IF1 vs HM: 0.714 | IF1 vs IF1_leakfree: 0.943
+   state           gen  IF1_mean  IF1_std  IF1_age5_mean  IF1_leakfree_mean  in_train_mean  HM_mean
+0     CA     Memorizer     0.171    0.002          0.335              0.133          1.000    0.982
+1     CA    Real(test)     0.168    0.002          0.329              0.159          0.394    0.982
+2     CA   WGAN-GP-ZCR     0.086    0.003          0.221              0.083          0.184    0.963
+3     CA  SemaPop-VAE+     0.127    0.002          0.307              0.118          0.376    0.980
+4     CA         TTVAE     0.160    0.002          0.322              0.125          0.972    0.979
+5     CA            BN     0.092    0.004          0.245              0.088          0.198    0.961
+6     CA       TabDDPM     0.108    0.002          0.274              0.104          0.239    0.978
+7     CA         CTGAN     0.086    0.004          0.222              0.083          0.177    0.964
+8     TX     Memorizer     0.246    0.001          0.428              0.182          1.000    0.983
+9     TX    Real(test)     0.245    0.002          0.431              0.222          0.501    0.982
+10    TX   WGAN-GP-ZCR     0.126    0.002          0.270              0.118          0.228    0.954
+11    TX  SemaPop-VAE+     0.193    0.004          0.402              0.173          0.429    0.980
+12    TX         TTVAE     0.233    0.005          0.416              0.176          1.000    0.981
+13    TX            BN     0.129    0.002          0.306              0.119          0.235    0.942
+14    TX       TabDDPM     0.165    0.004          0.358              0.153          0.299    0.981
+15    TX         CTGAN     0.127    0.002          0.288              0.116          0.227    0.953
+16    OH     Memorizer     0.325    0.000          0.509              0.206          1.000    0.983
+17    OH    Real(test)     0.328    0.005          0.511              0.271          0.635    0.982
+18    OH   WGAN-GP-ZCR     0.147    0.002          0.300              0.132          0.258    0.948
+19    OH  SemaPop-VAE+     0.227    0.003          0.460              0.191          0.446    0.980
+20    OH         TTVAE     0.315    0.004          0.503              0.201          1.000    0.980
+21    OH            BN     0.159    0.004          0.355              0.136          0.272    0.945
+22    OH       TabDDPM     0.164    0.003          0.344              0.146          0.268    0.935
+23    OH         CTGAN     0.162    0.003          0.337              0.144          0.263    0.961

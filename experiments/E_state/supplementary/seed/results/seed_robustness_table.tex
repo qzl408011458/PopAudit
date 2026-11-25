@@ -1,0 +1,29 @@
+\begin{tabular}{lllll}
+\toprule
+ & Statistic or decision & Seed 42 & Seed 142 & Seed 242 \\
+\midrule
+\multicolumn{5}{l}{\emph{A. Cases closest to a threshold}}\\
+\texttt{TabDDPM}, OH, all horizons & invalid mass (tolerance \(0.005\)) & \(0.0048\) & \(0.0034\) & \(\mathbf{0.0052}\) \\
+\texttt{TabDDPM}, OH, 2018 & \(\overline{\chi}_H\) & \(4.54\) & \(\mathbf{5.42}\) & \(4.90\) \\
+\texttt{TabDDPM}, OH, 2024 & \(\overline{\chi}_H\) & \(\mathbf{5.11}\) & \(\mathbf{5.54}\) & \(\mathbf{5.44}\) \\
+\texttt{TabDDPM}, TX, 2024 & \(\overline{\chi}_H\) & \(\mathbf{5.10}\) & \(4.96\) & \(4.85\) \\
+\texttt{WGAN-GP-ZCR}, OH, 2018 & \(\overline{\chi}_H\) & \(4.54\) & \(\mathbf{6.06}\) & \(\mathbf{5.19}\) \\
+\texttt{WGAN-GP-ZCR}, CA, 2018 & \(\overline{\chi}_H\) & \(\mathbf{5.07}\) & \(\mathbf{5.47}\) & \(\mathbf{5.80}\) \\
+\texttt{SemaPop-VAE+}, CA, 2024 & \(\overline{\chi}_H\) & \(4.48\) & \(4.67\) & \(4.67\) \\
+\texttt{TTVAE}, CA, 2024 & \(\overline{\chi}_H\) & \(4.57\) & \(4.57\) & \(4.58\) \\
+\texttt{TabDDPM}, CA, 2024 & \(\overline{\chi}_H\) & \(4.67\) & \(4.71\) & \(4.52\) \\
+\midrule
+\multicolumn{5}{l}{\emph{B. Valid cases}}\\
+\multicolumn{2}{l}{45 regenerated cases} & 23 & 22 & 22 \\
+\multicolumn{2}{l}{all 81 cases} & 23 & 22 & 22 \\
+\multicolumn{2}{l}{\quad 2018 / 2021 / 2024} & 13/0/10 & 11/0/11 & 11/0/11 \\
+\midrule
+\multicolumn{5}{l}{\emph{C. Selected prior \(\theta^\dagger(S_H)\), residual \(D^\dagger(S_H)\), and flat decision at \(B_0=0.30\)}}\\
+CA 2018 & Deploy & \texttt{SemaPop-VAE+} 0.234 & \texttt{TTVAE} 0.234 & \texttt{SemaPop-VAE+} 0.229 \\
+OH 2018 & Deploy & \texttt{SemaPop-VAE+} 0.147 & \texttt{TTVAE} 0.156 & \texttt{SemaPop-VAE+} 0.150 \\
+TX 2018 & Deploy & \texttt{TTVAE} 0.142 & \texttt{TTVAE} 0.142 & \texttt{TTVAE} 0.142 \\
+CA 2024 & Defer & \texttt{SemaPop-VAE+} 0.321 (\(\gamma_{\min}=0.084\)) & \texttt{TTVAE} 0.324 (\(\gamma_{\min}=0.097\)) & \texttt{SemaPop-VAE+} 0.326 (\(\gamma_{\min}=0.104\)) \\
+OH 2024 & Deploy & \texttt{SemaPop-VAE+} 0.213 & \texttt{TTVAE} 0.223 & \texttt{SemaPop-VAE+} 0.221 \\
+TX 2024 & Deploy & \texttt{SemaPop-VAE+} 0.238 & \texttt{SemaPop-VAE+} 0.241 & \texttt{TTVAE} 0.243 \\
+\bottomrule
+\end{tabular}

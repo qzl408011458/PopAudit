@@ -1,0 +1,10 @@
+state,year,n_adm_prod,admitted_prod,theta_dagger_prod,D_dagger_prod,flat_prod,n_adm_fresh,admitted_fresh,theta_dagger_fresh,D_dagger_fresh,flat_fresh,same_selection
+CA,2018,4,bn;semapop_vae;tabddpm;ttvae,semapop_vae,0.23361427935962356,Deploy,4,bn;semapop_vae;tabddpm;ttvae,semapop_vae,0.23361427935962356,Deploy,True
+OH,2018,5,bn;semapop_vae;tabddpm;ttvae;wgan_zcr,semapop_vae,0.14705558964266827,Deploy,5,bn;semapop_vae;tabddpm;ttvae;wgan_zcr,semapop_vae,0.14705558964266827,Deploy,True
+TX,2018,4,bn;semapop_vae;tabddpm;ttvae,ttvae,0.14228661402579257,Deploy,4,bn;semapop_vae;tabddpm;ttvae,ttvae,0.14228661402579257,Deploy,True
+CA,2021,0,,,,Defer,0,,,,Defer,True
+OH,2021,0,,,,Defer,0,,,,Defer,True
+TX,2021,0,,,,Defer,0,,,,Defer,True
+CA,2024,4,bn;semapop_vae;tabddpm;ttvae,semapop_vae,0.3206514817325648,Defer,4,bn;semapop_vae;tabddpm;ttvae,semapop_vae,0.3206514817325648,Defer,True
+OH,2024,3,bn;semapop_vae;ttvae,semapop_vae,0.21326126121597844,Deploy,3,bn;semapop_vae;ttvae,semapop_vae,0.21326126121597844,Deploy,True
+TX,2024,3,bn;semapop_vae;ttvae,semapop_vae,0.23754109490127867,Deploy,3,bn;semapop_vae;ttvae,semapop_vae,0.23754109490127867,Deploy,True

@@ -1,0 +1,9 @@
+wrote fig_L2_commute_unprojectable (png+pdf)
+WFH by year (real/proj/prior %):
+      real  proj  prior
+year                   
+2018  2.44  1.91   1.91
+2021  8.06  5.58   1.96
+2024  6.31  3.66   1.96
+2024 commute discrepancy — PASS mean 0.032 | FAIL mean 0.035
+wrote fig_L2_wfh_unprojectable (single panel a, no title; png+pdf)

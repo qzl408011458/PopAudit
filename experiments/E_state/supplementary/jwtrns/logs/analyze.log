@@ -1,0 +1,97 @@
+prod: max|chi - cert| 4.838834566811556e-06  VALID match 36 /36
+
+== lr2rail
+      model state  year     chi_p       chi     dchi   cutoff      D_p        D        dD  VALID_p  VALID
+    tabddpm    CA  2021 10.301360 11.028988 0.727627 5.017042 0.269851 0.268909 -0.000942    False  False
+   wgan_zcr    CA  2021 11.377993 12.105554 0.727561 5.020543 0.301322 0.300203 -0.001119    False  False
+    flowsyn    CA  2021 13.130612 13.836520 0.705908 5.023410 0.361630 0.364871  0.003241    False  False
+      ttvae    CA  2021 10.104761 10.796758 0.691997 5.019024 0.245072 0.244224 -0.000848    False  False
+         bn    CA  2021 10.182994 10.874848 0.691854 5.012498 0.256980 0.256328 -0.000652    False  False
+semapop_vae    CA  2021  9.991464 10.681411 0.689946 5.017992 0.245780 0.245048 -0.000733    False  False
+
+== lr2subway
+      model state  year     chi_p       chi     dchi   cutoff      D_p        D        dD  VALID_p  VALID
+   wgan_zcr    CA  2021 11.377993 12.103387 0.725394 5.020537 0.301322 0.300229 -0.001093    False  False
+    tabddpm    CA  2021 10.301360 11.026719 0.725359 5.017044 0.269851 0.268944 -0.000907    False  False
+    flowsyn    CA  2021 13.130612 13.833894 0.703282 5.023412 0.361630 0.364884  0.003254    False  False
+      ttvae    CA  2021 10.104761 10.794003 0.689241 5.019019 0.245072 0.244265 -0.000807    False  False
+         bn    CA  2021 10.182994 10.871418 0.688424 5.012505 0.256980 0.256378 -0.000602    False  False
+semapop_vae    CA  2021  9.991464 10.679095 0.687631 5.017993 0.245780 0.245074 -0.000706    False  False
+
+== lr2rail_k13
+      model state  year     chi_p       chi      dchi   cutoff      D_p        D        dD  VALID_p  VALID
+    flowsyn    CA  2024  6.566280  6.567901  0.001621 5.014070 0.447304 0.447405  0.000101    False  False
+   wgan_zcr    CA  2021 11.377993 11.376565 -0.001428 5.019461 0.301322 0.301015 -0.000307    False  False
+    tabddpm    CA  2024  4.672671  4.674014  0.001343 5.010646 0.335255 0.335407  0.000152     True   True
+   wgan_zcr    CA  2024  5.345137  5.343966 -0.001170 5.012989 0.353421 0.352986 -0.000435    False  False
+semapop_vae    CA  2024  4.479175  4.480076  0.000901 5.011112 0.320651 0.321066  0.000414     True   True
+         bn    CA  2024  4.650860  4.651745  0.000885 5.007856 0.331911 0.332242  0.000331     True   True
+
+== lr2subway_k13
+   model state  year     chi_p       chi      dchi   cutoff      D_p        D        dD  VALID_p  VALID
+      bn    CA  2024  4.650860  4.645227 -0.005634 5.007872 0.331911 0.331670 -0.000241     True   True
+wgan_zcr    CA  2024  5.345137  5.340355 -0.004782 5.012979 0.353421 0.352656 -0.000765    False  False
+   ttvae    CA  2024  4.574370  4.570226 -0.004144 5.011282 0.324220 0.323996 -0.000224     True   True
+      bn    CA  2021 10.182994 10.179223 -0.003770 5.011931 0.256980 0.257041  0.000061    False  False
+wgan_zcr    CA  2021 11.377993 11.374564 -0.003429 5.019455 0.301322 0.301041 -0.000282    False  False
+   ttvae    CA  2021 10.104761 10.101588 -0.003173 5.018036 0.245072 0.245124  0.000052    False  False
+
+SUMMARY
+                              0          1            2              3
+variant                lr2rail  lr2subway  lr2rail_k13  lr2subway_k13
+n                           36         36           36             36
+n_commute                 [12]       [12]         [13]           [13]
+VALID                       10         10           10             10
+VALID_2021                   0          0            0              0
+VALID_2024                  10         10           10             10
+L2_flips                     0          0            0              0
+L3_flips                     0          0            0              0
+VALID_flips                  0          0            0              0
+rstar_changes                3          3            0              0
+dchi_min              0.176218   0.176281    -0.001428      -0.005634
+dchi_max              0.727627   0.725394     0.001621       0.000139
+absdchi_max           0.727627   0.725394     0.001621       0.005634
+absdD_max_all         0.006492   0.006493     0.000435       0.000765
+absdD_max_valid        0.00225   0.002498     0.000414       0.000596
+absdD_max_OHTX        0.006492   0.006493     0.000175       0.000119
+mu_out_max_valid       0.00066    0.00066     0.000568       0.000568
+absdKL_max            0.001242   0.001241      0.00002       0.000045
+absdnESS_max          0.003923   0.003922     0.000057       0.000117
+min_margin_to_cutoff  0.067318   0.071486      0.08066       0.080743
+
+SCENARIOS
+ state  year  n_valid  min_chi_L1       theta  D_dagger decision  gamma_min runner_up      gap          D_range       variant
+   CA  2021        0    9.991464         NaN       NaN      NaN        NaN       NaN      NaN              NaN          prod
+   CA  2024        4         NaN semapop_vae  0.320651    Defer   0.083878     ttvae 0.003568 (0.3207, 0.3353)          prod
+   OH  2021        0    5.808698         NaN       NaN      NaN        NaN       NaN      NaN              NaN          prod
+   OH  2024        3         NaN semapop_vae  0.213261   Deploy   0.000000     ttvae 0.010006  (0.2133, 0.231)          prod
+   TX  2021        0    6.887919         NaN       NaN      NaN        NaN       NaN      NaN              NaN          prod
+   TX  2024        3         NaN semapop_vae  0.237541   Deploy   0.000000     ttvae 0.005604 (0.2375, 0.2481)          prod
+   CA  2021        0   10.681411         NaN       NaN      NaN        NaN       NaN      NaN              NaN       lr2rail
+   CA  2024        4         NaN semapop_vae  0.319303    Defer   0.078401     ttvae 0.003420 (0.3193, 0.3335)       lr2rail
+   OH  2021        0    6.177798         NaN       NaN      NaN        NaN       NaN      NaN              NaN       lr2rail
+   OH  2024        3         NaN semapop_vae  0.211783   Deploy   0.000000     ttvae 0.010227 (0.2118, 0.2297)       lr2rail
+   TX  2021        0    7.319012         NaN       NaN      NaN        NaN       NaN      NaN              NaN       lr2rail
+   TX  2024        3         NaN semapop_vae  0.235291   Deploy   0.000000     ttvae 0.005817 (0.2353, 0.2462)       lr2rail
+   CA  2021        0   10.679095         NaN       NaN      NaN        NaN       NaN      NaN              NaN     lr2subway
+   CA  2024        4         NaN semapop_vae  0.318577    Defer   0.075452     ttvae 0.003633 (0.3186, 0.3328)     lr2subway
+   OH  2021        0    6.177789         NaN       NaN      NaN        NaN       NaN      NaN              NaN     lr2subway
+   OH  2024        3         NaN semapop_vae  0.211828   Deploy   0.000000     ttvae 0.010227 (0.2118, 0.2297)     lr2subway
+   TX  2021        0    7.319032         NaN       NaN      NaN        NaN       NaN      NaN              NaN     lr2subway
+   TX  2024        3         NaN semapop_vae  0.235415   Deploy   0.000000     ttvae 0.005749 (0.2354, 0.2463)     lr2subway
+   CA  2021        0    9.990867         NaN       NaN      NaN        NaN       NaN      NaN              NaN   lr2rail_k13
+   CA  2024        4         NaN semapop_vae  0.321066    Defer   0.085560     ttvae 0.003447 (0.3211, 0.3354)   lr2rail_k13
+   OH  2021        0    5.808700         NaN       NaN      NaN        NaN       NaN      NaN              NaN   lr2rail_k13
+   OH  2024        3         NaN semapop_vae  0.213261   Deploy   0.000000     ttvae 0.010006  (0.2133, 0.231)   lr2rail_k13
+   TX  2021        0    6.887819         NaN       NaN      NaN        NaN       NaN      NaN              NaN   lr2rail_k13
+   TX  2024        3         NaN semapop_vae  0.237469   Deploy   0.000000     ttvae 0.005598  (0.2375, 0.248)   lr2rail_k13
+   CA  2021        0    9.988729         NaN       NaN      NaN        NaN       NaN      NaN              NaN lr2subway_k13
+   CA  2024        4         NaN semapop_vae  0.320334    Defer   0.082589     ttvae 0.003662 (0.3203, 0.3347) lr2subway_k13
+   OH  2021        0    5.808692         NaN       NaN      NaN        NaN       NaN      NaN              NaN lr2subway_k13
+   OH  2024        3         NaN semapop_vae  0.213306   Deploy   0.000000     ttvae 0.010006 (0.2133, 0.2311) lr2subway_k13
+   TX  2021        0    6.887837         NaN       NaN      NaN        NaN       NaN      NaN              NaN lr2subway_k13
+   TX  2024        3         NaN semapop_vae  0.237592   Deploy   0.000000     ttvae 0.005530 (0.2376, 0.2481) lr2subway_k13
+
+[drop] spread across the three assignments over 36 cases (2018: 0):  max chi spread 0.7276  max D spread (all feasible) 0.00649  max D spread (valid in all) 0.00250  argmax chi spread ('tabddpm', 'CA', np.int64(2021))
+
+[k13] spread across the three assignments over 36 cases (2018: 0):  max chi spread 0.0065  max D spread (all feasible) 0.00077  max D spread (valid in all) 0.00075  argmax chi spread ('bn', 'CA', np.int64(2024))

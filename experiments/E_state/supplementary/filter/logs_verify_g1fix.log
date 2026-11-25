@@ -1,0 +1,32 @@
+state                 split      n  n_invalid
+   CA    traindata_pers.csv  40000          0
+   CA      valdata_pers.csv  10000          0
+   CA     testdata_pers.csv 330109          0
+   CA reference_2018_CA.csv 378817          0
+   CA reference_2021_CA.csv 386061          0
+   CA reference_2024_CA.csv 393725          0
+   TX    traindata_pers.csv  40000          0
+   TX      valdata_pers.csv  10000          0
+   TX     testdata_pers.csv 212756          0
+   TX reference_2018_TX.csv 268100          0
+   TX reference_2021_TX.csv 261446          0
+   TX reference_2024_TX.csv 292272          0
+   OH    traindata_pers.csv  40000          0
+   OH      valdata_pers.csv  10000          0
+   OH     testdata_pers.csv  64112          0
+   OH reference_2018_OH.csv 119086          0
+   OH reference_2021_OH.csv 119869          0
+   OH reference_2024_OH.csv 122052          0
+total records 3098405, total violations 0
+               files  identical  diag_match  resid  removed_mean
+model   state                                                   
+borysov CA        50         50          50      0      0.007963
+        OH        50         50          50      0      0.031777
+        TX        50         50          50      0      0.029230
+ctgan   CA        50         50          50      0      0.011912
+        OH        50         50          50      0      0.012614
+        TX        50         50          50      0      0.016093
+tvae    CA        50         50          50      0      0.011954
+        OH        50         50          50      0      0.010251
+        TX        50         50          50      0      0.010847
+ALL ENS VERIFIED: True

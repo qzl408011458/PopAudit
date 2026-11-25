@@ -1,0 +1,112 @@
+[18:39:50] ablation over 54 L1-pass cells (N=50000, K=8, <= 3 realizations)
+[18:40:01] done CA semapop_vae 2018: 8 evals
+[18:40:01] done CA flowsyn 2018: 8 evals
+[18:40:01] done CA bn 2018: 8 evals
+[18:40:01] done CA semapop_vae 2021: 8 evals
+[18:40:01] done CA flowsyn 2024: 8 evals
+[18:40:01] done CA flowsyn 2021: 8 evals
+[18:40:01] done CA bn 2021: 8 evals
+[18:40:01] done CA bn 2024: 8 evals
+[18:40:10] done CA ttvae 2021: 8 evals
+[18:40:10] done CA tabddpm 2018: 8 evals
+[18:40:11] done CA ttvae 2018: 8 evals
+[18:40:12] done CA ttvae 2024: 8 evals
+[18:40:12] done CA semapop_vae 2024: 8 evals
+[18:40:12] done CA tabddpm 2021: 8 evals
+[18:40:12] done CA wgan_zcr 2018: 8 evals
+[18:40:12] done CA tabddpm 2024: 8 evals
+[18:40:19] done CA wgan_zcr 2021: 8 evals
+[18:40:21] done OH bn 2018: 8 evals
+[18:40:21] done OH bn 2021: 8 evals
+[18:40:21] done OH bn 2024: 8 evals
+[18:40:21] done CA wgan_zcr 2024: 8 evals
+[18:40:21] done OH flowsyn 2018: 8 evals
+[18:40:21] done OH flowsyn 2021: 8 evals
+[18:40:21] done OH flowsyn 2024: 8 evals
+[18:40:29] done OH semapop_vae 2018: 8 evals
+[18:40:30] done OH semapop_vae 2021: 8 evals
+[18:40:30] done OH semapop_vae 2024: 8 evals
+[18:40:31] done OH tabddpm 2018: 8 evals
+[18:40:31] done OH ttvae 2021: 8 evals
+[18:40:31] done OH ttvae 2018: 8 evals
+[18:40:31] done OH tabddpm 2021: 8 evals
+[18:40:31] done OH tabddpm 2024: 8 evals
+[18:40:38] done OH ttvae 2024: 8 evals
+[18:40:39] done OH wgan_zcr 2018: 8 evals
+[18:40:39] done OH wgan_zcr 2021: 8 evals
+[18:40:39] done OH wgan_zcr 2024: 8 evals
+[18:40:41] done TX bn 2018: 8 evals
+[18:40:41] done TX flowsyn 2018: 8 evals
+[18:40:41] done TX bn 2021: 8 evals
+[18:40:41] done TX bn 2024: 8 evals
+[18:40:48] done TX flowsyn 2021: 8 evals
+[18:40:49] done TX flowsyn 2024: 8 evals
+[18:40:49] done TX semapop_vae 2018: 8 evals
+[18:40:49] done TX semapop_vae 2021: 8 evals
+[18:40:50] done TX tabddpm 2018: 8 evals
+[18:40:50] done TX tabddpm 2021: 8 evals
+[18:40:50] done TX tabddpm 2024: 8 evals
+[18:40:51] done TX semapop_vae 2024: 8 evals
+[18:40:58] done TX ttvae 2018: 8 evals
+[18:40:59] done TX ttvae 2021: 8 evals
+[18:40:59] done TX ttvae 2024: 8 evals
+[18:40:59] done TX wgan_zcr 2018: 8 evals
+[18:41:00] done TX wgan_zcr 2021: 8 evals
+[18:41:00] done TX wgan_zcr 2024: 8 evals
+
+[18:41:00] wrote ablation_results.csv (54 cells)
+state       model  year  L2pass  L2_chi_H  SRMSE_U_mean  SRMSE_B_mean  SRMSE_M_mean  SRMSE_J_mean  Recall_mean  F1_mean
+   CA          bn  2018    True    3.0326        0.0375        0.1309        0.0341        2.6430      88.2913  86.9580
+   CA          bn  2021   False   10.1830        0.0394        0.1317        0.0345        2.7858      88.0285  86.7378
+   CA          bn  2024    True    4.6509        0.0478        0.1474        0.0385        2.9499      88.2283  86.8076
+   CA     flowsyn  2018   False    9.6539        0.0554        0.1376        0.0396        2.6659      86.9255  85.6936
+   CA     flowsyn  2021   False   13.1306        0.0549        0.1412        0.0401        2.8722      86.7075  85.4454
+   CA     flowsyn  2024   False    6.5663        0.0657        0.1582        0.0439        3.0791      86.9813  85.4970
+   CA semapop_vae  2018    True    2.9219        0.0377        0.0868        0.0245        1.2932      87.3983  87.1476
+   CA semapop_vae  2021   False    9.9915        0.0389        0.1007        0.0289        1.7353      86.4210  86.4773
+   CA semapop_vae  2024    True    4.4792        0.0480        0.1106        0.0308        1.8331      86.9890  86.7546
+   CA     tabddpm  2018    True    2.8353        0.0397        0.0915        0.0272        1.7280      89.1155  87.0444
+   CA     tabddpm  2021   False   10.3014        0.0410        0.1057        0.0297        2.0424      88.6393  86.5092
+   CA     tabddpm  2024    True    4.6727        0.0479        0.1146        0.0323        2.1571      88.9860  86.7686
+   CA       ttvae  2018    True    2.8451        0.0377        0.0857        0.0245        1.1659      84.8900  86.3542
+   CA       ttvae  2021   False   10.1048        0.0390        0.1006        0.0294        1.6128      83.3198  85.2759
+   CA       ttvae  2024    True    4.5744        0.0477        0.1092        0.0313        1.7162      84.2630  85.7888
+   CA    wgan_zcr  2018   False    5.0660        0.0426        0.1181        0.0385        2.9676      85.0440  84.4570
+   CA    wgan_zcr  2021   False   11.3780        0.0437        0.1293        0.0399        3.2295      84.5290  84.2267
+   CA    wgan_zcr  2024   False    5.3451        0.0513        0.1402        0.0429        3.3544      84.9308  84.2600
+   OH          bn  2018    True    1.5826        0.0258        0.1188        0.0383        2.0382      89.0625  88.3668
+   OH          bn  2021   False    5.9731        0.0349        0.1326        0.0423        2.1844      88.4343  87.4479
+   OH          bn  2024    True    4.1430        0.0358        0.1311        0.0425        2.3351      88.8285  87.6102
+   OH     flowsyn  2018   False    8.8125        0.0560        0.1513        0.0481        2.0054      89.3610  89.0160
+   OH     flowsyn  2021   False   10.9274        0.0500        0.1454        0.0466        2.0721      88.8760  88.4895
+   OH     flowsyn  2024   False    8.1199        0.0618        0.1572        0.0510        2.2874      88.6500  88.2817
+   OH semapop_vae  2018    True    1.2711        0.0244        0.0801        0.0262        0.9992      88.7925  89.4990
+   OH semapop_vae  2021   False    5.8787        0.0320        0.1020        0.0311        1.3727      87.3123  88.3392
+   OH semapop_vae  2024    True    4.0399        0.0328        0.1043        0.0331        1.5394      87.8953  88.6106
+   OH     tabddpm  2018    True    4.5447        0.0366        0.1212        0.0405        2.2685      89.5495  86.0830
+   OH     tabddpm  2021   False    7.3853        0.0391        0.1277        0.0423        2.4315      89.0000  85.4099
+   OH     tabddpm  2024   False    5.1102        0.0441        0.1314        0.0430        2.5196      88.9383  85.3597
+   OH       ttvae  2018    True    1.3386        0.0254        0.0852        0.0281        1.0328      87.0278  88.9348
+   OH       ttvae  2021   False    5.8087        0.0325        0.0994        0.0322        1.3410      85.6445  88.0860
+   OH       ttvae  2024    True    3.9926        0.0335        0.1050        0.0346        1.5245      85.7518  87.8402
+   OH    wgan_zcr  2018    True    4.5430        0.0359        0.1454        0.0511        2.8032      82.7275  84.1966
+   OH    wgan_zcr  2021   False    7.5688        0.0417        0.1571        0.0545        3.0419      81.4570  83.1372
+   OH    wgan_zcr  2024   False    5.3047        0.0448        0.1601        0.0545        3.0964      81.9525  83.4655
+   TX          bn  2018    True    2.3949        0.0229        0.1219        0.0364        2.4356      89.2180  86.9361
+   TX          bn  2021   False    7.0448        0.0275        0.1266        0.0383        2.5980      88.6993  86.3283
+   TX          bn  2024    True    4.2793        0.0378        0.1335        0.0392        2.6902      88.1148  86.2366
+   TX     flowsyn  2018   False    8.9528        0.0404        0.1089        0.0339        1.8599      88.7483  87.7291
+   TX     flowsyn  2021   False   11.0600        0.0469        0.1176        0.0358        2.0102      87.5645  86.8287
+   TX     flowsyn  2024   False    8.3054        0.0599        0.1315        0.0401        2.2419      87.4528  86.9447
+   TX semapop_vae  2018    True    2.7276        0.0221        0.0669        0.0214        0.9833      89.0948  89.4551
+   TX semapop_vae  2021   False    7.1006        0.0267        0.0800        0.0253        1.2891      87.8925  88.6604
+   TX semapop_vae  2024    True    4.3338        0.0371        0.0904        0.0276        1.5064      87.7268  88.5992
+   TX     tabddpm  2018    True    3.1496        0.0219        0.0756        0.0244        1.4358      90.6683  89.0648
+   TX     tabddpm  2021   False    7.8605        0.0254        0.0878        0.0270        1.6204      89.9380  88.4736
+   TX     tabddpm  2024   False    5.0968        0.0372        0.0976        0.0284        1.8181      89.5575  88.4205
+   TX       ttvae  2018    True    2.1690        0.0219        0.0693        0.0220        0.9675      87.2463  88.8937
+   TX       ttvae  2021   False    6.8879        0.0270        0.0837        0.0256        1.2447      85.7063  87.8680
+   TX       ttvae  2024    True    4.1367        0.0373        0.0936        0.0288        1.4652      85.6113  87.8685
+   TX    wgan_zcr  2018   False   11.0218        0.0316        0.1126        0.0413        2.6907      86.1745  85.7763
+   TX    wgan_zcr  2021   False   12.1207        0.0365        0.1218        0.0441        2.9368      84.7830  84.7276
+   TX    wgan_zcr  2024   False    8.8261        0.0464        0.1342        0.0466        3.2277      84.5090  84.7159

@@ -1,0 +1,4 @@
+num_cols: ['Age', 'Household_Size', 'Number_of_children', 'Number_of_cars_of_household']
+cat_cols: ['Region_Category', 'Gender', 'Marital_status',
+       'Employment_status', 'Studenthood_status', 'Household_Type',
+       'Commute_Mode', 'Personal_Income_Class', 'Household_Income_Class']

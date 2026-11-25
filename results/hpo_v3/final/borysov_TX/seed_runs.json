@@ -1,0 +1,113 @@
+[
+  {
+    "seed": 42,
+    "run_name": "borysov_TX_final_s42",
+    "run_dir": "<POPAUDIT_HPO>/final/borysov_TX/borysov_TX_final_s42",
+    "seconds": 537.8,
+    "returncode": 0,
+    "timed_out": false,
+    "log": "<POPAUDIT_HPO>/logs/borysov_TX/final_s42.log",
+    "val_metrics": {
+      "srmse_1": 0.18406977940882088,
+      "srmse_2": 0.5551190182786464,
+      "block_f1_demographic": 0.8277248326124311,
+      "block_precision_demographic": 0.7272,
+      "block_recall_demographic": 0.9605,
+      "block_f1_household": 0.8473377707712969,
+      "block_precision_household": 0.7685,
+      "block_recall_household": 0.9442,
+      "block_f1_commute": 0.999549797408834,
+      "block_precision_commute": 1.0,
+      "block_recall_commute": 0.9991,
+      "block_f1": 0.891537466930854
+    },
+    "val_objective": -0.36959439884373363,
+    "reference_metrics": {
+      "n_reference": 212756,
+      "n_generated": 10000,
+      "srmse_1": 0.17964342191545368,
+      "srmse_2": 0.5384035057767347,
+      "block_f1_demographic": 0.8943806826746509,
+      "block_f1_household": 0.8973777681895792,
+      "block_f1_commute": 0.9995979696290741,
+      "block_f1": 0.9304521401644347
+    },
+    "reference_objective": -0.3590234638460942,
+    "val_minus_reference": -0.010570934997639447,
+    "trainer_wall_clock_s": 485.28
+  },
+  {
+    "seed": 142,
+    "run_name": "borysov_TX_final_s142",
+    "run_dir": "<POPAUDIT_HPO>/final/borysov_TX/borysov_TX_final_s142",
+    "seconds": 490.6,
+    "returncode": 0,
+    "timed_out": false,
+    "log": "<POPAUDIT_HPO>/logs/borysov_TX/final_s142.log",
+    "val_metrics": {
+      "srmse_1": 0.14468348649841814,
+      "srmse_2": 0.46557412173511187,
+      "block_f1_demographic": 0.8582903943726937,
+      "block_precision_demographic": 0.7793,
+      "block_recall_demographic": 0.9551,
+      "block_f1_household": 0.8365198938992043,
+      "block_precision_household": 0.7485,
+      "block_recall_household": 0.948,
+      "block_f1_commute": 0.9995998399359743,
+      "block_precision_commute": 1.0,
+      "block_recall_commute": 0.9992,
+      "block_f1": 0.8981367094026241
+    },
+    "val_objective": -0.305128804116765,
+    "reference_metrics": {
+      "n_reference": 212756,
+      "n_generated": 10000,
+      "srmse_1": 0.14061768507728012,
+      "srmse_2": 0.44882447469913167,
+      "block_f1_demographic": 0.9149746735166749,
+      "block_f1_household": 0.8834695786221535,
+      "block_f1_commute": 0.9996873376447827,
+      "block_f1": 0.9327105299278703
+    },
+    "reference_objective": -0.2947210798882059,
+    "val_minus_reference": -0.010407724228559123,
+    "trainer_wall_clock_s": 488.64
+  },
+  {
+    "seed": 242,
+    "run_name": "borysov_TX_final_s242",
+    "run_dir": "<POPAUDIT_HPO>/final/borysov_TX/borysov_TX_final_s242",
+    "seconds": 493.9,
+    "returncode": 0,
+    "timed_out": false,
+    "log": "<POPAUDIT_HPO>/logs/borysov_TX/final_s242.log",
+    "val_metrics": {
+      "srmse_1": 0.1439106033663994,
+      "srmse_2": 0.4888924596695268,
+      "block_f1_demographic": 0.8321013491124261,
+      "block_precision_demographic": 0.7406,
+      "block_recall_demographic": 0.9494,
+      "block_f1_household": 0.8303321678321679,
+      "block_precision_household": 0.7375,
+      "block_recall_household": 0.9499,
+      "block_f1_commute": 0.9995998399359743,
+      "block_precision_commute": 1.0,
+      "block_recall_commute": 0.9992,
+      "block_f1": 0.8873444522935228
+    },
+    "val_objective": -0.31640153151796313,
+    "reference_metrics": {
+      "n_reference": 212756,
+      "n_generated": 10000,
+      "srmse_1": 0.13946614301189278,
+      "srmse_2": 0.47274608182975847,
+      "block_f1_demographic": 0.9006994349803162,
+      "block_f1_household": 0.8768255681889083,
+      "block_f1_commute": 0.9996873376447827,
+      "block_f1": 0.9257374469380024
+    },
+    "reference_objective": -0.30610611242082564,
+    "val_minus_reference": -0.010295419097137493,
+    "trainer_wall_clock_s": 491.77
+  }
+]

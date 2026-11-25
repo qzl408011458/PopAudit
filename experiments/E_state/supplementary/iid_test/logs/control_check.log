@@ -1,0 +1,4 @@
+                       cell  json_fields  json_max_abs_diff  csv_cells  csv_max_abs_diff missing     marg      dep      cov      inv
+layer1_paper_semapop_vae_CA           35                0.0       3518               0.0         0.005915 0.012968 0.986289 0.000098
+       layer1_paper_tvae_OH           35                0.0       3518               0.0         0.073088 0.144753 0.791661 0.010251
+MAX json 0.0 MAX csv 0.0

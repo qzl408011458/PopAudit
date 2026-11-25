@@ -1,0 +1,5 @@
+model,L1,L2,VALID
+ctgan_filt,0,3,6
+tvae_filt,9,0,0
+borysov_filt,6,3,0
+ctgan_ctrl,3,0,0

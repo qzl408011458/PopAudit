@@ -1,0 +1,7 @@
+k_inv,n_L1_reject,n_valid,per_model,max_R2MA
+0.005,27,23,"{'bn': 6, 'semapop_vae': 6, 'tabddpm': 4, 'ttvae': 6, 'wgan_zcr': 1}",1.04267
+0.0075,27,23,"{'bn': 6, 'semapop_vae': 6, 'tabddpm': 4, 'ttvae': 6, 'wgan_zcr': 1}",1.04267
+0.01,24,23,"{'bn': 6, 'semapop_vae': 6, 'tabddpm': 4, 'ttvae': 6, 'wgan_zcr': 1}",1.04267
+0.015,18,27,"{'bn': 6, 'ctgan': 4, 'semapop_vae': 6, 'tabddpm': 4, 'ttvae': 6, 'wgan_zcr': 1}",1.04267
+0.02,15,29,"{'bn': 6, 'ctgan': 6, 'semapop_vae': 6, 'tabddpm': 4, 'ttvae': 6, 'wgan_zcr': 1}",1.04267
+0.03,15,29,"{'bn': 6, 'ctgan': 6, 'semapop_vae': 6, 'tabddpm': 4, 'ttvae': 6, 'wgan_zcr': 1}",1.04267

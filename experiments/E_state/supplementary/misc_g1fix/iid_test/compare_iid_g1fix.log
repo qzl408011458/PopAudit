@@ -1,0 +1,61 @@
+pairs                                  27
+l1_pass_pairs_prod                     18
+l1_pass_pairs_fresh                    18
+l1_fail_pairs_prod                      9
+l1_fail_pairs_fresh                     9
+same_pass_set                        True
+flips                                    
+l1_pass_cases_of_81_prod               54
+l1_pass_cases_of_81_fresh              54
+valid_of_81_prod                       23
+valid_of_81_fresh                      23
+same_valid_set                       True
+selected_unchanged                   True
+max_abs_dmarg                    0.001738
+max_abs_ddep                     0.001301
+max_abs_d1mcov                   0.002714
+max_abs_dinv                          0.0
+max_abs_dcut                          0.0
+min_slack_prod_among_passers      0.00699
+min_slack_fresh_among_passers    0.007462
+mean_dmarg                       -0.00017
+mean_ddep                       -0.000093
+mean_d1mcov                      0.000144
+        tag state  marg_prod  marg_fresh  dep_prod  dep_fresh  one_minus_cov_prod  one_minus_cov_fresh  invalid_fresh  cut_marg_fresh  accept_prod  accept_fresh failed_fresh_all_gates  min_slack_prod  min_slack_fresh
+semapop_vae    CA    0.00592     0.00606   0.01297    0.01325             0.01371              0.01360        0.00010         0.04954         True          True                                0.04362          0.04348
+semapop_vae    TX    0.00794     0.00712   0.01714    0.01602             0.01090              0.01032        0.00021         0.04943         True          True                                0.04148          0.04231
+semapop_vae    OH    0.00739     0.00657   0.01606    0.01556             0.01157              0.01265        0.00038         0.04896         True          True                                0.04157          0.04238
+      ttvae    CA    0.00526     0.00519   0.01116    0.01125             0.07696              0.07676        0.00000         0.04954         True          True                                0.04428          0.04435
+      ttvae    TX    0.00419     0.00397   0.01004    0.00990             0.05515              0.05493        0.00000         0.04943         True          True                                0.04524          0.04546
+      ttvae    OH    0.00670     0.00614   0.01312    0.01303             0.03998              0.03977        0.00000         0.04896         True          True                                0.04226          0.04282
+         bn    CA    0.00647     0.00667   0.02606    0.02662             0.00229              0.00239        0.00010         0.04954         True          True                                0.04307          0.04287
+         bn    TX    0.00424     0.00446   0.02089    0.02104             0.00196              0.00189        0.00011         0.04943         True          True                                0.04518          0.04496
+         bn    OH    0.00933     0.00856   0.03343    0.03213             0.00370              0.00356        0.00314         0.04896         True          True                                0.03962          0.04040
+   wgan_zcr    CA    0.02153     0.02104   0.04286    0.04296             0.01377              0.01370        0.00048         0.04954         True          True                                0.02801          0.02850
+   wgan_zcr    TX    0.02785     0.02823   0.05391    0.05426             0.01507              0.01493        0.00154         0.04943         True          True                                0.02158          0.02119
+   wgan_zcr    OH    0.02633     0.02720   0.05710    0.05835             0.04027              0.04083        0.00079         0.04896         True          True                                0.02263          0.02175
+      ctgan    CA    0.01026     0.00981   0.02656    0.02659             0.01594              0.01562        0.01191         0.04954        False         False                    inv         0.03928          0.03973
+      ctgan    TX    0.01127     0.01075   0.02924    0.02900             0.01529              0.01511        0.01609         0.04943        False         False                    inv         0.03816          0.03868
+      ctgan    OH    0.01063     0.00911   0.02970    0.02933             0.01402              0.01527        0.01261         0.04896        False         False                    inv         0.03833          0.03985
+    flowsyn    CA    0.03048     0.03120   0.05660    0.05630             0.01006              0.01001        0.00283         0.04954         True          True                                0.01906          0.01834
+    flowsyn    TX    0.03512     0.03527   0.05294    0.05301             0.00634              0.00591        0.00378         0.04943         True          True                                0.01431          0.01416
+    flowsyn    OH    0.04197     0.04149   0.06271    0.06194             0.01011              0.01140        0.00066         0.04896         True          True                                0.00699          0.00746
+    borysov    CA    0.04522     0.04531   0.08337    0.08324             0.00854              0.00850        0.00796         0.04954        False         False                    inv         0.00432          0.00423
+    borysov    TX    0.07692     0.07687   0.14442    0.14415             0.00301              0.00256        0.02923         0.04943        False         False           inv,marg,dep        -0.04499         -0.04472
+    borysov    OH    0.06695     0.06653   0.14066    0.14020             0.00499              0.00493        0.03178         0.04896        False         False           inv,marg,dep        -0.04170         -0.04124
+    tabddpm    CA    0.01318     0.01300   0.02627    0.02635             0.00300              0.00302        0.00046         0.04954         True          True                                0.03636          0.03654
+    tabddpm    TX    0.01378     0.01440   0.02633    0.02710             0.00165              0.00166        0.00119         0.04943         True          True                                0.03565          0.03503
+    tabddpm    OH    0.03021     0.02847   0.05452    0.05359             0.00374              0.00387        0.00484         0.04896         True          True                                0.01875          0.02049
+       tvae    CA    0.07145     0.07178   0.14509    0.14470             0.16012              0.16052        0.01195         0.04954        False         False           inv,marg,dep        -0.04555         -0.04516
+       tvae    TX    0.05349     0.05342   0.10714    0.10692             0.09522              0.09479        0.01085         0.04943        False         False           inv,marg,dep        -0.00771         -0.00749
+       tvae    OH    0.07309     0.07395   0.14475    0.14574             0.20834              0.21105        0.01025         0.04896        False         False           inv,marg,dep        -0.04580         -0.04679
+state  year  n_adm_prod                         admitted_prod theta_dagger_prod  D_dagger_prod flat_prod  n_adm_fresh                        admitted_fresh theta_dagger_fresh  D_dagger_fresh flat_fresh  same_selection
+   CA  2018           4          bn;semapop_vae;tabddpm;ttvae       semapop_vae       0.233614    Deploy            4          bn;semapop_vae;tabddpm;ttvae        semapop_vae        0.233614     Deploy            True
+   OH  2018           5 bn;semapop_vae;tabddpm;ttvae;wgan_zcr       semapop_vae       0.147056    Deploy            5 bn;semapop_vae;tabddpm;ttvae;wgan_zcr        semapop_vae        0.147056     Deploy            True
+   TX  2018           4          bn;semapop_vae;tabddpm;ttvae             ttvae       0.142287    Deploy            4          bn;semapop_vae;tabddpm;ttvae              ttvae        0.142287     Deploy            True
+   CA  2021           0                                                    None            NaN     Defer            0                                                     None             NaN      Defer            True
+   OH  2021           0                                                    None            NaN     Defer            0                                                     None             NaN      Defer            True
+   TX  2021           0                                                    None            NaN     Defer            0                                                     None             NaN      Defer            True
+   CA  2024           4          bn;semapop_vae;tabddpm;ttvae       semapop_vae       0.320651     Defer            4          bn;semapop_vae;tabddpm;ttvae        semapop_vae        0.320651      Defer            True
+   OH  2024           3                  bn;semapop_vae;ttvae       semapop_vae       0.213261    Deploy            3                  bn;semapop_vae;ttvae        semapop_vae        0.213261     Deploy            True
+   TX  2024           3                  bn;semapop_vae;ttvae       semapop_vae       0.237541    Deploy            3                  bn;semapop_vae;ttvae        semapop_vae        0.237541     Deploy            True

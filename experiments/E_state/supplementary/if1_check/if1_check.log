@@ -1,0 +1,103 @@
+[CA] split stats: {'state': 'CA', 'n_train': 40000, 'n_val': 10000, 'n_test': 330109, 'val_tuple_unique_within_val': 0.8329, 'val_distinct_tuples_per_row': 0.9061, 'train_distinct_tuples_per_row': 0.750125, 'val_exact_match_in_train': 0.395, 'val_source_person_in_train': 0.1426, 'val_source_person_dup_within_val': 0.0388, 'match_explained_by_shared_source': 0.3610126582278481, 'match_coincidental': 0.6389873417721519, 'val_exact_match_in_train_excl_shared_source': 0.2524, 'val_exact_match_in_test': 0.8375, 'val_source_person_in_test': 0.6561, 'val_tuple_unique_within_val_age5': 0.6706, 'val_exact_match_in_train_age5': 0.557}
+  CA Memorizer (train subsample)    r0 P=0.171 R=0.167 IF1=0.169 inTrain=1.000 HM=0.982 IF1pop=0.536
+  CA Real (test subsample)          r0 P=0.168 R=0.164 IF1=0.166 inTrain=0.397 HM=0.982 IF1pop=nan
+  CA Memorizer (train subsample)    r1 P=0.179 R=0.175 IF1=0.177 inTrain=1.000 HM=0.982 IF1pop=0.536
+  CA Real (test subsample)          r1 P=0.174 R=0.170 IF1=0.172 inTrain=0.397 HM=0.982 IF1pop=nan
+  CA Memorizer (train subsample)    r2 P=0.173 R=0.171 IF1=0.172 inTrain=1.000 HM=0.982 IF1pop=0.536
+  CA Real (test subsample)          r2 P=0.163 R=0.161 IF1=0.162 inTrain=0.390 HM=0.980 IF1pop=nan
+  CA WGAN-GP-ZCR                    r0 P=0.084 R=0.090 IF1=0.087 inTrain=0.185 HM=0.966 IF1pop=0.383
+  CA WGAN-GP-ZCR                    r1 P=0.083 R=0.087 IF1=0.085 inTrain=0.184 HM=0.967 IF1pop=0.383
+  CA WGAN-GP-ZCR                    r2 P=0.084 R=0.089 IF1=0.087 inTrain=0.184 HM=0.964 IF1pop=0.383
+  CA SemaPop-VAE+                   r0 P=0.128 R=0.129 IF1=0.128 inTrain=0.366 HM=0.980 IF1pop=0.528
+  CA SemaPop-VAE+                   r1 P=0.125 R=0.127 IF1=0.126 inTrain=0.370 HM=0.980 IF1pop=0.529
+  CA SemaPop-VAE+                   r2 P=0.124 R=0.129 IF1=0.126 inTrain=0.369 HM=0.979 IF1pop=0.528
+  CA TTVAE                          r0 P=0.164 R=0.151 IF1=0.157 inTrain=0.973 HM=0.980 IF1pop=0.530
+  CA TTVAE                          r1 P=0.169 R=0.151 IF1=0.160 inTrain=0.972 HM=0.980 IF1pop=0.530
+  CA TTVAE                          r2 P=0.175 R=0.160 IF1=0.167 inTrain=0.972 HM=0.980 IF1pop=0.530
+  CA BN                             r0 P=0.093 R=0.099 IF1=0.096 inTrain=0.202 HM=0.964 IF1pop=0.422
+  CA BN                             r1 P=0.088 R=0.096 IF1=0.092 inTrain=0.194 HM=0.958 IF1pop=0.422
+  CA BN                             r2 P=0.085 R=0.093 IF1=0.089 inTrain=0.195 HM=0.960 IF1pop=0.423
+  CA TabDDPM                        r0 P=0.112 R=0.117 IF1=0.115 inTrain=0.243 HM=0.980 IF1pop=0.474
+  CA TabDDPM                        r1 P=0.114 R=0.118 IF1=0.116 inTrain=0.238 HM=0.978 IF1pop=0.475
+  CA TabDDPM                        r2 P=0.112 R=0.113 IF1=0.112 inTrain=0.242 HM=0.979 IF1pop=0.476
+  CA CTGAN                          r0 P=0.081 R=0.087 IF1=0.083 inTrain=0.182 HM=0.967 IF1pop=0.392
+  CA CTGAN                          r1 P=0.081 R=0.093 IF1=0.086 inTrain=0.181 HM=0.967 IF1pop=0.392
+  CA CTGAN                          r2 P=0.084 R=0.092 IF1=0.088 inTrain=0.183 HM=0.966 IF1pop=0.392
+[CA] done in 108s
+[TX] split stats: {'state': 'TX', 'n_train': 40000, 'n_val': 10000, 'n_test': 212756, 'val_tuple_unique_within_val': 0.7529, 'val_distinct_tuples_per_row': 0.8587, 'train_distinct_tuples_per_row': 0.66405, 'val_exact_match_in_train': 0.5073, 'val_source_person_in_train': 0.2145, 'val_source_person_dup_within_val': 0.0616, 'match_explained_by_shared_source': 0.4228267297457126, 'match_coincidental': 0.5771732702542874, 'val_exact_match_in_train_excl_shared_source': 0.2928, 'val_exact_match_in_test': 0.8529, 'val_source_person_in_test': 0.6568, 'val_tuple_unique_within_val_age5': 0.5682, 'val_exact_match_in_train_age5': 0.6611}
+  TX Memorizer (train subsample)    r0 P=0.250 R=0.243 IF1=0.247 inTrain=1.000 HM=0.983 IF1pop=0.632
+  TX Real (test subsample)          r0 P=0.245 R=0.241 IF1=0.243 inTrain=0.513 HM=0.983 IF1pop=nan
+  TX Memorizer (train subsample)    r1 P=0.246 R=0.247 IF1=0.246 inTrain=1.000 HM=0.984 IF1pop=0.632
+  TX Real (test subsample)          r1 P=0.249 R=0.246 IF1=0.248 inTrain=0.510 HM=0.978 IF1pop=nan
+  TX Memorizer (train subsample)    r2 P=0.246 R=0.241 IF1=0.244 inTrain=1.000 HM=0.984 IF1pop=0.632
+  TX Real (test subsample)          r2 P=0.247 R=0.246 IF1=0.246 inTrain=0.496 HM=0.983 IF1pop=nan
+  TX WGAN-GP-ZCR                    r0 P=0.123 R=0.129 IF1=0.126 inTrain=0.238 HM=0.956 IF1pop=0.388
+  TX WGAN-GP-ZCR                    r1 P=0.120 R=0.120 IF1=0.120 inTrain=0.224 HM=0.960 IF1pop=0.388
+  TX WGAN-GP-ZCR                    r2 P=0.122 R=0.124 IF1=0.123 inTrain=0.224 HM=0.953 IF1pop=0.389
+  TX SemaPop-VAE+                   r0 P=0.178 R=0.186 IF1=0.182 inTrain=0.423 HM=0.980 IF1pop=0.568
+  TX SemaPop-VAE+                   r1 P=0.191 R=0.196 IF1=0.193 inTrain=0.426 HM=0.979 IF1pop=0.569
+  TX SemaPop-VAE+                   r2 P=0.185 R=0.195 IF1=0.190 inTrain=0.420 HM=0.981 IF1pop=0.568
+  TX TTVAE                          r0 P=0.242 R=0.221 IF1=0.231 inTrain=1.000 HM=0.982 IF1pop=0.632
+  TX TTVAE                          r1 P=0.256 R=0.230 IF1=0.242 inTrain=1.000 HM=0.982 IF1pop=0.632
+  TX TTVAE                          r2 P=0.251 R=0.224 IF1=0.236 inTrain=1.000 HM=0.981 IF1pop=0.632
+  TX BN                             r0 P=0.125 R=0.139 IF1=0.132 inTrain=0.238 HM=0.945 IF1pop=0.430
+  TX BN                             r1 P=0.123 R=0.135 IF1=0.128 inTrain=0.246 HM=0.949 IF1pop=0.431
+  TX BN                             r2 P=0.123 R=0.141 IF1=0.131 inTrain=0.233 HM=0.947 IF1pop=0.430
+  TX TabDDPM                        r0 P=0.158 R=0.170 IF1=0.164 inTrain=0.301 HM=0.979 IF1pop=0.500
+  TX TabDDPM                        r1 P=0.159 R=0.170 IF1=0.164 inTrain=0.302 HM=0.981 IF1pop=0.502
+  TX TabDDPM                        r2 P=0.155 R=0.169 IF1=0.162 inTrain=0.303 HM=0.981 IF1pop=0.501
+  TX CTGAN                          r0 P=0.122 R=0.138 IF1=0.129 inTrain=0.232 HM=0.968 IF1pop=0.411
+  TX CTGAN                          r1 P=0.120 R=0.135 IF1=0.127 inTrain=0.230 HM=0.957 IF1pop=0.411
+  TX CTGAN                          r2 P=0.121 R=0.139 IF1=0.129 inTrain=0.228 HM=0.961 IF1pop=0.410
+[TX] done in 94s
+[OH] split stats: {'state': 'OH', 'n_train': 40000, 'n_val': 10000, 'n_test': 64112, 'val_tuple_unique_within_val': 0.672, 'val_distinct_tuples_per_row': 0.8067, 'train_distinct_tuples_per_row': 0.5691, 'val_exact_match_in_train': 0.6325, 'val_source_person_in_train': 0.375, 'val_source_person_dup_within_val': 0.1223, 'match_explained_by_shared_source': 0.5928853754940712, 'match_coincidental': 0.40711462450592883, 'val_exact_match_in_train_excl_shared_source': 0.2575, 'val_exact_match_in_test': 0.7401, 'val_source_person_in_test': 0.5101, 'val_tuple_unique_within_val_age5': 0.4893, 'val_exact_match_in_train_age5': 0.7585}
+  OH Memorizer (train subsample)    r0 P=0.325 R=0.327 IF1=0.326 inTrain=1.000 HM=0.983 IF1pop=0.649
+  OH Real (test subsample)          r0 P=0.332 R=0.330 IF1=0.331 inTrain=0.641 HM=0.983 IF1pop=nan
+  OH Memorizer (train subsample)    r1 P=0.329 R=0.324 IF1=0.326 inTrain=1.000 HM=0.983 IF1pop=0.653
+  OH Real (test subsample)          r1 P=0.335 R=0.326 IF1=0.331 inTrain=0.641 HM=0.982 IF1pop=nan
+  OH Memorizer (train subsample)    r2 P=0.319 R=0.319 IF1=0.319 inTrain=1.000 HM=0.983 IF1pop=0.652
+  OH Real (test subsample)          r2 P=0.324 R=0.327 IF1=0.325 inTrain=0.634 HM=0.981 IF1pop=nan
+  OH WGAN-GP-ZCR                    r0 P=0.144 R=0.147 IF1=0.145 inTrain=0.247 HM=0.947 IF1pop=0.313
+  OH WGAN-GP-ZCR                    r1 P=0.142 R=0.143 IF1=0.142 inTrain=0.256 HM=0.948 IF1pop=0.312
+  OH WGAN-GP-ZCR                    r2 P=0.144 R=0.151 IF1=0.147 inTrain=0.255 HM=0.946 IF1pop=0.314
+  OH SemaPop-VAE+                   r0 P=0.222 R=0.235 IF1=0.229 inTrain=0.444 HM=0.979 IF1pop=0.483
+  OH SemaPop-VAE+                   r1 P=0.227 R=0.240 IF1=0.233 inTrain=0.447 HM=0.980 IF1pop=0.484
+  OH SemaPop-VAE+                   r2 P=0.213 R=0.233 IF1=0.223 inTrain=0.429 HM=0.978 IF1pop=0.478
+  OH TTVAE                          r0 P=0.323 R=0.303 IF1=0.312 inTrain=1.000 HM=0.982 IF1pop=0.654
+  OH TTVAE                          r1 P=0.327 R=0.307 IF1=0.317 inTrain=1.000 HM=0.982 IF1pop=0.653
+  OH TTVAE                          r2 P=0.325 R=0.307 IF1=0.316 inTrain=1.000 HM=0.979 IF1pop=0.654
+  OH BN                             r0 P=0.146 R=0.177 IF1=0.160 inTrain=0.269 HM=0.950 IF1pop=0.360
+  OH BN                             r1 P=0.149 R=0.176 IF1=0.161 inTrain=0.275 HM=0.948 IF1pop=0.361
+  OH BN                             r2 P=0.144 R=0.169 IF1=0.156 inTrain=0.269 HM=0.939 IF1pop=0.360
+  OH TabDDPM                        r0 P=0.147 R=0.174 IF1=0.159 inTrain=0.266 HM=0.926 IF1pop=0.351
+  OH TabDDPM                        r1 P=0.149 R=0.176 IF1=0.161 inTrain=0.272 HM=0.934 IF1pop=0.354
+  OH TabDDPM                        r2 P=0.151 R=0.177 IF1=0.163 inTrain=0.272 HM=0.940 IF1pop=0.353
+  OH CTGAN                          r0 P=0.150 R=0.177 IF1=0.162 inTrain=0.261 HM=0.959 IF1pop=0.341
+  OH CTGAN                          r1 P=0.151 R=0.175 IF1=0.162 inTrain=0.257 HM=0.951 IF1pop=0.345
+  OH CTGAN                          r2 P=0.153 R=0.171 IF1=0.162 inTrain=0.263 HM=0.964 IF1pop=0.342
+[OH] done in 71s
+   state                    generator  P_mean  R_mean  IF1_mean  IF1_std  IF1_age5_mean  IF1_pop_mean  gen_in_train_mean  NIP_NIR_HM_mean  rank_IF1  rank_HM
+0     CA  Memorizer (train subsample)  0.1746  0.1708    0.1727   0.0044         0.3318        0.5363             1.0000           0.9820    1.0000   1.0000
+1     CA        Real (test subsample)  0.1683  0.1652    0.1667   0.0049         0.3324           NaN             0.3943           0.9816    2.0000   2.0000
+2     CA                  WGAN-GP-ZCR  0.0838  0.0888    0.0862   0.0009         0.2190        0.3831             0.1843           0.9654    7.0000   7.0000
+3     CA                 SemaPop-VAE+  0.1254  0.1283    0.1268   0.0013         0.3058        0.5283             0.3683           0.9797    4.0000   3.0000
+4     CA                        TTVAE  0.1693  0.1540    0.1613   0.0051         0.3228        0.5300             0.9724           0.9797    3.0000   4.0000
+5     CA                           BN  0.0886  0.0961    0.0922   0.0036         0.2436        0.4221             0.1968           0.9605    6.0000   8.0000
+6     CA                      TabDDPM  0.1126  0.1160    0.1143   0.0017         0.2788        0.4751             0.2414           0.9791    5.0000   5.0000
+7     CA                        CTGAN  0.0816  0.0906    0.0858   0.0021         0.2227        0.3917             0.1820           0.9668    8.0000   6.0000
+8     TX  Memorizer (train subsample)  0.2475  0.2438    0.2456   0.0018         0.4294        0.6322             1.0000           0.9837    2.0000   1.0000
+9     TX        Real (test subsample)  0.2469  0.2447    0.2458   0.0025         0.4325           NaN             0.5065           0.9815    1.0000   3.0000
+10    TX                  WGAN-GP-ZCR  0.1216  0.1243    0.1229   0.0029         0.2682        0.3882             0.2286           0.9563    8.0000   7.0000
+11    TX                 SemaPop-VAE+  0.1848  0.1922    0.1884   0.0056         0.3942        0.5685             0.4230           0.9801    4.0000   5.0000
+12    TX                        TTVAE  0.2495  0.2250    0.2366   0.0056         0.4189        0.6322             1.0000           0.9816    3.0000   2.0000
+13    TX                           BN  0.1234  0.1384    0.1305   0.0018         0.3082        0.4302             0.2391           0.9468    6.0000   8.0000
+14    TX                      TabDDPM  0.1573  0.1698    0.1633   0.0016         0.3628        0.5010             0.3019           0.9802    5.0000   4.0000
+15    TX                        CTGAN  0.1208  0.1377    0.1287   0.0013         0.2880        0.4106             0.2300           0.9621    7.0000   6.0000
+16    OH  Memorizer (train subsample)  0.3242  0.3235    0.3238   0.0042         0.5109        0.6512             1.0000           0.9830    2.0000   1.0000
+17    OH        Real (test subsample)  0.3304  0.3276    0.3290   0.0032         0.5097           NaN             0.6388           0.9820    1.0000   2.0000
+18    OH                  WGAN-GP-ZCR  0.1433  0.1468    0.1450   0.0025         0.2959        0.3127             0.2526           0.9471    8.0000   6.0000
+19    OH                 SemaPop-VAE+  0.2207  0.2361    0.2281   0.0053         0.4588        0.4816             0.4398           0.9791    4.0000   4.0000
+20    OH                        TTVAE  0.3250  0.3054    0.3149   0.0022         0.5022        0.6535             1.0000           0.9808    3.0000   3.0000
+21    OH                           BN  0.1465  0.1743    0.1592   0.0031         0.3588        0.3603             0.2710           0.9461    7.0000   7.0000
+22    OH                      TabDDPM  0.1491  0.1755    0.1612   0.0018         0.3435        0.3527             0.2697           0.9333    6.0000   8.0000
+23    OH                        CTGAN  0.1512  0.1744    0.1620   0.0004         0.3366        0.3428             0.2601           0.9578    5.0000   5.0000

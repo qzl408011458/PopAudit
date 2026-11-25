@@ -1,0 +1,4 @@
+[2026-11-24 15:36:30] variant=orig ref=<POPAUDIT_ROOT>/data/pums_states/{state}/testdata_pers.csv -> <POPAUDIT_ROOT>/experiments/E_state/audits_v3_referee/iid_test/runs/orig: 2 cells
+[15:37:57] L1 tvae OH orig marg=0.073088 dep=0.144753 supp=0.791661 inv7=0.010251 (74.5s)
+[15:42:43] L1 semapop_vae CA orig marg=0.005915 dep=0.012968 supp=0.986289 inv7=0.000098 (317.6s)
+[2026-11-24 15:42:43] done orig

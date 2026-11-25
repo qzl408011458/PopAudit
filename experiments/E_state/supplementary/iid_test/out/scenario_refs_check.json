@@ -1,0 +1,218 @@
+{
+  "CA_ref_2018": {
+    "rows": 378817,
+    "id_col": "Person_ID",
+    "id_unique": true,
+    "has_Sampled_Person_ID": false,
+    "has_PWGTP": true,
+    "has_WGTP": true,
+    "pwgtp_sum": 39557045.0
+  },
+  "CA_ref_2021": {
+    "rows": 386061,
+    "id_col": "Person_ID",
+    "id_unique": true,
+    "has_Sampled_Person_ID": false,
+    "has_PWGTP": true,
+    "has_WGTP": true,
+    "pwgtp_sum": 39237836.0
+  },
+  "CA_ref_2024": {
+    "rows": 393725,
+    "id_col": "Person_ID",
+    "id_unique": true,
+    "has_Sampled_Person_ID": false,
+    "has_PWGTP": true,
+    "has_WGTP": true,
+    "pwgtp_sum": 39431263.0
+  },
+  "CA_hist_2009": {
+    "rows": 352875,
+    "id_col": "Person_ID",
+    "id_unique": true,
+    "has_Sampled_Person_ID": false,
+    "has_PWGTP": true,
+    "has_WGTP": true,
+    "pwgtp_sum": 36961664.0
+  },
+  "CA_hist_2010": {
+    "rows": 360836,
+    "id_col": "Person_ID",
+    "id_unique": true,
+    "has_Sampled_Person_ID": false,
+    "has_PWGTP": true,
+    "has_WGTP": true,
+    "pwgtp_sum": 37349363.0
+  },
+  "CA_hist_2011": {
+    "rows": 368809,
+    "id_col": "Person_ID",
+    "id_unique": true,
+    "has_Sampled_Person_ID": false,
+    "has_PWGTP": true,
+    "has_WGTP": true,
+    "pwgtp_sum": 37691912.0
+  },
+  "CA_hist_2012": {
+    "rows": 368047,
+    "id_col": "Person_ID",
+    "id_unique": true,
+    "has_Sampled_Person_ID": false,
+    "has_PWGTP": true,
+    "has_WGTP": true,
+    "pwgtp_sum": 38041430.0
+  },
+  "CA_hist_2013": {
+    "rows": 371403,
+    "id_col": "Person_ID",
+    "id_unique": true,
+    "has_Sampled_Person_ID": false,
+    "has_PWGTP": true,
+    "has_WGTP": true,
+    "pwgtp_sum": 38332521.0
+  },
+  "OH_ref_2018": {
+    "rows": 119086,
+    "id_col": "Person_ID",
+    "id_unique": true,
+    "has_Sampled_Person_ID": false,
+    "has_PWGTP": true,
+    "has_WGTP": true,
+    "pwgtp_sum": 11689442.0
+  },
+  "OH_ref_2021": {
+    "rows": 119869,
+    "id_col": "Person_ID",
+    "id_unique": true,
+    "has_Sampled_Person_ID": false,
+    "has_PWGTP": true,
+    "has_WGTP": true,
+    "pwgtp_sum": 11780017.0
+  },
+  "OH_ref_2024": {
+    "rows": 122052,
+    "id_col": "Person_ID",
+    "id_unique": true,
+    "has_Sampled_Person_ID": false,
+    "has_PWGTP": true,
+    "has_WGTP": true,
+    "pwgtp_sum": 11883304.0
+  },
+  "OH_hist_2009": {
+    "rows": 117386,
+    "id_col": "Person_ID",
+    "id_unique": true,
+    "has_Sampled_Person_ID": false,
+    "has_PWGTP": true,
+    "has_WGTP": true,
+    "pwgtp_sum": 11542645.0
+  },
+  "OH_hist_2010": {
+    "rows": 117475,
+    "id_col": "Person_ID",
+    "id_unique": true,
+    "has_Sampled_Person_ID": false,
+    "has_PWGTP": true,
+    "has_WGTP": true,
+    "pwgtp_sum": 11536182.0
+  },
+  "OH_hist_2011": {
+    "rows": 118423,
+    "id_col": "Person_ID",
+    "id_unique": true,
+    "has_Sampled_Person_ID": false,
+    "has_PWGTP": true,
+    "has_WGTP": true,
+    "pwgtp_sum": 11544951.0
+  },
+  "OH_hist_2012": {
+    "rows": 117251,
+    "id_col": "Person_ID",
+    "id_unique": true,
+    "has_Sampled_Person_ID": false,
+    "has_PWGTP": true,
+    "has_WGTP": true,
+    "pwgtp_sum": 11544225.0
+  },
+  "OH_hist_2013": {
+    "rows": 118223,
+    "id_col": "Person_ID",
+    "id_unique": true,
+    "has_Sampled_Person_ID": false,
+    "has_PWGTP": true,
+    "has_WGTP": true,
+    "pwgtp_sum": 11570808.0
+  },
+  "TX_ref_2018": {
+    "rows": 268100,
+    "id_col": "Person_ID",
+    "id_unique": true,
+    "has_Sampled_Person_ID": false,
+    "has_PWGTP": true,
+    "has_WGTP": true,
+    "pwgtp_sum": 28701845.0
+  },
+  "TX_ref_2021": {
+    "rows": 261446,
+    "id_col": "Person_ID",
+    "id_unique": true,
+    "has_Sampled_Person_ID": false,
+    "has_PWGTP": true,
+    "has_WGTP": true,
+    "pwgtp_sum": 29527941.0
+  },
+  "TX_ref_2024": {
+    "rows": 292272,
+    "id_col": "Person_ID",
+    "id_unique": true,
+    "has_Sampled_Person_ID": false,
+    "has_PWGTP": true,
+    "has_WGTP": true,
+    "pwgtp_sum": 31290831.0
+  },
+  "TX_hist_2009": {
+    "rows": 238301,
+    "id_col": "Person_ID",
+    "id_unique": true,
+    "has_Sampled_Person_ID": false,
+    "has_PWGTP": true,
+    "has_WGTP": true,
+    "pwgtp_sum": 24782302.0
+  },
+  "TX_hist_2010": {
+    "rows": 244071,
+    "id_col": "Person_ID",
+    "id_unique": true,
+    "has_Sampled_Person_ID": false,
+    "has_PWGTP": true,
+    "has_WGTP": true,
+    "pwgtp_sum": 25257114.0
+  },
+  "TX_hist_2011": {
+    "rows": 245536,
+    "id_col": "Person_ID",
+    "id_unique": true,
+    "has_Sampled_Person_ID": false,
+    "has_PWGTP": true,
+    "has_WGTP": true,
+    "pwgtp_sum": 25674681.0
+  },
+  "TX_hist_2012": {
+    "rows": 249155,
+    "id_col": "Person_ID",
+    "id_unique": true,
+    "has_Sampled_Person_ID": false,
+    "has_PWGTP": true,
+    "has_WGTP": true,
+    "pwgtp_sum": 26059203.0
+  },
+  "TX_hist_2013": {
+    "rows": 253599,
+    "id_col": "Person_ID",
+    "id_unique": true,
+    "has_Sampled_Person_ID": false,
+    "has_PWGTP": true,
+    "has_WGTP": true,
+    "pwgtp_sum": 26448193.0
+  }
+}

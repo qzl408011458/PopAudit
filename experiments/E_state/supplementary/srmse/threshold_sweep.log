@@ -1,0 +1,69 @@
+max |srmse - stored srmse_marg| = 4.999125100810242e-05
+accepted at 0.30 (recomputed / stored): 79 79
+n_cells per case: [np.int64(63), np.int64(64), np.int64(66), np.int64(68), np.int64(69), np.int64(70)]
+N=81  VALID=23  L1_accept=54
+L1 rule from columns reproduces L1_accept: True  mismatches: 0
+                        protocol  threshold  accepted  acc_2018  acc_2021  acc_2024  valid_rejected  invalid_accepted  agree  agree_pct  inv_acc_L1fail  inv_acc_L2fail  inv_acc_L3fail
+             marginal-only SRMSE     0.2000        50        21        17        12               4                31     46       56.8               9              22               0
+             marginal-only SRMSE     0.2500        72        25        24        23               0                49     32       39.5              20              29               0
+             marginal-only SRMSE     0.3000        79        27        26        26               0                56     25       30.9              25              31               0
+             marginal-only SRMSE     0.3500        81        27        27        27               0                58     23       28.4              27              31               0
+             marginal-only SRMSE     0.4000        81        27        27        27               0                58     23       28.4              27              31               0
+             marginal-only SRMSE     0.5000        81        27        27        27               0                58     23       28.4              27              31               0
+structural-only (allowances x s)     0.5000        36        12        12        12               2                15     64       79.0               0              15               0
+structural-only (allowances x s)     0.7500        51        17        17        17               0                28     53       65.4               0              28               0
+structural-only (allowances x s)     1.0000        54        18        18        18               0                31     50       61.7               0              31               0
+structural-only (allowances x s)     1.2500        54        18        18        18               0                31     50       61.7               0              31               0
+structural-only (allowances x s)     1.5000        54        18        18        18               0                31     50       61.7               0              31               0
+structural-only (allowances x s)     2.0000        54        18        18        18               0                31     50       61.7               0              31               0
+   structural-only (invalid tol)     0.0010        36        12        12        12               4                17     60       74.1               0              17               0
+   structural-only (invalid tol)     0.0025        42        14        14        14               3                22     56       69.1               0              22               0
+   structural-only (invalid tol)     0.0050        54        18        18        18               0                31     50       61.7               0              31               0
+   structural-only (invalid tol)     0.0100        57        19        19        19               0                34     47       58.0               3              31               0
+   structural-only (invalid tol)     0.0200        66        22        22        22               0                43     38       46.9              12              31               0
+
+marginal-only: best agreement over all thresholds = 64/81 at t=0.0917
+AUC of -SRMSE for VALID: 0.792
+AUC of -SRMSE for VALID among L1-pass cases: 0.75
+max SRMSE among VALID: 0.2075  min SRMSE among VALID: 0.0763
+min SRMSE among 2021 cases: 0.1229
+at t = max valid SRMSE: accepted 59 invalid accepted 36
+structural-only: decision constant across horizons per prior-state; max achievable agreement if it admitted exactly the 2018-valid priors:
+  upper bound on agreement of ANY horizon-invariant rule: 68 /81
+
+SRMSE by year x VALID:
+            count    min    50%    max
+year VALID                            
+2018 False   14.0  0.085  0.193  0.278
+     True    13.0  0.076  0.092  0.145
+2021 False   27.0  0.123  0.191  0.326
+2024 False   17.0  0.133  0.221  0.341
+     True    10.0  0.127  0.157  0.208
+
+SRMSE by year x first_fail:
+                      count    min    50%    max
+year ff                                         
+2018 L1:invalid_mass    9.0  0.085  0.200  0.278
+     L2                 5.0  0.140  0.173  0.230
+     valid             13.0  0.076  0.092  0.145
+2021 L1:invalid_mass    9.0  0.124  0.210  0.326
+     L2                18.0  0.123  0.170  0.269
+2024 L1:invalid_mass    9.0  0.133  0.230  0.341
+     L2                 8.0  0.161  0.204  0.287
+     valid             10.0  0.127  0.157  0.208
+
+cases with 0.25 < SRMSE < 0.35:
+state   model  year    srmse  VALID      first_fail  L2_chi_H  L2_cutoff
+   TX    tvae  2024 0.255255  False L1:invalid_mass  11.63182    5.02814
+   OH    tvae  2018 0.260123  False L1:invalid_mass  23.21888    5.07031
+   CA flowsyn  2021 0.269389  False              L2  13.13061    5.02262
+   CA    tvae  2018 0.277653  False L1:invalid_mass  34.09875    5.06095
+   OH    tvae  2021 0.285333  False L1:invalid_mass  22.08733    5.04716
+   CA flowsyn  2024 0.287355  False              L2   6.56628    5.01407
+   OH    tvae  2024 0.288659  False L1:invalid_mass  16.15437    5.03363
+   CA    tvae  2021 0.325848  False L1:invalid_mass  32.49238    5.03601
+   CA    tvae  2024 0.340982  False L1:invalid_mass  20.39246    5.02249
+
+invalid cases with SRMSE below the smallest valid-2024 SRMSE (0.127): 5  by year {2018: 2, 2021: 3}
+best-agreement threshold 0.1451: accepted 29, valid rejected 7, invalid accepted 13 -> [['TX', 'semapop_vae', 2021, 0.13633255289110446, 'L2'], ['TX', 'ttvae', 2021, 0.13262763296642002, 'L2'], ['TX', 'bn', 2021, 0.1338784185185251, 'L2'], ['TX', 'wgan_zcr', 2018, 0.13965905639447065, 'L2'], ['TX', 'ctgan', 2018, 0.09375437074527981, 'L1:invalid_mass'], ['TX', 'ctgan', 2021, 0.1386755437293068, 'L1:invalid_mass'], ['TX', 'tabddpm', 2021, 0.14097360636232117, 'L2'], ['OH', 'semapop_vae', 2021, 0.12289980903703301, 'L2'], ['OH', 'ttvae', 2021, 0.12612229718146725, 'L2'], ['OH', 'bn', 2021, 0.1282814953297575, 'L2'], ['OH', 'ctgan', 2018, 0.0851783193761995, 'L1:invalid_mass'], ['OH', 'ctgan', 2021, 0.12396348651527288, 'L1:invalid_mass'], ['OH', 'ctgan', 2024, 0.1330536441186966, 'L1:invalid_mass']]
+P(SRMSE_valid < SRMSE_invalid) = 0.792

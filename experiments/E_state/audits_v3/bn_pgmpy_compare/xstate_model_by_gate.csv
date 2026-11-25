@@ -1,0 +1,4 @@
+model,L2,VALID
+bn,3,6
+bn_pgmpy,3,6
+bn_pgmpy_bic,4,5

@@ -1,0 +1,4 @@
+state,n_test,n_a,n_ipw_rows,n_bins,top_bin_from_nh,max_weight,kish_ess_rows,test_mass_in_empty_bins
+CA,330109,181537,330088,18,20,22.723,99768.2,0.0
+OH,64112,18209,64148,7,7,88.306,2111.4,0.0
+TX,212756,94648,212806,15,16,54.19,25513.4,0.0

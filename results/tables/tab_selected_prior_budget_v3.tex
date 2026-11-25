@@ -1,0 +1,39 @@
+\begin{table}[htbp]
+\centering
+\caption{
+Scenario-level deployment decisions under the selected-prior budget rule.
+For each scenario \(S_H\), \(\Theta_{\mathrm{adm}}(S_H)\) is the set of priors
+passing all three audit layers. When this set is nonempty,
+\(\theta^\dagger(S_H)\) is the admitted prior with the smallest
+post-projection marginal-aggregate residual
+\(D^\dagger(S_H)=D(\theta^\dagger(S_H),S_H)\). The flat decision deploys only
+if \(D^\dagger(S_H)\le B_0=0.30\), and scenarios with
+\(\Theta_{\mathrm{adm}}(S_H)=\emptyset\) are deferred by definition.
+The last column reports the diagnostic value \(\gamma_{\min}\), the minimum
+volatility-budget parameter required for the selected prior to satisfy
+\(D^\dagger(S_H)\le B_0(1+\gamma v(H))\).
+}
+\label{tab:selected-prior-budget}
+\begin{tabular}{llcccccc}
+\toprule
+State & Year & \(H\) &
+\(|\Theta_{\mathrm{adm}}(S_H)|\) &
+\(\theta^\dagger(S_H)\) &
+\(D^\dagger(S_H)\) &
+Flat decision &
+\(\gamma_{\min}\) \\
+\midrule
+CA & 2018 & 5  & 4 & \texttt{SemaPop-VAE+} & 0.234 & Deploy & 0 \\
+OH & 2018 & 5  & 5 & \texttt{SemaPop-VAE+} & 0.147 & Deploy & 0 \\
+TX & 2018 & 5  & 4 & \texttt{TTVAE} & 0.142 & Deploy & 0 \\
+\midrule
+CA & 2021 & 8  & 0 & N/A & N/A & Defer & N/A \\
+OH & 2021 & 8  & 0 & N/A & N/A & Defer & N/A \\
+TX & 2021 & 8  & 0 & N/A & N/A & Defer & N/A \\
+\midrule
+CA & 2024 & 11 & 4 & \texttt{SemaPop-VAE+} & 0.321 & Defer & 0.084 \\
+OH & 2024 & 11 & 3 & \texttt{SemaPop-VAE+} & 0.213 & Deploy & 0 \\
+TX & 2024 & 11 & 3 & \texttt{SemaPop-VAE+} & 0.238 & Deploy & 0 \\
+\bottomrule
+\end{tabular}
+\end{table}

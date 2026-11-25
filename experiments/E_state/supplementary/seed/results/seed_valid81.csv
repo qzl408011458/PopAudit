@@ -1,0 +1,4 @@
+seed,n_regenerated,VALID81,VALID_2018,VALID_2021,VALID_2024,VALID_CA,VALID_OH,VALID_TX,valid_2024_set
+42,45,23,13,0,10,8,8,7,semapop_vae_CA;ttvae_CA;bn_CA;tabddpm_CA;semapop_vae_TX;ttvae_TX;bn_TX;semapop_vae_OH;ttvae_OH;bn_OH
+142,45,22,11,0,11,8,6,8,semapop_vae_CA;ttvae_CA;bn_CA;tabddpm_CA;semapop_vae_TX;ttvae_TX;bn_TX;tabddpm_TX;semapop_vae_OH;ttvae_OH;bn_OH
+242,45,22,11,0,11,8,6,8,semapop_vae_CA;ttvae_CA;bn_CA;tabddpm_CA;semapop_vae_TX;ttvae_TX;bn_TX;tabddpm_TX;semapop_vae_OH;ttvae_OH;bn_OH

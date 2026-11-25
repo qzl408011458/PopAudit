@@ -1,0 +1,6 @@
+,shadow,shadow,shadow,shadow,shadow,shadow,shadow,shadow,shadow,audits_v3,audits_v3,audits_v3,audits_v3,audits_v3,audits_v3,audits_v3,audits_v3,audits_v3
+,L1_marg,L1_dep,L1_support,L1_invalid,L2_chi_H,L3_KL,L3_nESS,D_post,first_fail,L1_marg,L1_dep,L1_support,L1_invalid,L2_chi_H,L3_KL,L3_nESS,D_post,first_fail
+year,,,,,,,,,,,,,,,,,,
+2018,0.010629,0.029702,0.985978,0.012614,1.56446,0.0,1.0,0.1848670914757163,L1:invalid_mass,0.010629,0.029702,0.985978,0.012614,1.56446,0.0,1.0,0.1848670914757163,L1:invalid_mass
+2021,0.010629,0.029702,0.985978,0.012614,6.06264,0.015353,0.9581,0.2055583416100852,L1:invalid_mass,0.010629,0.029702,0.985978,0.012614,6.06264,0.015353,0.9581,0.2055583416100852,L1:invalid_mass
+2024,0.010629,0.029702,0.985978,0.012614,4.19212,0.006476,0.9838,0.24822632822949353,L1:invalid_mass,0.010629,0.029702,0.985978,0.012614,4.19212,0.006476,0.9838,0.24822632822949353,L1:invalid_mass

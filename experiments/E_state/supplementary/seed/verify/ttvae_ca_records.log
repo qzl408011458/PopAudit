@@ -1,0 +1,13 @@
+train_processed (40000, 91)
+0 42 in train(1M) 0.973 in test 0.8198
+0 142 in train(1M) 0.9769 in test 0.8211
+0 242 in train(1M) 0.9796 in test 0.8216
+0 42 142 rowwise identical 0.9828
+0 42 242 rowwise identical 0.9758
+0 142 242 rowwise identical 0.9818
+17 42 in train(1M) 0.9729 in test 0.8192
+17 142 in train(1M) 0.9768 in test 0.8203
+17 242 in train(1M) 0.9794 in test 0.8208
+17 42 142 rowwise identical 0.9833
+17 42 242 rowwise identical 0.9762
+17 142 242 rowwise identical 0.9823

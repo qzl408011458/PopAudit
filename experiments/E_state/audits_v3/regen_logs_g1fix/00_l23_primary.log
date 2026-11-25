@@ -1,0 +1,111 @@
+[2026-11-24 18:06:35] audit_v3 PRIMARY: 27 cells -> <POPAUDIT_ROOT>/experiments/E_state/audits_v3
+  semapop_vae        CA  semapop_vae_CA_train           K=50  READY
+  semapop_vae        TX  semapop_vae_TX_train           K=50  READY
+  semapop_vae        OH  semapop_vae_OH_train           K=50  READY
+  ttvae              CA  ttvae_CA                       K=50  READY
+  ttvae              TX  ttvae_TX                       K=50  READY
+  ttvae              OH  ttvae_OH                       K=50  READY
+  bn                 CA  bn_pgmpy_CA                    K=50  READY
+  bn                 TX  bn_pgmpy_TX                    K=50  READY
+  bn                 OH  bn_pgmpy_OH                    K=50  READY
+  wgan_zcr           CA  wgan_zcr_CA                    K=50  READY
+  wgan_zcr           TX  wgan_zcr_TX                    K=50  READY
+  wgan_zcr           OH  wgan_zcr_OH                    K=50  READY
+  ctgan              CA  ctgan_CA                       K=50  READY
+  ctgan              TX  ctgan_TX                       K=50  READY
+  ctgan              OH  ctgan_OH                       K=50  READY
+  flowsyn            CA  flowsyn_CA                     K=50  READY
+  flowsyn            TX  flowsyn_TX                     K=50  READY
+  flowsyn            OH  flowsyn_OH                     K=50  READY
+  borysov            CA  borysov_CA                     K=50  READY
+  borysov            TX  borysov_TX                     K=50  READY
+  borysov            OH  borysov_OH                     K=50  READY
+  tabddpm            CA  tabddpm_CA_valsrmse            K=50  READY
+  tabddpm            TX  tabddpm_TX_valsrmse            K=50  READY
+  tabddpm            OH  tabddpm_OH_valsrmse            K=50  READY
+  tvae               CA  tvae_ref_CA                    K=50  READY
+  tvae               TX  tvae_ref_TX                    K=50  READY
+  tvae               OH  tvae_ref_OH                    K=50  READY
+[18:06:35] 81 tasks, jobs=14
+[18:07:25] L2 semapop_vae OH 2018 rc2=0; L3 semapop_vae OH 2018 rc3=0 (final_generated_samples_47_cells7.csv)
+[18:07:48] L2 semapop_vae OH 2024 rc2=0; L3 semapop_vae OH 2024 rc3=0 (final_generated_samples_16_cells7.csv)
+[18:08:20] L2 semapop_vae OH 2021 rc2=0; L3 semapop_vae OH 2021 rc3=0 (final_generated_samples_16_cells7.csv)
+[18:08:54] L2 ttvae OH 2018 rc2=0; L3 ttvae OH 2018 rc3=0 (final_generated_samples_23_cells7.csv)
+[18:09:18] L2 ttvae TX 2018 rc2=0; L3 ttvae TX 2018 rc3=0 (final_generated_samples_1_cells7.csv)
+[18:09:19] L2 ttvae OH 2021 rc2=0; L3 ttvae OH 2021 rc3=0 (final_generated_samples_47_cells7.csv)
+[18:09:20] L2 semapop_vae TX 2018 rc2=0; L3 semapop_vae TX 2018 rc3=0 (final_generated_samples_14_cells7.csv)
+[18:09:25] L2 semapop_vae TX 2021 rc2=0; L3 semapop_vae TX 2021 rc3=0 (final_generated_samples_38_cells7.csv)
+[18:10:23] L2 ttvae TX 2021 rc2=0; L3 ttvae TX 2021 rc3=0 (final_generated_samples_49_cells7.csv)
+[18:10:37] L2 ttvae OH 2024 rc2=0; L3 ttvae OH 2024 rc3=0 (final_generated_samples_5_cells7.csv)
+[18:10:41] L2 semapop_vae TX 2024 rc2=0; L3 semapop_vae TX 2024 rc3=0 (final_generated_samples_38_cells7.csv)
+[18:10:46] L2 ttvae TX 2024 rc2=0; L3 ttvae TX 2024 rc3=0 (final_generated_samples_1_cells7.csv)
+[18:11:38] L2 bn OH 2018 rc2=0; L3 bn OH 2018 rc3=0 (final_generated_samples_37_cells7.csv)
+[18:12:07] L2 ttvae CA 2018 rc2=0; L3 ttvae CA 2018 rc3=0 (final_generated_samples_0_cells7.csv)
+[18:12:09] L2 semapop_vae CA 2018 rc2=0; L3 semapop_vae CA 2018 rc3=0 (final_generated_samples_33_cells7.csv)
+[18:12:24] L2 semapop_vae CA 2021 rc2=0; L3 semapop_vae CA 2021 rc3=0 (final_generated_samples_39_cells7.csv)
+[18:12:27] L2 ttvae CA 2021 rc2=0; L3 ttvae CA 2021 rc3=0 (final_generated_samples_18_cells7.csv)
+[18:12:29] L2 semapop_vae CA 2024 rc2=0; L3 semapop_vae CA 2024 rc3=0 (final_generated_samples_39_cells7.csv)
+[18:12:37] L2 ttvae CA 2024 rc2=0; L3 ttvae CA 2024 rc3=0 (final_generated_samples_18_cells7.csv)
+[18:12:42] L2 bn TX 2018 rc2=0; L3 bn TX 2018 rc3=0 (final_generated_samples_46_cells7.csv)
+[18:12:48] L2 bn OH 2021 rc2=0; L3 bn OH 2021 rc3=0 (final_generated_samples_37_cells7.csv)
+[18:13:34] L2 bn OH 2024 rc2=0; L3 bn OH 2024 rc3=0 (final_generated_samples_40_cells7.csv)
+[18:14:31] L2 wgan_zcr OH 2018 rc2=0; L3 wgan_zcr OH 2018 rc3=0 (final_generated_samples_2_cells7.csv)
+[18:14:56] L2 wgan_zcr OH 2021 rc2=0; L3 wgan_zcr OH 2021 rc3=0 (final_generated_samples_46_cells7.csv)
+[18:15:14] L2 bn TX 2021 rc2=0; L3 bn TX 2021 rc3=0 (final_generated_samples_29_cells7.csv)
+[18:15:16] L2 bn CA 2018 rc2=0; L3 bn CA 2018 rc3=0 (final_generated_samples_3_cells7.csv)
+[18:15:34] L2 bn CA 2021 rc2=0; L3 bn CA 2021 rc3=0 (final_generated_samples_3_cells7.csv)
+[18:15:40] L2 bn TX 2024 rc2=0; L3 bn TX 2024 rc3=0 (final_generated_samples_32_cells7.csv)
+[18:15:45] L2 bn CA 2024 rc2=0; L3 bn CA 2024 rc3=0 (final_generated_samples_3_cells7.csv)
+[18:15:54] L2 wgan_zcr OH 2024 rc2=0; L3 wgan_zcr OH 2024 rc3=0 (final_generated_samples_46_cells7.csv)
+[18:15:55] L2 wgan_zcr TX 2018 rc2=0; L3 wgan_zcr TX 2018 rc3=0 (final_generated_samples_10_cells7.csv)
+[18:16:03] L2 wgan_zcr TX 2021 rc2=0; L3 wgan_zcr TX 2021 rc3=0 (final_generated_samples_10_cells7.csv)
+[18:16:11] L2 wgan_zcr TX 2024 rc2=0; L3 wgan_zcr TX 2024 rc3=0 (final_generated_samples_10_cells7.csv)
+[18:16:40] L2 ctgan OH 2018 rc2=0; L3 ctgan OH 2018 rc3=0 (final_generated_samples_20_cells7.csv)
+[18:17:31] L2 ctgan OH 2024 rc2=0; L3 ctgan OH 2024 rc3=0 (final_generated_samples_40_cells7.csv)
+[18:17:35] L2 ctgan OH 2021 rc2=0; L3 ctgan OH 2021 rc3=0 (final_generated_samples_40_cells7.csv)
+[18:18:08] L2 wgan_zcr CA 2018 rc2=0; L3 wgan_zcr CA 2018 rc3=0 (final_generated_samples_14_cells7.csv)
+[18:18:39] L2 ctgan TX 2018 rc2=0; L3 ctgan TX 2018 rc3=0 (final_generated_samples_31_cells7.csv)
+[18:18:41] L2 wgan_zcr CA 2024 rc2=0; L3 wgan_zcr CA 2024 rc3=0 (final_generated_samples_35_cells7.csv)
+[18:18:43] L2 wgan_zcr CA 2021 rc2=0; L3 wgan_zcr CA 2021 rc3=0 (final_generated_samples_35_cells7.csv)
+[18:19:41] L2 ctgan TX 2021 rc2=0; L3 ctgan TX 2021 rc3=0 (final_generated_samples_0_cells7.csv)
+[18:19:51] L2 ctgan TX 2024 rc2=0; L3 ctgan TX 2024 rc3=0 (final_generated_samples_0_cells7.csv)
+[18:20:03] L2 ctgan CA 2018 rc2=0; L3 ctgan CA 2018 rc3=0 (final_generated_samples_37_cells7.csv)
+[18:20:38] L2 flowsyn OH 2018 rc2=0; L3 flowsyn OH 2018 rc3=0 (final_generated_samples_22_cells7.csv)
+[18:20:48] L2 flowsyn OH 2024 rc2=0; L3 flowsyn OH 2024 rc3=0 (final_generated_samples_45_cells7.csv)
+[18:21:20] L2 ctgan CA 2021 rc2=0; L3 ctgan CA 2021 rc3=0 (final_generated_samples_37_cells7.csv)
+[18:21:25] L2 flowsyn TX 2018 rc2=0; L3 flowsyn TX 2018 rc3=0 (final_generated_samples_37_cells7.csv)
+[18:22:01] L2 flowsyn CA 2018 rc2=0; L3 flowsyn CA 2018 rc3=0 (final_generated_samples_49_cells7.csv)
+[18:22:01] L2 flowsyn OH 2021 rc2=0; L3 flowsyn OH 2021 rc3=0 (final_generated_samples_45_cells7.csv)
+[18:22:05] L2 ctgan CA 2024 rc2=0; L3 ctgan CA 2024 rc3=0 (final_generated_samples_37_cells7.csv)
+[18:22:29] L2 flowsyn CA 2021 rc2=0; L3 flowsyn CA 2021 rc3=0 (final_generated_samples_42_cells7.csv)
+[18:22:50] L2 flowsyn TX 2024 rc2=0; L3 flowsyn TX 2024 rc3=0 (final_generated_samples_37_cells7.csv)
+[18:23:10] L2 flowsyn TX 2021 rc2=0; L3 flowsyn TX 2021 rc3=0 (final_generated_samples_37_cells7.csv)
+[18:23:21] L2 borysov OH 2018 rc2=0; L3 borysov OH 2018 rc3=0 (final_generated_samples_44_cells7.csv)
+[18:24:03] L2 flowsyn CA 2024 rc2=0; L3 flowsyn CA 2024 rc3=0 (final_generated_samples_42_cells7.csv)
+[18:24:24] L2 borysov OH 2021 rc2=0; L3 borysov OH 2021 rc3=0 (final_generated_samples_1_cells7.csv)
+[18:24:38] L2 borysov TX 2018 rc2=0; L3 borysov TX 2018 rc3=0 (final_generated_samples_20_cells7.csv)
+[18:25:08] L2 borysov OH 2024 rc2=0; L3 borysov OH 2024 rc3=0 (final_generated_samples_9_cells7.csv)
+[18:25:27] L2 borysov TX 2021 rc2=0; L3 borysov TX 2021 rc3=0 (final_generated_samples_1_cells7.csv)
+[18:26:03] L2 borysov CA 2018 rc2=0; L3 borysov CA 2018 rc3=0 (final_generated_samples_45_cells7.csv)
+[18:26:20] L2 borysov CA 2021 rc2=0; L3 borysov CA 2021 rc3=0 (final_generated_samples_45_cells7.csv)
+[18:26:25] L2 tabddpm OH 2018 rc2=0; L3 tabddpm OH 2018 rc3=0 (final_generated_samples_12_cells7.csv)
+[18:26:33] L2 borysov TX 2024 rc2=0; L3 borysov TX 2024 rc3=0 (final_generated_samples_20_cells7.csv)
+[18:27:02] L2 tabddpm OH 2021 rc2=0; L3 tabddpm OH 2021 rc3=0 (final_generated_samples_12_cells7.csv)
+[18:27:05] L2 tabddpm TX 2018 rc2=0; L3 tabddpm TX 2018 rc3=0 (final_generated_samples_6_cells7.csv)
+[18:27:20] L2 tabddpm OH 2024 rc2=0; L3 tabddpm OH 2024 rc3=0 (final_generated_samples_12_cells7.csv)
+[18:27:56] L2 tabddpm CA 2018 rc2=0; L3 tabddpm CA 2018 rc3=0 (final_generated_samples_49_cells7.csv)
+[18:27:59] L2 tabddpm TX 2021 rc2=0; L3 tabddpm TX 2021 rc3=0 (final_generated_samples_47_cells7.csv)
+[18:28:00] L2 borysov CA 2024 rc2=0; L3 borysov CA 2024 rc3=0 (final_generated_samples_45_cells7.csv)
+[18:28:02] L2 tabddpm TX 2024 rc2=0; L3 tabddpm TX 2024 rc3=0 (final_generated_samples_47_cells7.csv)
+[18:28:23] L2 tvae OH 2018 rc2=0; L3 tvae OH 2018 rc3=0 (final_generated_samples_0_cells7.csv)
+[18:28:44] L2 tvae OH 2021 rc2=0; L3 tvae OH 2021 rc3=0 (final_generated_samples_0_cells7.csv)
+[18:28:57] L2 tabddpm CA 2021 rc2=0; L3 tabddpm CA 2021 rc3=0 (final_generated_samples_30_cells7.csv)
+[18:29:01] L2 tvae OH 2024 rc2=0; L3 tvae OH 2024 rc3=0 (final_generated_samples_0_cells7.csv)
+[18:29:01] L2 tabddpm CA 2024 rc2=0; L3 tabddpm CA 2024 rc3=0 (final_generated_samples_30_cells7.csv)
+[18:29:27] L2 tvae TX 2018 rc2=0; L3 tvae TX 2018 rc3=0 (final_generated_samples_11_cells7.csv)
+[18:29:47] L2 tvae TX 2021 rc2=0; L3 tvae TX 2021 rc3=0 (final_generated_samples_40_cells7.csv)
+[18:30:04] L2 tvae TX 2024 rc2=0; L3 tvae TX 2024 rc3=0 (final_generated_samples_40_cells7.csv)
+[18:30:07] L2 tvae CA 2018 rc2=0; L3 tvae CA 2018 rc3=0 (final_generated_samples_6_cells7.csv)
+[18:30:40] L2 tvae CA 2021 rc2=0; L3 tvae CA 2021 rc3=0 (final_generated_samples_6_cells7.csv)
+[18:30:51] L2 tvae CA 2024 rc2=0; L3 tvae CA 2024 rc3=0 (final_generated_samples_26_cells7.csv)
+[2026-11-24 18:30:51] audit_v3 done.

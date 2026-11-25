@@ -1,0 +1,18 @@
+baseline realized WFH share (2024 TX) = 0.062; car share = 0.399
+w=0.00 WFH_target=0.062 L3_gauss_loss_prior=4.171122003860461 G3_feasible=True R3=0.04579808519636644 nESS=0.9901147263892245
+w=0.15 WFH_target=0.122 L3_gauss_loss_prior=13.868436426264244 G3_feasible=True R3=0.19481651191330518 nESS=0.776103912677388
+w=0.30 WFH_target=0.182 L3_gauss_loss_prior=31.625551463034046 G3_feasible=True R3=0.3143947540800964 nESS=0.5090512931164454
+w=0.45 WFH_target=0.242 L3_gauss_loss_prior=57.44209787922651 G3_feasible=True R3=0.41996528471016786 nESS=0.32832833085345847
+w=0.60 WFH_target=0.302 L3_gauss_loss_prior=91.31872944231422 G3_feasible=True R3=0.5175669799494335 nESS=0.22021562236987952
+w=0.75 WFH_target=0.362 L3_gauss_loss_prior=133.2546738137451 G3_feasible=True R3=0.6105196755708524 nESS=0.15474512070269014
+w=0.90 WFH_target=0.422 L3_gauss_loss_prior=183.25131958765718 G3_feasible=True R3=0.7013545149157584 nESS=0.11326600110962563
+
+Saved -> <POPAUDIT_ROOT>/experiments/E_state/audits_v3/PAPER_xstate_v3/l3_counterfactual/semapop_vae_TX_2024/l3_counterfactual_curve.csv
+ w_shift  WFH_target  chiH_rstar_sigmaH  G3_feasible    R_3   nESS  commute_chi_proj
+    0.00       0.062              4.171         True 0.0458 0.9901               1.0
+    0.15       0.122             13.868         True 0.1948 0.7761               1.0
+    0.30       0.182             31.626         True 0.3144 0.5091               1.0
+    0.45       0.242             57.442         True 0.4200 0.3283               1.0
+    0.60       0.302             91.319         True 0.5176 0.2202               1.0
+    0.75       0.362            133.255         True 0.6105 0.1547               1.0
+    0.90       0.422            183.251         True 0.7014 0.1133               1.0

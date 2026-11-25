@@ -1,0 +1,10 @@
+state,year,n_adm_paper,theta_dagger_paper,D_dagger_paper,flat_paper,admitted_paper,n_adm_with_filtered,theta_dagger_with_filtered,D_dagger_with_filtered,flat_with_filtered,admitted_with_filtered
+CA,2018,4,semapop_vae,0.2336,Deploy,semapop_vae:0.234;ttvae:0.234;bn:0.237;tabddpm:0.263,5,semapop_vae,0.2336,Deploy,semapop_vae:0.234;ttvae:0.234;bn:0.237;ctgan_filt:0.246;tabddpm:0.263
+OH,2018,5,semapop_vae,0.1471,Deploy,semapop_vae:0.147;ttvae:0.156;bn:0.162;tabddpm:0.244;wgan_zcr:0.252,6,semapop_vae,0.1471,Deploy,semapop_vae:0.147;ttvae:0.156;bn:0.162;ctgan_filt:0.180;tabddpm:0.244;wgan_zcr:0.252
+TX,2018,4,ttvae,0.1423,Deploy,ttvae:0.142;semapop_vae:0.143;bn:0.151;tabddpm:0.163,5,ttvae,0.1423,Deploy,ttvae:0.142;semapop_vae:0.143;bn:0.151;ctgan_filt:0.155;tabddpm:0.163
+CA,2021,0,,,Defer,,0,,,Defer,
+OH,2021,0,,,Defer,,0,,,Defer,
+TX,2021,0,,,Defer,,0,,,Defer,
+CA,2024,4,semapop_vae,0.3207,Defer,semapop_vae:0.321;ttvae:0.324;bn:0.332;tabddpm:0.335,5,semapop_vae,0.3207,Defer,semapop_vae:0.321;ttvae:0.324;bn:0.332;ctgan_filt:0.335;tabddpm:0.335
+OH,2024,3,semapop_vae,0.2133,Deploy,semapop_vae:0.213;ttvae:0.223;bn:0.231,4,semapop_vae,0.2133,Deploy,semapop_vae:0.213;ttvae:0.223;bn:0.231;ctgan_filt:0.242
+TX,2024,3,semapop_vae,0.2375,Deploy,semapop_vae:0.238;ttvae:0.243;bn:0.248,4,semapop_vae,0.2375,Deploy,semapop_vae:0.238;ttvae:0.243;bn:0.248;ctgan_filt:0.251

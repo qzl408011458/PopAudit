@@ -1,0 +1,14 @@
+var1,var2,pair_type,method,discrepancy_mean,discrepancy_std,discrepancy_min,discrepancy_max,n_realizations_used
+Age_Group,Commute_Mode,categorical,joint_total_variation,0.9827078907292861,0.0,0.9827078907292861,0.9827078907292861,50
+Age_Group,Employment_status,categorical,joint_total_variation,1.0,0.0,1.0,1.0,50
+Age_Group,Household_Income_Class,categorical,joint_total_variation,0.9813160615916827,1.542897604105819e-06,0.9813119253981087,0.9813166256180791,50
+Employment_status,Commute_Mode,categorical,joint_total_variation,1.0,0.0,1.0,1.0,50
+Employment_status,Household_Income_Class,categorical,joint_total_variation,0.9452371730997011,1.542897604105819e-06,0.9452330369061271,0.9452377371260975,50
+Household_Income_Class,Commute_Mode,categorical,joint_total_variation,0.8697140386170074,1.542897604105819e-06,0.8697099024234335,0.8697146026434038,50
+Household_Size,Household_Income_Class,categorical,joint_total_variation,0.8933561450675892,1.5428976040920092e-06,0.8933520088740152,0.8933567090939856,50
+Household_Size,Number_of_cars_of_household,categorical,joint_total_variation,0.9405516178157137,0.0,0.9405516178157137,0.9405516178157137,50
+Household_Size,Number_of_children,categorical,joint_total_variation,0.994463140874993,0.0,0.9944631408749931,0.9944631408749931,50
+Number_of_cars_of_household,Commute_Mode,categorical,joint_total_variation,0.912937825490233,0.0,0.912937825490233,0.912937825490233,50
+Number_of_cars_of_household,Household_Income_Class,categorical,joint_total_variation,0.9844135065521067,1.5428976040754555e-06,0.9844093703585328,0.984414070578503,50
+Number_of_children,Household_Income_Class,categorical,joint_total_variation,0.9930337099776269,1.542897604105819e-06,0.993029573784053,0.9930342740040233,50
+Number_of_children,Number_of_cars_of_household,categorical,joint_total_variation,0.9905995600594109,0.0,0.9905995600594109,0.9905995600594109,50

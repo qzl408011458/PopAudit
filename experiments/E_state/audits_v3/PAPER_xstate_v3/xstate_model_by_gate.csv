@@ -1,0 +1,10 @@
+model,L1,L2,VALID
+semapop_vae,0,3,6
+ttvae,0,3,6
+bn,0,3,6
+wgan_zcr,0,8,1
+ctgan,9,0,0
+flowsyn,0,9,0
+borysov,9,0,0
+tabddpm,0,5,4
+tvae,9,0,0

@@ -1,0 +1,7 @@
+B0,CA_2018,CA_2024,OH_2018,OH_2024,TX_2018,TX_2024,n_deploy
+0.15,Defer,Defer,Deploy,Defer,Deploy,Defer,2
+0.2,Defer,Defer,Deploy,Defer,Deploy,Defer,2
+0.25,Deploy,Defer,Deploy,Deploy,Deploy,Deploy,5
+0.3,Deploy,Defer,Deploy,Deploy,Deploy,Deploy,5
+0.35,Deploy,Deploy,Deploy,Deploy,Deploy,Deploy,6
+0.4,Deploy,Deploy,Deploy,Deploy,Deploy,Deploy,6

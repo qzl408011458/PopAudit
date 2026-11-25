@@ -1,0 +1,83 @@
+wrote fig_cor1_marginal_transfer
+wrote fig_appB_joint_transfer
+wrote fig_appB_joint_transfer_50plus
+
+[marginal] pass 92/92  mean tightness 0.051
+[joint 65+] pass 23/23  mean|Δ|=0.0051  tightness|Δ|/d_gAE=0.113  (d_A ≈5.2x d_gAE)
+[joint 50+] pass 23/23  mean|Δ|=0.0081  tightness|Δ|/d_gAE=0.164
+                cell  delta65  delta50    d_A  d_gAE
+CA·SemaPop-VAE+·2018   0.0029   0.0076 0.2336 0.0380
+CA·SemaPop-VAE+·2024   0.0062   0.0081 0.3207 0.0527
+       CA·TTVAE·2018   0.0054   0.0116 0.2337 0.0415
+       CA·TTVAE·2024   0.0097   0.0124 0.3242 0.0570
+          CA·BN·2018   0.0056   0.0110 0.2370 0.0467
+          CA·BN·2024   0.0112   0.0143 0.3319 0.0608
+     CA·TabDDPM·2018   0.0013   0.0137 0.2629 0.0460
+     CA·TabDDPM·2024   0.0065   0.0155 0.3353 0.0597
+TX·SemaPop-VAE+·2018   0.0018   0.0016 0.1431 0.0175
+TX·SemaPop-VAE+·2024   0.0039   0.0016 0.2375 0.0398
+       TX·TTVAE·2018   0.0033   0.0025 0.1423 0.0182
+       TX·TTVAE·2024   0.0064   0.0038 0.2431 0.0406
+          TX·BN·2018   0.0031   0.0032 0.1514 0.0247
+          TX·BN·2024   0.0063   0.0045 0.2481 0.0463
+     TX·TabDDPM·2018   0.0037   0.0087 0.1627 0.0313
+OH·SemaPop-VAE+·2018   0.0016   0.0018 0.1471 0.0341
+OH·SemaPop-VAE+·2024   0.0032   0.0062 0.2133 0.0564
+       OH·TTVAE·2018   0.0039   0.0057 0.1556 0.0318
+       OH·TTVAE·2024   0.0089   0.0014 0.2233 0.0580
+          OH·BN·2018   0.0042   0.0047 0.1621 0.0368
+          OH·BN·2024   0.0090   0.0010 0.2310 0.0649
+ OH·WGAN-GP-ZCR·2018   0.0089   0.0311 0.2515 0.0934
+     OH·TabDDPM·2018   0.0009   0.0141 0.2436 0.0771
+
+[stats] {
+ "n_valid_cells": 23,
+ "marginal": {
+  "n_points": 92,
+  "n_below_bound": 92,
+  "mean_tightness_ratio": 0.05062197565647704,
+  "median_tightness_ratio": 0.04260000948227838,
+  "max_tightness_ratio": 0.13105813519424,
+  "max_ratio_cell": "CA\u00b7BN\u00b72018",
+  "max_ratio_functional": "car-commute share",
+  "per_functional_mean_ratio": {
+   "3+ children HH": 0.06435228273441954,
+   "WFH share": 0.059581221874500725,
+   "car-commute share": 0.04768347769220984,
+   "zero-car HH share": 0.030870920324778003
+  },
+  "per_functional_max_ratio": {
+   "3+ children HH": 0.11798500878479,
+   "WFH share": 0.12660540247028781,
+   "car-commute share": 0.13105813519424,
+   "zero-car HH share": 0.056771100353691296
+  },
+  "d_A_min": 0.14228661402579262,
+  "d_A_max": 0.33525472227295616,
+  "d_A_mean": 0.22760382169862214
+ },
+ "joint_65plus": {
+  "n_points": 23,
+  "n_below_bound": 23,
+  "mean_abs_delta": 0.005111603401845096,
+  "max_abs_delta": 0.011175278204624037,
+  "mean_tightness_ratio": 0.11257068559290202,
+  "max_tightness_ratio": 0.18381629223664137,
+  "d_gAE_mean": 0.04666695909477294,
+  "d_gAE_median": 0.045984547357685944,
+  "d_gAE_min": 0.017503979378664235,
+  "d_gAE_max": 0.09340819618224222,
+  "dA_over_dG_mean": 5.247827329197838,
+  "dA_over_dG_median": 5.45942851641229,
+  "dA_over_dG_min": 2.6929698328511975,
+  "dA_over_dG_max": 8.176046921158752
+ },
+ "joint_50plus": {
+  "n_points": 23,
+  "n_below_bound": 23,
+  "mean_abs_delta": 0.008092633903174789,
+  "max_abs_delta": 0.031100129467638266,
+  "mean_tightness_ratio": 0.16402509419097425,
+  "max_tightness_ratio": 0.33294861413404203
+ }
+}

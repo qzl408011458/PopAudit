@@ -1,0 +1,15 @@
+tau=1.0: feasible=True feas_rate=1.000 R3=0.04579808519636644 nESS=0.9901147263892245 binding=Commute_Mode=1.000
+tau=0.75: feasible=True feas_rate=1.000 R3=0.06076009672699433 nESS=0.9822240648552842 binding=Commute_Mode=0.750
+tau=0.5: feasible=True feas_rate=1.000 R3=0.0786015343726454 nESS=0.9697260235556782 binding=Commute_Mode=0.500
+tau=0.3: feasible=True feas_rate=1.000 R3=0.09675485527138056 nESS=0.9536929955358234 binding=Commute_Mode=0.300
+tau=0.2: feasible=True feas_rate=1.000 R3=0.10859971934247009 nESS=0.9415858331344775 binding=Household_Income_Class=0.200
+tau=0.1: feasible=True feas_rate=1.000 R3=0.12484802509686142 nESS=0.9230716750258502 binding=Household_Income_Class=0.100
+
+Saved -> <POPAUDIT_ROOT>/experiments/E_state/audits_v3/PAPER_xstate_v3/l3_stress/semapop_vae_TX_2024/l3_stress_curve.csv
+ tau  feasible  feasibility_rate    R_3      KL   nESS                 binding_attr  rc
+1.00      True               1.0 0.0458 0.00419 0.9901           Commute_Mode=1.000   0
+0.75      True               1.0 0.0608 0.00738 0.9822           Commute_Mode=0.750   0
+0.50      True               1.0 0.0786 0.01236 0.9697           Commute_Mode=0.500   0
+0.30      True               1.0 0.0968 0.01872 0.9537           Commute_Mode=0.300   0
+0.20      True               1.0 0.1086 0.02359 0.9416 Household_Income_Class=0.200   0
+0.10      True               1.0 0.1248 0.03117 0.9231 Household_Income_Class=0.100   0

@@ -1,0 +1,19 @@
+2018 CA {'state': 'CA', 'year': 2018, 'n_ref': 378817, 'n_unmatched': 204488, 'frac_records_on_map': 1.0, 'w_off_map': 0.0} {'state': 'CA', 'year': 2018, 'var': 'JWTR', 'share_code03_05': 0.0085013680875303, 'share_code05': 0.002205574253587446, 'share_taxi': 0.001215434570504445}
+2018 OH {'state': 'OH', 'year': 2018, 'n_ref': 119086, 'n_unmatched': 64077, 'frac_records_on_map': 1.0, 'w_off_map': 0.0} {'state': 'OH', 'year': 2018, 'var': 'JWTR', 'share_code03_05': 0.00038179752292709953, 'share_code05': 2.9171623418808187e-05, 'share_taxi': 0.0005503256699507128}
+2018 TX {'state': 'TX', 'year': 2018, 'n_ref': 268100, 'n_unmatched': 146091, 'frac_records_on_map': 1.0, 'w_off_map': 0.0} {'state': 'TX', 'year': 2018, 'var': 'JWTR', 'share_code03_05': 0.0008229087711957193, 'share_code05': 0.00040272672366532537, 'share_taxi': 0.0004920241190069837}
+2021 CA {'state': 'CA', 'year': 2021, 'n_ref': 386061, 'n_unmatched': 215353, 'frac_records_on_map': 1.0, 'w_off_map': 0.0} {'state': 'CA', 'year': 2021, 'var': 'JWTRNS', 'share_code03_05': 0.0021726988205975476, 'share_code05': 0.0003360531911087044, 'share_taxi': 0.0006262832639394283}
+2021 OH {'state': 'OH', 'year': 2021, 'n_ref': 119869, 'n_unmatched': 66092, 'frac_records_on_map': 1.0, 'w_off_map': 0.0} {'state': 'OH', 'year': 2021, 'var': 'JWTRNS', 'share_code03_05': 0.00016086564221426844, 'share_code05': 7.911703353229456e-05, 'share_taxi': 0.0008247865856220751}
+2021 TX {'state': 'TX', 'year': 2021, 'n_ref': 261446, 'n_unmatched': 146556, 'frac_records_on_map': 1.0, 'w_off_map': 0.0} {'state': 'TX', 'year': 2021, 'var': 'JWTRNS', 'share_code03_05': 0.00028965785321773704, 'share_code05': 0.0001456925154381743, 'share_taxi': 0.00041127148012115036}
+2024 CA {'state': 'CA', 'year': 2024, 'n_ref': 393725, 'n_unmatched': 210514, 'frac_records_on_map': 1.0, 'w_off_map': 0.0} {'state': 'CA', 'year': 2024, 'var': 'JWTRNS', 'share_code03_05': 0.005064407903951745, 'share_code05': 0.0008381674206073491, 'share_taxi': 0.001823198004081178}
+2024 OH {'state': 'OH', 'year': 2024, 'n_ref': 122052, 'n_unmatched': 65054, 'frac_records_on_map': 1.0, 'w_off_map': 0.0} {'state': 'OH', 'year': 2024, 'var': 'JWTRNS', 'share_code03_05': 0.00031127706570495883, 'share_code05': 4.5105300680686115e-05, 'share_taxi': 0.002205615542613401}
+2024 TX {'state': 'TX', 'year': 2024, 'n_ref': 292272, 'n_unmatched': 158351, 'frac_records_on_map': 1.0, 'w_off_map': 0.0} {'state': 'TX', 'year': 2024, 'var': 'JWTRNS', 'share_code03_05': 0.0005467416317578782, 'share_code05': 0.00017740021030441793, 'share_taxi': 0.0017021599713986503}
+  state  year     var  share_code03_05  share_code05  share_taxi
+0    CA  2018    JWTR           0.8501        0.2206      0.1215
+1    OH  2018    JWTR           0.0382        0.0029      0.0550
+2    TX  2018    JWTR           0.0823        0.0403      0.0492
+3    CA  2021  JWTRNS           0.2173        0.0336      0.0626
+4    OH  2021  JWTRNS           0.0161        0.0079      0.0825
+5    TX  2021  JWTRNS           0.0290        0.0146      0.0411
+6    CA  2024  JWTRNS           0.5064        0.0838      0.1823
+7    OH  2024  JWTRNS           0.0311        0.0045      0.2206
+8    TX  2024  JWTRNS           0.0547        0.0177      0.1702

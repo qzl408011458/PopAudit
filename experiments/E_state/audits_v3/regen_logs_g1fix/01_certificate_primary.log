@@ -1,0 +1,76 @@
+==========================================================================================
+O1 v3 CERTIFICATE (PRIMARY): 9 models x 3 states x 3 horizons; cases loaded=81
+==========================================================================================
+Total cases: 81 | VALID: 23
+
+By horizon (valid / cases):
+  2018: 13 / 27
+  2021: 0 / 27
+  2024: 10 / 27
+
+By model (valid / 9):
+  semapop_vae       : 6 / 9
+  ttvae             : 6 / 9
+  bn                : 6 / 9
+  wgan_zcr          : 1 / 9
+  ctgan             : 0 / 9
+  flowsyn           : 0 / 9
+  borysov           : 0 / 9
+  tabddpm           : 4 / 9
+  tvae              : 0 / 9
+
+First-failed-gate counts:
+first_fail
+L2    31
+L1    27
+  => L1 reject=27, L2 reject=31, L3 reject=0, valid=23
+
+Model x first-failed gate (counts over the 9 state-horizon cases):
+first_fail   L1  L2  VALID
+model                     
+semapop_vae   0   3      6
+ttvae         0   3      6
+bn            0   3      6
+wgan_zcr      0   8      1
+ctgan         9   0      0
+flowsyn       0   9      0
+borysov       9   0      0
+tabddpm       0   5      4
+tvae          9   0      0
+
+L1 detail per (model,state):  marg / dep / support / invalid  [gates: marg<=0.05-eta, dep<=0.10-eta, 1-supp<=0.30-eta, inv<=0.005]
+      model state  L1_marg   L1_dep  L1_support  L1_invalid    L1_failed
+         bn    CA 0.006466 0.026062    0.997707    0.000104             
+         bn    OH 0.009334 0.033431    0.996303    0.003143             
+         bn    TX 0.004244 0.020894    0.998040    0.000108             
+    borysov    CA 0.045223 0.083365    0.991460    0.007963 invalid_mass
+    borysov    OH 0.066950 0.140661    0.995009    0.031777 invalid_mass
+    borysov    TX 0.076915 0.144415    0.996987    0.029230 invalid_mass
+      ctgan    CA 0.010258 0.026561    0.984063    0.011912 invalid_mass
+      ctgan    OH 0.010629 0.029702    0.985978    0.012614 invalid_mass
+      ctgan    TX 0.011267 0.029236    0.984715    0.016093 invalid_mass
+    flowsyn    CA 0.030483 0.056598    0.989937    0.002830             
+    flowsyn    OH 0.041966 0.062712    0.989893    0.000658             
+    flowsyn    TX 0.035118 0.052940    0.993664    0.003778             
+semapop_vae    CA 0.005915 0.012968    0.986289    0.000098             
+semapop_vae    OH 0.007388 0.016056    0.988427    0.000377             
+semapop_vae    TX 0.007942 0.017137    0.989105    0.000207             
+    tabddpm    CA 0.013182 0.026269    0.996998    0.000462             
+    tabddpm    OH 0.030209 0.054523    0.996257    0.004843             
+    tabddpm    TX 0.013779 0.026330    0.998355    0.001192             
+      ttvae    CA 0.005260 0.011162    0.923044    0.000000             
+      ttvae    OH 0.006695 0.013119    0.960023    0.000000             
+      ttvae    TX 0.004186 0.010038    0.944852    0.000000             
+       tvae    CA 0.071455 0.145085    0.839883    0.011954 invalid_mass
+       tvae    OH 0.073088 0.144753    0.791661    0.010251 invalid_mass
+       tvae    TX 0.053491 0.107135    0.904783    0.010847 invalid_mass
+   wgan_zcr    CA 0.021532 0.042858    0.986232    0.000480             
+   wgan_zcr    OH 0.026325 0.057102    0.959727    0.000786             
+   wgan_zcr    TX 0.027852 0.053911    0.984931    0.001536             
+
+Deployment decision (R_2^MA vs B0=0.3):
+  max R_2^MA over valid = 1.0427  at CA x tabddpm x 2024
+  flat-budget verdict: DEFER
+  R_2^MA range over valid = [0.2792, 1.0427]
+
+Saved -> <POPAUDIT_ROOT>/experiments/E_state/audits_v3/PAPER_xstate_v3/  (xstate_certificate_all.csv, xstate_valid_only.csv)

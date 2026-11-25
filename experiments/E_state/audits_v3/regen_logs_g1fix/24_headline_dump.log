@@ -1,0 +1,224 @@
+
+===== NEW certificate (primary) =====
+VALID 23 / 81 by year {2018: 13, 2021: 0, 2024: 10}
+by prior {'SemaPop-VAE+': 6, 'TTVAE': 6, 'TabDDPM': 4, 'BN': 6, 'WGAN-GP-ZCR': 1, 'CTGAN': 0, 'FlowSyn': 0, 'Borysov-VAE': 0, 'TVAE': 0}
+by state {'CA': 8, 'OH': 8, 'TX': 7}
+first_fail {'L2': 31, 'L1:invalid_mass': 27, 'VALID': 23}
+L1 pass & L2 fail 31
+L2 pass & L3 fail 0
+  2018: L1-pass 18, min chi_H 1.271 (['OH', 'semapop_vae']), min margin chi-cutoff -3.744
+  2021: L1-pass 18, min chi_H 5.809 (['OH', 'ttvae']), min margin chi-cutoff 0.776
+  2024: L1-pass 18, min chi_H 3.993 (['OH', 'ttvae']), min margin chi-cutoff -1.034
+VALID cells: ['CA-bn-2018', 'CA-bn-2024', 'CA-semapop_vae-2018', 'CA-semapop_vae-2024', 'CA-tabddpm-2018', 'CA-tabddpm-2024', 'CA-ttvae-2018', 'CA-ttvae-2024', 'OH-bn-2018', 'OH-bn-2024', 'OH-semapop_vae-2018', 'OH-semapop_vae-2024', 'OH-tabddpm-2018', 'OH-ttvae-2018', 'OH-ttvae-2024', 'OH-wgan_zcr-2018', 'TX-bn-2018', 'TX-bn-2024', 'TX-semapop_vae-2018', 'TX-semapop_vae-2024', 'TX-tabddpm-2018', 'TX-ttvae-2018', 'TX-ttvae-2024']
+EXTRAS VALID 5 / 54 {'ctgan_defaults': 0, 'tvae_defaults': 0, 'borysov_defaults': 0, 'tabddpm_mleff': 0, 'semapop_vae_mu': 5, 'ttvae_prior': 0} first_fail {'L1:invalid_mass': 30, 'L2': 7, 'L1:marg_TVD,dep_TVD': 6, 'L1:marg_TVD,dep_TVD,1-support_cov': 6, 'VALID': 5}
+
+===== OLD certificate (primary) =====
+VALID 20 / 81 by year {2018: 13, 2021: 0, 2024: 7}
+by prior {'SemaPop-VAE+': 5, 'TTVAE': 5, 'TabDDPM': 4, 'BN': 5, 'WGAN-GP-ZCR': 1, 'CTGAN': 0, 'FlowSyn': 0, 'Borysov-VAE': 0, 'TVAE': 0}
+by state {'CA': 4, 'OH': 8, 'TX': 8}
+first_fail {'L2': 34, 'L1:invalid_mass': 27, 'VALID': 20}
+L1 pass & L2 fail 34
+L2 pass & L3 fail 0
+  2018: L1-pass 18, min chi_H 0.923 (['OH', 'semapop_vae']), min margin chi-cutoff -4.088
+  2021: L1-pass 18, min chi_H 5.383 (['OH', 'ttvae']), min margin chi-cutoff 0.352
+  2024: L1-pass 18, min chi_H 3.708 (['TX', 'semapop_vae']), min margin chi-cutoff -1.303
+VALID cells: ['CA-bn-2018', 'CA-semapop_vae-2018', 'CA-tabddpm-2018', 'CA-ttvae-2018', 'OH-bn-2018', 'OH-bn-2024', 'OH-semapop_vae-2018', 'OH-semapop_vae-2024', 'OH-tabddpm-2018', 'OH-ttvae-2018', 'OH-ttvae-2024', 'OH-wgan_zcr-2018', 'TX-bn-2018', 'TX-bn-2024', 'TX-semapop_vae-2018', 'TX-semapop_vae-2024', 'TX-tabddpm-2018', 'TX-tabddpm-2024', 'TX-ttvae-2018', 'TX-ttvae-2024']
+EXTRAS VALID 5 / 54 {'ctgan_defaults': 0, 'tvae_defaults': 0, 'borysov_defaults': 0, 'tabddpm_mleff': 0, 'semapop_vae_mu': 5, 'ttvae_prior': 0} first_fail {'L1:invalid_mass': 30, 'L2': 7, 'L1:marg_TVD,dep_TVD': 6, 'L1:marg_TVD,dep_TVD,1-support_cov': 6, 'VALID': 5}
+
+VALID flips (new vs old):
+  CA semapop_vae 2024: False->True  chi 6.790->4.479 cutoff 5.011 first_fail L2->nan
+  CA ttvae 2024: False->True  chi 6.867->4.574 cutoff 5.011 first_fail L2->nan
+  CA bn 2024: False->True  chi 6.847->4.651 cutoff 5.008 first_fail L2->nan
+  CA tabddpm 2024: False->True  chi 6.956->4.673 cutoff 5.011 first_fail L2->nan
+  TX tabddpm 2024: True->False  chi 4.737->5.097 cutoff 5.016 first_fail nan->L2
+max |d chi_H| 2018/2021/2024: {2018: 2.26412, 2021: 2.6371899999999986, 2024: 3.448290000000001}
+mean d chi_H: {2018: 0.11573481481481487, 2021: -0.11598518518518518, 2024: -0.6774711111111111}
+
+===== NEW scenario budget (post-projection) =====
+state  year  H  n_adm    v_H theta_dagger  D_dagger   flat  gamma_min  max_dA theta_runner_up  runner_up_gap  D_dagger_ref theta_dagger_pre  D_dagger_pre
+   CA  2018  5      4 0.0000  semapop_vae   0.23361 Deploy    0.00000 0.26289           ttvae        0.00009       0.23358            ttvae       0.24885
+   OH  2018  5      5 0.0000  semapop_vae   0.14706 Deploy    0.00000 0.25155           ttvae        0.00853       0.14672      semapop_vae       0.14930
+   TX  2018  5      4 0.0000        ttvae   0.14229 Deploy    0.00000 0.16267     semapop_vae        0.00083       0.14218            ttvae       0.15609
+   CA  2021  8      0 0.4167          NaN       NaN    NaN        NaN     NaN             NaN            NaN           NaN              NaN           NaN
+   OH  2021  8      0 0.4167          NaN       NaN    NaN        NaN     NaN             NaN            NaN           NaN              NaN           NaN
+   TX  2021  8      0 0.4167          NaN       NaN    NaN        NaN     NaN             NaN            NaN           NaN              NaN           NaN
+   CA  2024 11      4 0.8207  semapop_vae   0.32065  Defer    0.08388 0.33525           ttvae        0.00357       0.32061      semapop_vae       0.35933
+   OH  2024 11      3 0.8207  semapop_vae   0.21326 Deploy    0.00000 0.23102           ttvae        0.01001       0.21298      semapop_vae       0.23986
+   TX  2024 11      3 0.8207  semapop_vae   0.23754 Deploy    0.00000 0.24805           ttvae        0.00560       0.23749            ttvae       0.28077
+ year  mean_sigma_norm    v_H
+ 2018           0.1132 0.0000
+ 2021           0.1604 0.4167
+ 2024           0.2061 0.8207
+
+===== OLD scenario budget (post-projection) =====
+state  year  H  n_adm    v_H theta_dagger  D_dagger   flat  gamma_min  max_dA theta_dagger_pre  D_dagger_pre
+   CA  2018  5      4 0.0000  semapop_vae   0.24861 Deploy    0.00000 0.27917            ttvae       0.28003
+   OH  2018  5      5 0.0000  semapop_vae   0.17287 Deploy    0.00000 0.28531      semapop_vae       0.18075
+   TX  2018  5      4 0.0000        ttvae   0.17648 Deploy    0.00000 0.20094            ttvae       0.17882
+   CA  2021  8      0 0.4255          NaN       NaN    NaN        NaN     NaN              NaN           NaN
+   OH  2021  8      0 0.4255          NaN       NaN    NaN        NaN     NaN              NaN           NaN
+   TX  2021  8      0 0.4255          NaN       NaN    NaN        NaN     NaN              NaN           NaN
+   CA  2024 11      0 0.8373          NaN       NaN    NaN        NaN     NaN              NaN           NaN
+   OH  2024 11      3 0.8373  semapop_vae   0.34977  Defer    0.19812 0.36908      semapop_vae       0.37452
+   TX  2024 11      4 0.8373  semapop_vae   0.36539  Defer    0.26033 0.38461      semapop_vae       0.40128
+ year  mean_sigma_norm    v_H
+ 2018           0.1259 0.0000
+ 2021           0.1794 0.4255
+ 2024           0.2313 0.8373
+
+===== tableE NEW (sorted by scenario) =====
+state  year       model     d_A  d_A_ref  mu_out  d_A_pre  R_2_MA
+   CA  2018 semapop_vae 0.23361  0.23358 0.00007  0.25121 0.44424
+   CA  2018       ttvae 0.23370  0.23370 0.00000  0.24885 0.43836
+   CA  2018          bn 0.23699  0.23691 0.00016  0.25498 0.45258
+   CA  2018     tabddpm 0.26289  0.26289 0.00000  0.27629 0.43761
+   OH  2018 semapop_vae 0.14706  0.14672 0.00067  0.14930 0.27925
+   OH  2018       ttvae 0.15559  0.15516 0.00086  0.15755 0.28657
+   OH  2018          bn 0.16211  0.16181 0.00061  0.16893 0.31160
+   OH  2018     tabddpm 0.24357  0.24209 0.00296  0.26511 0.52803
+   OH  2018    wgan_zcr 0.25155  0.25152 0.00005  0.26838 0.52793
+   TX  2018       ttvae 0.14229  0.14218 0.00021  0.15609 0.29466
+   TX  2018 semapop_vae 0.14311  0.14298 0.00027  0.16792 0.33043
+   TX  2018          bn 0.15142  0.15134 0.00015  0.16189 0.30962
+   TX  2018     tabddpm 0.16267  0.16267 0.00000  0.17577 0.35507
+   CA  2024 semapop_vae 0.32065  0.32061 0.00008  0.35933 1.02085
+   CA  2024       ttvae 0.32422  0.32422 0.00000  0.36064 1.03164
+   CA  2024          bn 0.33191  0.33183 0.00016  0.36663 1.04023
+   CA  2024     tabddpm 0.33525  0.33525 0.00000  0.37330 1.04267
+   OH  2024 semapop_vae 0.21326  0.21298 0.00057  0.23986 0.87562
+   OH  2024       ttvae 0.22327  0.22298 0.00057  0.24801 0.87047
+   OH  2024          bn 0.23102  0.23086 0.00034  0.25579 0.88671
+   TX  2024 semapop_vae 0.23754  0.23749 0.00011  0.29044 0.74194
+   TX  2024       ttvae 0.24314  0.24305 0.00019  0.28077 0.72486
+   TX  2024          bn 0.24805  0.24796 0.00019  0.28721 0.73725
+
+NEW chi decomposition (all / L1-pass-L2-fail): [('Commute mode', '39.0', '52.3'), ('Household cars', '19.4', '15.1'), ('Household income', '17.6', '13.0'), ('Age', '11.4', '11.3'), ('Household size', '6.4', '4.4'), ('Employment', '3.3', '1.7'), ('Children', '2.8', '2.2'), ('Mean \\(\\overline{\\chi}_H\\)', '8.20', '8.29')]
+
+OLD chi decomposition (all / L1-pass-L2-fail): [('Commute mode', '37.8', '51.2'), ('Household cars', '19.5', '14.3'), ('Household income', '18.4', '15.9'), ('Age', '11.4', '10.6'), ('Household size', '6.5', '4.1'), ('Employment', '3.3', '1.8'), ('Children', '3.0', '2.2'), ('Mean \\(\\overline{\\chi}_H\\)', '8.43', '8.37')]
+
+===== Layer-3 diagnostics over VALID cells =====
+NEW: KL [0.0000, 0.0070]  nESS [0.9828, 1.0000]  R3 [0.0000, 0.0593]  binding 20/23
+   2018: n=13 KL<= 0.0006 nESS>= 0.9988 disp [0.000,0.035] R3 [0.0000,0.0172]
+   2024: n=10 KL<= 0.0070 nESS>= 0.9828 disp [0.100,0.132] R3 [0.0458,0.0593]
+   all L3-run cells feasible 78/81
+OLD: KL [0.0000, 0.0067]  nESS [0.9829, 1.0000]  R3 [0.0000, 0.0580]  binding 14/20
+   2018: n=13 KL<= 0.0008 nESS>= 0.9983 disp [0.000,0.041] R3 [0.0000,0.0203]
+   2024: n=7 KL<= 0.0067 nESS>= 0.9829 disp [0.097,0.132] R3 [0.0441,0.0580]
+   all L3-run cells feasible 78/81
+
+NEW L3 diagnostics table:
+
+\texttt{SemaPop-VAE+} & 9/9 & 0.052 & 0.976 \\
+\texttt{TTVAE} & 9/9 & 0.053 & 0.976 \\
+\texttt{TabDDPM} & 9/9 & 0.056 & 0.972 \\
+\texttt{BN} & 9/9 & 0.054 & 0.975 \\
+\texttt{WGAN-GP-ZCR} & 9/9 & 0.063 & 0.968 \\
+\midrule
+\texttt{CTGAN} & 9/9 & 0.046 & 0.978 \\
+\texttt{FlowSyn} & 9/9 & 0.067 & 0.965 \\
+\texttt{Borysov-VAE} & 9/9 & 0.057 & 0.984 \\
+\texttt{TVAE} & 6/9 & 0.274 & 0.515 \\
+
+
+OLD L3 diagnostics table:
+
+\texttt{SemaPop-VAE+} & 9/9 & 0.058 & 0.972 \\
+\texttt{TTVAE} & 9/9 & 0.053 & 0.973 \\
+\texttt{TabDDPM} & 9/9 & 0.056 & 0.969 \\
+\texttt{BN} & 9/9 & 0.058 & 0.972 \\
+\texttt{WGAN-GP-ZCR} & 9/9 & 0.065 & 0.964 \\
+\midrule
+\texttt{CTGAN} & 9/9 & 0.057 & 0.975 \\
+\texttt{FlowSyn} & 9/9 & 0.085 & 0.955 \\
+\texttt{Borysov-VAE} & 9/9 & 0.061 & 0.980 \\
+\texttt{TVAE} & 6/9 & 0.278 & 0.523 \\
+
+
+===== NEW kappa2 curve / B0 ladder =====
+  k2  n_valid_total  n_valid_CA  n_valid_OH  n_valid_TX  n_valid_2018  n_valid_2021  n_valid_2024  max_R2MA     max_R2MA_arg  verdict_ADOPT
+ 2.0              3           0           3           0             3             0             0    0.3116       OH×bn×2018          False
+ 3.5             11           4           3           4            11             0             0    0.4526       CA×bn×2018          False
+ 4.0             12           4           4           4            11             0             1    0.8705    OH×ttvae×2024          False
+ 5.0             23           8           8           7            13             0            10    1.0427  CA×tabddpm×2024          False
+ 6.0             31          10          13           8            14             3            14    1.1152 CA×wgan_zcr×2024          False
+ 7.0             33          11          13           9            14             4            15    1.2360  CA×flowsyn×2024          False
+10.0             45          13          17          15            17            10            18    1.2414  OH×flowsyn×2024          False
+20.0             54          18          18          18            18            18            18    1.3426  CA×flowsyn×2021          False
+  B0 CA_2018 CA_2024 OH_2018 OH_2024 TX_2018 TX_2024  n_deploy
+0.15   Defer   Defer  Deploy   Defer  Deploy   Defer         2
+0.20   Defer   Defer  Deploy   Defer  Deploy   Defer         2
+0.25  Deploy   Defer  Deploy  Deploy  Deploy  Deploy         5
+0.30  Deploy   Defer  Deploy  Deploy  Deploy  Deploy         5
+0.35  Deploy  Deploy  Deploy  Deploy  Deploy  Deploy         6
+0.40  Deploy  Deploy  Deploy  Deploy  Deploy  Deploy         6
+sensitivity_flips rows 1095
+ alpha  k1_supp  k2 direction state       model  year
+  0.01      0.2 2.0    -VALID    TX semapop_vae  2024
+  0.01      0.2 2.0    -VALID    TX     tabddpm  2018
+  0.01      0.2 2.0    -VALID    CA          bn  2018
+  0.01      0.2 2.0    -VALID    OH          bn  2024
+  0.01      0.2 2.0    -VALID    CA       ttvae  2024
+  0.01      0.2 2.0    -VALID    CA     tabddpm  2024
+  0.01      0.2 2.0    -VALID    TX          bn  2018
+  0.01      0.2 2.0    -VALID    OH       ttvae  2024
+  0.01      0.2 2.0    -VALID    CA semapop_vae  2024
+  0.01      0.2 2.0    -VALID    TX       ttvae  2024
+sensitivity_grid shape (60, 13)
+ alpha  k1_supp   k2  n_valid_total  n_valid_CA  n_valid_OH  n_valid_TX  n_valid_2018  n_valid_2021  n_valid_2024  max_R2MA    max_R2MA_arg  verdict_ADOPT
+  0.01      0.2  2.0              3           0           3           0             3             0             0    0.3116      OH×bn×2018          False
+  0.01      0.2  5.0             23           8           8           7            13             0            10    1.0427 CA×tabddpm×2024          False
+  0.01      0.2 10.0             45          13          17          15            17            10            18    1.2414 OH×flowsyn×2024          False
+
+===== OLD kappa2 curve / B0 ladder =====
+  k2  n_valid_total  n_valid_CA  n_valid_OH  n_valid_TX  n_valid_2018  n_valid_2021  n_valid_2024  max_R2MA     max_R2MA_arg  verdict_ADOPT
+ 2.0              6           0           3           3             6             0             0    0.3025       OH×bn×2018          False
+ 3.5              7           0           3           4             7             0             0    0.3604  TX×tabddpm×2018          False
+ 4.0             15           4           4           7            11             0             4    0.9902    OH×ttvae×2024          False
+ 5.0             20           4           8           8            13             0             7    1.0093       OH×bn×2024          False
+ 6.0             25           4          13           8            13             3             9    1.1392 OH×wgan_zcr×2024          False
+ 7.0             35           9          14          12            15             7            13    1.1964  CA×tabddpm×2024          False
+10.0             44          11          17          16            16            10            18    1.4355  CA×flowsyn×2024          False
+20.0             54          18          18          18            18            18            18    1.4355  CA×flowsyn×2024          False
+  B0 CA_2018 OH_2018 OH_2024 TX_2018 TX_2024  n_deploy
+0.15   Defer   Defer   Defer   Defer   Defer         0
+0.20   Defer  Deploy   Defer  Deploy   Defer         2
+0.25  Deploy  Deploy   Defer  Deploy   Defer         3
+0.30  Deploy  Deploy   Defer  Deploy   Defer         3
+0.35  Deploy  Deploy  Deploy  Deploy   Defer         4
+0.40  Deploy  Deploy  Deploy  Deploy  Deploy         5
+sensitivity_flips rows 1080
+ alpha  k1_supp  k2 direction state       model  year
+  0.01      0.2 2.0    -VALID    OH     tabddpm  2018
+  0.01      0.2 2.0    -VALID    OH       ttvae  2024
+  0.01      0.2 2.0    -VALID    OH          bn  2024
+  0.01      0.2 2.0    -VALID    CA semapop_vae  2018
+  0.01      0.2 2.0    -VALID    TX semapop_vae  2024
+  0.01      0.2 2.0    -VALID    TX     tabddpm  2018
+  0.01      0.2 2.0    -VALID    OH semapop_vae  2024
+  0.01      0.2 2.0    -VALID    TX       ttvae  2024
+  0.01      0.2 2.0    -VALID    CA       ttvae  2018
+  0.01      0.2 2.0    -VALID    TX          bn  2024
+sensitivity_grid shape (60, 13)
+ alpha  k1_supp   k2  n_valid_total  n_valid_CA  n_valid_OH  n_valid_TX  n_valid_2018  n_valid_2021  n_valid_2024  max_R2MA    max_R2MA_arg  verdict_ADOPT
+  0.01      0.2  2.0              6           0           3           3             6             0             0    0.3025      OH×bn×2018          False
+  0.01      0.2  5.0             20           4           8           8            13             0             7    1.0093      OH×bn×2024          False
+  0.01      0.2 10.0             45          11          18          16            16            11            18    1.4355 CA×flowsyn×2024          False
+
+NEW transfer: {"n_valid_cells": 23, "marginal": {"n_points": 92, "n_below_bound": 92, "mean_tightness_ratio": 0.05062197565647704, "median_tightness_ratio": 0.04260000948227838, "max_tightness_ratio": 0.13105813519424, "max_ratio_cell": "CA\u00b7BN\u00b72018", "max_ratio_functional": "car-commute share", "per_functional_mean_ratio": {"3+ children HH": 0.06435228273441954, "WFH share": 0.059581221874500725, "car-commute share": 0.04768347769220984, "zero-car HH share": 0.030870920324778003}, "per_functional_max_ratio": {"3+ children HH": 0.11798500878479, "WFH share": 0.12660540247028781, "car-commute share": 0.13105813519424, "zero-car HH share": 0.056771100353691296}, "d_A_min": 0.14228661402579262, "d_A_max": 0.33525472227295616, "d_A_mean": 0.22760382169862214}}
+   joint_65plus: {'n_points': 23, 'n_below_bound': 23, 'mean_abs_delta': 0.0051, 'max_abs_delta': 0.0112, 'mean_tightness_ratio': 0.1126, 'max_tightness_ratio': 0.1838, 'd_gAE_mean': 0.0467, 'd_gAE_median': 0.046, 'd_gAE_min': 0.0175, 'd_gAE_max': 0.0934, 'dA_over_dG_mean': 5.2478, 'dA_over_dG_median': 5.4594, 'dA_over_dG_min': 2.693, 'dA_over_dG_max': 8.176}
+
+OLD transfer: {"n_valid_cells": 20, "marginal": {"n_points": 80, "n_below_bound": 80, "mean_tightness_ratio": 0.04100922975326234, "median_tightness_ratio": 0.03655930171321754, "max_tightness_ratio": 0.11422221552976271, "max_ratio_cell": "CA\u00b7BN\u00b72018", "max_ratio_functional": "car-commute share", "per_functional_mean_ratio": {"3+ children HH": 0.048650217320524256, "WFH share": 0.04104273990326491, "car-commute share": 0.045890486126220355, "zero-car HH share": 0.02845347566303986}, "per_functional_max_ratio": {"3+ children HH": 0.09244031064690827, "WFH share": 0.08227398442975968, "car-commute share": 0.11422221552976271, "zero-car HH share": 0.05444413014169043}, "d_A_min": 0.1732259714345621, "d_A_max": 0.3846063491892541, "d_A_mean": 0.2733464975434967}}
+   joint_65plus: {'n_points': 20, 'n_below_bound': 20, 'mean_abs_delta': 0.0044, 'max_abs_delta': 0.0105, 'mean_tightness_ratio': 0.106, 'max_tightness_ratio': 0.2056, 'd_gAE_mean': 0.0437, 'd_gAE_median': 0.0409, 'd_gAE_min': 0.0163, 'd_gAE_max': 0.0928, 'dA_over_dG_mean': 6.8575, 'dA_over_dG_median': 6.3863, 'dA_over_dG_min': 3.0761, 'dA_over_dG_max': 10.9235}
+
+===== single-share example (Household_Income_Class==High) =====
+NEW CA 2018 semapop_vae: High proj 0.3108 prior 0.3076 realized 0.3854 sigma 0.0516 z 1.45 | WFH proj 0.0247 realized 0.0282
+NEW OH 2018 semapop_vae: High proj 0.2251 prior 0.2251 realized 0.2644 sigma 0.0164 z 2.39 | WFH proj 0.0148 realized 0.0206
+NEW TX 2018 ttvae: High proj 0.2474 prior 0.2442 realized 0.2876 sigma 0.0173 z 2.33 | WFH proj 0.0188 realized 0.0244
+NEW CA 2024 semapop_vae: High proj 0.3113 prior 0.3080 realized 0.4186 sigma 0.0984 z 1.09 | WFH proj 0.0430 realized 0.0676
+NEW OH 2024 semapop_vae: High proj 0.2250 prior 0.2226 realized 0.2818 sigma 0.0243 z 2.34 | WFH proj 0.0340 realized 0.0592
+NEW TX 2024 semapop_vae: High proj 0.2573 prior 0.2464 realized 0.3170 sigma 0.0274 z 2.18 | WFH proj 0.0324 realized 0.0624
+OLD CA 2018 semapop_vae: High proj 0.3213 prior 0.3076 realized 0.4166 sigma 0.0443 z 2.15 | WFH proj 0.0249 realized 0.0282
+OLD OH 2018 semapop_vae: High proj 0.2253 prior 0.2253 realized 0.2959 sigma 0.0651 z 1.08 | WFH proj 0.0157 realized 0.0206
+OLD TX 2018 ttvae: High proj 0.2445 prior 0.2445 realized 0.3183 sigma 0.0633 z 1.17 | WFH proj 0.0182 realized 0.0244
+OLD OH 2024 semapop_vae: High proj 0.2250 prior 0.2226 realized 0.4235 sigma 0.1269 z 1.56 | WFH proj 0.0340 realized 0.0592
+OLD TX 2024 semapop_vae: High proj 0.2496 prior 0.2464 realized 0.4488 sigma 0.1235 z 1.61 | WFH proj 0.0324 realized 0.0624

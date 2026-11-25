@@ -1,0 +1,33 @@
+CA 8574
+TX 7855
+OH 6250
+                                                  n_ref      P      R    IF1  gen_in_train
+state generator                                                                           
+CA    Memorizer (train subsample)             8574.0000 0.1291 0.1397 0.1342        1.0000
+      Real (test subsample, no shared source) 8574.0000 0.1194 0.1310 0.1249        0.2934
+      WGAN-GP-ZCR                             8574.0000 0.0780 0.0910 0.0840        0.1846
+      SemaPop-VAE+                            8574.0000 0.1096 0.1245 0.1166        0.3683
+      TTVAE                                   8574.0000 0.1273 0.1279 0.1276        0.9724
+      BN                                      8574.0000 0.0803 0.0982 0.0883        0.1968
+      TabDDPM                                 8574.0000 0.1040 0.1190 0.1110        0.2414
+      CTGAN                                   8574.0000 0.0750 0.0921 0.0826        0.1820
+TX    Memorizer (train subsample)             7855.0000 0.1723 0.1968 0.1837        1.0000
+      Real (test subsample, no shared source) 7855.0000 0.1741 0.1970 0.1848        0.3716
+      WGAN-GP-ZCR                             7855.0000 0.1064 0.1283 0.1163        0.2279
+      SemaPop-VAE+                            7855.0000 0.1550 0.1855 0.1689        0.4201
+      TTVAE                                   7855.0000 0.1712 0.1786 0.1748        1.0000
+      BN                                      7855.0000 0.1061 0.1392 0.1204        0.2381
+      TabDDPM                                 7855.0000 0.1360 0.1697 0.1510        0.2957
+      CTGAN                                   7855.0000 0.1033 0.1351 0.1171        0.2225
+OH    Memorizer (train subsample)             6250.0000 0.1806 0.2404 0.2062        1.0000
+      Real (test subsample, no shared source) 6250.0000 0.1896 0.2426 0.2129        0.4172
+      WGAN-GP-ZCR                             6250.0000 0.1115 0.1539 0.1293        0.2526
+      SemaPop-VAE+                            6250.0000 0.1616 0.2323 0.1906        0.4398
+      TTVAE                                   6250.0000 0.1768 0.2248 0.1979        1.0000
+      BN                                      6250.0000 0.1121 0.1827 0.1389        0.2710
+      TabDDPM                                 6250.0000 0.1162 0.1834 0.1423        0.2697
+      CTGAN                                   6250.0000 0.1185 0.1843 0.1442        0.2601
+  state  spearman_IF1_vs_HM  spearman_IF1_vs_IF1leakfree                                                  order_IF1                                                   order_HM                                         order_IF1_leakfree
+0    CA            0.714286                          1.0  TTVAE > SemaPop-VAE+ > TabDDPM > BN > WGAN-GP-ZCR > CTGAN  SemaPop-VAE+ > TTVAE > TabDDPM > CTGAN > WGAN-GP-ZCR > BN  TTVAE > SemaPop-VAE+ > TabDDPM > BN > WGAN-GP-ZCR > CTGAN
+1    TX            0.771429                          1.0  TTVAE > SemaPop-VAE+ > TabDDPM > BN > CTGAN > WGAN-GP-ZCR  TTVAE > TabDDPM > SemaPop-VAE+ > CTGAN > WGAN-GP-ZCR > BN  TTVAE > SemaPop-VAE+ > TabDDPM > BN > CTGAN > WGAN-GP-ZCR
+2    OH            0.771429                          1.0  TTVAE > SemaPop-VAE+ > CTGAN > TabDDPM > BN > WGAN-GP-ZCR  TTVAE > SemaPop-VAE+ > CTGAN > WGAN-GP-ZCR > BN > TabDDPM  TTVAE > SemaPop-VAE+ > CTGAN > TabDDPM > BN > WGAN-GP-ZCR

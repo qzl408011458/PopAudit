@@ -1,0 +1,38 @@
+{
+  "scenario_name": "retrospective_reference_scenario",
+  "n_realizations": 50,
+  "n_targets": 64,
+  "loss_aggregation": "attribute_normalized",
+  "n_attributes": 7,
+  "ESS": 45.49751287089361,
+  "ESS_ratio": 0.9099502574178722,
+  "entropy": 3.8659925416833443,
+  "entropy_ratio": 0.9882335907327406,
+  "perplexity": 47.75064342396287,
+  "max_weight": 0.03879987158650341,
+  "top_5_weight": 0.1707349593556381,
+  "prior_mean_scenario_loss": 23.21888351117962,
+  "posterior_mean_scenario_loss": 23.128257249985708,
+  "weight_summary": {
+    "scenario_name": "retrospective_reference_scenario",
+    "n_realizations": 50,
+    "n_targets": 64,
+    "n_attributes": 7,
+    "loss_aggregation": "attribute_normalized",
+    "attribute_weights": {},
+    "ESS": 45.49751287089361,
+    "ESS_ratio": 0.9099502574178722,
+    "entropy": 3.8659925416833443,
+    "entropy_ratio": 0.9882335907327406,
+    "perplexity": 47.75064342396287,
+    "max_weight": 0.03879987158650341,
+    "top_5_weight": 0.1707349593556381,
+    "prior_mean_scenario_loss": 23.21888351117962,
+    "posterior_mean_scenario_loss": 23.128257249985708,
+    "interpretation": {
+      "ESS_ratio_close_to_1": "posterior weights are diffuse across realizations under the configured scenario kernel",
+      "ESS_ratio_close_to_0": "scenario posterior weights concentrate on very few realizations",
+      "attribute_normalized_loss": "sum over attributes of 0.5 times the mean squared standardized error within each attribute"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+state,year,n,at_floor,median,max,argmax,l2,prior_indep
+CA,2018,68,36,0.005,0.052,Household_Income_Class==High,0.127,True
+CA,2021,69,33,0.006,0.075,Household_Income_Class==High,0.183,True
+CA,2024,69,30,0.0074,0.098,Household_Income_Class==High,0.238,True
+TX,2018,66,36,0.005,0.029,Number_of_children==0,0.094,True
+TX,2021,68,36,0.005,0.043,Number_of_children==0,0.131,True
+TX,2024,70,35,0.0054,0.057,Number_of_children==0,0.167,True
+OH,2018,64,31,0.0067,0.039,Number_of_children==0,0.119,True
+OH,2021,64,30,0.0086,0.058,Number_of_children==0,0.167,True
+OH,2024,63,28,0.0106,0.076,Number_of_children==0,0.213,True

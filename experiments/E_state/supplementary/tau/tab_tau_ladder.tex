@@ -1,0 +1,29 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Post-projection residual \(D\), nESS, and displacement coefficient \(\sqrt{1/\mathrm{nESS}-1}\) of \texttt{SemaPop-VAE+}, the prior selected at \(\tau_a=1\), in the three 2024 scenarios with admitted priors as the tolerance \(\tau_a=\tau\) is tightened uniformly for all \(a\in\Aset\). California~2024 is deferred after admission; Ohio and Texas~2024 are deployed. \(\min_\theta D\) is the smallest residual among the four admitted California priors. The row \(\tau=1\) reproduces Table~\ref*{tab:selected-prior-budget} of the main text. All projections are feasible. The last row gives the largest tolerance \(\tau^{\ast}\) at which \(D\le B_0=0.30\), interpolated linearly between ladder points.}
+\label{tab:tau-ladder}
+\begin{tabular}{lccccccccc}
+\toprule
+ & \multicolumn{4}{c}{California 2024} & \multicolumn{2}{c}{Ohio 2024} & \multicolumn{2}{c}{Texas 2024} \\
+\cmidrule(lr){2-5}\cmidrule(lr){6-7}\cmidrule(lr){8-9}
+\(\tau\) & \(D\) & nESS & \(\sqrt{1/\mathrm{nESS}-1}\) & \(\min_\theta D\) & \(D\) & nESS & \(D\) & nESS \\
+\midrule
+1 & 0.321 & 0.987 & 0.115 & 0.321 & 0.213 & 0.983 & 0.238 & 0.990 \\
+0.9 & 0.318 & 0.985 & 0.124 & 0.318 & 0.211 & 0.980 & 0.230 & 0.987 \\
+0.8 & 0.315 & 0.983 & 0.132 & 0.315 & 0.209 & 0.977 & 0.222 & 0.984 \\
+0.7 & 0.310 & 0.980 & 0.142 & 0.310 & 0.207 & 0.974 & 0.214 & 0.980 \\
+0.6 & 0.304 & 0.977 & 0.153 & 0.304 & 0.205 & 0.970 & 0.206 & 0.975 \\
+0.55 & 0.301 & 0.975 & 0.159 & 0.301 & 0.203 & 0.968 & 0.203 & 0.973 \\
+0.5 & 0.298 & 0.973 & 0.166 & 0.298 & 0.201 & 0.965 & 0.198 & 0.970 \\
+0.4 & 0.290 & 0.969 & 0.180 & 0.290 & 0.195 & 0.960 & 0.188 & 0.963 \\
+0.3 & 0.282 & 0.963 & 0.196 & 0.282 & 0.187 & 0.952 & 0.177 & 0.954 \\
+0.2 & 0.272 & 0.955 & 0.217 & 0.272 & 0.179 & 0.942 & 0.162 & 0.942 \\
+0.1 & 0.231 & 0.941 & 0.250 & 0.227 & 0.162 & 0.927 & 0.134 & 0.923 \\
+0.01 & 0.087 & 0.889 & 0.353 & 0.087 & 0.071 & 0.886 & 0.055 & 0.881 \\
+0.001 & 0.028 & 0.856 & 0.411 & 0.027 & 0.024 & 0.861 & 0.019 & 0.857 \\
+\midrule
+\(\tau^{\ast}\) & \multicolumn{4}{c}{\(0.54\), nESS \(0.975\), \(0.16\)} & \multicolumn{2}{c}{\(D\le B_0\) for all \(\tau\)} & \multicolumn{2}{c}{\(D\le B_0\) for all \(\tau\)} \\
+\bottomrule
+\end{tabular}
+\end{table}

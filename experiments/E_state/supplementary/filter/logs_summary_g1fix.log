@@ -1,0 +1,116 @@
+==========================================================================================
+O1 v3 CERTIFICATE (PRIMARY): 4 models x 3 states x 3 horizons; cases loaded=30
+==========================================================================================
+Total cases: 30 | VALID: 6
+
+By horizon (valid / cases):
+  2018: 3 / 10
+  2021: 0 / 10
+  2024: 3 / 10
+
+By model (valid / 9):
+  ctgan_filt        : 6 / 9
+  tvae_filt         : 0 / 9
+  borysov_filt      : 0 / 9
+  ctgan_ctrl        : 0 / 3
+
+First-failed-gate counts:
+first_fail
+L1    18
+L2     6
+  => L1 reject=18, L2 reject=6, L3 reject=0, valid=6
+
+Model x first-failed gate (counts over the 9 state-horizon cases):
+first_fail    L1  L2  VALID
+model                      
+ctgan_filt     0   3      6
+tvae_filt      9   0      0
+borysov_filt   6   3      0
+ctgan_ctrl     3   0      0
+
+L1 detail per (model,state):  marg / dep / support / invalid  [gates: marg<=0.05-eta, dep<=0.10-eta, 1-supp<=0.30-eta, inv<=0.005]
+       model state  L1_marg   L1_dep  L1_support  L1_invalid        L1_failed
+borysov_filt    CA 0.046212 0.084023    0.991391    0.000000                 
+borysov_filt    OH 0.071025 0.142478    0.994822    0.000000 marg_TVD,dep_TVD
+borysov_filt    TX 0.079967 0.145083    0.996832    0.000000 marg_TVD,dep_TVD
+  ctgan_ctrl    OH 0.010629 0.029702    0.985978    0.012614     invalid_mass
+  ctgan_filt    CA 0.011031 0.026795    0.984057    0.000000                 
+  ctgan_filt    OH 0.011724 0.029872    0.985837    0.000000                 
+  ctgan_filt    TX 0.011308 0.028797    0.984682    0.000000                 
+   tvae_filt    CA 0.072847 0.144620    0.839865    0.000000 marg_TVD,dep_TVD
+   tvae_filt    OH 0.074670 0.146241    0.791661    0.000000 marg_TVD,dep_TVD
+   tvae_filt    TX 0.051468 0.105581    0.904750    0.000000 marg_TVD,dep_TVD
+
+Deployment decision (R_2^MA vs B0=0.3):
+  max R_2^MA over valid = 1.0034  at CA x ctgan_filt x 2024
+  flat-budget verdict: DEFER
+  R_2^MA range over valid = [0.3008, 1.0034]
+
+Saved -> <POPAUDIT_ROOT>/experiments/E_state/audits_v3_referee/filter/certificate/  (xstate_certificate_all.csv, xstate_valid_only.csv)
+
+[control] unfiltered CTGAN-Ohio, shadow vs audits_v3:
+         shadow                                                                                       audits_v3                                                                                      
+       L1_marg    L1_dep L1_support L1_invalid L2_chi_H     L3_KL L3_nESS    D_post       first_fail   L1_marg    L1_dep L1_support L1_invalid L2_chi_H     L3_KL L3_nESS    D_post       first_fail
+year                                                                                                                                                                                                
+2018  0.010629  0.029702   0.985978   0.012614  1.56446  0.000000  1.0000  0.184867  L1:invalid_mass  0.010629  0.029702   0.985978   0.012614  1.56446  0.000000  1.0000  0.184867  L1:invalid_mass
+2021  0.010629  0.029702   0.985978   0.012614  6.06264  0.015353  0.9581  0.205558  L1:invalid_mass  0.010629  0.029702   0.985978   0.012614  6.06264  0.015353  0.9581  0.205558  L1:invalid_mass
+2024  0.010629  0.029702   0.985978   0.012614  4.19212  0.006476  0.9838  0.248226  L1:invalid_mass  0.010629  0.029702   0.985978   0.012614  4.19212  0.006476  0.9838  0.248226  L1:invalid_mass 
+max |diff| = 0.00e+00
+
+ base_model state  year  L1_marg_unfilt  L1_marg_filt  L1_dep_unfilt  L1_dep_filt  L1_support_unfilt  L1_support_filt  L1_invalid_unfilt  L1_invalid_filt  L2_chi_H_unfilt  L2_chi_H_filt  L2_cutoff_filt  L3_nESS_unfilt  L3_nESS_filt  D_post_unfilt  D_post_filt first_fail_unfilt     first_fail_filt  VALID_filt
+   borysov    CA  2018          0.0452        0.0462         0.0834       0.0840             0.9915           0.9914             0.0080              0.0          14.1295        14.5823          5.0548          0.9862        0.9859         0.3304       0.3317   L1:invalid_mass                  L2       False
+   borysov    CA  2021          0.0452        0.0462         0.0834       0.0840             0.9915           0.9914             0.0080              0.0          13.2950        13.5025          5.0334          0.9669        0.9672         0.3149       0.3167   L1:invalid_mass                  L2       False
+   borysov    CA  2024          0.0452        0.0462         0.0834       0.0840             0.9915           0.9914             0.0080              0.0           7.8366         7.9346          5.0216          0.9893        0.9892         0.3958       0.3910   L1:invalid_mass                  L2       False
+   borysov    OH  2018          0.0670        0.0710         0.1407       0.1425             0.9950           0.9948             0.0318              0.0           8.2426         9.7424          5.0593          0.9962        0.9923         0.3974       0.4176   L1:invalid_mass L1:marg_TVD,dep_TVD       False
+   borysov    OH  2021          0.0670        0.0710         0.1407       0.1425             0.9950           0.9948             0.0318              0.0           7.9137         8.7237          5.0447          0.9849        0.9835         0.4259       0.4405   L1:invalid_mass L1:marg_TVD,dep_TVD       False
+   borysov    OH  2024          0.0670        0.0710         0.1407       0.1425             0.9950           0.9948             0.0318              0.0           5.3759         5.8500          5.0343          0.9956        0.9958         0.4703       0.4916   L1:invalid_mass L1:marg_TVD,dep_TVD       False
+   borysov    TX  2018          0.0769        0.0800         0.1444       0.1451             0.9970           0.9968             0.0292              0.0          16.6905        18.9231          5.0588          0.9814        0.9732         0.3597       0.3651   L1:invalid_mass L1:marg_TVD,dep_TVD       False
+   borysov    TX  2021          0.0769        0.0800         0.1444       0.1451             0.9970           0.9968             0.0292              0.0          14.1609        15.4997          5.0408          0.9650        0.9599         0.3720       0.3790   L1:invalid_mass L1:marg_TVD,dep_TVD       False
+   borysov    TX  2024          0.0769        0.0800         0.1444       0.1451             0.9970           0.9968             0.0292              0.0           8.9875         9.8219          5.0276          0.9870        0.9847         0.4244       0.4409   L1:invalid_mass L1:marg_TVD,dep_TVD       False
+     ctgan    CA  2018          0.0103        0.0110         0.0266       0.0268             0.9841           0.9841             0.0119              0.0           3.2009         3.0800          5.0133          0.9991        0.9993         0.2553       0.2458   L1:invalid_mass                 NaN        True
+     ctgan    CA  2021          0.0103        0.0110         0.0266       0.0268             0.9841           0.9841             0.0119              0.0           9.6957         9.6488          5.0189          0.9313        0.9319         0.2758       0.2695   L1:invalid_mass                  L2       False
+     ctgan    CA  2024          0.0103        0.0110         0.0266       0.0268             0.9841           0.9841             0.0119              0.0           4.3684         4.3276          5.0116          0.9914        0.9917         0.3455       0.3348   L1:invalid_mass                 NaN        True
+     ctgan    OH  2018          0.0106        0.0117         0.0297       0.0299             0.9860           0.9858             0.0126              0.0           1.5645         1.4744          5.0165          1.0000        1.0000         0.1849       0.1798   L1:invalid_mass                 NaN        True
+     ctgan    OH  2021          0.0106        0.0117         0.0297       0.0299             0.9860           0.9858             0.0126              0.0           6.0626         6.0049          5.0263          0.9581        0.9585         0.2056       0.2051   L1:invalid_mass                  L2       False
+     ctgan    OH  2024          0.0106        0.0117         0.0297       0.0299             0.9860           0.9858             0.0126              0.0           4.1921         4.1315          5.0208          0.9838        0.9840         0.2482       0.2416   L1:invalid_mass                 NaN        True
+     ctgan    TX  2018          0.0113        0.0113         0.0292       0.0288             0.9847           0.9847             0.0161              0.0           2.7466         2.4562          5.0112          0.9996        0.9997         0.1677       0.1552   L1:invalid_mass                 NaN        True
+     ctgan    TX  2021          0.0113        0.0113         0.0292       0.0288             0.9847           0.9847             0.0161              0.0           7.1525         6.9319          5.0150          0.9482        0.9488         0.2029       0.1919   L1:invalid_mass                  L2       False
+     ctgan    TX  2024          0.0113        0.0113         0.0292       0.0288             0.9847           0.9847             0.0161              0.0           4.4099         4.2387          5.0107          0.9898        0.9902         0.2618       0.2514   L1:invalid_mass                 NaN        True
+      tvae    CA  2018          0.0715        0.0728         0.1451       0.1446             0.8399           0.8399             0.0120              0.0          34.0988        35.3071          5.0663          0.1041        0.0965         0.3502       0.3464   L1:invalid_mass L1:marg_TVD,dep_TVD       False
+      tvae    CA  2021          0.0715        0.0728         0.1451       0.1446             0.8399           0.8399             0.0120              0.0          32.4924        33.0480          5.0383          0.1228        0.1156         0.3809       0.3748   L1:invalid_mass L1:marg_TVD,dep_TVD       False
+      tvae    CA  2024          0.0715        0.0728         0.1451       0.1446             0.8399           0.8399             0.0120              0.0          20.3925        20.7853          5.0238          0.1092        0.1500         0.4621       0.4481   L1:invalid_mass L1:marg_TVD,dep_TVD       False
+      tvae    OH  2018          0.0731        0.0747         0.1448       0.1462             0.7917           0.7917             0.0103              0.0          23.2189        23.7985          5.0736             NaN           NaN         4.5738       5.6718   L1:invalid_mass L1:marg_TVD,dep_TVD       False
+      tvae    OH  2021          0.0731        0.0747         0.1448       0.1462             0.7917           0.7917             0.0103              0.0          22.0873        22.4262          5.0490             NaN           NaN         4.9024       5.1836   L1:invalid_mass L1:marg_TVD,dep_TVD       False
+      tvae    OH  2024          0.0731        0.0747         0.1448       0.1462             0.7917           0.7917             0.0103              0.0          16.1544        16.3522          5.0348             NaN           NaN         5.2220       4.8909   L1:invalid_mass L1:marg_TVD,dep_TVD       False
+      tvae    TX  2018          0.0535        0.0515         0.1071       0.1056             0.9048           0.9048             0.0108              0.0          12.6424        12.4487          5.0487          0.9806        0.9815         0.3037       0.2928   L1:invalid_mass L1:marg_TVD,dep_TVD       False
+      tvae    TX  2021          0.0535        0.0515         0.1071       0.1056             0.9048           0.9048             0.0108              0.0          15.9651        15.9303          5.0375          0.8432        0.8450         0.3436       0.3374   L1:invalid_mass L1:marg_TVD,dep_TVD       False
+      tvae    TX  2024          0.0535        0.0515         0.1071       0.1056             0.9048           0.9048             0.0108              0.0          11.6318        11.5260          5.0286          0.9319        0.9333         0.4059       0.3944   L1:invalid_mass L1:marg_TVD,dep_TVD       False
+
+ state  year  n_adm_paper theta_dagger_paper  D_dagger_paper flat_paper                                                      admitted_paper  n_adm_with_filtered theta_dagger_with_filtered  D_dagger_with_filtered flat_with_filtered                                                               admitted_with_filtered
+   CA  2018            4        semapop_vae          0.2336     Deploy                semapop_vae:0.234;ttvae:0.234;bn:0.237;tabddpm:0.263                    5                semapop_vae                  0.2336             Deploy                semapop_vae:0.234;ttvae:0.234;bn:0.237;ctgan_filt:0.246;tabddpm:0.263
+   OH  2018            5        semapop_vae          0.1471     Deploy semapop_vae:0.147;ttvae:0.156;bn:0.162;tabddpm:0.244;wgan_zcr:0.252                    6                semapop_vae                  0.1471             Deploy semapop_vae:0.147;ttvae:0.156;bn:0.162;ctgan_filt:0.180;tabddpm:0.244;wgan_zcr:0.252
+   TX  2018            4              ttvae          0.1423     Deploy                ttvae:0.142;semapop_vae:0.143;bn:0.151;tabddpm:0.163                    5                      ttvae                  0.1423             Deploy                ttvae:0.142;semapop_vae:0.143;bn:0.151;ctgan_filt:0.155;tabddpm:0.163
+   CA  2021            0               None             NaN      Defer                                                                 NaN                    0                       None                     NaN              Defer                                                                                  NaN
+   OH  2021            0               None             NaN      Defer                                                                 NaN                    0                       None                     NaN              Defer                                                                                  NaN
+   TX  2021            0               None             NaN      Defer                                                                 NaN                    0                       None                     NaN              Defer                                                                                  NaN
+   CA  2024            4        semapop_vae          0.3207      Defer                semapop_vae:0.321;ttvae:0.324;bn:0.332;tabddpm:0.335                    5                semapop_vae                  0.3207              Defer                semapop_vae:0.321;ttvae:0.324;bn:0.332;ctgan_filt:0.335;tabddpm:0.335
+   OH  2024            3        semapop_vae          0.2133     Deploy                              semapop_vae:0.213;ttvae:0.223;bn:0.231                    4                semapop_vae                  0.2133             Deploy                              semapop_vae:0.213;ttvae:0.223;bn:0.231;ctgan_filt:0.242
+   TX  2024            3        semapop_vae          0.2375     Deploy                              semapop_vae:0.238;ttvae:0.243;bn:0.248                    4                semapop_vae                  0.2375             Deploy                              semapop_vae:0.238;ttvae:0.243;bn:0.248;ctgan_filt:0.251
+
+VALID: paper 23/81 ; truncated priors admitted 6/27 ; L1 pass 4/9
+first-fail of truncated priors:
+ first_fail
+L1:marg_TVD,dep_TVD    15
+L2                      6
+
+scenarios whose theta_dagger or flat decision changes:
+   none
+
+admitted truncated priors vs selected prior:
+ state  year      model  chi_H  cutoff  D_filt theta_dagger  D_dagger    gap  rank  n_admitted next_model  D_next
+   CA  2018 ctgan_filt 3.0800  5.0133  0.2458  semapop_vae    0.2336 0.0122     4           5    tabddpm  0.2629
+   OH  2018 ctgan_filt 1.4744  5.0165  0.1798  semapop_vae    0.1471 0.0327     4           6    tabddpm  0.2436
+   TX  2018 ctgan_filt 2.4562  5.0112  0.1552        ttvae    0.1423 0.0130     4           5    tabddpm  0.1627
+   CA  2024 ctgan_filt 4.3276  5.0116  0.3348  semapop_vae    0.3207 0.0142     4           5    tabddpm  0.3353
+   OH  2024 ctgan_filt 4.1315  5.0208  0.2416  semapop_vae    0.2133 0.0283     4           4       None     NaN
+   TX  2024 ctgan_filt 4.2387  5.0107  0.2514  semapop_vae    0.2375 0.0139     4           4       None     NaN

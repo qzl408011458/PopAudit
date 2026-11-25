@@ -1,0 +1,86 @@
+====================================================================================================
+HORIZON 2018   (13 L2-pass, 5 L2-fail)   [within-year => horizon controlled]
+====================================================================================================
+state       model  L2pass  L2_chi_H  L1_marg  SRMSE_J_mean  SRMSE_U_mean  Recall_mean  F1_mean
+   OH semapop_vae    True    1.2711   0.0074        0.9992        0.0244      88.7925  89.4990
+   OH       ttvae    True    1.3386   0.0067        1.0328        0.0254      87.0278  88.9348
+   OH          bn    True    1.5826   0.0093        2.0382        0.0258      89.0625  88.3668
+   TX       ttvae    True    2.1690   0.0042        0.9675        0.0219      87.2463  88.8937
+   TX          bn    True    2.3949   0.0042        2.4356        0.0229      89.2180  86.9361
+   TX semapop_vae    True    2.7276   0.0079        0.9833        0.0221      89.0948  89.4551
+   CA     tabddpm    True    2.8353   0.0132        1.7280        0.0397      89.1155  87.0444
+   CA       ttvae    True    2.8451   0.0053        1.1659        0.0377      84.8900  86.3542
+   CA semapop_vae    True    2.9219   0.0059        1.2932        0.0377      87.3983  87.1476
+   CA          bn    True    3.0326   0.0065        2.6430        0.0375      88.2913  86.9580
+   TX     tabddpm    True    3.1496   0.0138        1.4358        0.0219      90.6683  89.0648
+   OH    wgan_zcr    True    4.5430   0.0263        2.8032        0.0359      82.7275  84.1966
+   OH     tabddpm    True    4.5447   0.0302        2.2685        0.0366      89.5495  86.0830
+   CA    wgan_zcr   False    5.0660   0.0215        2.9676        0.0426      85.0440  84.4570
+   OH     flowsyn   False    8.8125   0.0420        2.0054        0.0560      89.3610  89.0160
+   TX     flowsyn   False    8.9528   0.0351        1.8599        0.0404      88.7483  87.7291
+   CA     flowsyn   False    9.6539   0.0305        2.6659        0.0554      86.9255  85.6936
+   TX    wgan_zcr   False   11.0218   0.0279        2.6907        0.0316      86.1745  85.7763
+   corr(chi_H, joint-SRMSE   ):  pearson=+0.53  spearman=+0.65  | partial|L1_marg=+0.19 (p=0.441)
+   corr(chi_H, recall(worse) ):  pearson=+0.15  spearman=+0.16  | partial|L1_marg=+0.19 (p=0.452)
+   corr(chi_H, F1(worse)     ):  pearson=+0.37  spearman=+0.55  | partial|L1_marg=+0.18 (p=0.464)
+   mean SRMSE_J_mean  : PASS=1.6765  FAIL=2.4379  (diff -0.7614)
+   mean Recall_mean   : PASS=87.9294  FAIL=87.2507  (diff +0.6787)
+   mean F1_mean       : PASS=87.6103  FAIL=86.5344  (diff +1.0759)
+   mean L1_marg       : PASS=0.0108  FAIL=0.0314  (diff -0.0205)
+
+====================================================================================================
+HORIZON 2021   (0 L2-pass, 18 L2-fail)   [within-year => horizon controlled]
+====================================================================================================
+state       model  L2pass  L2_chi_H  L1_marg  SRMSE_J_mean  SRMSE_U_mean  Recall_mean  F1_mean
+   OH       ttvae   False    5.8087   0.0067        1.3410        0.0325      85.6445  88.0860
+   OH semapop_vae   False    5.8787   0.0074        1.3727        0.0320      87.3123  88.3392
+   OH          bn   False    5.9731   0.0093        2.1844        0.0349      88.4343  87.4479
+   TX       ttvae   False    6.8879   0.0042        1.2447        0.0270      85.7063  87.8680
+   TX          bn   False    7.0448   0.0042        2.5980        0.0275      88.6993  86.3283
+   TX semapop_vae   False    7.1006   0.0079        1.2891        0.0267      87.8925  88.6604
+   OH     tabddpm   False    7.3853   0.0302        2.4315        0.0391      89.0000  85.4099
+   OH    wgan_zcr   False    7.5688   0.0263        3.0419        0.0417      81.4570  83.1372
+   TX     tabddpm   False    7.8605   0.0138        1.6204        0.0254      89.9380  88.4736
+   CA semapop_vae   False    9.9915   0.0059        1.7353        0.0389      86.4210  86.4773
+   CA       ttvae   False   10.1048   0.0053        1.6128        0.0390      83.3198  85.2759
+   CA          bn   False   10.1830   0.0065        2.7858        0.0394      88.0285  86.7378
+   CA     tabddpm   False   10.3014   0.0132        2.0424        0.0410      88.6393  86.5092
+   OH     flowsyn   False   10.9274   0.0420        2.0721        0.0500      88.8760  88.4895
+   TX     flowsyn   False   11.0600   0.0351        2.0102        0.0469      87.5645  86.8287
+   CA    wgan_zcr   False   11.3780   0.0215        3.2295        0.0437      84.5290  84.2267
+   TX    wgan_zcr   False   12.1207   0.0279        2.9368        0.0365      84.7830  84.7276
+   CA     flowsyn   False   13.1306   0.0305        2.8722        0.0549      86.7075  85.4454
+   corr(chi_H, joint-SRMSE   ):  pearson=+0.52  spearman=+0.57  | partial|L1_marg=+0.35 (p=0.152)
+   corr(chi_H, recall(worse) ):  pearson=+0.14  spearman=+0.12  | partial|L1_marg=+0.17 (p=0.494)
+   corr(chi_H, F1(worse)     ):  pearson=+0.43  spearman=+0.43  | partial|L1_marg=+0.33 (p=0.178)
+
+====================================================================================================
+HORIZON 2024   (10 L2-pass, 8 L2-fail)   [within-year => horizon controlled]
+====================================================================================================
+state       model  L2pass  L2_chi_H  L1_marg  SRMSE_J_mean  SRMSE_U_mean  Recall_mean  F1_mean
+   OH       ttvae    True    3.9926   0.0067        1.5245        0.0335      85.7518  87.8402
+   OH semapop_vae    True    4.0399   0.0074        1.5394        0.0328      87.8953  88.6106
+   TX       ttvae    True    4.1367   0.0042        1.4652        0.0373      85.6113  87.8685
+   OH          bn    True    4.1430   0.0093        2.3351        0.0358      88.8285  87.6102
+   TX          bn    True    4.2793   0.0042        2.6902        0.0378      88.1148  86.2366
+   TX semapop_vae    True    4.3338   0.0079        1.5064        0.0371      87.7268  88.5992
+   CA semapop_vae    True    4.4792   0.0059        1.8331        0.0480      86.9890  86.7546
+   CA       ttvae    True    4.5744   0.0053        1.7162        0.0477      84.2630  85.7888
+   CA          bn    True    4.6509   0.0065        2.9499        0.0478      88.2283  86.8076
+   CA     tabddpm    True    4.6727   0.0132        2.1571        0.0479      88.9860  86.7686
+   TX     tabddpm   False    5.0968   0.0138        1.8181        0.0372      89.5575  88.4205
+   OH     tabddpm   False    5.1102   0.0302        2.5196        0.0441      88.9383  85.3597
+   OH    wgan_zcr   False    5.3047   0.0263        3.0964        0.0448      81.9525  83.4655
+   CA    wgan_zcr   False    5.3451   0.0215        3.3544        0.0513      84.9308  84.2600
+   CA     flowsyn   False    6.5663   0.0305        3.0791        0.0657      86.9813  85.4970
+   OH     flowsyn   False    8.1199   0.0420        2.2874        0.0618      88.6500  88.2817
+   TX     flowsyn   False    8.3054   0.0351        2.2419        0.0599      87.4528  86.9447
+   TX    wgan_zcr   False    8.8261   0.0279        3.2277        0.0464      84.5090  84.7159
+   corr(chi_H, joint-SRMSE   ):  pearson=+0.46  spearman=+0.66  | partial|L1_marg=+0.06 (p=0.808)
+   corr(chi_H, recall(worse) ):  pearson=+0.10  spearman=+0.10  | partial|L1_marg=+0.13 (p=0.609)
+   corr(chi_H, F1(worse)     ):  pearson=+0.26  spearman=+0.50  | partial|L1_marg=-0.07 (p=0.784)
+   mean SRMSE_J_mean  : PASS=1.9717  FAIL=2.7031  (diff -0.7313)
+   mean Recall_mean   : PASS=87.2395  FAIL=86.6215  (diff +0.6180)
+   mean F1_mean       : PASS=87.2885  FAIL=85.8681  (diff +1.4204)
+   mean L1_marg       : PASS=0.0071  FAIL=0.0284  (diff -0.0213)
+

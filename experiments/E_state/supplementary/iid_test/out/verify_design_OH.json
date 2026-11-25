@@ -1,0 +1,150 @@
+{
+  "state": "OH",
+  "slice_equals_national_resample_filtered": true,
+  "historical_2013_equals_national_unweighted_filtered": true,
+  "raw_person_rows": 118223,
+  "raw_pwgtp_sum": 11570808.0,
+  "n_raw_state_persons": 118223,
+  "n_resampled_state_rows": 114112,
+  "state_total_expected": 114665.17753655495,
+  "state_total_sd": 332.36764794948954,
+  "state_total_z": -1.6643543376370435,
+  "sum_copies_check": 114112,
+  "share_persons_with_k_copies_obs": {
+    "0": 0.4547000160713228,
+    "1": 0.3025468817404397,
+    "2": 0.14295018735778994,
+    "3": 0.057865220811517216,
+    "4+": 0.04193769401893033
+  },
+  "share_persons_with_k_copies_exp": {
+    "0": 0.4530742750432609,
+    "1": 0.30409472530846937,
+    "2": 0.1416686114735105,
+    "3": 0.05821161533487906,
+    "4+": 0.04295077283989818
+  },
+  "gof_chi2_df4": 6.060385460354648,
+  "gof_p": 0.19468380846863878,
+  "ols_copies_on_lambda": {
+    "slope": 0.9943902193137165,
+    "intercept": 0.0007618565065911346
+  },
+  "dispersion_index": 0.9915059815828269,
+  "by_pwgtp_decile": [
+    {
+      "dec": 0,
+      "w_mean": 19.0084,
+      "c_mean": 0.192,
+      "lam_mean": 0.1884,
+      "n": 12290
+    },
+    {
+      "dec": 1,
+      "w_mean": 39.9171,
+      "c_mean": 0.3967,
+      "lam_mean": 0.3956,
+      "n": 11566
+    },
+    {
+      "dec": 2,
+      "w_mean": 54.9207,
+      "c_mean": 0.5423,
+      "lam_mean": 0.5443,
+      "n": 12256
+    },
+    {
+      "dec": 3,
+      "w_mean": 66.2221,
+      "c_mean": 0.6663,
+      "lam_mean": 0.6563,
+      "n": 11921
+    },
+    {
+      "dec": 4,
+      "w_mean": 74.4372,
+      "c_mean": 0.7241,
+      "lam_mean": 0.7377,
+      "n": 11272
+    },
+    {
+      "dec": 5,
+      "w_mean": 83.9986,
+      "c_mean": 0.8309,
+      "lam_mean": 0.8324,
+      "n": 12255
+    },
+    {
+      "dec": 6,
+      "w_mean": 99.4788,
+      "c_mean": 0.9787,
+      "lam_mean": 0.9858,
+      "n": 11503
+    },
+    {
+      "dec": 7,
+      "w_mean": 120.1118,
+      "c_mean": 1.1846,
+      "lam_mean": 1.1903,
+      "n": 11533
+    },
+    {
+      "dec": 8,
+      "w_mean": 150.1913,
+      "c_mean": 1.4617,
+      "lam_mean": 1.4884,
+      "n": 11813
+    },
+    {
+      "dec": 9,
+      "w_mean": 274.3143,
+      "c_mean": 2.7123,
+      "lam_mean": 2.7184,
+      "n": 11814
+    }
+  ],
+  "n_multiperson_households": 33629,
+  "within_hh_corr_resid_person1_person2": -0.00029256881673585505,
+  "within_hh_share_equal_copies_person1_person2_obs": 0.3751821344672753,
+  "within_hh_share_equal_copies_indep_sim": 0.3760742216539296,
+  "share_multiperson_hh_all_members_same_copies_obs": 0.2567724285586845,
+  "share_multiperson_hh_all_members_same_copies_indep_sim": 0.2561182312884713,
+  "overlap_observed": {
+    "person_vs_train": 0.37840029947591713,
+    "person_vs_trainval": 0.44010481657100076,
+    "hh_vs_train": 0.6570064886448714,
+    "hh_vs_trainval": 0.7159814075368106
+  },
+  "overlap_iid_analytic": {
+    "person_vs_train": 0.3780241843004335,
+    "person_vs_trainval": 0.4391104135364641,
+    "hh_vs_train": 0.6594988563445277,
+    "hh_vs_trainval": 0.716796743120856
+  },
+  "overlap_fresh_draw_mc": {
+    "person_vs_train": {
+      "mean": 0.37879960069877716,
+      "sd": 0.0018994540167088375,
+      "min": 0.3753587471924133,
+      "max": 0.3820345645121038
+    },
+    "person_vs_trainval": {
+      "mean": 0.4407599201397555,
+      "sd": 0.001899511990378054,
+      "min": 0.4361118043424008,
+      "max": 0.44333354130272024
+    },
+    "hh_vs_train": {
+      "mean": 0.6585631395058648,
+      "sd": 0.0018934732218142188,
+      "min": 0.6551035687546793,
+      "max": 0.6614830296980284
+    },
+    "hh_vs_trainval": {
+      "mean": 0.7170787060144745,
+      "sd": 0.001932361913390589,
+      "min": 0.7132362116296481,
+      "max": 0.7210662590466683
+    }
+  }
+}

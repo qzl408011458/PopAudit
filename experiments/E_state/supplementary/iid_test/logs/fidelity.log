@@ -1,0 +1,133 @@
+SemaPop-VAE+ CA 42 {'srmse_1_stored': 0.0201, 'srmse_1_orig': 0.0201, 'srmse_1_fresh': 0.0225}
+SemaPop-VAE+ CA 142 {'srmse_1_stored': 0.023, 'srmse_1_orig': 0.023, 'srmse_1_fresh': 0.0236}
+SemaPop-VAE+ CA 242 {'srmse_1_stored': 0.0352, 'srmse_1_orig': 0.0352, 'srmse_1_fresh': 0.0335}
+SemaPop-VAE+ TX 42 {'srmse_1_stored': 0.0245, 'srmse_1_orig': 0.0245, 'srmse_1_fresh': 0.0246}
+SemaPop-VAE+ TX 142 {'srmse_1_stored': 0.0245, 'srmse_1_orig': 0.0245, 'srmse_1_fresh': 0.0245}
+SemaPop-VAE+ TX 242 {'srmse_1_stored': 0.0297, 'srmse_1_orig': 0.0297, 'srmse_1_fresh': 0.0296}
+SemaPop-VAE+ OH 42 {'srmse_1_stored': 0.0294, 'srmse_1_orig': 0.0294, 'srmse_1_fresh': 0.0244}
+SemaPop-VAE+ OH 142 {'srmse_1_stored': 0.0294, 'srmse_1_orig': 0.0294, 'srmse_1_fresh': 0.0304}
+SemaPop-VAE+ OH 242 {'srmse_1_stored': 0.0318, 'srmse_1_orig': 0.0318, 'srmse_1_fresh': 0.033}
+TTVAE CA 42 {'srmse_1_stored': 0.0393, 'srmse_1_orig': 0.0393, 'srmse_1_fresh': 0.0383}
+TTVAE CA 142 {'srmse_1_stored': 0.0397, 'srmse_1_orig': 0.0397, 'srmse_1_fresh': 0.039}
+TTVAE CA 242 {'srmse_1_stored': 0.0413, 'srmse_1_orig': 0.0413, 'srmse_1_fresh': 0.0389}
+TTVAE TX 42 {'srmse_1_stored': 0.0313, 'srmse_1_orig': 0.0313, 'srmse_1_fresh': 0.0305}
+TTVAE TX 142 {'srmse_1_stored': 0.0357, 'srmse_1_orig': 0.0357, 'srmse_1_fresh': 0.0365}
+TTVAE TX 242 {'srmse_1_stored': 0.0333, 'srmse_1_orig': 0.0333, 'srmse_1_fresh': 0.0329}
+TTVAE OH 42 {'srmse_1_stored': 0.0298, 'srmse_1_orig': 0.0298, 'srmse_1_fresh': 0.033}
+TTVAE OH 142 {'srmse_1_stored': 0.0306, 'srmse_1_orig': 0.0306, 'srmse_1_fresh': 0.0334}
+TTVAE OH 242 {'srmse_1_stored': 0.0262, 'srmse_1_orig': 0.0262, 'srmse_1_fresh': 0.0233}
+BN CA 42 {'srmse_1_stored': 0.0372, 'srmse_1_orig': 0.0372, 'srmse_1_fresh': 0.0369}
+BN CA 142 {'srmse_1_stored': 0.0282, 'srmse_1_orig': 0.0282, 'srmse_1_fresh': 0.0288}
+BN CA 242 {'srmse_1_stored': 0.043, 'srmse_1_orig': 0.043, 'srmse_1_fresh': 0.0412}
+BN TX 42 {'srmse_1_stored': 0.0299, 'srmse_1_orig': 0.0299, 'srmse_1_fresh': 0.0301}
+BN TX 142 {'srmse_1_stored': 0.025, 'srmse_1_orig': 0.025, 'srmse_1_fresh': 0.0255}
+BN TX 242 {'srmse_1_stored': 0.0307, 'srmse_1_orig': 0.0307, 'srmse_1_fresh': 0.0318}
+BN OH 42 {'srmse_1_stored': 0.0409, 'srmse_1_orig': 0.0409, 'srmse_1_fresh': 0.0402}
+BN OH 142 {'srmse_1_stored': 0.0429, 'srmse_1_orig': 0.0429, 'srmse_1_fresh': 0.0421}
+BN OH 242 {'srmse_1_stored': 0.0504, 'srmse_1_orig': 0.0504, 'srmse_1_fresh': 0.0493}
+WGAN-GP-ZCR CA 42 {'srmse_1_stored': 0.0577, 'srmse_1_orig': 0.0577, 'srmse_1_fresh': 0.0573}
+WGAN-GP-ZCR CA 142 {'srmse_1_stored': 0.0498, 'srmse_1_orig': 0.0498, 'srmse_1_fresh': 0.0514}
+WGAN-GP-ZCR CA 242 {'srmse_1_stored': 0.0586, 'srmse_1_orig': 0.0586, 'srmse_1_fresh': 0.0587}
+WGAN-GP-ZCR TX 42 {'srmse_1_stored': 0.0697, 'srmse_1_orig': 0.0697, 'srmse_1_fresh': 0.0715}
+WGAN-GP-ZCR TX 142 {'srmse_1_stored': 0.0605, 'srmse_1_orig': 0.0605, 'srmse_1_fresh': 0.061}
+WGAN-GP-ZCR TX 242 {'srmse_1_stored': 0.0733, 'srmse_1_orig': 0.0733, 'srmse_1_fresh': 0.0742}
+WGAN-GP-ZCR OH 42 {'srmse_1_stored': 0.0645, 'srmse_1_orig': 0.0645, 'srmse_1_fresh': 0.0621}
+WGAN-GP-ZCR OH 142 {'srmse_1_stored': 0.0703, 'srmse_1_orig': 0.0703, 'srmse_1_fresh': 0.072}
+WGAN-GP-ZCR OH 242 {'srmse_1_stored': 0.0786, 'srmse_1_orig': 0.0786, 'srmse_1_fresh': 0.0818}
+CTGAN tuned CA 42 {'srmse_1_stored': 0.0297, 'srmse_1_orig': 0.0297, 'srmse_1_fresh': 0.0286}
+CTGAN tuned CA 142 {'srmse_1_stored': 0.0302, 'srmse_1_orig': 0.0302, 'srmse_1_fresh': 0.0296}
+CTGAN tuned CA 242 {'srmse_1_stored': 0.0307, 'srmse_1_orig': 0.0307, 'srmse_1_fresh': 0.0298}
+CTGAN tuned TX 42 {'srmse_1_stored': 0.0266, 'srmse_1_orig': 0.0266, 'srmse_1_fresh': 0.0258}
+CTGAN tuned TX 142 {'srmse_1_stored': 0.0237, 'srmse_1_orig': 0.0237, 'srmse_1_fresh': 0.0247}
+CTGAN tuned TX 242 {'srmse_1_stored': 0.0325, 'srmse_1_orig': 0.0325, 'srmse_1_fresh': 0.0324}
+CTGAN tuned OH 42 {'srmse_1_stored': 0.0303, 'srmse_1_orig': 0.0303, 'srmse_1_fresh': 0.0317}
+CTGAN tuned OH 142 {'srmse_1_stored': 0.0348, 'srmse_1_orig': 0.0348, 'srmse_1_fresh': 0.0362}
+CTGAN tuned OH 242 {'srmse_1_stored': 0.0308, 'srmse_1_orig': 0.0308, 'srmse_1_fresh': 0.0331}
+CTGAN as shipped CA 42 {'srmse_1_stored': 0.2073, 'srmse_1_orig': 0.2073, 'srmse_1_fresh': 0.2064}
+CTGAN as shipped CA 142 {'srmse_1_stored': 0.2048, 'srmse_1_orig': 0.2048, 'srmse_1_fresh': 0.2041}
+CTGAN as shipped CA 242 {'srmse_1_stored': 0.1955, 'srmse_1_orig': 0.1955, 'srmse_1_fresh': 0.1957}
+CTGAN as shipped TX 42 {'srmse_1_stored': 0.1961, 'srmse_1_orig': 0.1961, 'srmse_1_fresh': 0.1957}
+CTGAN as shipped TX 142 {'srmse_1_stored': 0.1914, 'srmse_1_orig': 0.1914, 'srmse_1_fresh': 0.1914}
+CTGAN as shipped TX 242 {'srmse_1_stored': 0.2109, 'srmse_1_orig': 0.2109, 'srmse_1_fresh': 0.2102}
+CTGAN as shipped OH 42 {'srmse_1_stored': 0.1615, 'srmse_1_orig': 0.1615, 'srmse_1_fresh': 0.1572}
+CTGAN as shipped OH 142 {'srmse_1_stored': 0.1695, 'srmse_1_orig': 0.1695, 'srmse_1_fresh': 0.168}
+CTGAN as shipped OH 242 {'srmse_1_stored': 0.2094, 'srmse_1_orig': 0.2094, 'srmse_1_fresh': 0.2078}
+FlowSyn CA 42 {'srmse_1_stored': 0.0786, 'srmse_1_orig': 0.0786, 'srmse_1_fresh': 0.0782}
+FlowSyn CA 142 {'srmse_1_stored': 0.0622, 'srmse_1_orig': 0.0622, 'srmse_1_fresh': 0.0608}
+FlowSyn CA 242 {'srmse_1_stored': 0.0835, 'srmse_1_orig': 0.0835, 'srmse_1_fresh': 0.0861}
+FlowSyn TX 42 {'srmse_1_stored': 0.1099, 'srmse_1_orig': 0.1099, 'srmse_1_fresh': 0.11}
+FlowSyn TX 142 {'srmse_1_stored': 0.0812, 'srmse_1_orig': 0.0812, 'srmse_1_fresh': 0.0816}
+FlowSyn TX 242 {'srmse_1_stored': 0.0856, 'srmse_1_orig': 0.0856, 'srmse_1_fresh': 0.0863}
+FlowSyn OH 42 {'srmse_1_stored': 0.1144, 'srmse_1_orig': 0.1144, 'srmse_1_fresh': 0.1122}
+FlowSyn OH 142 {'srmse_1_stored': 0.0646, 'srmse_1_orig': 0.0646, 'srmse_1_fresh': 0.0615}
+FlowSyn OH 242 {'srmse_1_stored': 0.1042, 'srmse_1_orig': 0.1042, 'srmse_1_fresh': 0.1039}
+Borysov-VAE tuned CA 42 {'srmse_1_stored': 0.1033, 'srmse_1_orig': 0.1033, 'srmse_1_fresh': 0.104}
+Borysov-VAE tuned CA 142 {'srmse_1_stored': 0.0928, 'srmse_1_orig': 0.0928, 'srmse_1_fresh': 0.0937}
+Borysov-VAE tuned CA 242 {'srmse_1_stored': 0.0889, 'srmse_1_orig': 0.0889, 'srmse_1_fresh': 0.0905}
+Borysov-VAE tuned TX 42 {'srmse_1_stored': 0.1796, 'srmse_1_orig': 0.1796, 'srmse_1_fresh': 0.1799}
+Borysov-VAE tuned TX 142 {'srmse_1_stored': 0.1406, 'srmse_1_orig': 0.1406, 'srmse_1_fresh': 0.1402}
+Borysov-VAE tuned TX 242 {'srmse_1_stored': 0.1395, 'srmse_1_orig': 0.1395, 'srmse_1_fresh': 0.1395}
+Borysov-VAE tuned OH 42 {'srmse_1_stored': 0.1574, 'srmse_1_orig': 0.1574, 'srmse_1_fresh': 0.1566}
+Borysov-VAE tuned OH 142 {'srmse_1_stored': 0.1357, 'srmse_1_orig': 0.1357, 'srmse_1_fresh': 0.134}
+Borysov-VAE tuned OH 242 {'srmse_1_stored': 0.1406, 'srmse_1_orig': 0.1406, 'srmse_1_fresh': 0.1392}
+Borysov-VAE as shipped CA 42 {'srmse_1_stored': 0.2431, 'srmse_1_orig': 0.2431, 'srmse_1_fresh': 0.2437}
+Borysov-VAE as shipped CA 142 {'srmse_1_stored': 0.2384, 'srmse_1_orig': 0.2384, 'srmse_1_fresh': 0.2382}
+Borysov-VAE as shipped CA 242 {'srmse_1_stored': 0.2775, 'srmse_1_orig': 0.2775, 'srmse_1_fresh': 0.2779}
+Borysov-VAE as shipped TX 42 {'srmse_1_stored': 0.1882, 'srmse_1_orig': 0.1882, 'srmse_1_fresh': 0.1887}
+Borysov-VAE as shipped TX 142 {'srmse_1_stored': 0.2177, 'srmse_1_orig': 0.2177, 'srmse_1_fresh': 0.2187}
+Borysov-VAE as shipped TX 242 {'srmse_1_stored': 0.1859, 'srmse_1_orig': 0.1859, 'srmse_1_fresh': 0.1868}
+Borysov-VAE as shipped OH 42 {'srmse_1_stored': 0.2006, 'srmse_1_orig': 0.2006, 'srmse_1_fresh': 0.1982}
+Borysov-VAE as shipped OH 142 {'srmse_1_stored': 0.1617, 'srmse_1_orig': 0.1617, 'srmse_1_fresh': 0.1601}
+Borysov-VAE as shipped OH 242 {'srmse_1_stored': 0.1757, 'srmse_1_orig': 0.1757, 'srmse_1_fresh': 0.176}
+TabDDPM val-SRMSE CA 42 {'srmse_1_stored': 0.0364, 'srmse_1_orig': 0.0364, 'srmse_1_fresh': 0.0379}
+TabDDPM val-SRMSE CA 142 {'srmse_1_stored': 0.0476, 'srmse_1_orig': 0.0476, 'srmse_1_fresh': 0.0465}
+TabDDPM val-SRMSE CA 242 {'srmse_1_stored': 0.0374, 'srmse_1_orig': 0.0374, 'srmse_1_fresh': 0.0376}
+TabDDPM val-SRMSE TX 42 {'srmse_1_stored': 0.0448, 'srmse_1_orig': 0.0448, 'srmse_1_fresh': 0.0464}
+TabDDPM val-SRMSE TX 142 {'srmse_1_stored': 0.0417, 'srmse_1_orig': 0.0417, 'srmse_1_fresh': 0.0429}
+TabDDPM val-SRMSE TX 242 {'srmse_1_stored': 0.0402, 'srmse_1_orig': 0.0402, 'srmse_1_fresh': 0.0412}
+TabDDPM val-SRMSE OH 42 {'srmse_1_stored': 0.0713, 'srmse_1_orig': 0.0713, 'srmse_1_fresh': 0.0683}
+TabDDPM val-SRMSE OH 142 {'srmse_1_stored': 0.0688, 'srmse_1_orig': 0.0688, 'srmse_1_fresh': 0.067}
+TabDDPM val-SRMSE OH 242 {'srmse_1_stored': 0.0643, 'srmse_1_orig': 0.0643, 'srmse_1_fresh': 0.0606}
+TabDDPM ML-eff CA 42 {'srmse_1_stored': 0.2542, 'srmse_1_orig': 0.2542, 'srmse_1_fresh': 0.2555}
+TabDDPM ML-eff CA 142 {'srmse_1_stored': 0.2513, 'srmse_1_orig': 0.2513, 'srmse_1_fresh': 0.2519}
+TabDDPM ML-eff CA 242 {'srmse_1_stored': 0.2631, 'srmse_1_orig': 0.2631, 'srmse_1_fresh': 0.2643}
+TabDDPM ML-eff TX 42 {'srmse_1_stored': 0.0713, 'srmse_1_orig': 0.0713, 'srmse_1_fresh': 0.0718}
+TabDDPM ML-eff TX 142 {'srmse_1_stored': 0.0694, 'srmse_1_orig': 0.0694, 'srmse_1_fresh': 0.0695}
+TabDDPM ML-eff TX 242 {'srmse_1_stored': 0.0691, 'srmse_1_orig': 0.0691, 'srmse_1_fresh': 0.0687}
+TabDDPM ML-eff OH 42 {'srmse_1_stored': 0.4814, 'srmse_1_orig': 0.4814, 'srmse_1_fresh': 0.477}
+TabDDPM ML-eff OH 142 {'srmse_1_stored': 0.4917, 'srmse_1_orig': 0.4917, 'srmse_1_fresh': 0.4888}
+TabDDPM ML-eff OH 242 {'srmse_1_stored': 0.4933, 'srmse_1_orig': 0.4933, 'srmse_1_fresh': 0.4891}
+TVAE tuned CA 42 {'srmse_1_stored': 0.2007, 'srmse_1_orig': 0.2007, 'srmse_1_fresh': 0.2005}
+TVAE tuned CA 142 {'srmse_1_stored': 0.2098, 'srmse_1_orig': 0.2098, 'srmse_1_fresh': 0.211}
+TVAE tuned CA 242 {'srmse_1_stored': 0.2044, 'srmse_1_orig': 0.2044, 'srmse_1_fresh': 0.2058}
+TVAE tuned TX 42 {'srmse_1_stored': 0.1364, 'srmse_1_orig': 0.1364, 'srmse_1_fresh': 0.136}
+TVAE tuned TX 142 {'srmse_1_stored': 0.1462, 'srmse_1_orig': 0.1462, 'srmse_1_fresh': 0.146}
+TVAE tuned TX 242 {'srmse_1_stored': 0.16, 'srmse_1_orig': 0.16, 'srmse_1_fresh': 0.1602}
+TVAE tuned OH 42 {'srmse_1_stored': 0.1711, 'srmse_1_orig': 0.1711, 'srmse_1_fresh': 0.1717}
+TVAE tuned OH 142 {'srmse_1_stored': 0.1735, 'srmse_1_orig': 0.1735, 'srmse_1_fresh': 0.1729}
+TVAE tuned OH 242 {'srmse_1_stored': 0.2191, 'srmse_1_orig': 0.2191, 'srmse_1_fresh': 0.2181}
+TVAE as shipped CA 42 {'srmse_1_stored': 0.2433, 'srmse_1_orig': 0.2433, 'srmse_1_fresh': 0.2444}
+TVAE as shipped CA 142 {'srmse_1_stored': 0.2392, 'srmse_1_orig': 0.2392, 'srmse_1_fresh': 0.238}
+TVAE as shipped CA 242 {'srmse_1_stored': 0.2079, 'srmse_1_orig': 0.2079, 'srmse_1_fresh': 0.2071}
+TVAE as shipped TX 42 {'srmse_1_stored': 0.1796, 'srmse_1_orig': 0.1796, 'srmse_1_fresh': 0.1804}
+TVAE as shipped TX 142 {'srmse_1_stored': 0.1519, 'srmse_1_orig': 0.1519, 'srmse_1_fresh': 0.1526}
+TVAE as shipped TX 242 {'srmse_1_stored': 0.1943, 'srmse_1_orig': 0.1943, 'srmse_1_fresh': 0.1951}
+TVAE as shipped OH 42 {'srmse_1_stored': 0.1884, 'srmse_1_orig': 0.1884, 'srmse_1_fresh': 0.1875}
+TVAE as shipped OH 142 {'srmse_1_stored': 0.1985, 'srmse_1_orig': 0.1985, 'srmse_1_fresh': 0.1982}
+TVAE as shipped OH 242 {'srmse_1_stored': 0.2107, 'srmse_1_orig': 0.2107, 'srmse_1_fresh': 0.209}
+max |orig - stored| = 0.0
+state  n_rows  spearman  kendall  n_rank_changes    best_orig   best_fresh  max_abs_delta  max_rel_delta
+   CA      13  1.000000 1.000000               0 SemaPop-VAE+ SemaPop-VAE+       0.001376       0.034310
+   TX      13  1.000000 1.000000               0 SemaPop-VAE+ SemaPop-VAE+       0.001256       0.029719
+   OH      13  0.989011 0.948718               4        TTVAE SemaPop-VAE+       0.003829       0.053819
+                       srmse_1_orig  srmse_1_fresh
+state sample                                      
+CA    oracle_iid           0.022492       0.023128
+      oracle_prodtest      0.026756       0.026081
+      train_copy           0.023607       0.025116
+OH    oracle_iid           0.022896       0.020886
+      oracle_prodtest      0.020676       0.022336
+      train_copy           0.020791       0.020690
+TX    oracle_iid           0.022262       0.021982
+      oracle_prodtest      0.018338       0.018984
+      train_copy           0.025948       0.026713

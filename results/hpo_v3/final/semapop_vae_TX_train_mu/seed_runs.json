@@ -1,0 +1,33 @@
+[
+  {
+    "seed": 42,
+    "run_name": "semapop_vae_TX_train_mu_final_s42",
+    "run_dir": "<POPAUDIT_HPO>/final/semapop_vae_TX_train_mu/semapop_vae_TX_train_mu_final_s42",
+    "seconds": 1164.5,
+    "returncode": 0,
+    "timed_out": false,
+    "log": "<POPAUDIT_HPO>/logs/semapop_vae_TX_train_mu/final_s42.log",
+    "val_metrics": {
+      "srmse_1": 0.05522209683609001,
+      "srmse_2": 0.1776232157510652,
+      "block_f1": 0.9459883138172883,
+      "block_f1_demographic": 0.9278492322611928,
+      "block_f1_household": 0.9101157091906721,
+      "block_f1_commute": 1.0
+    },
+    "val_objective": -0.1164226562935776,
+    "reference_metrics": {
+      "n_reference": 212756,
+      "n_generated": 10000,
+      "srmse_1": 0.047871854773660266,
+      "srmse_2": 0.160154844029147,
+      "block_f1_demographic": 0.9474832311200747,
+      "block_f1_household": 0.9361418845934774,
+      "block_f1_commute": 0.9999835489594717,
+      "block_f1": 0.9612028882243413
+    },
+    "reference_objective": -0.10401334940140364,
+    "val_minus_reference": -0.012409306892173969,
+    "trainer_wall_clock_s": null
+  }
+]

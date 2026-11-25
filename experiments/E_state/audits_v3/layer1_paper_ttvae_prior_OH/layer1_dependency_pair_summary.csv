@@ -1,0 +1,14 @@
+var1,var2,pair_type,method,discrepancy_mean,discrepancy_std,discrepancy_min,discrepancy_max,n_realizations_used
+Age_Group,Commute_Mode,categorical,joint_total_variation,0.9202617294734213,0.00025694825628060986,0.9197810082355876,0.9209508360369352,50
+Age_Group,Employment_status,categorical,joint_total_variation,0.9921050661342651,0.00032869966791185804,0.9914212627901174,0.9929654354878963,50
+Age_Group,Household_Income_Class,categorical,joint_total_variation,0.9511763788370352,0.00025694825628061485,0.9506956575992015,0.951865485400549,50
+Employment_status,Commute_Mode,categorical,joint_total_variation,0.7900549039181434,1.2078866646358787e-16,0.7900549039181433,0.7900549039181435,50
+Employment_status,Household_Income_Class,categorical,joint_total_variation,0.9514087846269029,0.0003043986053431552,0.9508048415273272,0.9521618417768903,50
+Household_Income_Class,Commute_Mode,categorical,joint_total_variation,0.8657193661093087,0.0,0.8657193661093086,0.8657193661093086,50
+Household_Size,Household_Income_Class,categorical,joint_total_variation,0.9655914649363612,0.0,0.9655914649363613,0.9655914649363613,50
+Household_Size,Number_of_cars_of_household,categorical,joint_total_variation,0.9547666583478912,0.0,0.9547666583478912,0.9547666583478912,50
+Household_Size,Number_of_children,categorical,joint_total_variation,0.958577177439481,4.944993810205881e-05,0.9584633142001499,0.9586660843523834,50
+Number_of_cars_of_household,Commute_Mode,categorical,joint_total_variation,0.9160999500873471,0.0,0.9160999500873471,0.9160999500873471,50
+Number_of_cars_of_household,Household_Income_Class,categorical,joint_total_variation,0.9723452707761417,0.0,0.9723452707761417,0.9723452707761417,50
+Number_of_children,Household_Income_Class,categorical,joint_total_variation,0.9476269653107061,4.98061007113586e-05,0.9475137259795358,0.9477164961317693,50
+Number_of_children,Number_of_cars_of_household,categorical,joint_total_variation,0.9463323558772149,4.980610071133665e-05,0.9462191165460444,0.946421886698278,50

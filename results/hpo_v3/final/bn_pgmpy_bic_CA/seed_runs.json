@@ -1,0 +1,86 @@
+[
+  {
+    "seed": 42,
+    "run_name": "bn_pgmpy_bic_CA_final_s42",
+    "run_dir": "<POPAUDIT_HPO>/final/bn_pgmpy_bic_CA/bn_pgmpy_bic_CA_final_s42",
+    "seconds": 187.6,
+    "returncode": 0,
+    "timed_out": false,
+    "log": "<POPAUDIT_HPO>/logs/bn_pgmpy_bic_CA/final_s42.log",
+    "val_metrics": {
+      "srmse_1": 0.05179261689231654,
+      "srmse_2": 0.19925173668985025,
+      "block_f1": 0.9501157384060548
+    },
+    "val_objective": -0.1255221767910834,
+    "reference_metrics": {
+      "n_reference": 330109,
+      "n_generated": 10000,
+      "srmse_1": 0.043200747224585063,
+      "srmse_2": 0.18415404298007107,
+      "block_f1_demographic": 0.971294486912371,
+      "block_f1_household": 0.9325958889051922,
+      "block_f1_commute": 0.9999030529240147,
+      "block_f1": 0.9679311429138592
+    },
+    "reference_objective": -0.11367739510232806,
+    "val_minus_reference": -0.011844781688755343,
+    "trainer_wall_clock_s": null
+  },
+  {
+    "seed": 142,
+    "run_name": "bn_pgmpy_bic_CA_final_s142",
+    "run_dir": "<POPAUDIT_HPO>/final/bn_pgmpy_bic_CA/bn_pgmpy_bic_CA_final_s142",
+    "seconds": 4.8,
+    "returncode": 0,
+    "timed_out": false,
+    "log": "<POPAUDIT_HPO>/logs/bn_pgmpy_bic_CA/final_s142.log",
+    "val_metrics": {
+      "srmse_1": 0.04322685392139861,
+      "srmse_2": 0.19561470771025188,
+      "block_f1": 0.9494155549982812
+    },
+    "val_objective": -0.11942078081582524,
+    "reference_metrics": {
+      "n_reference": 330109,
+      "n_generated": 10000,
+      "srmse_1": 0.03401329040630994,
+      "srmse_2": 0.17834699406858814,
+      "block_f1_demographic": 0.9696016203025247,
+      "block_f1_household": 0.9333554273019998,
+      "block_f1_commute": 1.0,
+      "block_f1": 0.9676523492015082
+    },
+    "reference_objective": -0.10618014223744904,
+    "val_minus_reference": -0.013240638578376207,
+    "trainer_wall_clock_s": null
+  },
+  {
+    "seed": 242,
+    "run_name": "bn_pgmpy_bic_CA_final_s242",
+    "run_dir": "<POPAUDIT_HPO>/final/bn_pgmpy_bic_CA/bn_pgmpy_bic_CA_final_s242",
+    "seconds": 4.8,
+    "returncode": 0,
+    "timed_out": false,
+    "log": "<POPAUDIT_HPO>/logs/bn_pgmpy_bic_CA/final_s242.log",
+    "val_metrics": {
+      "srmse_1": 0.05325714011066222,
+      "srmse_2": 0.2063326032673771,
+      "block_f1": 0.9504131783682522
+    },
+    "val_objective": -0.12979487168901965,
+    "reference_metrics": {
+      "n_reference": 330109,
+      "n_generated": 10000,
+      "srmse_1": 0.04757641208027669,
+      "srmse_2": 0.1951325502372627,
+      "block_f1_demographic": 0.9692725579499845,
+      "block_f1_household": 0.9356834251068656,
+      "block_f1_commute": 1.0,
+      "block_f1": 0.9683186610189501
+    },
+    "reference_objective": -0.12135448115876969,
+    "val_minus_reference": -0.008440390530249961,
+    "trainer_wall_clock_s": null
+  }
+]

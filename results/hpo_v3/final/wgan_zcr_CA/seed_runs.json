@@ -1,0 +1,101 @@
+[
+  {
+    "seed": 42,
+    "run_name": "wgan_zcr_CA_final_s42",
+    "run_dir": "<POPAUDIT_HPO>/final/wgan_zcr_CA/wgan_zcr_CA_final_s42",
+    "seconds": 620.7,
+    "returncode": 0,
+    "timed_out": false,
+    "log": "<POPAUDIT_HPO>/logs/wgan_zcr_CA/final_s42.log",
+    "val_metrics": {
+      "srmse_1": 0.06646943916931651,
+      "srmse_2": 0.20621131309812937,
+      "block_f1": 0.9404191068185118,
+      "block_f1_demographic": 0.918911860718172,
+      "block_f1_household": 0.9029458199534934,
+      "block_f1_commute": 0.9993996397838703,
+      "NIP": 0.9807618421052632,
+      "NIR": 0.9462625
+    },
+    "val_objective": -0.13634037613372293,
+    "reference_metrics": {
+      "n_reference": 330109,
+      "n_generated": 10000,
+      "srmse_1": 0.057746732146264974,
+      "srmse_2": 0.18738710185654459,
+      "block_f1_demographic": 0.943807180856217,
+      "block_f1_household": 0.9253057953041434,
+      "block_f1_commute": 0.999507495912216,
+      "block_f1": 0.9562068240241922
+    },
+    "reference_objective": -0.12256691700140478,
+    "val_minus_reference": -0.013773459132318158,
+    "trainer_wall_clock_s": 551.52
+  },
+  {
+    "seed": 142,
+    "run_name": "wgan_zcr_CA_final_s142",
+    "run_dir": "<POPAUDIT_HPO>/final/wgan_zcr_CA/wgan_zcr_CA_final_s142",
+    "seconds": 532.4,
+    "returncode": 0,
+    "timed_out": false,
+    "log": "<POPAUDIT_HPO>/logs/wgan_zcr_CA/final_s142.log",
+    "val_metrics": {
+      "srmse_1": 0.051653324837069754,
+      "srmse_2": 0.18887517023559702,
+      "block_f1": 0.9401742713871596,
+      "block_f1_demographic": 0.9180287752545879,
+      "block_f1_household": 0.9037456033624599,
+      "block_f1_commute": 0.9987484355444306,
+      "NIP": 0.9691421052631579,
+      "NIR": 0.9639125000000001
+    },
+    "val_objective": -0.12026424753633339,
+    "reference_metrics": {
+      "n_reference": 330109,
+      "n_generated": 10000,
+      "srmse_1": 0.04979408934101808,
+      "srmse_2": 0.1791329588501029,
+      "block_f1_demographic": 0.9414625783700581,
+      "block_f1_household": 0.925933456223547,
+      "block_f1_commute": 0.9991055564651592,
+      "block_f1": 0.9555005303529214
+    },
+    "reference_objective": -0.1144635240955605,
+    "val_minus_reference": -0.005800723440772884,
+    "trainer_wall_clock_s": 528.76
+  },
+  {
+    "seed": 242,
+    "run_name": "wgan_zcr_CA_final_s242",
+    "run_dir": "<POPAUDIT_HPO>/final/wgan_zcr_CA/wgan_zcr_CA_final_s242",
+    "seconds": 526.7,
+    "returncode": 0,
+    "timed_out": false,
+    "log": "<POPAUDIT_HPO>/logs/wgan_zcr_CA/final_s242.log",
+    "val_metrics": {
+      "srmse_1": 0.06496088234712434,
+      "srmse_2": 0.208830015024951,
+      "block_f1": 0.9417321236018489,
+      "block_f1_demographic": 0.9209654255319148,
+      "block_f1_household": 0.9042309452736318,
+      "block_f1_commute": 1.0,
+      "NIP": 0.9826671052631579,
+      "NIR": 0.949925
+    },
+    "val_objective": -0.13689544868603767,
+    "reference_metrics": {
+      "n_reference": 330109,
+      "n_generated": 10000,
+      "srmse_1": 0.05858552202798669,
+      "srmse_2": 0.19453540680647316,
+      "block_f1_demographic": 0.9456438488273378,
+      "block_f1_household": 0.9253989729484356,
+      "block_f1_commute": 1.0,
+      "block_f1": 0.9570142739252577
+    },
+    "reference_objective": -0.12656046441722993,
+    "val_minus_reference": -0.010334984268807745,
+    "trainer_wall_clock_s": 522.98
+  }
+]

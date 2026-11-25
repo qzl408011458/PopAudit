@@ -1,0 +1,272 @@
+{
+  "study": "ttvae_CA",
+  "best_params": {
+    "d_model": 64,
+    "nhead": 8,
+    "num_layers": 1,
+    "dim_ff": 256,
+    "dropout": 0.1,
+    "z_dim": 128,
+    "lr": 1.2860744997611301e-05,
+    "weight_decay": 1.0991868097450444e-05,
+    "batch_size": 256,
+    "epochs": 180,
+    "beta_mmd": 0.1875988077867219,
+    "patience": 12
+  },
+  "objective": "score = -(0.5*(SRMSE_1 + SRMSE_2)); MAXIMISED; held-out val split, the condition's frozen eval config, unweighted (D19) [adopted, not reproduced: Borysov & Garrido (2020) and Jutras-Dube et al. (2024) select on validation SRMSE; SemaPop's own submission reports no search]; computed on the held-out val split with the condition's frozen eval config; fidelity/diversity (NIP and NIR, reported separately) and record validity are reported but not optimised; the reference split is never opened during a trial.",
+  "objective_criterion": "val_srmse",
+  "reselected_under": null,
+  "sampling_arm": "prior",
+  "reselect_caveat": null,
+  "seeds": [
+    42
+  ],
+  "sample_seed_varies_with_training_seed": true,
+  "finished": "2026-09-02T05:33:19",
+  "total_wall_clock_h": 0.121,
+  "aggregate": {
+    "n_seeds": 1,
+    "seeds": [
+      42
+    ],
+    "val": {
+      "block_f1": {
+        "mean": 0.2605805958087093,
+        "sd": NaN,
+        "n": 1,
+        "ci95_lo": NaN,
+        "ci95_hi": NaN,
+        "values": [
+          0.2605805958087093
+        ]
+      },
+      "block_f1_all": {
+        "mean": 0.0,
+        "sd": NaN,
+        "n": 1,
+        "ci95_lo": NaN,
+        "ci95_hi": NaN,
+        "values": [
+          0.0
+        ]
+      },
+      "block_f1_commute": {
+        "mean": 0.7296747967479675,
+        "sd": NaN,
+        "n": 1,
+        "ci95_lo": NaN,
+        "ci95_hi": NaN,
+        "values": [
+          0.7296747967479675
+        ]
+      },
+      "block_f1_demographic": {
+        "mean": 0.02010045829514207,
+        "sd": NaN,
+        "n": 1,
+        "ci95_lo": NaN,
+        "ci95_hi": NaN,
+        "values": [
+          0.02010045829514207
+        ]
+      },
+      "block_f1_household": {
+        "mean": 0.03196653238301829,
+        "sd": NaN,
+        "n": 1,
+        "ci95_lo": NaN,
+        "ci95_hi": NaN,
+        "values": [
+          0.03196653238301829
+        ]
+      },
+      "block_precision_commute": {
+        "mean": 1.0,
+        "sd": NaN,
+        "n": 1,
+        "ci95_lo": NaN,
+        "ci95_hi": NaN,
+        "values": [
+          1.0
+        ]
+      },
+      "block_precision_demographic": {
+        "mean": 0.0979,
+        "sd": NaN,
+        "n": 1,
+        "ci95_lo": NaN,
+        "ci95_hi": NaN,
+        "values": [
+          0.0979
+        ]
+      },
+      "block_precision_household": {
+        "mean": 0.629,
+        "sd": NaN,
+        "n": 1,
+        "ci95_lo": NaN,
+        "ci95_hi": NaN,
+        "values": [
+          0.629
+        ]
+      },
+      "block_recall_commute": {
+        "mean": 0.5744,
+        "sd": NaN,
+        "n": 1,
+        "ci95_lo": NaN,
+        "ci95_hi": NaN,
+        "values": [
+          0.5744
+        ]
+      },
+      "block_recall_demographic": {
+        "mean": 0.0112,
+        "sd": NaN,
+        "n": 1,
+        "ci95_lo": NaN,
+        "ci95_hi": NaN,
+        "values": [
+          0.0112
+        ]
+      },
+      "block_recall_household": {
+        "mean": 0.0164,
+        "sd": NaN,
+        "n": 1,
+        "ci95_lo": NaN,
+        "ci95_hi": NaN,
+        "values": [
+          0.0164
+        ]
+      },
+      "srmse_1": {
+        "mean": 1.8970336981185465,
+        "sd": NaN,
+        "n": 1,
+        "ci95_lo": NaN,
+        "ci95_hi": NaN,
+        "values": [
+          1.8970336981185465
+        ]
+      },
+      "srmse_2": {
+        "mean": 5.409312807581853,
+        "sd": NaN,
+        "n": 1,
+        "ci95_lo": NaN,
+        "ci95_hi": NaN,
+        "values": [
+          5.409312807581853
+        ]
+      }
+    },
+    "val_objective": {
+      "objective": {
+        "mean": -3.6531732528501997,
+        "sd": NaN,
+        "n": 1,
+        "ci95_lo": NaN,
+        "ci95_hi": NaN,
+        "values": [
+          -3.6531732528501997
+        ]
+      }
+    },
+    "reference": {
+      "block_f1": {
+        "mean": 0.25918244241603067,
+        "sd": NaN,
+        "n": 1,
+        "ci95_lo": NaN,
+        "ci95_hi": NaN,
+        "values": [
+          0.25918244241603067
+        ]
+      },
+      "block_f1_commute": {
+        "mean": 0.7268341034086439,
+        "sd": NaN,
+        "n": 1,
+        "ci95_lo": NaN,
+        "ci95_hi": NaN,
+        "values": [
+          0.7268341034086439
+        ]
+      },
+      "block_f1_demographic": {
+        "mean": 0.0178141229575259,
+        "sd": NaN,
+        "n": 1,
+        "ci95_lo": NaN,
+        "ci95_hi": NaN,
+        "values": [
+          0.0178141229575259
+        ]
+      },
+      "block_f1_household": {
+        "mean": 0.0328991008819223,
+        "sd": NaN,
+        "n": 1,
+        "ci95_lo": NaN,
+        "ci95_hi": NaN,
+        "values": [
+          0.0328991008819223
+        ]
+      },
+      "n_generated": {
+        "mean": 10000.0,
+        "sd": NaN,
+        "n": 1,
+        "ci95_lo": NaN,
+        "ci95_hi": NaN,
+        "values": [
+          10000.0
+        ]
+      },
+      "n_reference": {
+        "mean": 330109.0,
+        "sd": NaN,
+        "n": 1,
+        "ci95_lo": NaN,
+        "ci95_hi": NaN,
+        "values": [
+          330109.0
+        ]
+      },
+      "srmse_1": {
+        "mean": 1.8947868376252448,
+        "sd": NaN,
+        "n": 1,
+        "ci95_lo": NaN,
+        "ci95_hi": NaN,
+        "values": [
+          1.8947868376252448
+        ]
+      },
+      "srmse_2": {
+        "mean": 5.396336024051377,
+        "sd": NaN,
+        "n": 1,
+        "ci95_lo": NaN,
+        "ci95_hi": NaN,
+        "values": [
+          5.396336024051377
+        ]
+      }
+    },
+    "val_minus_reference_objective": {
+      "gap": {
+        "mean": -0.007611822011889036,
+        "sd": NaN,
+        "n": 1,
+        "ci95_lo": NaN,
+        "ci95_hi": NaN,
+        "values": [
+          -0.007611822011889036
+        ]
+      }
+    }
+  }
+}

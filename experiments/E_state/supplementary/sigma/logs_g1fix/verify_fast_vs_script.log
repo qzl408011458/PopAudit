@@ -1,0 +1,30 @@
+  variant                case  max_rel_loss    max_sigma  rstar_same  D_script   D_fast  Dunion_script  Dunion_fast
+     base       ttvae_CA_2018  8.815127e-14 6.999609e-16           1  0.233703 0.233703       0.233703     0.233703
+    beta0 semapop_vae_OH_2024  3.340589e-14 1.301043e-15           1  0.212904 0.212904       0.213187     0.213187
+    beta0     tabddpm_TX_2024  1.818457e-13 1.299308e-15           1       NaN      NaN            NaN          NaN
+    beta0       ttvae_OH_2018  7.069874e-14 6.002143e-16           1  0.155146 0.155146       0.155575     0.155575
+    beta0    wgan_zcr_OH_2021  3.077396e-14 9.992007e-16           1       NaN      NaN            NaN          NaN
+floor0025 semapop_vae_OH_2024  3.387192e-13 1.398187e-15           1       NaN      NaN            NaN          NaN
+floor0025     tabddpm_TX_2024  1.869898e-13 1.399922e-15           1       NaN      NaN            NaN          NaN
+floor0025       ttvae_OH_2018  7.441162e-14 7.008283e-16           1  0.155154 0.155154       0.155583     0.155583
+floor0025    wgan_zcr_OH_2021  3.179101e-13 1.099815e-15           1       NaN      NaN            NaN          NaN
+  floor01 semapop_vae_OH_2024  5.402145e-14 1.398187e-15           1  0.239511 0.239511       0.239791     0.239791
+  floor01     tabddpm_TX_2024  9.076705e-14 1.399922e-15           1  0.283682 0.283682       0.283682     0.283682
+  floor01       ttvae_OH_2018  6.668136e-14 7.008283e-16           1  0.155161 0.155161       0.155590     0.155590
+  floor01    wgan_zcr_OH_2021  4.139543e-14 1.099815e-15           1  0.313902 0.313902       0.313902     0.313902
+    hfree semapop_vae_OH_2024  3.316661e-14 7.008283e-16           1       NaN      NaN            NaN          NaN
+    hfree     tabddpm_TX_2024  6.936106e-14 7.997075e-16           1       NaN      NaN            NaN          NaN
+    hfree       ttvae_OH_2018  7.064886e-14 7.008283e-16           1  0.155158 0.155158       0.155587     0.155587
+    hfree    wgan_zcr_OH_2021  3.464724e-14 7.008283e-16           1       NaN      NaN            NaN          NaN
+    lam05 semapop_vae_OH_2024  6.751938e-14 1.301043e-15           1       NaN      NaN            NaN          NaN
+    lam05     tabddpm_TX_2024  1.622510e-13 1.301043e-15           1       NaN      NaN            NaN          NaN
+    lam05       ttvae_OH_2018  1.032896e-13 6.990936e-16           1  0.145983 0.145983       0.146419     0.146419
+    lam05    wgan_zcr_OH_2021  6.610087e-14 1.000935e-15           1       NaN      NaN            NaN          NaN
+     lam2 semapop_vae_OH_2024  3.202835e-13 1.602884e-15           1       NaN      NaN            NaN          NaN
+     lam2       ttvae_OH_2021  3.276591e-13 1.297573e-15           1       NaN      NaN            NaN          NaN
+      mu2 semapop_vae_OH_2024  4.088018e-13 2.400857e-15           1  0.214988 0.214988       0.215272     0.215272
+      mu2     tabddpm_TX_2024  1.893906e-13 2.501471e-15           1  0.289390 0.289390       0.289390     0.289390
+      mu2       ttvae_OH_2018  1.058618e-13 1.196959e-15           1  0.155169 0.155169       0.155598     0.155598
+      mu2    wgan_zcr_OH_2021  3.919480e-14 1.897787e-15           1       NaN      NaN            NaN          NaN
+  win1013 semapop_vae_OH_2024  9.634856e-12 4.620498e-12           1       NaN      NaN            NaN          NaN
+  win1013       ttvae_OH_2021  4.095166e-12 3.738503e-12           1       NaN      NaN            NaN          NaN

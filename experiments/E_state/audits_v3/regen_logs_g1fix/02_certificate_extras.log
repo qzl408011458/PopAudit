@@ -1,0 +1,61 @@
+==========================================================================================
+O1 v3 CERTIFICATE (EXTRAS): 6 models x 3 states x 3 horizons; cases loaded=54
+==========================================================================================
+Total cases: 54 | VALID: 5
+
+By horizon (valid / cases):
+  2018: 3 / 18
+  2021: 0 / 18
+  2024: 2 / 18
+
+By model (valid / 9):
+  ctgan_defaults    : 0 / 9
+  tvae_defaults     : 0 / 9
+  borysov_defaults  : 0 / 9
+  tabddpm_mleff     : 0 / 9
+  semapop_vae_mu    : 5 / 9
+  ttvae_prior       : 0 / 9
+
+First-failed-gate counts:
+first_fail
+L1    42
+L2     7
+  => L1 reject=42, L2 reject=7, L3 reject=0, valid=5
+
+Model x first-failed gate (counts over the 9 state-horizon cases):
+first_fail        L1  L2  VALID
+model                          
+ctgan_defaults     9   0      0
+tvae_defaults      9   0      0
+borysov_defaults   9   0      0
+tabddpm_mleff      6   3      0
+semapop_vae_mu     0   4      5
+ttvae_prior        9   0      0
+
+L1 detail per (model,state):  marg / dep / support / invalid  [gates: marg<=0.05-eta, dep<=0.10-eta, 1-supp<=0.30-eta, inv<=0.005]
+           model state  L1_marg   L1_dep  L1_support  L1_invalid                      L1_failed
+borysov_defaults    CA 0.093376 0.230442    0.412809    0.077919                   invalid_mass
+borysov_defaults    OH 0.078087 0.200988    0.498612    0.104193                   invalid_mass
+borysov_defaults    TX 0.065244 0.198656    0.422399    0.090812                   invalid_mass
+  ctgan_defaults    CA 0.081709 0.141965    0.988831    0.025769                   invalid_mass
+  ctgan_defaults    OH 0.055926 0.125867    0.982063    0.027153                   invalid_mass
+  ctgan_defaults    TX 0.071344 0.122811    0.987695    0.025715                   invalid_mass
+  semapop_vae_mu    CA 0.018180 0.036160    0.998188    0.000373                               
+  semapop_vae_mu    OH 0.024805 0.046035    0.994822    0.000994                               
+  semapop_vae_mu    TX 0.019937 0.042905    0.997321    0.001756                               
+   tabddpm_mleff    CA 0.147342 0.235019    0.997422    0.140998                   invalid_mass
+   tabddpm_mleff    OH 0.286981 0.437934    0.970583    0.410391                   invalid_mass
+   tabddpm_mleff    TX 0.029722 0.054954    0.998769    0.004091                               
+     ttvae_prior    CA 0.621931 0.802784    0.033359    0.646401                   invalid_mass
+     ttvae_prior    OH 0.738078 0.933236    0.000000    0.000001 marg_TVD,dep_TVD,1-support_cov
+     ttvae_prior    TX 0.766392 0.960641    0.000000    0.000000 marg_TVD,dep_TVD,1-support_cov
+   tvae_defaults    CA 0.111984 0.185589    0.889930    0.033099                   invalid_mass
+   tvae_defaults    OH 0.087033 0.175763    0.906383    0.004280               marg_TVD,dep_TVD
+   tvae_defaults    TX 0.077719 0.146478    0.881681    0.003455               marg_TVD,dep_TVD
+
+Deployment decision (R_2^MA vs B0=0.3):
+  max R_2^MA over valid = 1.0488  at CA x semapop_vae_mu x 2024
+  flat-budget verdict: DEFER
+  R_2^MA range over valid = [0.3784, 1.0488]
+
+Saved -> <POPAUDIT_ROOT>/experiments/E_state/audits_v3/PAPER_xstate_v3_extras/  (xstate_certificate_all.csv, xstate_valid_only.csv)

@@ -1,0 +1,22 @@
+\begin{table}[htbp]
+\centering
+\caption{Layer-3 projection diagnostics by model. Feasibility, median \(R_3=\sqrt{\mathrm{KL}/2}\), and agent-level nESS are computed over feasible projected cells.}
+\label{tab:layer3_diagnostics}
+\small
+\begin{tabular}{lccc}
+\toprule
+Model & Feasible & Median \(R_3\) & Agent nESS \\
+\midrule
+\texttt{SemaPop-VAE+} & 9/9 & 0.052 & 0.976 \\
+\texttt{TTVAE} & 9/9 & 0.053 & 0.976 \\
+\texttt{TabDDPM} & 9/9 & 0.056 & 0.972 \\
+\texttt{BN} & 9/9 & 0.054 & 0.975 \\
+\texttt{WGAN-GP-ZCR} & 9/9 & 0.063 & 0.968 \\
+\midrule
+\texttt{CTGAN} & 9/9 & 0.046 & 0.978 \\
+\texttt{FlowSyn} & 9/9 & 0.067 & 0.965 \\
+\texttt{Borysov-VAE} & 9/9 & 0.057 & 0.984 \\
+\texttt{TVAE} & 6/9 & 0.274 & 0.515 \\
+\bottomrule
+\end{tabular}
+\end{table}

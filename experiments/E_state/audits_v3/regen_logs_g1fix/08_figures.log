@@ -1,0 +1,77 @@
+Building figures -> <POPAUDIT_ROOT>/experiments/E_state/audits_v3/PAPER_xstate_v3/figures
+cells=81; gate counts: {'L2': 31, 'L1': 27, 'VALID': 23}
+  wrote figA_admission
+  wrote figB_failuremode
+  figC: n_all=81, n_drift=31
+  wrote figC_chiH_decomposition
+  figD[semapop_vae]: tau-ladder feasible at every tau: True; nESS 0.9901->0.9231, R3 0.0458->0.1248; counterfactual feasible at every w: True; nESS -> 0.1133 at WFH 42%
+  figD[ttvae]: tau-ladder feasible at every tau: True; nESS 0.9897->0.9232, R3 0.0462->0.1229; counterfactual feasible at every w: True; nESS -> 0.1110 at WFH 42%
+  figD: survivor band nESS>=0.98 (min valid 0.9828); weakest projection (TVAE, CA 2018) nESS≈0.10; realized WFH 6.2% nESS 0.990
+  wrote figD_L3_stress
+  wrote figE_decision
+  figF: kappa_2 curve sensitivity_sweep {2.0: 3, 3.5: 11, 4.0: 12, 5.0: 23, 6.0: 31, 7.0: 33, 10.0: 45, 20.0: 54} vs inline {2.0: 3, 3.5: 11, 4.0: 12, 5.0: 23, 6.0: 31, 7.0: 33, 10.0: 45, 20.0: 54} -> MATCH
+  wrote figF_comparison_sensitivity
+
+[figB L1 binding diagnostic per rejected cell]
+ model    state
+borysov  CA       inv
+         OH       inv
+         TX       inv
+ctgan    CA       inv
+         OH       inv
+         TX       inv
+tvae     CA       inv
+         OH       inv
+         TX       inv
+
+[tableC chi_H decomposition]
+                              all_cells_%  drift_cells_%
+Commute_Mode                        39.0           52.3
+Household_Income_Class              17.6           13.0
+Number_of_cars_of_household         19.4           15.1
+Age_Group                           11.4           11.3
+Number_of_children                   2.8            2.2
+Household_Size                       6.4            4.4
+Employment_status                    3.3            1.7
+
+[tableD L3 survivors]
+        model  n_valid   med_R3  med_nESS
+          BN        6 0.029975   0.99430
+SemaPop-VAE+        6 0.030475   0.99460
+     TabDDPM        4 0.012605   0.99925
+       TTVAE        6 0.029715   0.99450
+ WGAN-GP-ZCR        1 0.011870   0.99940
+
+[tableE decision d_A]
+                 cell      d_A  R_2_MA state   yr
+OH·SemaPop-VAE+·2018 0.149299 0.27925    OH 2018
+       TX·TTVAE·2018 0.156087 0.29466    TX 2018
+       OH·TTVAE·2018 0.157553 0.28657    OH 2018
+          TX·BN·2018 0.161888 0.30962    TX 2018
+TX·SemaPop-VAE+·2018 0.167921 0.33043    TX 2018
+          OH·BN·2018 0.168934 0.31160    OH 2018
+     TX·TabDDPM·2018 0.175774 0.35507    TX 2018
+OH·SemaPop-VAE+·2024 0.239858 0.87562    OH 2024
+       OH·TTVAE·2024 0.248014 0.87047    OH 2024
+       CA·TTVAE·2018 0.248846 0.43836    CA 2018
+CA·SemaPop-VAE+·2018 0.251206 0.44424    CA 2018
+          CA·BN·2018 0.254975 0.45258    CA 2018
+          OH·BN·2024 0.255792 0.88671    OH 2024
+     OH·TabDDPM·2018 0.265111 0.52803    OH 2018
+ OH·WGAN-GP-ZCR·2018 0.268383 0.52793    OH 2018
+     CA·TabDDPM·2018 0.276292 0.43761    CA 2018
+       TX·TTVAE·2024 0.280772 0.72486    TX 2024
+          TX·BN·2024 0.287211 0.73725    TX 2024
+TX·SemaPop-VAE+·2024 0.290439 0.74194    TX 2024
+CA·SemaPop-VAE+·2024 0.359334 1.02085    CA 2024
+       CA·TTVAE·2024 0.360638 1.03164    CA 2024
+          CA·BN·2024 0.366633 1.04023    CA 2024
+     CA·TabDDPM·2024 0.373304 1.04267    CA 2024
+
+[tableF comparison]
+                       protocol  accepted /81
+        Proposed 3-layer audit            23
+   SRMSE marginal rule (≤0.30)            79
+Structural-only scorecard (L1)            54
+
+DONE. figures in <POPAUDIT_ROOT>/experiments/E_state/audits_v3/PAPER_xstate_v3/figures/png

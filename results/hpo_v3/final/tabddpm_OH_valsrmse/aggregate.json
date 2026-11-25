@@ -1,0 +1,303 @@
+{
+  "study": "tabddpm_OH",
+  "best_params": {
+    "hidden": "1024 1024 1024 1024",
+    "dim_t": 128,
+    "dropout": 0.059614704460251716,
+    "weight_decay": 1.0656401760606435e-08,
+    "batch_size": 1024,
+    "epochs": 650,
+    "lr": 0.00013359790328445562,
+    "grad_clip": 1.7923286427213632,
+    "timesteps": 1000,
+    "schedule": "cosine",
+    "parametrization": "direct",
+    "gaussian_parametrization": "eps",
+    "gaussian_loss": "mse",
+    "time_sampler": "importance",
+    "lambda_multi": 2.0607081476491773,
+    "lambda_gauss": 1.185182139400947,
+    "num_transform": "quantile"
+  },
+  "objective": "score = mean macro-F1 over the pre-registered surrogate target panel, classifier trained on the synthetic sample and scored on the held-out val split; MAXIMISED [substituted for Kotelnikov et al. (2023), who maximise downstream ML efficiency with CatBoost on a real downstream task; we have no downstream task, so the targets are PUMS attributes predicted from the remaining ones (utils/ml_efficacy.py)]; computed on the held-out val split with the condition's frozen eval config; fidelity/diversity (NIP and NIR, reported separately) and record validity are reported but not optimised; the reference split is never opened during a trial.",
+  "objective_criterion": "ml_eff",
+  "reselected_under": "val_srmse",
+  "sampling_arm": null,
+  "reselect_caveat": "trial pool was searched and PRUNED under the study's own criterion; reselection picks the best COMPLETE trial of that pool under the new criterion, not a fresh search",
+  "seeds": [
+    42,
+    142,
+    242
+  ],
+  "sample_seed_varies_with_training_seed": true,
+  "finished": "2026-09-02T07:42:28",
+  "total_wall_clock_h": 2.221,
+  "aggregate": {
+    "n_seeds": 3,
+    "seeds": [
+      42,
+      142,
+      242
+    ],
+    "val": {
+      "block_f1": {
+        "mean": 0.9418157431459705,
+        "sd": 0.0006201355927921338,
+        "n": 3,
+        "ci95_lo": 0.940275240933536,
+        "ci95_hi": 0.943356245358405,
+        "values": [
+          0.9419302941497959,
+          0.9411463183942096,
+          0.9423706168939058
+        ]
+      },
+      "block_f1_commute": {
+        "mean": 0.999349555517728,
+        "sd": 0.00018049965460208565,
+        "n": 3,
+        "ci95_lo": 0.9989011695187786,
+        "ci95_hi": 0.9997979415166773,
+        "values": [
+          0.9991993594875901,
+          0.9992995096567597,
+          0.999549797408834
+        ]
+      },
+      "block_f1_demographic": {
+        "mean": 0.9234267850804598,
+        "sd": 0.0009107337033611253,
+        "n": 3,
+        "ci95_lo": 0.9211643971426065,
+        "ci95_hi": 0.9256891730183132,
+        "values": [
+          0.9229518256071835,
+          0.9244768200475265,
+          0.9228517095866696
+        ]
+      },
+      "block_f1_household": {
+        "mean": 0.9026708888397237,
+        "sd": 0.0026596629918866493,
+        "n": 3,
+        "ci95_lo": 0.8960639197011132,
+        "ci95_hi": 0.9092778579783342,
+        "values": [
+          0.9036396973546142,
+          0.8996626254783429,
+          0.9047103436862138
+        ]
+      },
+      "ml_eff": {
+        "mean": 0.30514182226319403,
+        "sd": 0.009308156871438919,
+        "n": 3,
+        "ci95_lo": 0.2820190787522512,
+        "ci95_hi": 0.3282645657741369,
+        "values": [
+          0.30715504569087804,
+          0.29499179855404173,
+          0.31327862254466227
+        ]
+      },
+      "ml_eff_n_seeds": {
+        "mean": 5.0,
+        "sd": 0.0,
+        "n": 3,
+        "ci95_lo": 5.0,
+        "ci95_hi": 5.0,
+        "values": [
+          5.0,
+          5.0,
+          5.0
+        ]
+      },
+      "ml_eff_sd": {
+        "mean": 0.022257968418291325,
+        "sd": 0.006489047882680595,
+        "n": 3,
+        "ci95_lo": 0.006138279859770588,
+        "ci95_hi": 0.03837765697681206,
+        "values": [
+          0.020574480142296812,
+          0.016776569125829068,
+          0.02942285598674809
+        ]
+      },
+      "ml_f1_Commute_Mode": {
+        "mean": 0.14575541956719038,
+        "sd": 0.01629001173416171,
+        "n": 3,
+        "ci95_lo": 0.10528878709400535,
+        "ci95_hi": 0.1862220520403754,
+        "values": [
+          0.15812232543247218,
+          0.12729763521534093,
+          0.15184629805375804
+        ]
+      },
+      "ml_f1_Employment_status": {
+        "mean": 0.4645282249591977,
+        "sd": 0.009398005601898836,
+        "n": 3,
+        "ci95_lo": 0.44118228482856925,
+        "ci95_hi": 0.4878741650898262,
+        "values": [
+          0.456187765949284,
+          0.46268596189274247,
+          0.4747109470355665
+        ]
+      },
+      "srmse_1": {
+        "mean": 0.0702900309959159,
+        "sd": 0.0040415310588712925,
+        "n": 3,
+        "ci95_lo": 0.06025031127948789,
+        "ci95_hi": 0.0803297507123439,
+        "values": [
+          0.07023873783311814,
+          0.07435696450828229,
+          0.06627439064634723
+        ]
+      },
+      "srmse_2": {
+        "mean": 0.20901802474027054,
+        "sd": 0.0034497996910534635,
+        "n": 3,
+        "ci95_lo": 0.2004482472298462,
+        "ci95_hi": 0.21758780225069488,
+        "values": [
+          0.20504566327313326,
+          0.2112618412423085,
+          0.21074656970536984
+        ]
+      }
+    },
+    "val_objective": {
+      "objective": {
+        "mean": -0.13965402786809322,
+        "sd": 0.002766906386719722,
+        "n": 3,
+        "ci95_lo": -0.14652740436814135,
+        "ci95_hi": -0.1327806513680451,
+        "values": [
+          -0.1376422005531257,
+          -0.1428094028752954,
+          -0.13851048017585854
+        ]
+      }
+    },
+    "reference": {
+      "block_f1": {
+        "mean": 0.9566947020506683,
+        "sd": 0.00038637497835424553,
+        "n": 3,
+        "ci95_lo": 0.9557348933960738,
+        "ci95_hi": 0.9576545107052629,
+        "values": [
+          0.9570028564302732,
+          0.9562612214202177,
+          0.9568200283015139
+        ]
+      },
+      "block_f1_commute": {
+        "mean": 1.0,
+        "sd": 0.0,
+        "n": 3,
+        "ci95_lo": 1.0,
+        "ci95_hi": 1.0,
+        "values": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "block_f1_demographic": {
+        "mean": 0.9486255289574221,
+        "sd": 0.0007254904896066637,
+        "n": 3,
+        "ci95_lo": 0.9468233106726963,
+        "ci95_hi": 0.950427747242148,
+        "values": [
+          0.9479041881058106,
+          0.9493550990746847,
+          0.948617299691771
+        ]
+      },
+      "block_f1_household": {
+        "mean": 0.9214585771945826,
+        "sd": 0.001867784159272832,
+        "n": 3,
+        "ci95_lo": 0.9168187441271806,
+        "ci95_hi": 0.9260984102619846,
+        "values": [
+          0.9231043811850088,
+          0.9194285651859683,
+          0.9218427852127704
+        ]
+      },
+      "n_generated": {
+        "mean": 10000.0,
+        "sd": 0.0,
+        "n": 3,
+        "ci95_lo": 10000.0,
+        "ci95_hi": 10000.0,
+        "values": [
+          10000.0,
+          10000.0,
+          10000.0
+        ]
+      },
+      "n_reference": {
+        "mean": 64112.0,
+        "sd": 0.0,
+        "n": 3,
+        "ci95_lo": 64112.0,
+        "ci95_hi": 64112.0,
+        "values": [
+          64112.0,
+          64112.0,
+          64112.0
+        ]
+      },
+      "srmse_1": {
+        "mean": 0.0681351906882543,
+        "sd": 0.003543797237238799,
+        "n": 3,
+        "ci95_lo": 0.05933191032854186,
+        "ci95_hi": 0.07693847104796674,
+        "values": [
+          0.07130916120959868,
+          0.06878492897015258,
+          0.06431148188501164
+        ]
+      },
+      "srmse_2": {
+        "mean": 0.20291675557059294,
+        "sd": 0.003187407494207509,
+        "n": 3,
+        "ci95_lo": 0.19499879641161458,
+        "ci95_hi": 0.2108347147295713,
+        "values": [
+          0.2012526501809162,
+          0.20090581134788688,
+          0.20659180518297565
+        ]
+      }
+    },
+    "val_minus_reference_objective": {
+      "gap": {
+        "mean": -0.004128054738669608,
+        "sd": 0.00342876906638703,
+        "n": 3,
+        "ci95_lo": -0.01264558928125905,
+        "ci95_hi": 0.0043894798039198326,
+        "values": [
+          -0.0013612948578682615,
+          -0.00796403271627566,
+          -0.0030588366418649038
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+==========================================================================================
+A. POOLED and PARTIAL association of chi_H with each metric
+   partial = residualize metric AND chi_H on [L1_marg,L1_dep,T1, year dummies], then correlate
+==========================================================================================
+metric                  pooled r  pooledρ |  partial r  partial p
+univariate SRMSE (CONTROL)     0.456    0.487 |      0.327     0.0158 **
+5-way SRMSE                0.387    0.419 |      0.046     0.7411
+6-way SRMSE                0.369    0.439 |     -0.217     0.1152
+full-joint SRMSE           0.422    0.451 |      0.496     0.0001 ***
+recall                     0.193    0.235 |      0.261     0.0569 *
+F1                         0.364    0.415 |      0.285     0.0365 **
+
+==========================================================================================
+B. Does chi_H predict full-joint SRMSE beyond L1 + horizon?  (cluster-robust by prior)
+==========================================================================================
+  SRMSE_J_mean  : chi_H coef=+0.09245  t=+4.27  p=0.0000  (R2=0.852)
+  Recall_mean   : chi_H coef=-0.17963  t=-1.45  p=0.1482  (R2=0.736)
+  --- prior fixed-effects (base-year quality fully absorbed) ---
+  SRMSE_J_mean  : within-prior chi_H coef=+0.02453  t=+2.53  p=0.0114
+  Recall_mean   : within-prior chi_H coef=-0.12874  t=-4.22  p=0.0000
+
+==========================================================================================
+C. WITHIN-PRIOR: rank-corr of chi_H with metric across the 3 horizons (base-year fixed)
+   (mean Spearman over the priors that have 3 horizons)
+==========================================================================================
+  univariate SRMSE (CONTROL) mean within-prior ρ(chi_H, worse-fidelity) = +0.222  (n_priors=18)
+  5-way SRMSE            mean within-prior ρ(chi_H, worse-fidelity) = +0.278  (n_priors=18)
+  6-way SRMSE            mean within-prior ρ(chi_H, worse-fidelity) = +0.278  (n_priors=18)
+  full-joint SRMSE       mean within-prior ρ(chi_H, worse-fidelity) = +0.278  (n_priors=18)
+  recall                 mean within-prior ρ(chi_H, worse-fidelity) = +0.611  (n_priors=18)
+  F1                     mean within-prior ρ(chi_H, worse-fidelity) = +0.639  (n_priors=18)
+
+==========================================================================================
+D. REPLACEABILITY: is chi_H redundant with base-year L1 or with Layer-3 nESS?
+==========================================================================================
+  corr(chi_H, L1_marg) = +0.556   corr(chi_H, L3_nESS) = -0.778
+  AUC of L1_marg   predicting the L2-pass set = 0.792
+  AUC of L3_nESS   predicting the L2-pass set = 0.916
+  AUC of T1(base)  predicting the L2-pass set = 0.746
+
+==========================================================================================
+E. DISCRIMINATION vs JOINT ORDER (partial |r| after controls): should rise 1-way -> 7-way
+==========================================================================================
+  1-way (control)  partial r(chi_H) = +0.327  (p=0.0158)
+  5-way            partial r(chi_H) = +0.046  (p=0.7411)
+  6-way            partial r(chi_H) = -0.217  (p=0.1152)
+  7-way            partial r(chi_H) = +0.496  (p=0.0001)
+
+==========================================================================================
+F. Binary pass/fail group means (context; confounded by horizon+L1)
+==========================================================================================
+        SRMSE_J_mean  Recall_mean  F1_mean  L1_marg  L2_chi_H
+L2pass                                                       
+False         2.3302      86.8444  86.3899   0.0220    8.2867
+True          1.8048      87.6294  87.4704   0.0092    3.4199
