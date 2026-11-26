@@ -17,7 +17,7 @@ audits_v3/
   regen_after_g1fix.sh          the authors' driver for every main-text artifact (steps 01-22)
   regen_from_release.sh         the steps that run from this repository alone
   regen_logs_g1fix/             logs of the authors' last full run (numbers printed by each step)
-tables/                         Table 4 and Supplementary Table S11 (.tex), written here by their generators
+tables/                         Table 3 and Supplementary Table S11 (.tex), written here by their generators
 figures/fig_framework_flow.tex  TikZ source of Figure A1
 ```
 
@@ -80,7 +80,7 @@ earlier row. "Step NN" refers to `regen_after_g1fix.sh`.
 | Sec. 5.3 common settings (alpha, kappa1, kappa2, tau, B0, sigma floor) | `main_experiments/decision_certificate_xstate_v3.py`, `main_experiments/rerun_audit_new.py` | constants | - |
 | Sec. 6, all Layer 1-3 numbers | `main_experiments/run_audit_v3.py` | `layer1_paper_*`, `layer2_*`, `layer3_paperW_*` | [ENS] [RAW] |
 | Decision certificate | `main_experiments/decision_certificate_xstate_v3.py` (steps 01/02) | `PAPER_xstate_v3/xstate_{certificate_all,valid_only,model_by_gate,per_model_robustness}.csv` | [REPO] |
-| Table 3 (tab:horizon-validity), Sec. 6.1 counts | `PAPER_xstate_v3/figures/make_paper_tables_v3.py` (step 07) | `PAPER_xstate_v3/figures/tables/tab_horizon_validity.tex` (the script says "cells" where the manuscript says "cases") | [REPO] |
+| Sec. 6.1 counts (`tab_horizon_validity.tex` is an intermediate table that the manuscript does not print) | `PAPER_xstate_v3/figures/make_paper_tables_v3.py` (step 07) | `PAPER_xstate_v3/figures/tables/tab_horizon_validity.tex` (the script says "cells" where the manuscript says "cases") | [REPO] |
 | Figure 1 (fig:admission) | `PAPER_xstate_v3/figures/make_figures_v3.py` (step 08) | `PAPER_xstate_v3/figures/pdf/figA_admission.pdf` | [REPO] |
 | Sec. 6.1 CTGAN base-year SRMSE | `hpo/fidelity_table_tex.py` | `main_experiments/tables/tab_fidelity_v3.tex` | [REPO] |
 | Sec. 6.2 Layer-1 rejections | certificate (`first_fail`, `L1_*`), `layer1_ensemble_summary.json` (`rule_*_mean`) | certificate | [REPO] |
@@ -92,13 +92,13 @@ earlier row. "Step NN" refers to `regen_after_g1fix.sh`.
 | Sec. 6.2 counterfactual stress test | `PAPER_xstate_v3/l3_counterfactual_telework.py` (05/06) | `PAPER_xstate_v3/l3_counterfactual/*/l3_counterfactual_curve.csv` | [ENS] [RAW] |
 | Residual D on the category union (D = d_A,ref + mu_out/2, mu_out = projected mass on categories absent from the reference), R_2^MA > D | `PAPER_xstate_v3/figures/make_figE_postproj.py` (09) + `PAPER_xstate_v3/dA_union.py` | `PAPER_xstate_v3/figures/tables/tableE_decision_dA.csv` | [PW] |
 | Figure 3 (fig:certificate) | `make_figures_v3.py` (08), then `make_figE_postproj.py` (09) | `PAPER_xstate_v3/figures/pdf/figE_decision.pdf` | [PW] |
-| Table 4 (tab:selected-prior-budget), Sec. 6.3 | `make_figE_postproj.py` (09) | `main_experiments/tables/tab_selected_prior_budget_v3.tex`, `PAPER_xstate_v3/exp_ii_scenario_budget_post.csv` | [PW] |
+| Table 3 (tab:selected-prior-budget), Sec. 6.3 | `make_figE_postproj.py` (09) | `main_experiments/tables/tab_selected_prior_budget_v3.tex`, `PAPER_xstate_v3/exp_ii_scenario_budget_post.csv` | [PW] |
 | Sec. 6.3 v(11) | `PAPER_xstate_v3/rebuild_lever_data.py` (01b) | `PAPER_xstate_v3/exp_ii_vH.csv` | [REPO] |
 | Sec. 6.3 marginal transfer | `PAPER_xstate_v3/figures/make_transfer_figures_v3.py` (12) | `PAPER_xstate_v3/figures/tables/{tableG,tableH}_*.csv`, `PAPER_xstate_v3/figures/tables/transfer_stats.json` | [PW] |
 | Sec. 6.3 single shares | `headline_numbers.py` | `24_headline_dump.log` | [REPO] |
 | Sec. 6.3 tau paragraph | `supplementary_experiments/tau_ladder/` | see Supplementary Table S6 | [ENS] [PW] |
 | Sec. 6.4 kappa2 ladder, Figure 4(b), B0 ladder | `PAPER_xstate_v3/sensitivity/sensitivity_sweep.py` (11), `kappa_recheck.py` (10), `kappa_null_sim.py` (10b) | `PAPER_xstate_v3/sensitivity/*.csv`, `kappa_recheck.md` (Chinese headings; English copy `kappa_recheck_EN.md`) | [REPO] |
-| Sec. 6.5, Table 5 (tab:baseline-counts) | `PAPER_xstate_v3/baselines/baseline_reproduction.py` (01d), `make_figures_v3.py` figF | `PAPER_xstate_v3/baselines/baseline_comparison.csv`, `PAPER_xstate_v3/figures/tables/tableF_comparison.csv` | [REPO] |
+| Sec. 6.5, Table 4 (tab:baseline-counts) | `PAPER_xstate_v3/baselines/baseline_reproduction.py` (01d), `make_figures_v3.py` figF | `PAPER_xstate_v3/baselines/baseline_comparison.csv`, `PAPER_xstate_v3/figures/tables/tableF_comparison.csv` | [REPO] |
 | Sec. 6.5 SRMSE threshold facts | `supplementary_experiments/srmse_threshold/threshold_sweep.py` | `srmse_threshold/threshold_sweep.{csv,log}` | [REPO] |
 | Figure 4 (fig:baseline-comparison) | `make_figures_v3.py` (08, after 11) | `figures/pdf/figF_comparison_sensitivity.pdf` | [REPO] |
 | Sec. 7 seed and sigma sensitivity | Supplementary S3.7, S3.8 | see `supplementary_experiments/README.md` | - |
@@ -115,8 +115,8 @@ earlier row. "Step NN" refers to `regen_after_g1fix.sh`.
   rejections and the invalid-mass ratios (certificate and `layer1_ensemble_summary.json`), the commute
   constraint binding in the 2024 scenarios (`attribute_projected_losses_json`) and the observed category
   counts of Table B1.
-- Table 5 was typed by hand from the shipped CSVs, and the captions of Tables 3 and 4 were edited by hand
-  after generation.
+- Table 4 was typed by hand from the shipped CSVs, and the caption of Table 3 was edited by hand after
+  generation.
 - Numbers marked [PW] can be checked against the shipped tables and logs but not regenerated without the
   projected weights.
 - `kappa_recheck.py` prints Chinese strings; they are code and were left unchanged so that outputs stay

@@ -54,6 +54,7 @@ _PRODUCTION_LAYOUT = [
     ("/supplementary_experiments/iid_reference/corrected", "/experiments/E_state/audits_v3_referee/misc_g1fix/iid_test"),
     ("/supplementary_experiments/seed_robustness/verify", "/experiments/E_state/audits_v3_referee/group1/referee_verify/seed"),
     ("/supplementary_experiments/scenario_only_ablation", "/experiments/E_state/audits_v3_referee/review28/a27_ablation"),
+    ("/supplementary_experiments/projection_budget_rule", "/experiments/E_state/audits_v3_referee/review30/projection_budget"),
     ("/supplementary_experiments/oracle_2013_reference", "/experiments/E_state/audits_v3_referee/review28/a9_oracle"),
     ("/supplementary_experiments/household_disjoint", "/experiments/E_state/audits_v3_referee/l1_disjoint"),
     ("/supplementary_experiments/sigma_calibration", "/experiments/E_state/audits_v3_referee/group1/release/check/indep"),

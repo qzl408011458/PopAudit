@@ -48,7 +48,7 @@ from the repository root, e.g. `python training/train_ctgan_v2.py --help` or `py
 the import mechanism is described in `popaudit_paths.py`. Other scripts below the root that import `model.*`,
 `utils.*` or `hpo.*` add the root to `sys.path` themselves or need `PYTHONPATH=$POPAUDIT_ROOT`.
 
-**From the shipped outputs** (no large inputs needed), regenerate the certificate, Table 3, Figures 1
+**From the shipped outputs** (no large inputs needed), regenerate the certificate, the Sec. 6.1 counts, Figures 1
 and 4, the sensitivity analyses, the headline numbers and the Supplementary tables that work from
 released CSVs:
 

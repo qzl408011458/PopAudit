@@ -15,7 +15,8 @@ folder unless a usage line says otherwise.
 | folder | Supplementary item |
 |---|---|
 | `srmse_threshold/` | S2, Table S1 |
-| `scenario_only_ablation/` | S2 scenario-only rule; Table 5 (tab:baseline-counts), Sec. 6.5 |
+| `scenario_only_ablation/` | S2 scenario-only rule; Table 4 (tab:baseline-counts), Sec. 6.5 |
+| `projection_budget_rule/` | S2 projection-and-budget rule; Table 4 (tab:baseline-counts), Sec. 6.5; empirical check of Proposition 4 (Sec. 4.7) |
 | `tau_ladder/` | S3.6, Table S6; Sec. 6.3 tau paragraph |
 | `ensemble_size/` | S3.6 ensemble size and the selected realization; Sec. 6.4 |
 | `oracle_2013_reference/` | S3.7 observed 2013 sample as a reference; Sec. 6.3 |
@@ -29,17 +30,28 @@ folder unless a usage line says otherwise.
 
 ## Analyses
 
-**srmse_threshold** (S2, Table S1; Sec. 6.5). Sweeps the threshold of the two reduced protocols
-(marginal-only SRMSE) over the 81 cases. `python threshold_sweep.py` [REPO] writes `threshold_sweep.csv`,
+**srmse_threshold** (S2, Table S1; Sec. 6.5). Sweeps the thresholds of the marginal-only (SRMSE) and structural-only
+reduced protocols over the 81 cases. `python threshold_sweep.py` [REPO] writes `threshold_sweep.csv`,
 `per_case_srmse.csv` and `threshold_sweep.log`.
 
-**scenario_only_ablation** (S2 scenario-only rule; Table 5, tab:baseline-counts; Sec. 6.5). Admits a case
+**scenario_only_ablation** (S2 scenario-only rule; Table 4, tab:baseline-counts; Sec. 6.5). Admits a case
 when it passes the Layer-2 gate alone, ignoring Layers 1 and 3, and compares this and the other reduced
 protocols with the audit on the 81 cases (Layer 2 is evaluated for the 27 Layer-1 rejections too).
 `python a27_l2_only.py` [REPO] reads the certificate, `baselines/baseline_comparison.csv` and the per-case
 Layer-2 summaries in `main_experiments/audits_v3/` and writes `a27_protocol_summary.csv` (accepted counts per
 protocol and horizon, agreement with the audit), `a27_l1_rejections_l2.csv` (the Layer-1 rejections and
 their Layer-2 verdicts) and `a27_l2_only.log`.
+
+**projection_budget_rule** (S2 projection-and-budget rule; Table 4, tab:baseline-counts; Sec. 6.5; empirical
+check of Proposition 4, Sec. 4.7). Skips the admission gates: in each scenario it selects, among the candidates
+whose Layer-3 projection is feasible, the one with the smallest post-projection residual D and deploys it if
+D <= B0 = 0.30. Nothing is re-solved: it reads the Layer-3 outputs of all 81 cases (the cases rejected at Layer 1
+or 2 were projected as diagnostic stress tests, S3.3) and D over all categories (`dA_union.py`).
+`python projection_budget_rule.py | tee projection_budget_rule.log` [PW] writes `projection_budget_cases.csv`
+(per case: D, acceptance by the rule, the commute-mode work-from-home residual before and after projection in units
+of sigma(H), and the age composition of the projected home workers against the realized one),
+`projection_budget_scenarios.csv` (audit and rule decisions per scenario) and `projection_budget_summary.csv`
+(accepted cases by first failed gate and horizon).
 
 **tau_ladder** (S3.6, Table S6). Re-projects the 10 valid 2024 cases over a grid of Layer-3 tolerances tau
 and records D, nESS, R_3 and feasibility. `bash launch.sh` runs `tau_ladder.py` for every case
@@ -133,7 +145,8 @@ Paths are relative to `supplementary_experiments/` unless they start with anothe
 | item | script | output | needs |
 |---|---|---|---|
 | S1 Figure (fig:joint-transfer) | `V3/figures/make_transfer_figures_v3.py` | `fig_appB_joint_transfer.pdf`, `tableH_joint_transfer.csv`, `transfer_stats.json` | [PW] |
-| S2 scenario-only rule; Table 5 (tab:baseline-counts) scenario-only row | `scenario_only_ablation/a27_l2_only.py` | `scenario_only_ablation/a27_protocol_summary.csv`, `a27_l1_rejections_l2.csv`, `a27_l2_only.log` | [REPO] |
+| S2 scenario-only rule; Table 4 (tab:baseline-counts) scenario-only row | `scenario_only_ablation/a27_l2_only.py` | `scenario_only_ablation/a27_protocol_summary.csv`, `a27_l1_rejections_l2.csv`, `a27_l2_only.log` | [REPO] |
+| S2 projection-and-budget rule; Table 4 (tab:baseline-counts) projection-and-budget row; Sec. 4.7 Proposition 4 (empirical check) | `projection_budget_rule/projection_budget_rule.py` | `projection_budget_rule/projection_budget_{cases,scenarios,summary}.csv`, `projection_budget_rule.log` | [PW] |
 | S2 Table S1 (tab:srmse-sweep) | `srmse_threshold/threshold_sweep.py` | `srmse_threshold/threshold_sweep.csv`, `per_case_srmse.csv`, `threshold_sweep.log` | [REPO] |
 | S3.1 Table S2 (tab:layerwise_outcomes) | `V3/figures/make_paper_tables_v3.py` | `V3/figures/tables/tab_layerwise_outcomes.tex` | [REPO] |
 | S3.2 Table S3, Figure (fig:l2-abnormality) | `make_paper_tables_v3.py`; `V3/ablation_l2/run_ensemble_table.py`, `make_L2_semantics_figure.py` | `tab_chiH_decomposition.tex`; `ensemble_results.csv`, `fig_L2_abnormality_vs_drift.pdf` | [REPO]; SRMSE_J [ENS] [PW] |

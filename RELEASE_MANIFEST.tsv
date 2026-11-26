@@ -1,7 +1,7 @@
 path	md5	role	production_source	manuscript_items
 CITATION.cff	26a239d99e5a7d92e8b0758ab3178c1f	new	(written for the release)	release infrastructure
 LICENSE	47c78abd19bf22441838cdd0768ff18a	new	(written for the release)	release infrastructure
-README.md	de23d53957b40280c0569ab1df17b212	new	(written for the release)	release infrastructure
+README.md	a4ed5e37691ab8b2f28816decad5a79f	new	(written for the release)	release infrastructure
 THIRD_PARTY_NOTICES.md	3b3c3e6d75f38f2d1bf0a23f9e06fbba	new	(written for the release)	release infrastructure
 _gen_pub_personas_traintest.py	705ccaee405605f008eb8d42f8f2f1bd	code:data_prep	_gen_pub_personas_traintest.py	S5.3 SemaPop-VAE+ personas (Qwen3-8B)
 _pums_proc.py	405848366a07e5a00e1b8fa670c22469	code:data_prep	_pums_proc.py	S5.2 PUMS processing; App B Tab B1
@@ -226,7 +226,7 @@ hpo/records/studies/wgan_zcr_TX.db	c85851b1e457faf44b07f628779a0f6f	result:hpo	h
 hpo/run.py	a8f3057cbaa5e4ef4e5fa581d82626b8	code:hpo	hpo/run.py	S5.3 / App B HPO; Supp S4.1; Tab S10
 hpo/run_all.sh	1fa05fe089abd43a3a5de55559fc9053	new	(written for the release)	S5.3 / App B HPO; Supp S4.1; Tab S10
 hpo/spaces.py	ba2e091e506cac160ca75f44eaa006e4	code:hpo	hpo/spaces.py	S5.3 / App B HPO; Supp S4.1; Tab S10
-main_experiments/README.md	315264d7e09d60db0b64f4f5894440dc	new	(written for the release)	release infrastructure
+main_experiments/README.md	ac6cde3d5da3a27b5efce93e2f3b8d65	new	(written for the release)	release infrastructure
 main_experiments/audits_v3/PAPER_xstate_v3/ablation_l2/ablation_lib.py	8cb402cad0b46bbd166ed0f4f76daf0a	code:audit	experiments/E_state/audits_v3/PAPER_xstate_v3/ablation_l2/ablation_lib.py	ablation helpers (regen steps 13-22)
 main_experiments/audits_v3/PAPER_xstate_v3/ablation_l2/ablation_raw.csv	aa9408946e61d3cf1a4743cbc0e9b185	result:paper	experiments/E_state/audits_v3/PAPER_xstate_v3/ablation_l2/ablation_raw.csv	ablation helpers (regen steps 13-22)
 main_experiments/audits_v3/PAPER_xstate_v3/ablation_l2/ablation_results.csv	3436b0290a2d611166bddbe0a323768d	result:paper	experiments/E_state/audits_v3/PAPER_xstate_v3/ablation_l2/ablation_results.csv	ablation helpers (regen steps 13-22)
@@ -2651,8 +2651,8 @@ model/tvae_llm_p.py	3e8fd29c728a495d3cd5b27acfc1a163	code:model	model/tvae_llm_p
 model/wgan.py	7092ea7e1c5f034e883c12c81acd03da	code:model	model/wgan.py	S5.3 / App B priors
 model/wgan_llm.py	261bece7eb1b04433d3dea250af29ab2	code:model	model/wgan_llm.py	S5.3 / App B priors
 model/zcr.py	416de41285aa33b97b92e944c5b7b61e	code:model	model/zcr.py	S5.3 / App B priors
-popaudit_paths.py	e8a72759d5216ffce5a1fc734655a55d	new	(written for the release)	release infrastructure
-supplementary_experiments/README.md	1a71b1988573b2c9bbeca2118223de1b	new	(written for the release)	release infrastructure
+popaudit_paths.py	cf8551e7cae4397ccc9ed03840a0f252	new	(written for the release)	release infrastructure
+supplementary_experiments/README.md	23fce6e7889a9cee3f382a47c8a891d7	new	(written for the release)	release infrastructure
 supplementary_experiments/ensemble_size/a10_D_compare.log	572a248461e881a24f1de3c32c0091c1	result:supplementary	experiments/E_state/audits_v3_referee/review28/a10_K/a10_D_compare.log	S6.4 ensemble size and median realization; Supp S3.6 (ensemble size and the selected realization)
 supplementary_experiments/ensemble_size/a10_D_compare.py	fba4e0c8dd41f59f4f0f5bffa935ea15	code:supplementary	experiments/E_state/audits_v3_referee/review28/a10_K/a10_D_compare.py	S6.4 ensemble size and median realization; Supp S3.6 (ensemble size and the selected realization)
 supplementary_experiments/ensemble_size/a10_D_med_vs_rstar.csv	b3fb4edc3e6790daa49f99f08df1859f	result:supplementary	experiments/E_state/audits_v3_referee/review28/a10_K/a10_D_med_vs_rstar.csv	S6.4 ensemble size and median realization; Supp S3.6 (ensemble size and the selected realization)
@@ -2803,6 +2803,11 @@ supplementary_experiments/oracle_2013_reference/run_oracle.log	908218fdfaf1ccd2f
 supplementary_experiments/oracle_2013_reference/run_oracle.py	708afac5dc1d5ae9d79736642cb9b34f	code:supplementary	experiments/E_state/audits_v3_referee/review28/a9_oracle/run_oracle.py	S6.3 (2021 deferral); Supp S3.7 observed 2013 sample as reference
 supplementary_experiments/oracle_2013_reference/validate.py	bbc06fff6bc1b3aa8fc5a26f930b5259	code:supplementary	experiments/E_state/audits_v3_referee/review28/a9_oracle/validate.py	S6.3 (2021 deferral); Supp S3.7 observed 2013 sample as reference
 supplementary_experiments/oracle_2013_reference/validation_single_realization_path.csv	544eae4094558ad821ad4b8b40c4857b	result:supplementary	experiments/E_state/audits_v3_referee/review28/a9_oracle/validation_single_realization_path.csv	S6.3 (2021 deferral); Supp S3.7 observed 2013 sample as reference
+supplementary_experiments/projection_budget_rule/projection_budget_cases.csv	1ba59ce47b82053f7d087675b19e116b	result:supplementary	experiments/E_state/audits_v3_referee/review30/projection_budget/projection_budget_cases.csv	S4.7 Prop 4 and Example 1 (empirical check); S6.5 Tab 4 (tab:baseline-counts) projection-and-budget row; Supp S2
+supplementary_experiments/projection_budget_rule/projection_budget_rule.log	c98909377926d2d3b2d4c6a1705c0a3e	result:supplementary	experiments/E_state/audits_v3_referee/review30/projection_budget/projection_budget_rule.log	S4.7 Prop 4 and Example 1 (empirical check); S6.5 Tab 4 (tab:baseline-counts) projection-and-budget row; Supp S2
+supplementary_experiments/projection_budget_rule/projection_budget_rule.py	199e572d265dce620071d4888a2f0f4b	code:supplementary	experiments/E_state/audits_v3_referee/review30/projection_budget/projection_budget_rule.py	S4.7 Prop 4 and Example 1 (empirical check); S6.5 Tab 4 (tab:baseline-counts) projection-and-budget row; Supp S2
+supplementary_experiments/projection_budget_rule/projection_budget_scenarios.csv	9a75ec307780bacbbbcbffb5e47744de	result:supplementary	experiments/E_state/audits_v3_referee/review30/projection_budget/projection_budget_scenarios.csv	S4.7 Prop 4 and Example 1 (empirical check); S6.5 Tab 4 (tab:baseline-counts) projection-and-budget row; Supp S2
+supplementary_experiments/projection_budget_rule/projection_budget_summary.csv	0a5aa8a64595b124f972b53677b21cd1	result:supplementary	experiments/E_state/audits_v3_referee/review30/projection_budget/projection_budget_summary.csv	S4.7 Prop 4 and Example 1 (empirical check); S6.5 Tab 4 (tab:baseline-counts) projection-and-budget row; Supp S2
 supplementary_experiments/scenario_only_ablation/a27_l1_rejections_l2.csv	f34c244150815a82fed3c6a8ee0fb12c	result:supplementary	experiments/E_state/audits_v3_referee/review28/a27_ablation/a27_l1_rejections_l2.csv	S6.5 Tab 5 (tab:baseline-counts) scenario-only row; Supp S2
 supplementary_experiments/scenario_only_ablation/a27_l2_only.log	97fdc4c2a65e4a1510cb33063610ed6f	result:supplementary	experiments/E_state/audits_v3_referee/review28/a27_ablation/a27_l2_only.log	S6.5 Tab 5 (tab:baseline-counts) scenario-only row; Supp S2
 supplementary_experiments/scenario_only_ablation/a27_l2_only.py	9b445dd53849461185e5ae91e680b7d5	code:supplementary	experiments/E_state/audits_v3_referee/review28/a27_ablation/a27_l2_only.py	S6.5 Tab 5 (tab:baseline-counts) scenario-only row; Supp S2

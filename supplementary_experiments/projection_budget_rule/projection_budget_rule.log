@@ -1,0 +1,57 @@
+feasible projections: 78 of 81; infeasible: [{'state': 'OH', 'model': 'tvae', 'year': 2018}, {'state': 'OH', 'model': 'tvae', 'year': 2021}, {'state': 'OH', 'model': 'tvae', 'year': 2024}]
+
+cases with a feasible projection and D <= B0 = 0.3: 46 of 81
+year   2018  2021  2024  total
+group                         
+L1        3     3     2      8
+L2        3    14     2     19
+VALID    13     0     6     19
+all      19    17    10     46
+L1 rejections within budget:
+state model  year  L1_invalid      D
+   CA ctgan  2018      0.0119 0.2553
+   CA ctgan  2021      0.0119 0.2758
+   TX ctgan  2018      0.0161 0.1677
+   TX ctgan  2021      0.0161 0.2029
+   TX ctgan  2024      0.0161 0.2618
+   OH ctgan  2018      0.0126 0.1849
+   OH ctgan  2021      0.0126 0.2056
+   OH ctgan  2024      0.0126 0.2482
+
+scenario decisions
+state  year audit_prior  audit_D             audit_decision  rule_prior  rule_D rule_first_fail      rule_decision
+   CA  2018 semapop_vae   0.2336                     deploy semapop_vae  0.2336           VALID             deploy
+   CA  2021                  NaN defer: no admissible prior       ttvae  0.2451              L2             deploy
+   CA  2024 semapop_vae   0.3207         defer: over budget semapop_vae  0.3207           VALID defer: over budget
+   OH  2018 semapop_vae   0.1471                     deploy semapop_vae  0.1471           VALID             deploy
+   OH  2021                  NaN defer: no admissible prior semapop_vae  0.1844              L2             deploy
+   OH  2024 semapop_vae   0.2133                     deploy semapop_vae  0.2133           VALID             deploy
+   TX  2018       ttvae   0.1423                     deploy       ttvae  0.1423           VALID             deploy
+   TX  2021                  NaN defer: no admissible prior semapop_vae  0.1744              L2             deploy
+   TX  2024 semapop_vae   0.2375                     deploy semapop_vae  0.2375           VALID             deploy
+scenarios deployed: audit 5 of 9; rule 8 of 9
+same selected prior and decision in 2018/2024: True
+2021 residuals under the rule: 0.174 to 0.245; deployed 2018/2024 residuals: 0.142 to 0.238
+
+work-from-home saturation (Layer-1-passing feasible cases)
+  2018: n=18, commute binding in 0, z_pre -1.73 to -0.43, z_post -1.78 to -0.42, sigma [np.float64(0.005)], commute targets [np.int64(13)]
+  2021: n=18, commute binding in 18, z_pre -14.73 to -10.24, z_post -5.02 to -4.78, sigma [np.float64(0.005)], commute targets [np.int64(13)]
+  2024: n=18, commute binding in 18, z_pre -8.89 to -7.24, z_post -5.04 to -4.77, sigma [np.float64(0.005), np.float64(0.0059817595580084)], commute targets [np.int64(13)]
+  CA 2021: projected WFH share 0.0723 to 0.0729, realized 0.0968
+  OH 2021: projected WFH share 0.0445 to 0.0446, realized 0.0696
+  TX 2021: projected WFH share 0.0503 to 0.0506, realized 0.0753
+  single-category limit sqrt(2*13*tau) = 5.099
+
+age composition of the projected home workers (discrepancy from the realized composition)
+state  year  rule_prior  rule_wfh_age_disc  rule_proj_wfh_18_34  real_wfh_18_34
+   CA  2018 semapop_vae              0.033                0.197           0.226
+   CA  2021       ttvae              0.123                0.195           0.304
+   CA  2024 semapop_vae              0.092                0.190           0.265
+   OH  2018 semapop_vae              0.050                0.237           0.197
+   OH  2021 semapop_vae              0.114                0.211           0.288
+   OH  2024 semapop_vae              0.107                0.211           0.258
+   TX  2018       ttvae              0.043                0.229           0.223
+   TX  2021 semapop_vae              0.108                0.201           0.309
+   TX  2024 semapop_vae              0.089                0.201           0.285
+
+wrote projection_budget_cases.csv, projection_budget_scenarios.csv, projection_budget_summary.csv
