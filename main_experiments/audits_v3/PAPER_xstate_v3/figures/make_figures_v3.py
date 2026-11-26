@@ -259,7 +259,7 @@ def figF():
     fig,(ax,ax2)=plt.subplots(1,2,figsize=(12,4),gridspec_kw={"width_ratios":[1,1.1]})
     # r22: display labels follow the caption/Table wording (CSV protocol names unchanged); the two reduced
     # protocols use neutral greys instead of the L1/L2 gate colours of Fig. A
-    PLBL=["Proposed\nthree-layer audit","SRMSE-style marginal\nrule (≤0.30)","Structural-only\nLayer-1 scorecard"]
+    PLBL=["Proposed\nthree-layer audit","SRMSE-style marginal\nrule (≤0.30)","Structural-only\nLayer 1 scorecard"]
     ax.bar(PLBL,comp[ACC],color=[CGREEN,"#7f8c99","#a6a6a6"])
     for i,v in enumerate(comp[ACC]): ax.text(i,v+0.6,str(v),ha="center",fontweight="bold")
     ax.set_ylabel(f"Accepted cases (of {N_CELLS})"); ax.set_title("(a) Admission under reduced protocols")

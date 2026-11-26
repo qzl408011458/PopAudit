@@ -38,8 +38,8 @@ for p, g in m.groupby("prior"):
     ax[0].plot(range(3), g.L2_chi_H.values, "-o", color=col, alpha=0.8, ms=4, lw=1.2)
 _gate = ax[0].axhline(KAPPA2, ls="--", color="k", lw=1, label=r"gate $\kappa_2=5$")   # in figure legend (in-axes text overlapped lines)
 ax[0].set_xticks(range(3)); ax[0].set_xticklabels(YEARS)
-ax[0].set_ylabel(r"Layer-2 mismatch  $\bar\chi_H$")
-ax[0].set_title("(a) Layer-2 mismatch by horizon", fontsize=10)
+ax[0].set_ylabel(r"Layer 2 mismatch  $\bar\chi_H$")
+ax[0].set_title("(a) Layer 2 mismatch by horizon", fontsize=10)
 _h = [ax[0].plot([], [], "-o", color=PCOL[k], ms=4, lw=1.2, label=DISP[k])[0] for k in PRIOR_ORDER]
 fig.legend(handles=_h + [_gate], loc="lower center", bbox_to_anchor=(0.38, 0.02), ncol=7, fontsize=8,
            frameon=False, title="prior (one line per state)", title_fontsize=8)
@@ -59,7 +59,7 @@ for yr in YEARS:
     s = m[m.year == yr]
     ax[2].scatter(s.L2_chi_H, s.SRMSE_J, c=cmap[yr], s=42, alpha=0.85, edgecolor="w", lw=0.5, label=str(yr))
 wr = m.groupby("prior").apply(lambda g: g.L2_chi_H.corr(g.SRMSE_J), include_groups=False).mean()
-ax[2].set_xlabel(r"Layer-2 mismatch  $\bar\chi_H$")
+ax[2].set_xlabel(r"Layer 2 mismatch  $\bar\chi_H$")
 ax[2].set_ylabel(r"$\mathrm{SRMSE}_J$")
 # v3: title is data-driven (v2 hard-coded 'nearly uncorrelated' at r=-0.08; v3 gives r=+0.35)
 ax[2].set_title("(c) Mismatch against joint SRMSE", fontsize=10)
