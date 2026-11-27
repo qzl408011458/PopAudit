@@ -95,8 +95,8 @@ logs in `logs_g1fix/`. Layer 2 [REPO]; Layer 3 and D [ENS] [PW].
 `ttvae_gen_only.py`, `tabddpm_gen_*.py`, `code/train_ttvae_CA_bigbatch.py` (run with
 `PYTHONPATH=$POPAUDIT_ROOT`). Audit: `audit_seed.py --seed 142` (and `g1fix_audit_*.sh`), then
 `cert_seed.py`, `analyze_seeds.py`, `make_seed_table.py`. Outputs in `results/`. Runs [CKPT] [ENS] [PW];
-table [REPO]. `verify/ttvae_records.py` (all states) and `verify/ttvae_ca_records.py` (California) measure
-TTVAE record reuse across seeds [ENS] [RAW].
+table [REPO]. `verify/ttvae_records.py` (all states, all 50 realizations, the figures of main Sec. 5.3 and S3.8) and
+`verify/ttvae_ca_records.py` (California, realizations 0 and 17) measure TTVAE record reuse across seeds [ENS] [RAW].
 
 **truncated_priors** (S3.9, Table S9). Drops the records that break a hard rule from the three
 Layer-1-rejected priors and audits the truncated priors. `scripts/filter_ensembles.py`,
@@ -160,7 +160,7 @@ Paths are relative to `supplementary_experiments/` unless they start with anothe
 | S3.7 observed 2013 sample as a reference; Sec. 6.3 | `oracle_2013_reference/run_oracle.py`, `validate.py`, `collect.py`, `per_attr.py` | `oracle_2013_reference/a9_oracle_table.csv`, `a9_oracle_all.csv`, `a9_production_context.csv`, `a9_D_per_attribute.csv`, `validation_single_realization_path.csv`, `run_oracle.log` | runs [RAW]; validation [ENS] [PW]; collection [PW] |
 | S3.7 Table S7 (tab:sigma-sensitivity), exact thresholds | `sigma_sensitivity/*` | `sigma_sensitivity/results/*` | Layer 2 [REPO]; Layer 3 / D [ENS] [PW] |
 | S3.8 Table S8 (tab:seed-robustness) | `seed_robustness/*` | `seed_robustness/results/*` | [CKPT] [ENS] [PW]; table [REPO] |
-| S3.8 TTVAE record reuse across seeds | `seed_robustness/verify/ttvae_records.py`, `ttvae_ca_records.py` | `seed_robustness/verify/ttvae_records.log`, `ttvae_ca_records.log` | [ENS] [RAW] |
+| Sec. 5.3, S3.8 TTVAE record reuse across seeds | `seed_robustness/verify/ttvae_records.py` (all 50 realizations), `ttvae_ca_records.py` | `seed_robustness/verify/ttvae_records.log`, `ttvae_ca_records.log` | [ENS] [RAW] |
 | S3.9 Table S9 (tab:truncated-priors) | `truncated_priors/scripts/*` | `truncated_priors/certificate/*.csv`, `truncated_priors/diag/*.csv` | [ENS] [PW] |
 | S4.1 household / group quarters | `household_gq/household_gq_share.py` | `household_gq/household_gq_share.log` | [RAW] |
 | S4.1 income in constant dollars | `_pums_proc.py`; `income_deflation/code/relabel.py`, `extract_hh.py` | `income_deflation/results/income_shares_by_definition.csv` | [RAW] |

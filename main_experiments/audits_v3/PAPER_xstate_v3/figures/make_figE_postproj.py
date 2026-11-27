@@ -106,5 +106,5 @@ def draw(col, name, ylabel):
                        Line2D([],[],marker="*",ls="",ms=13,color=CRED,mec="k",label="selected $\\theta^\\dagger$: over budget")],loc="upper left",fontsize=8.5)
     for sp in ("top","right"): ax.spines[sp].set_visible(False)
     fig.savefig(OUT_FIG/"png"/f"{name}.png",dpi=150,bbox_inches="tight"); fig.savefig(OUT_FIG/"pdf"/f"{name}.pdf",bbox_inches="tight"); plt.close(fig); print("wrote",name)
-draw("d_A","figE_decision","post-projection marginal discrepancy $d_\\mathcal{A}(Q^\\ast)$")
+draw("d_A","figE_decision","post-projection residual $D(\\theta,S_H)$")
 draw("d_A_pre","figE_decision_preproj","pre-projection prior marginal discrepancy $d_\\mathcal{A}(P_\\theta)$")

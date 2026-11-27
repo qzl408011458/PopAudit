@@ -1,39 +1,1055 @@
-== CA: training split 40000 records, test split 330109 records
-CA rid=0 seed=42 n=330109 in_train=0.9730 in_test=0.8198
-CA rid=0 seed=142 n=330109 in_train=0.9769 in_test=0.8211
-CA rid=0 seed=242 n=330109 in_train=0.9796 in_test=0.8216
-CA rid=0 seeds 42-142 rowwise_identical=0.9828
-CA rid=0 seeds 42-242 rowwise_identical=0.9758
-CA rid=0 seeds 142-242 rowwise_identical=0.9818
-CA rid=17 seed=42 n=330109 in_train=0.9729 in_test=0.8192
-CA rid=17 seed=142 n=330109 in_train=0.9768 in_test=0.8203
-CA rid=17 seed=242 n=330109 in_train=0.9794 in_test=0.8208
-CA rid=17 seeds 42-142 rowwise_identical=0.9833
-CA rid=17 seeds 42-242 rowwise_identical=0.9762
-CA rid=17 seeds 142-242 rowwise_identical=0.9823
-== OH: training split 40000 records, test split 64112 records
-OH rid=0 seed=42 n=64112 in_train=1.0000 in_test=0.7428
-OH rid=0 seed=142 n=64112 in_train=1.0000 in_test=0.7428
-OH rid=0 seed=242 n=64112 in_train=1.0000 in_test=0.7428
-OH rid=0 seeds 42-142 rowwise_identical=1.0000
-OH rid=0 seeds 42-242 rowwise_identical=1.0000
-OH rid=0 seeds 142-242 rowwise_identical=1.0000
-OH rid=17 seed=42 n=64112 in_train=1.0000 in_test=0.7433
-OH rid=17 seed=142 n=64112 in_train=1.0000 in_test=0.7433
-OH rid=17 seed=242 n=64112 in_train=1.0000 in_test=0.7433
-OH rid=17 seeds 42-142 rowwise_identical=1.0000
-OH rid=17 seeds 42-242 rowwise_identical=1.0000
-OH rid=17 seeds 142-242 rowwise_identical=1.0000
-== TX: training split 40000 records, test split 212756 records
-TX rid=0 seed=42 n=212756 in_train=1.0000 in_test=0.8457
-TX rid=0 seed=142 n=212756 in_train=0.9998 in_test=0.8456
-TX rid=0 seed=242 n=212756 in_train=0.9998 in_test=0.8456
-TX rid=0 seeds 42-142 rowwise_identical=0.9998
-TX rid=0 seeds 42-242 rowwise_identical=0.9998
-TX rid=0 seeds 142-242 rowwise_identical=0.9998
-TX rid=17 seed=42 n=212756 in_train=1.0000 in_test=0.8450
-TX rid=17 seed=142 n=212756 in_train=0.9999 in_test=0.8450
-TX rid=17 seed=242 n=212756 in_train=0.9999 in_test=0.8450
-TX rid=17 seeds 42-142 rowwise_identical=0.9999
-TX rid=17 seeds 42-242 rowwise_identical=0.9999
-TX rid=17 seeds 142-242 rowwise_identical=0.9999
+CA rid=0 seed=42 n=330109 in_train=0.97298 in_test=0.81978
+CA rid=0 seed=142 n=330109 in_train=0.97688 in_test=0.82110
+CA rid=0 seed=242 n=330109 in_train=0.97964 in_test=0.82158
+CA rid=0 seeds 42-142 rowwise_identical=0.98284
+CA rid=0 seeds 42-242 rowwise_identical=0.97579
+CA rid=0 seeds 142-242 rowwise_identical=0.98179
+CA rid=0 seeds 42-142-242 rowwise_identical=0.97051
+CA rid=1 seed=42 n=330109 in_train=0.97300 in_test=0.81925
+CA rid=1 seed=142 n=330109 in_train=0.97696 in_test=0.82039
+CA rid=1 seed=242 n=330109 in_train=0.97981 in_test=0.82092
+CA rid=1 seeds 42-142 rowwise_identical=0.98306
+CA rid=1 seeds 42-242 rowwise_identical=0.97591
+CA rid=1 seeds 142-242 rowwise_identical=0.98195
+CA rid=1 seeds 42-142-242 rowwise_identical=0.97074
+CA rid=2 seed=42 n=330109 in_train=0.97331 in_test=0.81981
+CA rid=2 seed=142 n=330109 in_train=0.97742 in_test=0.82100
+CA rid=2 seed=242 n=330109 in_train=0.97999 in_test=0.82163
+CA rid=2 seeds 42-142 rowwise_identical=0.98309
+CA rid=2 seeds 42-242 rowwise_identical=0.97609
+CA rid=2 seeds 142-242 rowwise_identical=0.98196
+CA rid=2 seeds 42-142-242 rowwise_identical=0.97083
+CA rid=3 seed=42 n=330109 in_train=0.97308 in_test=0.82011
+CA rid=3 seed=142 n=330109 in_train=0.97701 in_test=0.82127
+CA rid=3 seed=242 n=330109 in_train=0.97969 in_test=0.82173
+CA rid=3 seeds 42-142 rowwise_identical=0.98342
+CA rid=3 seeds 42-242 rowwise_identical=0.97640
+CA rid=3 seeds 142-242 rowwise_identical=0.98231
+CA rid=3 seeds 42-142-242 rowwise_identical=0.97133
+CA rid=4 seed=42 n=330109 in_train=0.97307 in_test=0.81984
+CA rid=4 seed=142 n=330109 in_train=0.97702 in_test=0.82114
+CA rid=4 seed=242 n=330109 in_train=0.97974 in_test=0.82148
+CA rid=4 seeds 42-142 rowwise_identical=0.98317
+CA rid=4 seeds 42-242 rowwise_identical=0.97641
+CA rid=4 seeds 142-242 rowwise_identical=0.98261
+CA rid=4 seeds 42-142-242 rowwise_identical=0.97138
+CA rid=5 seed=42 n=330109 in_train=0.97294 in_test=0.81916
+CA rid=5 seed=142 n=330109 in_train=0.97711 in_test=0.82047
+CA rid=5 seed=242 n=330109 in_train=0.97978 in_test=0.82101
+CA rid=5 seeds 42-142 rowwise_identical=0.98351
+CA rid=5 seeds 42-242 rowwise_identical=0.97629
+CA rid=5 seeds 142-242 rowwise_identical=0.98260
+CA rid=5 seeds 42-142-242 rowwise_identical=0.97148
+CA rid=6 seed=42 n=330109 in_train=0.97279 in_test=0.82001
+CA rid=6 seed=142 n=330109 in_train=0.97696 in_test=0.82133
+CA rid=6 seed=242 n=330109 in_train=0.97960 in_test=0.82156
+CA rid=6 seeds 42-142 rowwise_identical=0.98314
+CA rid=6 seeds 42-242 rowwise_identical=0.97591
+CA rid=6 seeds 142-242 rowwise_identical=0.98177
+CA rid=6 seeds 42-142-242 rowwise_identical=0.97066
+CA rid=7 seed=42 n=330109 in_train=0.97255 in_test=0.81936
+CA rid=7 seed=142 n=330109 in_train=0.97672 in_test=0.82079
+CA rid=7 seed=242 n=330109 in_train=0.97928 in_test=0.82109
+CA rid=7 seeds 42-142 rowwise_identical=0.98327
+CA rid=7 seeds 42-242 rowwise_identical=0.97616
+CA rid=7 seeds 142-242 rowwise_identical=0.98220
+CA rid=7 seeds 42-142-242 rowwise_identical=0.97109
+CA rid=8 seed=42 n=330109 in_train=0.97301 in_test=0.81886
+CA rid=8 seed=142 n=330109 in_train=0.97724 in_test=0.82036
+CA rid=8 seed=242 n=330109 in_train=0.97976 in_test=0.82088
+CA rid=8 seeds 42-142 rowwise_identical=0.98322
+CA rid=8 seeds 42-242 rowwise_identical=0.97614
+CA rid=8 seeds 142-242 rowwise_identical=0.98221
+CA rid=8 seeds 42-142-242 rowwise_identical=0.97110
+CA rid=9 seed=42 n=330109 in_train=0.97289 in_test=0.81935
+CA rid=9 seed=142 n=330109 in_train=0.97709 in_test=0.82073
+CA rid=9 seed=242 n=330109 in_train=0.97963 in_test=0.82107
+CA rid=9 seeds 42-142 rowwise_identical=0.98301
+CA rid=9 seeds 42-242 rowwise_identical=0.97608
+CA rid=9 seeds 142-242 rowwise_identical=0.98234
+CA rid=9 seeds 42-142-242 rowwise_identical=0.97098
+CA rid=10 seed=42 n=330109 in_train=0.97327 in_test=0.82033
+CA rid=10 seed=142 n=330109 in_train=0.97715 in_test=0.82163
+CA rid=10 seed=242 n=330109 in_train=0.97984 in_test=0.82214
+CA rid=10 seeds 42-142 rowwise_identical=0.98296
+CA rid=10 seeds 42-242 rowwise_identical=0.97629
+CA rid=10 seeds 142-242 rowwise_identical=0.98209
+CA rid=10 seeds 42-142-242 rowwise_identical=0.97093
+CA rid=11 seed=42 n=330109 in_train=0.97315 in_test=0.82011
+CA rid=11 seed=142 n=330109 in_train=0.97726 in_test=0.82138
+CA rid=11 seed=242 n=330109 in_train=0.97986 in_test=0.82181
+CA rid=11 seeds 42-142 rowwise_identical=0.98297
+CA rid=11 seeds 42-242 rowwise_identical=0.97611
+CA rid=11 seeds 142-242 rowwise_identical=0.98223
+CA rid=11 seeds 42-142-242 rowwise_identical=0.97099
+CA rid=12 seed=42 n=330109 in_train=0.97286 in_test=0.81916
+CA rid=12 seed=142 n=330109 in_train=0.97690 in_test=0.82044
+CA rid=12 seed=242 n=330109 in_train=0.97967 in_test=0.82109
+CA rid=12 seeds 42-142 rowwise_identical=0.98303
+CA rid=12 seeds 42-242 rowwise_identical=0.97584
+CA rid=12 seeds 142-242 rowwise_identical=0.98197
+CA rid=12 seeds 42-142-242 rowwise_identical=0.97075
+CA rid=13 seed=42 n=330109 in_train=0.97308 in_test=0.81973
+CA rid=13 seed=142 n=330109 in_train=0.97699 in_test=0.82084
+CA rid=13 seed=242 n=330109 in_train=0.97979 in_test=0.82130
+CA rid=13 seeds 42-142 rowwise_identical=0.98264
+CA rid=13 seeds 42-242 rowwise_identical=0.97609
+CA rid=13 seeds 142-242 rowwise_identical=0.98204
+CA rid=13 seeds 42-142-242 rowwise_identical=0.97066
+CA rid=14 seed=42 n=330109 in_train=0.97296 in_test=0.82009
+CA rid=14 seed=142 n=330109 in_train=0.97681 in_test=0.82120
+CA rid=14 seed=242 n=330109 in_train=0.97972 in_test=0.82176
+CA rid=14 seeds 42-142 rowwise_identical=0.98332
+CA rid=14 seeds 42-242 rowwise_identical=0.97651
+CA rid=14 seeds 142-242 rowwise_identical=0.98245
+CA rid=14 seeds 42-142-242 rowwise_identical=0.97140
+CA rid=15 seed=42 n=330109 in_train=0.97285 in_test=0.81906
+CA rid=15 seed=142 n=330109 in_train=0.97687 in_test=0.82042
+CA rid=15 seed=242 n=330109 in_train=0.97956 in_test=0.82107
+CA rid=15 seeds 42-142 rowwise_identical=0.98303
+CA rid=15 seeds 42-242 rowwise_identical=0.97616
+CA rid=15 seeds 142-242 rowwise_identical=0.98240
+CA rid=15 seeds 42-142-242 rowwise_identical=0.97107
+CA rid=16 seed=42 n=330109 in_train=0.97331 in_test=0.81975
+CA rid=16 seed=142 n=330109 in_train=0.97714 in_test=0.82074
+CA rid=16 seed=242 n=330109 in_train=0.97978 in_test=0.82123
+CA rid=16 seeds 42-142 rowwise_identical=0.98297
+CA rid=16 seeds 42-242 rowwise_identical=0.97588
+CA rid=16 seeds 142-242 rowwise_identical=0.98169
+CA rid=16 seeds 42-142-242 rowwise_identical=0.97058
+CA rid=17 seed=42 n=330109 in_train=0.97288 in_test=0.81924
+CA rid=17 seed=142 n=330109 in_train=0.97684 in_test=0.82026
+CA rid=17 seed=242 n=330109 in_train=0.97943 in_test=0.82079
+CA rid=17 seeds 42-142 rowwise_identical=0.98329
+CA rid=17 seeds 42-242 rowwise_identical=0.97623
+CA rid=17 seeds 142-242 rowwise_identical=0.98228
+CA rid=17 seeds 42-142-242 rowwise_identical=0.97122
+CA rid=18 seed=42 n=330109 in_train=0.97329 in_test=0.82030
+CA rid=18 seed=142 n=330109 in_train=0.97724 in_test=0.82152
+CA rid=18 seed=242 n=330109 in_train=0.97983 in_test=0.82208
+CA rid=18 seeds 42-142 rowwise_identical=0.98358
+CA rid=18 seeds 42-242 rowwise_identical=0.97634
+CA rid=18 seeds 142-242 rowwise_identical=0.98218
+CA rid=18 seeds 42-142-242 rowwise_identical=0.97132
+CA rid=19 seed=42 n=330109 in_train=0.97296 in_test=0.81872
+CA rid=19 seed=142 n=330109 in_train=0.97695 in_test=0.81994
+CA rid=19 seed=242 n=330109 in_train=0.97956 in_test=0.82060
+CA rid=19 seeds 42-142 rowwise_identical=0.98316
+CA rid=19 seeds 42-242 rowwise_identical=0.97610
+CA rid=19 seeds 142-242 rowwise_identical=0.98185
+CA rid=19 seeds 42-142-242 rowwise_identical=0.97086
+CA rid=20 seed=42 n=330109 in_train=0.97295 in_test=0.81923
+CA rid=20 seed=142 n=330109 in_train=0.97693 in_test=0.82050
+CA rid=20 seed=242 n=330109 in_train=0.97966 in_test=0.82105
+CA rid=20 seeds 42-142 rowwise_identical=0.98327
+CA rid=20 seeds 42-242 rowwise_identical=0.97596
+CA rid=20 seeds 142-242 rowwise_identical=0.98194
+CA rid=20 seeds 42-142-242 rowwise_identical=0.97088
+CA rid=21 seed=42 n=330109 in_train=0.97305 in_test=0.82029
+CA rid=21 seed=142 n=330109 in_train=0.97699 in_test=0.82162
+CA rid=21 seed=242 n=330109 in_train=0.97958 in_test=0.82189
+CA rid=21 seeds 42-142 rowwise_identical=0.98348
+CA rid=21 seeds 42-242 rowwise_identical=0.97673
+CA rid=21 seeds 142-242 rowwise_identical=0.98253
+CA rid=21 seeds 42-142-242 rowwise_identical=0.97167
+CA rid=22 seed=42 n=330109 in_train=0.97302 in_test=0.81894
+CA rid=22 seed=142 n=330109 in_train=0.97691 in_test=0.82009
+CA rid=22 seed=242 n=330109 in_train=0.97949 in_test=0.82048
+CA rid=22 seeds 42-142 rowwise_identical=0.98293
+CA rid=22 seeds 42-242 rowwise_identical=0.97604
+CA rid=22 seeds 142-242 rowwise_identical=0.98155
+CA rid=22 seeds 42-142-242 rowwise_identical=0.97056
+CA rid=23 seed=42 n=330109 in_train=0.97276 in_test=0.81943
+CA rid=23 seed=142 n=330109 in_train=0.97666 in_test=0.82053
+CA rid=23 seed=242 n=330109 in_train=0.97922 in_test=0.82082
+CA rid=23 seeds 42-142 rowwise_identical=0.98334
+CA rid=23 seeds 42-242 rowwise_identical=0.97593
+CA rid=23 seeds 142-242 rowwise_identical=0.98202
+CA rid=23 seeds 42-142-242 rowwise_identical=0.97090
+CA rid=24 seed=42 n=330109 in_train=0.97356 in_test=0.81937
+CA rid=24 seed=142 n=330109 in_train=0.97738 in_test=0.82044
+CA rid=24 seed=242 n=330109 in_train=0.97996 in_test=0.82077
+CA rid=24 seeds 42-142 rowwise_identical=0.98314
+CA rid=24 seeds 42-242 rowwise_identical=0.97620
+CA rid=24 seeds 142-242 rowwise_identical=0.98213
+CA rid=24 seeds 42-142-242 rowwise_identical=0.97100
+CA rid=25 seed=42 n=330109 in_train=0.97328 in_test=0.81996
+CA rid=25 seed=142 n=330109 in_train=0.97722 in_test=0.82111
+CA rid=25 seed=242 n=330109 in_train=0.97995 in_test=0.82143
+CA rid=25 seeds 42-142 rowwise_identical=0.98305
+CA rid=25 seeds 42-242 rowwise_identical=0.97582
+CA rid=25 seeds 142-242 rowwise_identical=0.98211
+CA rid=25 seeds 42-142-242 rowwise_identical=0.97074
+CA rid=26 seed=42 n=330109 in_train=0.97342 in_test=0.82004
+CA rid=26 seed=142 n=330109 in_train=0.97729 in_test=0.82120
+CA rid=26 seed=242 n=330109 in_train=0.97980 in_test=0.82159
+CA rid=26 seeds 42-142 rowwise_identical=0.98355
+CA rid=26 seeds 42-242 rowwise_identical=0.97602
+CA rid=26 seeds 142-242 rowwise_identical=0.98169
+CA rid=26 seeds 42-142-242 rowwise_identical=0.97092
+CA rid=27 seed=42 n=330109 in_train=0.97291 in_test=0.81995
+CA rid=27 seed=142 n=330109 in_train=0.97680 in_test=0.82106
+CA rid=27 seed=242 n=330109 in_train=0.97943 in_test=0.82167
+CA rid=27 seeds 42-142 rowwise_identical=0.98314
+CA rid=27 seeds 42-242 rowwise_identical=0.97598
+CA rid=27 seeds 142-242 rowwise_identical=0.98202
+CA rid=27 seeds 42-142-242 rowwise_identical=0.97082
+CA rid=28 seed=42 n=330109 in_train=0.97313 in_test=0.81974
+CA rid=28 seed=142 n=330109 in_train=0.97695 in_test=0.82095
+CA rid=28 seed=242 n=330109 in_train=0.97953 in_test=0.82134
+CA rid=28 seeds 42-142 rowwise_identical=0.98315
+CA rid=28 seeds 42-242 rowwise_identical=0.97611
+CA rid=28 seeds 142-242 rowwise_identical=0.98203
+CA rid=28 seeds 42-142-242 rowwise_identical=0.97089
+CA rid=29 seed=42 n=330109 in_train=0.97279 in_test=0.82015
+CA rid=29 seed=142 n=330109 in_train=0.97678 in_test=0.82133
+CA rid=29 seed=242 n=330109 in_train=0.97943 in_test=0.82185
+CA rid=29 seeds 42-142 rowwise_identical=0.98292
+CA rid=29 seeds 42-242 rowwise_identical=0.97617
+CA rid=29 seeds 142-242 rowwise_identical=0.98238
+CA rid=29 seeds 42-142-242 rowwise_identical=0.97099
+CA rid=30 seed=42 n=330109 in_train=0.97294 in_test=0.81865
+CA rid=30 seed=142 n=330109 in_train=0.97696 in_test=0.81997
+CA rid=30 seed=242 n=330109 in_train=0.97963 in_test=0.82047
+CA rid=30 seeds 42-142 rowwise_identical=0.98316
+CA rid=30 seeds 42-242 rowwise_identical=0.97636
+CA rid=30 seeds 142-242 rowwise_identical=0.98220
+CA rid=30 seeds 42-142-242 rowwise_identical=0.97119
+CA rid=31 seed=42 n=330109 in_train=0.97261 in_test=0.81971
+CA rid=31 seed=142 n=330109 in_train=0.97665 in_test=0.82091
+CA rid=31 seed=242 n=330109 in_train=0.97922 in_test=0.82113
+CA rid=31 seeds 42-142 rowwise_identical=0.98324
+CA rid=31 seeds 42-242 rowwise_identical=0.97598
+CA rid=31 seeds 142-242 rowwise_identical=0.98202
+CA rid=31 seeds 42-142-242 rowwise_identical=0.97092
+CA rid=32 seed=42 n=330109 in_train=0.97306 in_test=0.81939
+CA rid=32 seed=142 n=330109 in_train=0.97705 in_test=0.82062
+CA rid=32 seed=242 n=330109 in_train=0.97988 in_test=0.82126
+CA rid=32 seeds 42-142 rowwise_identical=0.98313
+CA rid=32 seeds 42-242 rowwise_identical=0.97622
+CA rid=32 seeds 142-242 rowwise_identical=0.98197
+CA rid=32 seeds 42-142-242 rowwise_identical=0.97098
+CA rid=33 seed=42 n=330109 in_train=0.97324 in_test=0.81916
+CA rid=33 seed=142 n=330109 in_train=0.97721 in_test=0.82040
+CA rid=33 seed=242 n=330109 in_train=0.97951 in_test=0.82080
+CA rid=33 seeds 42-142 rowwise_identical=0.98360
+CA rid=33 seeds 42-242 rowwise_identical=0.97661
+CA rid=33 seeds 142-242 rowwise_identical=0.98243
+CA rid=33 seeds 42-142-242 rowwise_identical=0.97160
+CA rid=34 seed=42 n=330109 in_train=0.97319 in_test=0.81917
+CA rid=34 seed=142 n=330109 in_train=0.97686 in_test=0.82017
+CA rid=34 seed=242 n=330109 in_train=0.97988 in_test=0.82090
+CA rid=34 seeds 42-142 rowwise_identical=0.98348
+CA rid=34 seeds 42-242 rowwise_identical=0.97645
+CA rid=34 seeds 142-242 rowwise_identical=0.98258
+CA rid=34 seeds 42-142-242 rowwise_identical=0.97148
+CA rid=35 seed=42 n=330109 in_train=0.97305 in_test=0.81910
+CA rid=35 seed=142 n=330109 in_train=0.97723 in_test=0.82044
+CA rid=35 seed=242 n=330109 in_train=0.98017 in_test=0.82115
+CA rid=35 seeds 42-142 rowwise_identical=0.98320
+CA rid=35 seeds 42-242 rowwise_identical=0.97602
+CA rid=35 seeds 142-242 rowwise_identical=0.98228
+CA rid=35 seeds 42-142-242 rowwise_identical=0.97105
+CA rid=36 seed=42 n=330109 in_train=0.97329 in_test=0.81964
+CA rid=36 seed=142 n=330109 in_train=0.97732 in_test=0.82100
+CA rid=36 seed=242 n=330109 in_train=0.98035 in_test=0.82167
+CA rid=36 seeds 42-142 rowwise_identical=0.98309
+CA rid=36 seeds 42-242 rowwise_identical=0.97644
+CA rid=36 seeds 142-242 rowwise_identical=0.98252
+CA rid=36 seeds 42-142-242 rowwise_identical=0.97126
+CA rid=37 seed=42 n=330109 in_train=0.97293 in_test=0.81966
+CA rid=37 seed=142 n=330109 in_train=0.97678 in_test=0.82099
+CA rid=37 seed=242 n=330109 in_train=0.97968 in_test=0.82162
+CA rid=37 seeds 42-142 rowwise_identical=0.98321
+CA rid=37 seeds 42-242 rowwise_identical=0.97617
+CA rid=37 seeds 142-242 rowwise_identical=0.98215
+CA rid=37 seeds 42-142-242 rowwise_identical=0.97103
+CA rid=38 seed=42 n=330109 in_train=0.97277 in_test=0.82027
+CA rid=38 seed=142 n=330109 in_train=0.97657 in_test=0.82128
+CA rid=38 seed=242 n=330109 in_train=0.97941 in_test=0.82177
+CA rid=38 seeds 42-142 rowwise_identical=0.98266
+CA rid=38 seeds 42-242 rowwise_identical=0.97604
+CA rid=38 seeds 142-242 rowwise_identical=0.98204
+CA rid=38 seeds 42-142-242 rowwise_identical=0.97062
+CA rid=39 seed=42 n=330109 in_train=0.97313 in_test=0.81825
+CA rid=39 seed=142 n=330109 in_train=0.97711 in_test=0.81965
+CA rid=39 seed=242 n=330109 in_train=0.97986 in_test=0.81991
+CA rid=39 seeds 42-142 rowwise_identical=0.98298
+CA rid=39 seeds 42-242 rowwise_identical=0.97590
+CA rid=39 seeds 142-242 rowwise_identical=0.98211
+CA rid=39 seeds 42-142-242 rowwise_identical=0.97076
+CA rid=40 seed=42 n=330109 in_train=0.97314 in_test=0.82058
+CA rid=40 seed=142 n=330109 in_train=0.97702 in_test=0.82173
+CA rid=40 seed=242 n=330109 in_train=0.97984 in_test=0.82226
+CA rid=40 seeds 42-142 rowwise_identical=0.98347
+CA rid=40 seeds 42-242 rowwise_identical=0.97635
+CA rid=40 seeds 142-242 rowwise_identical=0.98208
+CA rid=40 seeds 42-142-242 rowwise_identical=0.97125
+CA rid=41 seed=42 n=330109 in_train=0.97325 in_test=0.82040
+CA rid=41 seed=142 n=330109 in_train=0.97713 in_test=0.82155
+CA rid=41 seed=242 n=330109 in_train=0.97967 in_test=0.82218
+CA rid=41 seeds 42-142 rowwise_identical=0.98313
+CA rid=41 seeds 42-242 rowwise_identical=0.97568
+CA rid=41 seeds 142-242 rowwise_identical=0.98205
+CA rid=41 seeds 42-142-242 rowwise_identical=0.97072
+CA rid=42 seed=42 n=330109 in_train=0.97323 in_test=0.81932
+CA rid=42 seed=142 n=330109 in_train=0.97717 in_test=0.82075
+CA rid=42 seed=242 n=330109 in_train=0.97991 in_test=0.82140
+CA rid=42 seeds 42-142 rowwise_identical=0.98334
+CA rid=42 seeds 42-242 rowwise_identical=0.97630
+CA rid=42 seeds 142-242 rowwise_identical=0.98208
+CA rid=42 seeds 42-142-242 rowwise_identical=0.97115
+CA rid=43 seed=42 n=330109 in_train=0.97270 in_test=0.81951
+CA rid=43 seed=142 n=330109 in_train=0.97692 in_test=0.82069
+CA rid=43 seed=242 n=330109 in_train=0.97944 in_test=0.82131
+CA rid=43 seeds 42-142 rowwise_identical=0.98317
+CA rid=43 seeds 42-242 rowwise_identical=0.97619
+CA rid=43 seeds 142-242 rowwise_identical=0.98227
+CA rid=43 seeds 42-142-242 rowwise_identical=0.97107
+CA rid=44 seed=42 n=330109 in_train=0.97328 in_test=0.82047
+CA rid=44 seed=142 n=330109 in_train=0.97740 in_test=0.82170
+CA rid=44 seed=242 n=330109 in_train=0.97970 in_test=0.82194
+CA rid=44 seeds 42-142 rowwise_identical=0.98342
+CA rid=44 seeds 42-242 rowwise_identical=0.97575
+CA rid=44 seeds 142-242 rowwise_identical=0.98209
+CA rid=44 seeds 42-142-242 rowwise_identical=0.97096
+CA rid=45 seed=42 n=330109 in_train=0.97303 in_test=0.81926
+CA rid=45 seed=142 n=330109 in_train=0.97715 in_test=0.82045
+CA rid=45 seed=242 n=330109 in_train=0.97990 in_test=0.82096
+CA rid=45 seeds 42-142 rowwise_identical=0.98299
+CA rid=45 seeds 42-242 rowwise_identical=0.97601
+CA rid=45 seeds 142-242 rowwise_identical=0.98215
+CA rid=45 seeds 42-142-242 rowwise_identical=0.97089
+CA rid=46 seed=42 n=330109 in_train=0.97333 in_test=0.81957
+CA rid=46 seed=142 n=330109 in_train=0.97727 in_test=0.82075
+CA rid=46 seed=242 n=330109 in_train=0.98006 in_test=0.82120
+CA rid=46 seeds 42-142 rowwise_identical=0.98307
+CA rid=46 seeds 42-242 rowwise_identical=0.97630
+CA rid=46 seeds 142-242 rowwise_identical=0.98223
+CA rid=46 seeds 42-142-242 rowwise_identical=0.97107
+CA rid=47 seed=42 n=330109 in_train=0.97319 in_test=0.82032
+CA rid=47 seed=142 n=330109 in_train=0.97707 in_test=0.82143
+CA rid=47 seed=242 n=330109 in_train=0.97962 in_test=0.82183
+CA rid=47 seeds 42-142 rowwise_identical=0.98296
+CA rid=47 seeds 42-242 rowwise_identical=0.97600
+CA rid=47 seeds 142-242 rowwise_identical=0.98213
+CA rid=47 seeds 42-142-242 rowwise_identical=0.97081
+CA rid=48 seed=42 n=330109 in_train=0.97248 in_test=0.81967
+CA rid=48 seed=142 n=330109 in_train=0.97663 in_test=0.82099
+CA rid=48 seed=242 n=330109 in_train=0.97958 in_test=0.82149
+CA rid=48 seeds 42-142 rowwise_identical=0.98275
+CA rid=48 seeds 42-242 rowwise_identical=0.97582
+CA rid=48 seeds 142-242 rowwise_identical=0.98195
+CA rid=48 seeds 42-142-242 rowwise_identical=0.97056
+CA rid=49 seed=42 n=330109 in_train=0.97363 in_test=0.82048
+CA rid=49 seed=142 n=330109 in_train=0.97717 in_test=0.82131
+CA rid=49 seed=242 n=330109 in_train=0.97967 in_test=0.82192
+CA rid=49 seeds 42-142 rowwise_identical=0.98332
+CA rid=49 seeds 42-242 rowwise_identical=0.97641
+CA rid=49 seeds 142-242 rowwise_identical=0.98224
+CA rid=49 seeds 42-142-242 rowwise_identical=0.97124
+OH rid=0 seed=42 n=64112 in_train=1.00000 in_test=0.74278
+OH rid=0 seed=142 n=64112 in_train=1.00000 in_test=0.74278
+OH rid=0 seed=242 n=64112 in_train=1.00000 in_test=0.74278
+OH rid=0 seeds 42-142 rowwise_identical=1.00000
+OH rid=0 seeds 42-242 rowwise_identical=1.00000
+OH rid=0 seeds 142-242 rowwise_identical=1.00000
+OH rid=0 seeds 42-142-242 rowwise_identical=1.00000
+OH rid=1 seed=42 n=64112 in_train=0.99998 in_test=0.74261
+OH rid=1 seed=142 n=64112 in_train=1.00000 in_test=0.74261
+OH rid=1 seed=242 n=64112 in_train=1.00000 in_test=0.74261
+OH rid=1 seeds 42-142 rowwise_identical=0.99998
+OH rid=1 seeds 42-242 rowwise_identical=0.99998
+OH rid=1 seeds 142-242 rowwise_identical=1.00000
+OH rid=1 seeds 42-142-242 rowwise_identical=0.99998
+OH rid=2 seed=42 n=64112 in_train=0.99994 in_test=0.74426
+OH rid=2 seed=142 n=64112 in_train=1.00000 in_test=0.74426
+OH rid=2 seed=242 n=64112 in_train=1.00000 in_test=0.74426
+OH rid=2 seeds 42-142 rowwise_identical=0.99994
+OH rid=2 seeds 42-242 rowwise_identical=0.99994
+OH rid=2 seeds 142-242 rowwise_identical=1.00000
+OH rid=2 seeds 42-142-242 rowwise_identical=0.99994
+OH rid=3 seed=42 n=64112 in_train=1.00000 in_test=0.74295
+OH rid=3 seed=142 n=64112 in_train=1.00000 in_test=0.74295
+OH rid=3 seed=242 n=64112 in_train=1.00000 in_test=0.74295
+OH rid=3 seeds 42-142 rowwise_identical=1.00000
+OH rid=3 seeds 42-242 rowwise_identical=1.00000
+OH rid=3 seeds 142-242 rowwise_identical=1.00000
+OH rid=3 seeds 42-142-242 rowwise_identical=1.00000
+OH rid=4 seed=42 n=64112 in_train=0.99998 in_test=0.74122
+OH rid=4 seed=142 n=64112 in_train=1.00000 in_test=0.74122
+OH rid=4 seed=242 n=64112 in_train=1.00000 in_test=0.74122
+OH rid=4 seeds 42-142 rowwise_identical=0.99998
+OH rid=4 seeds 42-242 rowwise_identical=0.99998
+OH rid=4 seeds 142-242 rowwise_identical=1.00000
+OH rid=4 seeds 42-142-242 rowwise_identical=0.99998
+OH rid=5 seed=42 n=64112 in_train=1.00000 in_test=0.74086
+OH rid=5 seed=142 n=64112 in_train=1.00000 in_test=0.74086
+OH rid=5 seed=242 n=64112 in_train=1.00000 in_test=0.74086
+OH rid=5 seeds 42-142 rowwise_identical=1.00000
+OH rid=5 seeds 42-242 rowwise_identical=1.00000
+OH rid=5 seeds 142-242 rowwise_identical=1.00000
+OH rid=5 seeds 42-142-242 rowwise_identical=1.00000
+OH rid=6 seed=42 n=64112 in_train=0.99992 in_test=0.74153
+OH rid=6 seed=142 n=64112 in_train=1.00000 in_test=0.74153
+OH rid=6 seed=242 n=64112 in_train=1.00000 in_test=0.74153
+OH rid=6 seeds 42-142 rowwise_identical=0.99992
+OH rid=6 seeds 42-242 rowwise_identical=0.99992
+OH rid=6 seeds 142-242 rowwise_identical=1.00000
+OH rid=6 seeds 42-142-242 rowwise_identical=0.99992
+OH rid=7 seed=42 n=64112 in_train=0.99995 in_test=0.74259
+OH rid=7 seed=142 n=64112 in_train=1.00000 in_test=0.74259
+OH rid=7 seed=242 n=64112 in_train=1.00000 in_test=0.74259
+OH rid=7 seeds 42-142 rowwise_identical=0.99995
+OH rid=7 seeds 42-242 rowwise_identical=0.99995
+OH rid=7 seeds 142-242 rowwise_identical=1.00000
+OH rid=7 seeds 42-142-242 rowwise_identical=0.99995
+OH rid=8 seed=42 n=64112 in_train=0.99998 in_test=0.74180
+OH rid=8 seed=142 n=64112 in_train=1.00000 in_test=0.74180
+OH rid=8 seed=242 n=64112 in_train=1.00000 in_test=0.74180
+OH rid=8 seeds 42-142 rowwise_identical=0.99998
+OH rid=8 seeds 42-242 rowwise_identical=0.99998
+OH rid=8 seeds 142-242 rowwise_identical=1.00000
+OH rid=8 seeds 42-142-242 rowwise_identical=0.99998
+OH rid=9 seed=42 n=64112 in_train=0.99998 in_test=0.74270
+OH rid=9 seed=142 n=64112 in_train=1.00000 in_test=0.74270
+OH rid=9 seed=242 n=64112 in_train=1.00000 in_test=0.74270
+OH rid=9 seeds 42-142 rowwise_identical=0.99998
+OH rid=9 seeds 42-242 rowwise_identical=0.99998
+OH rid=9 seeds 142-242 rowwise_identical=1.00000
+OH rid=9 seeds 42-142-242 rowwise_identical=0.99998
+OH rid=10 seed=42 n=64112 in_train=0.99994 in_test=0.74219
+OH rid=10 seed=142 n=64112 in_train=1.00000 in_test=0.74219
+OH rid=10 seed=242 n=64112 in_train=1.00000 in_test=0.74219
+OH rid=10 seeds 42-142 rowwise_identical=0.99994
+OH rid=10 seeds 42-242 rowwise_identical=0.99994
+OH rid=10 seeds 142-242 rowwise_identical=1.00000
+OH rid=10 seeds 42-142-242 rowwise_identical=0.99994
+OH rid=11 seed=42 n=64112 in_train=0.99997 in_test=0.74103
+OH rid=11 seed=142 n=64112 in_train=1.00000 in_test=0.74103
+OH rid=11 seed=242 n=64112 in_train=1.00000 in_test=0.74103
+OH rid=11 seeds 42-142 rowwise_identical=0.99997
+OH rid=11 seeds 42-242 rowwise_identical=0.99997
+OH rid=11 seeds 142-242 rowwise_identical=1.00000
+OH rid=11 seeds 42-142-242 rowwise_identical=0.99997
+OH rid=12 seed=42 n=64112 in_train=1.00000 in_test=0.74212
+OH rid=12 seed=142 n=64112 in_train=1.00000 in_test=0.74212
+OH rid=12 seed=242 n=64112 in_train=1.00000 in_test=0.74212
+OH rid=12 seeds 42-142 rowwise_identical=1.00000
+OH rid=12 seeds 42-242 rowwise_identical=1.00000
+OH rid=12 seeds 142-242 rowwise_identical=1.00000
+OH rid=12 seeds 42-142-242 rowwise_identical=1.00000
+OH rid=13 seed=42 n=64112 in_train=0.99995 in_test=0.74418
+OH rid=13 seed=142 n=64112 in_train=1.00000 in_test=0.74418
+OH rid=13 seed=242 n=64112 in_train=1.00000 in_test=0.74418
+OH rid=13 seeds 42-142 rowwise_identical=0.99995
+OH rid=13 seeds 42-242 rowwise_identical=0.99995
+OH rid=13 seeds 142-242 rowwise_identical=1.00000
+OH rid=13 seeds 42-142-242 rowwise_identical=0.99995
+OH rid=14 seed=42 n=64112 in_train=0.99998 in_test=0.74100
+OH rid=14 seed=142 n=64112 in_train=1.00000 in_test=0.74100
+OH rid=14 seed=242 n=64112 in_train=1.00000 in_test=0.74100
+OH rid=14 seeds 42-142 rowwise_identical=0.99998
+OH rid=14 seeds 42-242 rowwise_identical=0.99998
+OH rid=14 seeds 142-242 rowwise_identical=1.00000
+OH rid=14 seeds 42-142-242 rowwise_identical=0.99998
+OH rid=15 seed=42 n=64112 in_train=0.99997 in_test=0.74181
+OH rid=15 seed=142 n=64112 in_train=1.00000 in_test=0.74181
+OH rid=15 seed=242 n=64112 in_train=1.00000 in_test=0.74181
+OH rid=15 seeds 42-142 rowwise_identical=0.99997
+OH rid=15 seeds 42-242 rowwise_identical=0.99997
+OH rid=15 seeds 142-242 rowwise_identical=1.00000
+OH rid=15 seeds 42-142-242 rowwise_identical=0.99997
+OH rid=16 seed=42 n=64112 in_train=0.99998 in_test=0.73961
+OH rid=16 seed=142 n=64112 in_train=1.00000 in_test=0.73961
+OH rid=16 seed=242 n=64112 in_train=1.00000 in_test=0.73961
+OH rid=16 seeds 42-142 rowwise_identical=0.99998
+OH rid=16 seeds 42-242 rowwise_identical=0.99998
+OH rid=16 seeds 142-242 rowwise_identical=1.00000
+OH rid=16 seeds 42-142-242 rowwise_identical=0.99998
+OH rid=17 seed=42 n=64112 in_train=0.99998 in_test=0.74332
+OH rid=17 seed=142 n=64112 in_train=1.00000 in_test=0.74332
+OH rid=17 seed=242 n=64112 in_train=1.00000 in_test=0.74332
+OH rid=17 seeds 42-142 rowwise_identical=0.99998
+OH rid=17 seeds 42-242 rowwise_identical=0.99998
+OH rid=17 seeds 142-242 rowwise_identical=1.00000
+OH rid=17 seeds 42-142-242 rowwise_identical=0.99998
+OH rid=18 seed=42 n=64112 in_train=0.99998 in_test=0.73807
+OH rid=18 seed=142 n=64112 in_train=1.00000 in_test=0.73807
+OH rid=18 seed=242 n=64112 in_train=1.00000 in_test=0.73807
+OH rid=18 seeds 42-142 rowwise_identical=0.99998
+OH rid=18 seeds 42-242 rowwise_identical=0.99998
+OH rid=18 seeds 142-242 rowwise_identical=1.00000
+OH rid=18 seeds 42-142-242 rowwise_identical=0.99998
+OH rid=19 seed=42 n=64112 in_train=0.99997 in_test=0.74251
+OH rid=19 seed=142 n=64112 in_train=1.00000 in_test=0.74251
+OH rid=19 seed=242 n=64112 in_train=1.00000 in_test=0.74251
+OH rid=19 seeds 42-142 rowwise_identical=0.99997
+OH rid=19 seeds 42-242 rowwise_identical=0.99997
+OH rid=19 seeds 142-242 rowwise_identical=1.00000
+OH rid=19 seeds 42-142-242 rowwise_identical=0.99997
+OH rid=20 seed=42 n=64112 in_train=0.99994 in_test=0.74142
+OH rid=20 seed=142 n=64112 in_train=1.00000 in_test=0.74142
+OH rid=20 seed=242 n=64112 in_train=1.00000 in_test=0.74142
+OH rid=20 seeds 42-142 rowwise_identical=0.99994
+OH rid=20 seeds 42-242 rowwise_identical=0.99994
+OH rid=20 seeds 142-242 rowwise_identical=1.00000
+OH rid=20 seeds 42-142-242 rowwise_identical=0.99994
+OH rid=21 seed=42 n=64112 in_train=1.00000 in_test=0.74321
+OH rid=21 seed=142 n=64112 in_train=1.00000 in_test=0.74321
+OH rid=21 seed=242 n=64112 in_train=1.00000 in_test=0.74321
+OH rid=21 seeds 42-142 rowwise_identical=1.00000
+OH rid=21 seeds 42-242 rowwise_identical=1.00000
+OH rid=21 seeds 142-242 rowwise_identical=1.00000
+OH rid=21 seeds 42-142-242 rowwise_identical=1.00000
+OH rid=22 seed=42 n=64112 in_train=0.99997 in_test=0.74220
+OH rid=22 seed=142 n=64112 in_train=1.00000 in_test=0.74220
+OH rid=22 seed=242 n=64112 in_train=1.00000 in_test=0.74220
+OH rid=22 seeds 42-142 rowwise_identical=0.99997
+OH rid=22 seeds 42-242 rowwise_identical=0.99997
+OH rid=22 seeds 142-242 rowwise_identical=1.00000
+OH rid=22 seeds 42-142-242 rowwise_identical=0.99997
+OH rid=23 seed=42 n=64112 in_train=1.00000 in_test=0.74081
+OH rid=23 seed=142 n=64112 in_train=1.00000 in_test=0.74081
+OH rid=23 seed=242 n=64112 in_train=1.00000 in_test=0.74081
+OH rid=23 seeds 42-142 rowwise_identical=1.00000
+OH rid=23 seeds 42-242 rowwise_identical=1.00000
+OH rid=23 seeds 142-242 rowwise_identical=1.00000
+OH rid=23 seeds 42-142-242 rowwise_identical=1.00000
+OH rid=24 seed=42 n=64112 in_train=0.99997 in_test=0.73758
+OH rid=24 seed=142 n=64112 in_train=1.00000 in_test=0.73758
+OH rid=24 seed=242 n=64112 in_train=1.00000 in_test=0.73758
+OH rid=24 seeds 42-142 rowwise_identical=0.99997
+OH rid=24 seeds 42-242 rowwise_identical=0.99997
+OH rid=24 seeds 142-242 rowwise_identical=1.00000
+OH rid=24 seeds 42-142-242 rowwise_identical=0.99997
+OH rid=25 seed=42 n=64112 in_train=0.99997 in_test=0.74063
+OH rid=25 seed=142 n=64112 in_train=1.00000 in_test=0.74063
+OH rid=25 seed=242 n=64112 in_train=1.00000 in_test=0.74063
+OH rid=25 seeds 42-142 rowwise_identical=0.99997
+OH rid=25 seeds 42-242 rowwise_identical=0.99997
+OH rid=25 seeds 142-242 rowwise_identical=1.00000
+OH rid=25 seeds 42-142-242 rowwise_identical=0.99997
+OH rid=26 seed=42 n=64112 in_train=0.99997 in_test=0.73960
+OH rid=26 seed=142 n=64112 in_train=1.00000 in_test=0.73960
+OH rid=26 seed=242 n=64112 in_train=1.00000 in_test=0.73960
+OH rid=26 seeds 42-142 rowwise_identical=0.99997
+OH rid=26 seeds 42-242 rowwise_identical=0.99997
+OH rid=26 seeds 142-242 rowwise_identical=1.00000
+OH rid=26 seeds 42-142-242 rowwise_identical=0.99997
+OH rid=27 seed=42 n=64112 in_train=0.99995 in_test=0.74027
+OH rid=27 seed=142 n=64112 in_train=1.00000 in_test=0.74027
+OH rid=27 seed=242 n=64112 in_train=1.00000 in_test=0.74027
+OH rid=27 seeds 42-142 rowwise_identical=0.99995
+OH rid=27 seeds 42-242 rowwise_identical=0.99995
+OH rid=27 seeds 142-242 rowwise_identical=1.00000
+OH rid=27 seeds 42-142-242 rowwise_identical=0.99995
+OH rid=28 seed=42 n=64112 in_train=1.00000 in_test=0.73980
+OH rid=28 seed=142 n=64112 in_train=1.00000 in_test=0.73980
+OH rid=28 seed=242 n=64112 in_train=1.00000 in_test=0.73980
+OH rid=28 seeds 42-142 rowwise_identical=1.00000
+OH rid=28 seeds 42-242 rowwise_identical=1.00000
+OH rid=28 seeds 142-242 rowwise_identical=1.00000
+OH rid=28 seeds 42-142-242 rowwise_identical=1.00000
+OH rid=29 seed=42 n=64112 in_train=0.99995 in_test=0.74251
+OH rid=29 seed=142 n=64112 in_train=1.00000 in_test=0.74251
+OH rid=29 seed=242 n=64112 in_train=1.00000 in_test=0.74251
+OH rid=29 seeds 42-142 rowwise_identical=0.99995
+OH rid=29 seeds 42-242 rowwise_identical=0.99995
+OH rid=29 seeds 142-242 rowwise_identical=1.00000
+OH rid=29 seeds 42-142-242 rowwise_identical=0.99995
+OH rid=30 seed=42 n=64112 in_train=0.99998 in_test=0.73765
+OH rid=30 seed=142 n=64112 in_train=1.00000 in_test=0.73765
+OH rid=30 seed=242 n=64112 in_train=1.00000 in_test=0.73765
+OH rid=30 seeds 42-142 rowwise_identical=0.99998
+OH rid=30 seeds 42-242 rowwise_identical=0.99998
+OH rid=30 seeds 142-242 rowwise_identical=1.00000
+OH rid=30 seeds 42-142-242 rowwise_identical=0.99998
+OH rid=31 seed=42 n=64112 in_train=0.99997 in_test=0.73910
+OH rid=31 seed=142 n=64112 in_train=1.00000 in_test=0.73910
+OH rid=31 seed=242 n=64112 in_train=1.00000 in_test=0.73910
+OH rid=31 seeds 42-142 rowwise_identical=0.99997
+OH rid=31 seeds 42-242 rowwise_identical=0.99997
+OH rid=31 seeds 142-242 rowwise_identical=1.00000
+OH rid=31 seeds 42-142-242 rowwise_identical=0.99997
+OH rid=32 seed=42 n=64112 in_train=0.99998 in_test=0.73885
+OH rid=32 seed=142 n=64112 in_train=1.00000 in_test=0.73885
+OH rid=32 seed=242 n=64112 in_train=1.00000 in_test=0.73885
+OH rid=32 seeds 42-142 rowwise_identical=0.99998
+OH rid=32 seeds 42-242 rowwise_identical=0.99998
+OH rid=32 seeds 142-242 rowwise_identical=1.00000
+OH rid=32 seeds 42-142-242 rowwise_identical=0.99998
+OH rid=33 seed=42 n=64112 in_train=1.00000 in_test=0.73893
+OH rid=33 seed=142 n=64112 in_train=1.00000 in_test=0.73893
+OH rid=33 seed=242 n=64112 in_train=1.00000 in_test=0.73893
+OH rid=33 seeds 42-142 rowwise_identical=1.00000
+OH rid=33 seeds 42-242 rowwise_identical=1.00000
+OH rid=33 seeds 142-242 rowwise_identical=1.00000
+OH rid=33 seeds 42-142-242 rowwise_identical=1.00000
+OH rid=34 seed=42 n=64112 in_train=0.99997 in_test=0.74270
+OH rid=34 seed=142 n=64112 in_train=1.00000 in_test=0.74270
+OH rid=34 seed=242 n=64112 in_train=1.00000 in_test=0.74270
+OH rid=34 seeds 42-142 rowwise_identical=0.99997
+OH rid=34 seeds 42-242 rowwise_identical=0.99997
+OH rid=34 seeds 142-242 rowwise_identical=1.00000
+OH rid=34 seeds 42-142-242 rowwise_identical=0.99997
+OH rid=35 seed=42 n=64112 in_train=0.99997 in_test=0.74127
+OH rid=35 seed=142 n=64112 in_train=1.00000 in_test=0.74127
+OH rid=35 seed=242 n=64112 in_train=1.00000 in_test=0.74127
+OH rid=35 seeds 42-142 rowwise_identical=0.99997
+OH rid=35 seeds 42-242 rowwise_identical=0.99997
+OH rid=35 seeds 142-242 rowwise_identical=1.00000
+OH rid=35 seeds 42-142-242 rowwise_identical=0.99997
+OH rid=36 seed=42 n=64112 in_train=0.99997 in_test=0.74134
+OH rid=36 seed=142 n=64112 in_train=1.00000 in_test=0.74134
+OH rid=36 seed=242 n=64112 in_train=1.00000 in_test=0.74134
+OH rid=36 seeds 42-142 rowwise_identical=0.99997
+OH rid=36 seeds 42-242 rowwise_identical=0.99997
+OH rid=36 seeds 142-242 rowwise_identical=1.00000
+OH rid=36 seeds 42-142-242 rowwise_identical=0.99997
+OH rid=37 seed=42 n=64112 in_train=0.99998 in_test=0.74170
+OH rid=37 seed=142 n=64112 in_train=1.00000 in_test=0.74170
+OH rid=37 seed=242 n=64112 in_train=1.00000 in_test=0.74170
+OH rid=37 seeds 42-142 rowwise_identical=0.99998
+OH rid=37 seeds 42-242 rowwise_identical=0.99998
+OH rid=37 seeds 142-242 rowwise_identical=1.00000
+OH rid=37 seeds 42-142-242 rowwise_identical=0.99998
+OH rid=38 seed=42 n=64112 in_train=1.00000 in_test=0.74222
+OH rid=38 seed=142 n=64112 in_train=1.00000 in_test=0.74222
+OH rid=38 seed=242 n=64112 in_train=1.00000 in_test=0.74222
+OH rid=38 seeds 42-142 rowwise_identical=1.00000
+OH rid=38 seeds 42-242 rowwise_identical=1.00000
+OH rid=38 seeds 142-242 rowwise_identical=1.00000
+OH rid=38 seeds 42-142-242 rowwise_identical=1.00000
+OH rid=39 seed=42 n=64112 in_train=0.99998 in_test=0.74237
+OH rid=39 seed=142 n=64112 in_train=1.00000 in_test=0.74237
+OH rid=39 seed=242 n=64112 in_train=1.00000 in_test=0.74237
+OH rid=39 seeds 42-142 rowwise_identical=0.99998
+OH rid=39 seeds 42-242 rowwise_identical=0.99998
+OH rid=39 seeds 142-242 rowwise_identical=1.00000
+OH rid=39 seeds 42-142-242 rowwise_identical=0.99998
+OH rid=40 seed=42 n=64112 in_train=0.99998 in_test=0.74049
+OH rid=40 seed=142 n=64112 in_train=1.00000 in_test=0.74049
+OH rid=40 seed=242 n=64112 in_train=1.00000 in_test=0.74049
+OH rid=40 seeds 42-142 rowwise_identical=0.99998
+OH rid=40 seeds 42-242 rowwise_identical=0.99998
+OH rid=40 seeds 142-242 rowwise_identical=1.00000
+OH rid=40 seeds 42-142-242 rowwise_identical=0.99998
+OH rid=41 seed=42 n=64112 in_train=1.00000 in_test=0.74083
+OH rid=41 seed=142 n=64112 in_train=1.00000 in_test=0.74083
+OH rid=41 seed=242 n=64112 in_train=1.00000 in_test=0.74083
+OH rid=41 seeds 42-142 rowwise_identical=1.00000
+OH rid=41 seeds 42-242 rowwise_identical=1.00000
+OH rid=41 seeds 142-242 rowwise_identical=1.00000
+OH rid=41 seeds 42-142-242 rowwise_identical=1.00000
+OH rid=42 seed=42 n=64112 in_train=0.99997 in_test=0.74254
+OH rid=42 seed=142 n=64112 in_train=1.00000 in_test=0.74254
+OH rid=42 seed=242 n=64112 in_train=1.00000 in_test=0.74254
+OH rid=42 seeds 42-142 rowwise_identical=0.99997
+OH rid=42 seeds 42-242 rowwise_identical=0.99997
+OH rid=42 seeds 142-242 rowwise_identical=1.00000
+OH rid=42 seeds 42-142-242 rowwise_identical=0.99997
+OH rid=43 seed=42 n=64112 in_train=0.99995 in_test=0.74417
+OH rid=43 seed=142 n=64112 in_train=1.00000 in_test=0.74417
+OH rid=43 seed=242 n=64112 in_train=1.00000 in_test=0.74417
+OH rid=43 seeds 42-142 rowwise_identical=0.99995
+OH rid=43 seeds 42-242 rowwise_identical=0.99995
+OH rid=43 seeds 142-242 rowwise_identical=1.00000
+OH rid=43 seeds 42-142-242 rowwise_identical=0.99995
+OH rid=44 seed=42 n=64112 in_train=1.00000 in_test=0.73981
+OH rid=44 seed=142 n=64112 in_train=1.00000 in_test=0.73981
+OH rid=44 seed=242 n=64112 in_train=1.00000 in_test=0.73981
+OH rid=44 seeds 42-142 rowwise_identical=1.00000
+OH rid=44 seeds 42-242 rowwise_identical=1.00000
+OH rid=44 seeds 142-242 rowwise_identical=1.00000
+OH rid=44 seeds 42-142-242 rowwise_identical=1.00000
+OH rid=45 seed=42 n=64112 in_train=1.00000 in_test=0.74005
+OH rid=45 seed=142 n=64112 in_train=1.00000 in_test=0.74005
+OH rid=45 seed=242 n=64112 in_train=1.00000 in_test=0.74005
+OH rid=45 seeds 42-142 rowwise_identical=1.00000
+OH rid=45 seeds 42-242 rowwise_identical=1.00000
+OH rid=45 seeds 142-242 rowwise_identical=1.00000
+OH rid=45 seeds 42-142-242 rowwise_identical=1.00000
+OH rid=46 seed=42 n=64112 in_train=0.99998 in_test=0.74276
+OH rid=46 seed=142 n=64112 in_train=1.00000 in_test=0.74276
+OH rid=46 seed=242 n=64112 in_train=1.00000 in_test=0.74276
+OH rid=46 seeds 42-142 rowwise_identical=0.99998
+OH rid=46 seeds 42-242 rowwise_identical=0.99998
+OH rid=46 seeds 142-242 rowwise_identical=1.00000
+OH rid=46 seeds 42-142-242 rowwise_identical=0.99998
+OH rid=47 seed=42 n=64112 in_train=1.00000 in_test=0.74116
+OH rid=47 seed=142 n=64112 in_train=1.00000 in_test=0.74116
+OH rid=47 seed=242 n=64112 in_train=1.00000 in_test=0.74116
+OH rid=47 seeds 42-142 rowwise_identical=1.00000
+OH rid=47 seeds 42-242 rowwise_identical=1.00000
+OH rid=47 seeds 142-242 rowwise_identical=1.00000
+OH rid=47 seeds 42-142-242 rowwise_identical=1.00000
+OH rid=48 seed=42 n=64112 in_train=0.99998 in_test=0.74205
+OH rid=48 seed=142 n=64112 in_train=1.00000 in_test=0.74205
+OH rid=48 seed=242 n=64112 in_train=1.00000 in_test=0.74205
+OH rid=48 seeds 42-142 rowwise_identical=0.99998
+OH rid=48 seeds 42-242 rowwise_identical=0.99998
+OH rid=48 seeds 142-242 rowwise_identical=1.00000
+OH rid=48 seeds 42-142-242 rowwise_identical=0.99998
+OH rid=49 seed=42 n=64112 in_train=0.99995 in_test=0.74033
+OH rid=49 seed=142 n=64112 in_train=1.00000 in_test=0.74033
+OH rid=49 seed=242 n=64112 in_train=1.00000 in_test=0.74033
+OH rid=49 seeds 42-142 rowwise_identical=0.99995
+OH rid=49 seeds 42-242 rowwise_identical=0.99995
+OH rid=49 seeds 142-242 rowwise_identical=1.00000
+OH rid=49 seeds 42-142-242 rowwise_identical=0.99995
+TX rid=0 seed=42 n=212756 in_train=1.00000 in_test=0.84568
+TX rid=0 seed=142 n=212756 in_train=0.99977 in_test=0.84557
+TX rid=0 seed=242 n=212756 in_train=0.99979 in_test=0.84558
+TX rid=0 seeds 42-142 rowwise_identical=0.99977
+TX rid=0 seeds 42-242 rowwise_identical=0.99979
+TX rid=0 seeds 142-242 rowwise_identical=0.99977
+TX rid=0 seeds 42-142-242 rowwise_identical=0.99977
+TX rid=1 seed=42 n=212756 in_train=1.00000 in_test=0.84404
+TX rid=1 seed=142 n=212756 in_train=0.99981 in_test=0.84394
+TX rid=1 seed=242 n=212756 in_train=0.99982 in_test=0.84394
+TX rid=1 seeds 42-142 rowwise_identical=0.99981
+TX rid=1 seeds 42-242 rowwise_identical=0.99982
+TX rid=1 seeds 142-242 rowwise_identical=0.99981
+TX rid=1 seeds 42-142-242 rowwise_identical=0.99981
+TX rid=2 seed=42 n=212756 in_train=1.00000 in_test=0.84500
+TX rid=2 seed=142 n=212756 in_train=0.99984 in_test=0.84492
+TX rid=2 seed=242 n=212756 in_train=0.99985 in_test=0.84492
+TX rid=2 seeds 42-142 rowwise_identical=0.99984
+TX rid=2 seeds 42-242 rowwise_identical=0.99985
+TX rid=2 seeds 142-242 rowwise_identical=0.99984
+TX rid=2 seeds 42-142-242 rowwise_identical=0.99984
+TX rid=3 seed=42 n=212756 in_train=1.00000 in_test=0.84413
+TX rid=3 seed=142 n=212756 in_train=0.99988 in_test=0.84407
+TX rid=3 seed=242 n=212756 in_train=0.99989 in_test=0.84407
+TX rid=3 seeds 42-142 rowwise_identical=0.99988
+TX rid=3 seeds 42-242 rowwise_identical=0.99989
+TX rid=3 seeds 142-242 rowwise_identical=0.99988
+TX rid=3 seeds 42-142-242 rowwise_identical=0.99988
+TX rid=4 seed=42 n=212756 in_train=1.00000 in_test=0.84401
+TX rid=4 seed=142 n=212756 in_train=0.99983 in_test=0.84393
+TX rid=4 seed=242 n=212756 in_train=0.99983 in_test=0.84393
+TX rid=4 seeds 42-142 rowwise_identical=0.99983
+TX rid=4 seeds 42-242 rowwise_identical=0.99983
+TX rid=4 seeds 142-242 rowwise_identical=0.99983
+TX rid=4 seeds 42-142-242 rowwise_identical=0.99983
+TX rid=5 seed=42 n=212756 in_train=1.00000 in_test=0.84428
+TX rid=5 seed=142 n=212756 in_train=0.99988 in_test=0.84422
+TX rid=5 seed=242 n=212756 in_train=0.99988 in_test=0.84422
+TX rid=5 seeds 42-142 rowwise_identical=0.99988
+TX rid=5 seeds 42-242 rowwise_identical=0.99988
+TX rid=5 seeds 142-242 rowwise_identical=0.99988
+TX rid=5 seeds 42-142-242 rowwise_identical=0.99988
+TX rid=6 seed=42 n=212756 in_train=1.00000 in_test=0.84402
+TX rid=6 seed=142 n=212756 in_train=0.99986 in_test=0.84393
+TX rid=6 seed=242 n=212756 in_train=0.99986 in_test=0.84393
+TX rid=6 seeds 42-142 rowwise_identical=0.99986
+TX rid=6 seeds 42-242 rowwise_identical=0.99986
+TX rid=6 seeds 142-242 rowwise_identical=0.99986
+TX rid=6 seeds 42-142-242 rowwise_identical=0.99986
+TX rid=7 seed=42 n=212756 in_train=1.00000 in_test=0.84387
+TX rid=7 seed=142 n=212756 in_train=0.99986 in_test=0.84380
+TX rid=7 seed=242 n=212756 in_train=0.99988 in_test=0.84380
+TX rid=7 seeds 42-142 rowwise_identical=0.99986
+TX rid=7 seeds 42-242 rowwise_identical=0.99988
+TX rid=7 seeds 142-242 rowwise_identical=0.99986
+TX rid=7 seeds 42-142-242 rowwise_identical=0.99986
+TX rid=8 seed=42 n=212756 in_train=1.00000 in_test=0.84349
+TX rid=8 seed=142 n=212756 in_train=0.99982 in_test=0.84339
+TX rid=8 seed=242 n=212756 in_train=0.99983 in_test=0.84340
+TX rid=8 seeds 42-142 rowwise_identical=0.99982
+TX rid=8 seeds 42-242 rowwise_identical=0.99983
+TX rid=8 seeds 142-242 rowwise_identical=0.99982
+TX rid=8 seeds 42-142-242 rowwise_identical=0.99982
+TX rid=9 seed=42 n=212756 in_train=1.00000 in_test=0.84345
+TX rid=9 seed=142 n=212756 in_train=0.99983 in_test=0.84333
+TX rid=9 seed=242 n=212756 in_train=0.99983 in_test=0.84334
+TX rid=9 seeds 42-142 rowwise_identical=0.99983
+TX rid=9 seeds 42-242 rowwise_identical=0.99983
+TX rid=9 seeds 142-242 rowwise_identical=0.99983
+TX rid=9 seeds 42-142-242 rowwise_identical=0.99983
+TX rid=10 seed=42 n=212756 in_train=1.00000 in_test=0.84324
+TX rid=10 seed=142 n=212756 in_train=0.99988 in_test=0.84319
+TX rid=10 seed=242 n=212756 in_train=0.99989 in_test=0.84319
+TX rid=10 seeds 42-142 rowwise_identical=0.99988
+TX rid=10 seeds 42-242 rowwise_identical=0.99989
+TX rid=10 seeds 142-242 rowwise_identical=0.99988
+TX rid=10 seeds 42-142-242 rowwise_identical=0.99988
+TX rid=11 seed=42 n=212756 in_train=1.00000 in_test=0.84511
+TX rid=11 seed=142 n=212756 in_train=0.99988 in_test=0.84505
+TX rid=11 seed=242 n=212756 in_train=0.99988 in_test=0.84505
+TX rid=11 seeds 42-142 rowwise_identical=0.99988
+TX rid=11 seeds 42-242 rowwise_identical=0.99988
+TX rid=11 seeds 142-242 rowwise_identical=0.99988
+TX rid=11 seeds 42-142-242 rowwise_identical=0.99988
+TX rid=12 seed=42 n=212756 in_train=1.00000 in_test=0.84435
+TX rid=12 seed=142 n=212756 in_train=0.99985 in_test=0.84426
+TX rid=12 seed=242 n=212756 in_train=0.99986 in_test=0.84426
+TX rid=12 seeds 42-142 rowwise_identical=0.99985
+TX rid=12 seeds 42-242 rowwise_identical=0.99986
+TX rid=12 seeds 142-242 rowwise_identical=0.99985
+TX rid=12 seeds 42-142-242 rowwise_identical=0.99985
+TX rid=13 seed=42 n=212756 in_train=1.00000 in_test=0.84533
+TX rid=13 seed=142 n=212756 in_train=0.99985 in_test=0.84528
+TX rid=13 seed=242 n=212756 in_train=0.99986 in_test=0.84528
+TX rid=13 seeds 42-142 rowwise_identical=0.99985
+TX rid=13 seeds 42-242 rowwise_identical=0.99986
+TX rid=13 seeds 142-242 rowwise_identical=0.99985
+TX rid=13 seeds 42-142-242 rowwise_identical=0.99985
+TX rid=14 seed=42 n=212756 in_train=1.00000 in_test=0.84484
+TX rid=14 seed=142 n=212756 in_train=0.99988 in_test=0.84477
+TX rid=14 seed=242 n=212756 in_train=0.99989 in_test=0.84478
+TX rid=14 seeds 42-142 rowwise_identical=0.99988
+TX rid=14 seeds 42-242 rowwise_identical=0.99989
+TX rid=14 seeds 142-242 rowwise_identical=0.99988
+TX rid=14 seeds 42-142-242 rowwise_identical=0.99988
+TX rid=15 seed=42 n=212756 in_train=1.00000 in_test=0.84379
+TX rid=15 seed=142 n=212756 in_train=0.99987 in_test=0.84372
+TX rid=15 seed=242 n=212756 in_train=0.99989 in_test=0.84372
+TX rid=15 seeds 42-142 rowwise_identical=0.99987
+TX rid=15 seeds 42-242 rowwise_identical=0.99989
+TX rid=15 seeds 142-242 rowwise_identical=0.99987
+TX rid=15 seeds 42-142-242 rowwise_identical=0.99987
+TX rid=16 seed=42 n=212756 in_train=1.00000 in_test=0.84536
+TX rid=16 seed=142 n=212756 in_train=0.99984 in_test=0.84527
+TX rid=16 seed=242 n=212756 in_train=0.99984 in_test=0.84527
+TX rid=16 seeds 42-142 rowwise_identical=0.99984
+TX rid=16 seeds 42-242 rowwise_identical=0.99984
+TX rid=16 seeds 142-242 rowwise_identical=0.99984
+TX rid=16 seeds 42-142-242 rowwise_identical=0.99984
+TX rid=17 seed=42 n=212756 in_train=1.00000 in_test=0.84503
+TX rid=17 seed=142 n=212756 in_train=0.99989 in_test=0.84499
+TX rid=17 seed=242 n=212756 in_train=0.99989 in_test=0.84499
+TX rid=17 seeds 42-142 rowwise_identical=0.99989
+TX rid=17 seeds 42-242 rowwise_identical=0.99989
+TX rid=17 seeds 142-242 rowwise_identical=0.99989
+TX rid=17 seeds 42-142-242 rowwise_identical=0.99989
+TX rid=18 seed=42 n=212756 in_train=1.00000 in_test=0.84526
+TX rid=18 seed=142 n=212756 in_train=0.99984 in_test=0.84518
+TX rid=18 seed=242 n=212756 in_train=0.99985 in_test=0.84518
+TX rid=18 seeds 42-142 rowwise_identical=0.99984
+TX rid=18 seeds 42-242 rowwise_identical=0.99985
+TX rid=18 seeds 142-242 rowwise_identical=0.99984
+TX rid=18 seeds 42-142-242 rowwise_identical=0.99984
+TX rid=19 seed=42 n=212756 in_train=1.00000 in_test=0.84471
+TX rid=19 seed=142 n=212756 in_train=0.99986 in_test=0.84464
+TX rid=19 seed=242 n=212756 in_train=0.99988 in_test=0.84464
+TX rid=19 seeds 42-142 rowwise_identical=0.99986
+TX rid=19 seeds 42-242 rowwise_identical=0.99988
+TX rid=19 seeds 142-242 rowwise_identical=0.99986
+TX rid=19 seeds 42-142-242 rowwise_identical=0.99986
+TX rid=20 seed=42 n=212756 in_train=1.00000 in_test=0.84253
+TX rid=20 seed=142 n=212756 in_train=0.99986 in_test=0.84247
+TX rid=20 seed=242 n=212756 in_train=0.99987 in_test=0.84247
+TX rid=20 seeds 42-142 rowwise_identical=0.99986
+TX rid=20 seeds 42-242 rowwise_identical=0.99987
+TX rid=20 seeds 142-242 rowwise_identical=0.99986
+TX rid=20 seeds 42-142-242 rowwise_identical=0.99986
+TX rid=21 seed=42 n=212756 in_train=1.00000 in_test=0.84506
+TX rid=21 seed=142 n=212756 in_train=0.99987 in_test=0.84498
+TX rid=21 seed=242 n=212756 in_train=0.99988 in_test=0.84498
+TX rid=21 seeds 42-142 rowwise_identical=0.99987
+TX rid=21 seeds 42-242 rowwise_identical=0.99988
+TX rid=21 seeds 142-242 rowwise_identical=0.99987
+TX rid=21 seeds 42-142-242 rowwise_identical=0.99987
+TX rid=22 seed=42 n=212756 in_train=1.00000 in_test=0.84502
+TX rid=22 seed=142 n=212756 in_train=0.99985 in_test=0.84494
+TX rid=22 seed=242 n=212756 in_train=0.99986 in_test=0.84495
+TX rid=22 seeds 42-142 rowwise_identical=0.99985
+TX rid=22 seeds 42-242 rowwise_identical=0.99986
+TX rid=22 seeds 142-242 rowwise_identical=0.99985
+TX rid=22 seeds 42-142-242 rowwise_identical=0.99985
+TX rid=23 seed=42 n=212756 in_train=1.00000 in_test=0.84417
+TX rid=23 seed=142 n=212756 in_train=0.99991 in_test=0.84414
+TX rid=23 seed=242 n=212756 in_train=0.99991 in_test=0.84414
+TX rid=23 seeds 42-142 rowwise_identical=0.99991
+TX rid=23 seeds 42-242 rowwise_identical=0.99991
+TX rid=23 seeds 142-242 rowwise_identical=0.99991
+TX rid=23 seeds 42-142-242 rowwise_identical=0.99991
+TX rid=24 seed=42 n=212756 in_train=1.00000 in_test=0.84527
+TX rid=24 seed=142 n=212756 in_train=0.99985 in_test=0.84520
+TX rid=24 seed=242 n=212756 in_train=0.99987 in_test=0.84521
+TX rid=24 seeds 42-142 rowwise_identical=0.99985
+TX rid=24 seeds 42-242 rowwise_identical=0.99987
+TX rid=24 seeds 142-242 rowwise_identical=0.99985
+TX rid=24 seeds 42-142-242 rowwise_identical=0.99985
+TX rid=25 seed=42 n=212756 in_train=1.00000 in_test=0.84494
+TX rid=25 seed=142 n=212756 in_train=0.99990 in_test=0.84490
+TX rid=25 seed=242 n=212756 in_train=0.99991 in_test=0.84490
+TX rid=25 seeds 42-142 rowwise_identical=0.99990
+TX rid=25 seeds 42-242 rowwise_identical=0.99991
+TX rid=25 seeds 142-242 rowwise_identical=0.99990
+TX rid=25 seeds 42-142-242 rowwise_identical=0.99990
+TX rid=26 seed=42 n=212756 in_train=1.00000 in_test=0.84447
+TX rid=26 seed=142 n=212756 in_train=0.99982 in_test=0.84438
+TX rid=26 seed=242 n=212756 in_train=0.99982 in_test=0.84438
+TX rid=26 seeds 42-142 rowwise_identical=0.99982
+TX rid=26 seeds 42-242 rowwise_identical=0.99982
+TX rid=26 seeds 142-242 rowwise_identical=0.99982
+TX rid=26 seeds 42-142-242 rowwise_identical=0.99982
+TX rid=27 seed=42 n=212756 in_train=1.00000 in_test=0.84641
+TX rid=27 seed=142 n=212756 in_train=0.99981 in_test=0.84633
+TX rid=27 seed=242 n=212756 in_train=0.99982 in_test=0.84633
+TX rid=27 seeds 42-142 rowwise_identical=0.99981
+TX rid=27 seeds 42-242 rowwise_identical=0.99982
+TX rid=27 seeds 142-242 rowwise_identical=0.99981
+TX rid=27 seeds 42-142-242 rowwise_identical=0.99981
+TX rid=28 seed=42 n=212756 in_train=1.00000 in_test=0.84491
+TX rid=28 seed=142 n=212756 in_train=0.99983 in_test=0.84480
+TX rid=28 seed=242 n=212756 in_train=0.99984 in_test=0.84480
+TX rid=28 seeds 42-142 rowwise_identical=0.99983
+TX rid=28 seeds 42-242 rowwise_identical=0.99984
+TX rid=28 seeds 142-242 rowwise_identical=0.99983
+TX rid=28 seeds 42-142-242 rowwise_identical=0.99983
+TX rid=29 seed=42 n=212756 in_train=1.00000 in_test=0.84368
+TX rid=29 seed=142 n=212756 in_train=0.99986 in_test=0.84363
+TX rid=29 seed=242 n=212756 in_train=0.99987 in_test=0.84364
+TX rid=29 seeds 42-142 rowwise_identical=0.99986
+TX rid=29 seeds 42-242 rowwise_identical=0.99987
+TX rid=29 seeds 142-242 rowwise_identical=0.99986
+TX rid=29 seeds 42-142-242 rowwise_identical=0.99986
+TX rid=30 seed=42 n=212756 in_train=1.00000 in_test=0.84426
+TX rid=30 seed=142 n=212756 in_train=0.99985 in_test=0.84420
+TX rid=30 seed=242 n=212756 in_train=0.99987 in_test=0.84420
+TX rid=30 seeds 42-142 rowwise_identical=0.99985
+TX rid=30 seeds 42-242 rowwise_identical=0.99987
+TX rid=30 seeds 142-242 rowwise_identical=0.99985
+TX rid=30 seeds 42-142-242 rowwise_identical=0.99985
+TX rid=31 seed=42 n=212756 in_train=1.00000 in_test=0.84446
+TX rid=31 seed=142 n=212756 in_train=0.99982 in_test=0.84437
+TX rid=31 seed=242 n=212756 in_train=0.99983 in_test=0.84437
+TX rid=31 seeds 42-142 rowwise_identical=0.99982
+TX rid=31 seeds 42-242 rowwise_identical=0.99983
+TX rid=31 seeds 142-242 rowwise_identical=0.99982
+TX rid=31 seeds 42-142-242 rowwise_identical=0.99982
+TX rid=32 seed=42 n=212756 in_train=1.00000 in_test=0.84482
+TX rid=32 seed=142 n=212756 in_train=0.99985 in_test=0.84473
+TX rid=32 seed=242 n=212756 in_train=0.99988 in_test=0.84474
+TX rid=32 seeds 42-142 rowwise_identical=0.99985
+TX rid=32 seeds 42-242 rowwise_identical=0.99988
+TX rid=32 seeds 142-242 rowwise_identical=0.99985
+TX rid=32 seeds 42-142-242 rowwise_identical=0.99985
+TX rid=33 seed=42 n=212756 in_train=1.00000 in_test=0.84504
+TX rid=33 seed=142 n=212756 in_train=0.99987 in_test=0.84498
+TX rid=33 seed=242 n=212756 in_train=0.99988 in_test=0.84498
+TX rid=33 seeds 42-142 rowwise_identical=0.99987
+TX rid=33 seeds 42-242 rowwise_identical=0.99988
+TX rid=33 seeds 142-242 rowwise_identical=0.99987
+TX rid=33 seeds 42-142-242 rowwise_identical=0.99987
+TX rid=34 seed=42 n=212756 in_train=1.00000 in_test=0.84387
+TX rid=34 seed=142 n=212756 in_train=0.99987 in_test=0.84382
+TX rid=34 seed=242 n=212756 in_train=0.99988 in_test=0.84382
+TX rid=34 seeds 42-142 rowwise_identical=0.99987
+TX rid=34 seeds 42-242 rowwise_identical=0.99988
+TX rid=34 seeds 142-242 rowwise_identical=0.99987
+TX rid=34 seeds 42-142-242 rowwise_identical=0.99987
+TX rid=35 seed=42 n=212756 in_train=1.00000 in_test=0.84469
+TX rid=35 seed=142 n=212756 in_train=0.99984 in_test=0.84461
+TX rid=35 seed=242 n=212756 in_train=0.99984 in_test=0.84461
+TX rid=35 seeds 42-142 rowwise_identical=0.99984
+TX rid=35 seeds 42-242 rowwise_identical=0.99984
+TX rid=35 seeds 142-242 rowwise_identical=0.99984
+TX rid=35 seeds 42-142-242 rowwise_identical=0.99984
+TX rid=36 seed=42 n=212756 in_train=1.00000 in_test=0.84447
+TX rid=36 seed=142 n=212756 in_train=0.99992 in_test=0.84443
+TX rid=36 seed=242 n=212756 in_train=0.99992 in_test=0.84443
+TX rid=36 seeds 42-142 rowwise_identical=0.99992
+TX rid=36 seeds 42-242 rowwise_identical=0.99992
+TX rid=36 seeds 142-242 rowwise_identical=0.99992
+TX rid=36 seeds 42-142-242 rowwise_identical=0.99992
+TX rid=37 seed=42 n=212756 in_train=1.00000 in_test=0.84482
+TX rid=37 seed=142 n=212756 in_train=0.99983 in_test=0.84475
+TX rid=37 seed=242 n=212756 in_train=0.99985 in_test=0.84475
+TX rid=37 seeds 42-142 rowwise_identical=0.99983
+TX rid=37 seeds 42-242 rowwise_identical=0.99985
+TX rid=37 seeds 142-242 rowwise_identical=0.99983
+TX rid=37 seeds 42-142-242 rowwise_identical=0.99983
+TX rid=38 seed=42 n=212756 in_train=1.00000 in_test=0.84401
+TX rid=38 seed=142 n=212756 in_train=0.99986 in_test=0.84394
+TX rid=38 seed=242 n=212756 in_train=0.99987 in_test=0.84394
+TX rid=38 seeds 42-142 rowwise_identical=0.99986
+TX rid=38 seeds 42-242 rowwise_identical=0.99987
+TX rid=38 seeds 142-242 rowwise_identical=0.99986
+TX rid=38 seeds 42-142-242 rowwise_identical=0.99986
+TX rid=39 seed=42 n=212756 in_train=1.00000 in_test=0.84526
+TX rid=39 seed=142 n=212756 in_train=0.99985 in_test=0.84519
+TX rid=39 seed=242 n=212756 in_train=0.99985 in_test=0.84519
+TX rid=39 seeds 42-142 rowwise_identical=0.99985
+TX rid=39 seeds 42-242 rowwise_identical=0.99985
+TX rid=39 seeds 142-242 rowwise_identical=0.99985
+TX rid=39 seeds 42-142-242 rowwise_identical=0.99985
+TX rid=40 seed=42 n=212756 in_train=1.00000 in_test=0.84457
+TX rid=40 seed=142 n=212756 in_train=0.99985 in_test=0.84449
+TX rid=40 seed=242 n=212756 in_train=0.99985 in_test=0.84449
+TX rid=40 seeds 42-142 rowwise_identical=0.99985
+TX rid=40 seeds 42-242 rowwise_identical=0.99985
+TX rid=40 seeds 142-242 rowwise_identical=0.99985
+TX rid=40 seeds 42-142-242 rowwise_identical=0.99985
+TX rid=41 seed=42 n=212756 in_train=1.00000 in_test=0.84446
+TX rid=41 seed=142 n=212756 in_train=0.99985 in_test=0.84440
+TX rid=41 seed=242 n=212756 in_train=0.99985 in_test=0.84440
+TX rid=41 seeds 42-142 rowwise_identical=0.99985
+TX rid=41 seeds 42-242 rowwise_identical=0.99985
+TX rid=41 seeds 142-242 rowwise_identical=0.99984
+TX rid=41 seeds 42-142-242 rowwise_identical=0.99984
+TX rid=42 seed=42 n=212756 in_train=1.00000 in_test=0.84387
+TX rid=42 seed=142 n=212756 in_train=0.99988 in_test=0.84378
+TX rid=42 seed=242 n=212756 in_train=0.99989 in_test=0.84379
+TX rid=42 seeds 42-142 rowwise_identical=0.99988
+TX rid=42 seeds 42-242 rowwise_identical=0.99989
+TX rid=42 seeds 142-242 rowwise_identical=0.99987
+TX rid=42 seeds 42-142-242 rowwise_identical=0.99987
+TX rid=43 seed=42 n=212756 in_train=1.00000 in_test=0.84427
+TX rid=43 seed=142 n=212756 in_train=0.99985 in_test=0.84419
+TX rid=43 seed=242 n=212756 in_train=0.99985 in_test=0.84419
+TX rid=43 seeds 42-142 rowwise_identical=0.99985
+TX rid=43 seeds 42-242 rowwise_identical=0.99985
+TX rid=43 seeds 142-242 rowwise_identical=0.99985
+TX rid=43 seeds 42-142-242 rowwise_identical=0.99985
+TX rid=44 seed=42 n=212756 in_train=1.00000 in_test=0.84498
+TX rid=44 seed=142 n=212756 in_train=0.99984 in_test=0.84491
+TX rid=44 seed=242 n=212756 in_train=0.99984 in_test=0.84491
+TX rid=44 seeds 42-142 rowwise_identical=0.99984
+TX rid=44 seeds 42-242 rowwise_identical=0.99984
+TX rid=44 seeds 142-242 rowwise_identical=0.99984
+TX rid=44 seeds 42-142-242 rowwise_identical=0.99984
+TX rid=45 seed=42 n=212756 in_train=1.00000 in_test=0.84346
+TX rid=45 seed=142 n=212756 in_train=0.99985 in_test=0.84337
+TX rid=45 seed=242 n=212756 in_train=0.99986 in_test=0.84337
+TX rid=45 seeds 42-142 rowwise_identical=0.99985
+TX rid=45 seeds 42-242 rowwise_identical=0.99986
+TX rid=45 seeds 142-242 rowwise_identical=0.99985
+TX rid=45 seeds 42-142-242 rowwise_identical=0.99985
+TX rid=46 seed=42 n=212756 in_train=1.00000 in_test=0.84496
+TX rid=46 seed=142 n=212756 in_train=0.99989 in_test=0.84491
+TX rid=46 seed=242 n=212756 in_train=0.99990 in_test=0.84492
+TX rid=46 seeds 42-142 rowwise_identical=0.99989
+TX rid=46 seeds 42-242 rowwise_identical=0.99990
+TX rid=46 seeds 142-242 rowwise_identical=0.99989
+TX rid=46 seeds 42-142-242 rowwise_identical=0.99989
+TX rid=47 seed=42 n=212756 in_train=1.00000 in_test=0.84479
+TX rid=47 seed=142 n=212756 in_train=0.99985 in_test=0.84470
+TX rid=47 seed=242 n=212756 in_train=0.99986 in_test=0.84470
+TX rid=47 seeds 42-142 rowwise_identical=0.99985
+TX rid=47 seeds 42-242 rowwise_identical=0.99986
+TX rid=47 seeds 142-242 rowwise_identical=0.99985
+TX rid=47 seeds 42-142-242 rowwise_identical=0.99985
+TX rid=48 seed=42 n=212756 in_train=1.00000 in_test=0.84476
+TX rid=48 seed=142 n=212756 in_train=0.99982 in_test=0.84470
+TX rid=48 seed=242 n=212756 in_train=0.99983 in_test=0.84470
+TX rid=48 seeds 42-142 rowwise_identical=0.99982
+TX rid=48 seeds 42-242 rowwise_identical=0.99983
+TX rid=48 seeds 142-242 rowwise_identical=0.99982
+TX rid=48 seeds 42-142-242 rowwise_identical=0.99982
+TX rid=49 seed=42 n=212756 in_train=1.00000 in_test=0.84478
+TX rid=49 seed=142 n=212756 in_train=0.99983 in_test=0.84470
+TX rid=49 seed=242 n=212756 in_train=0.99983 in_test=0.84470
+TX rid=49 seeds 42-142 rowwise_identical=0.99983
+TX rid=49 seeds 42-242 rowwise_identical=0.99983
+TX rid=49 seeds 142-242 rowwise_identical=0.99982
+TX rid=49 seeds 42-142-242 rowwise_identical=0.99982
+
+== summary over all realizations and seeds
+CA: in_train 0.97248 to 0.98035; identical across all three seeds 0.97051 to 0.97167
+OH: in_train 0.99992 to 1.00000; identical across all three seeds 0.99992 to 1.00000
+TX: in_train 0.99977 to 1.00000; identical across all three seeds 0.99977 to 0.99992

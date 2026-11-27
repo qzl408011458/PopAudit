@@ -106,7 +106,7 @@ earlier row. "Step NN" refers to `regen_after_g1fix.sh`.
 | App. B BN configuration | `hpo/spaces.py` (BDeu, equivalent sample size 66.6383, maximum in-degree 4), `training/train_bn_pgmpy.py` | `hpo/records/final/bn_pgmpy_<ST>/` | - |
 | (diagnostic, not in the paper) BN backend comparison | certificate `--extras`, `bn_pgmpy_compare/compare_bn.py` | `PAPER_xstate_v3_extras/`, `bn_pgmpy_compare/` | [REPO]; D part [PW] |
 | Figure A1 (fig:framework-flow) | `main_experiments/figures/fig_framework_flow.tex` (standalone TikZ; `pdflatex` gives `fig_framework_flow.pdf`) | - | - |
-| Tables 1, 2, C1 | static | - | - |
+| Tables 1, 2, D1 | static | - | - |
 
 ## Known limitations
 
